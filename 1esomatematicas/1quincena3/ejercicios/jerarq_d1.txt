@@ -1,0 +1,48 @@
+Jerarquía
+
+guiado='s&iacute;'
+modos='clic o arrastre'
+
+variable nombre=A rango=[2,5]
+variable nombre=C rango=[2,10]
+variable nombre=B rango=[3,10]
+variable nombre=D rango=[2,10]
+variable nombre=E rango=[2,9]
+variable nombre=F rango=[2,10]
+variable nombre=G rango=[2,5]
+
+Doble clic sobre la operación
+
+A-(B*C)                        | Multiplica
+A-([B*C])                      | Resta
+[A-(B*C)]                      | Pulsa > para seguir
+
+Doble clic sobre la operación
+
+D-(E*([-(A)]))                 | Multiplica
+D-(-(E*A))                     | Multiplica
+D-([-(E*A)])                   | Escribe sin paréntesis
+D+([E*A])                      | Suma
+[D+(E*A)]                      | Pulsa > para seguir
+
+Doble clic sobre la operación
+
+(-(D))-(G*(-(F)))              | Multiplica
+(-(D))-(-(G*F))                | Multiplica
+(-(D))-([-(G*F)])              | Escribe sin paréntesis
+(-(D))+([G*F])                 | Opera
+[(-(D))+(G*F)]                 | Pulsa > para seguir
+
+Doble clic sobre la operación
+
+(-([-(B)]))-(A*C)              | Quita el paréntesis
+B-(A*C)                        | Multiplica
+B-([A*C])                      | Opera
+[B-(A*C)]                      | Pulsa > para seguir
+
+Doble clic sobre la operación
+
+(A*F)-(D*C)                    | Primera multiplicación
+([A*F])-(D*C)                  | Multiplica
+([A*F])-([D*C])                | Opera
+[(A*F)-(D*C)]                  | Pulsa >> para seguir

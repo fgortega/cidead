@@ -1,0 +1,19 @@
+<applet name="1a1a"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=380 height=302>
+   <param name="nombre" value="1a1a">
+   <param name="Versi&oacute;n" value="3.893, 2007-02-12">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="id='E2' fijo='si' ancho='380' alto='82' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='gris' ejes='gris' texto='rosa'">
+   <param name="E_01" value="id='E3' fijo='si' escala='20' x='0' y='82' ancho='380' alto='220' despl_imagen='arr-izq' fondo='grisObscuro' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='spa' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E2' expresi&oacute;n='(310,54,22,22)' visible='si' imagen='../imagen1/anterior.png' dibujar-si='(pas+spas&gt;0)&amp;(spas#0)' acci&oacute;n='calcular' par&aacute;metro='pas=(spas=0)?pas-1:pas;\nspas=(spas=0)?0:spas-1; ' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='spa' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E2' expresi&oacute;n='(310,54,22,22)' visible='si' imagen='../imagen1/atras.png' dibujar-si='(pas+spas+unavuelta&gt;0)&amp;(spas=0)' acci&oacute;n='calcular' par&aacute;metro='pas=(spas=0)&amp;(pas&gt;0)?pas-1:(spas+pas=0?ulpas:pas);\nspas=(spas=0)?0:spas-1; \n' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='spa2' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E2' expresi&oacute;n='(340,54,22,22)' visible='si' imagen='../imagen1/siguiente.png' dibujar-si='spas&lt;20' acci&oacute;n='calcular' par&aacute;metro='spas=spas+1;sspas=spas;ppas=pas;\npas=((ppas=0)&amp;(sspas=8))?pas+1:pas;\nspas=((ppas=0)&amp;(sspas=8))?0:spas;\npas=((ppas=1)&amp;(sspas=4))?pas+1:pas;\nspas=((ppas=1)&amp;(sspas=4))?0:spas;\npas=((ppas=2)&amp;(sspas=4))?pas+1:pas;\nspas=((ppas=2)&amp;(sspas=4))?0:spas;\npas=((ppas&gt;=3)&amp;(spas&gt;3))?0:pas;\nspas=((ppas&gt;=3)&amp;(spas&gt;3))?0:spas;\nfin=(pas=3)&amp;(spas=3)\nunavuelta=fin=1?1:unavuelta\nulpas=3' pos_mensajes='centro'">
+   <param name="G_00" value="espacio='E2' tipo='pol&iacute;gono' color='8e0000' expresi&oacute;n='(0,0)(379,0)(379,81)(0,81)(0,0)' relleno='fff7d7' coord_abs='si'">
+   <param name="G_01" value="espacio='E2' tipo='texto' color='8e0000' expresi&oacute;n='[20,12]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}\f1\fs24  \b pas  \fs20{\*\mjaformula{\expr pas\decimals 0\fixed0}}\par}' fuente='SansSerif,PLAIN,12' decimales='0' fijo='no'">
+   <param name="G_02" value="espacio='E3' tipo='punto' color='rojo' expresi&oacute;n='(-8,4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs28\b Subpaso {\*\mjaformula{\expr spas\decimals 2\fixed0}}\par El subpaso es spas y el n\u250 mero de\par subpasos en cada paso se define\par en el calcular del control spa2\par \par}' fuente='SansSerif,BOLD,14' fijo='no' tama&ntilde;o='0'">
+</applet>

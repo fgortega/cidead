@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Probar construcci&oacute triángulos dados sus tres lados</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="probar_lll" width=441 height=361
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="441x361">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="probar_lll">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=s&iacute; config=no inicio=no limpiar=no alto=0">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='si' escala='20' O.x='-1' O.y='-1' despl_imagen='arr-izq' fondo='ffffcc' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='A' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(0,-6)' constricci&oacute;n='y=-6' fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='A.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='A1.x' min='-9' max='10' visible='si' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='A.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='A1.y' valor='-6' visible='si' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='B' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(-3,-7)' constricci&oacute;n='y=-7' fuente='Monospaced,PLAIN,12'">
+   <param name="C_05" value="id='B.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='B.x' valor='-3' min='-9' max='10' visible='si' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='B.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='B.y' valor='-7' visible='si' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_07" value="id='C' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(-5,-8)' constricci&oacute;n='y=-8' fuente='Monospaced,PLAIN,12'">
+   <param name="C_08" value="id='C.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='C.x' valor='-5' min='-9' max='10' visible='si' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_09" value="id='C.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='C.y' valor='-8' visible='si' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='cox' constante='si' expresi&oacute;n='ent(E1.rat&oacute;n_x)' evaluar='siempre'">
+   <param name="A_02" value="id='coy' constante='si' expresi&oacute;n='ent(E1.rat&oacute;n_y)' evaluar='siempre'">
+   <param name="A_03" value="id='a' constante='si' expresi&oacute;n='ra&iacute;z((A.x+10)^2+(A.y+6)^2)' evaluar='siempre'">
+   <param name="A_04" value="id='b' constante='si' expresi&oacute;n='ra&iacute;z((B.x+10)^2+(B.y+7)^2)' evaluar='siempre'">
+   <param name="A_05" value="id='c' constante='si' expresi&oacute;n='ra&iacute;z((C.x+10)^2+(C.y+8)^2)' evaluar='siempre'">
+   <param name="A_06" value="id='n' constante='si' expresi&oacute;n='(a^2+c^2-b^2)/(2*a)' evaluar='siempre'">
+   <param name="A_07" value="id='h' constante='si' expresi&oacute;n='ra&iacute;z(c^2-n^2)' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='segmento' color='azul' expresi&oacute;n='(-10,-6)(A.x,A.y)' fuente='Monospaced,PLAIN,12' tama&ntilde;o='0' ancho='2'">
+   <param name="G_02" value="espacio='E1' tipo='segmento' color='ffa500' expresi&oacute;n='(-10,-7)(B.x,B.y)' fuente='Monospaced,PLAIN,12' tama&ntilde;o='0' ancho='2'">
+   <param name="G_03" value="espacio='E1' tipo='segmento' color='00a000' expresi&oacute;n='(-10,-8)(C.x,C.y)' fuente='Monospaced,PLAIN,12' tama&ntilde;o='0' ancho='2'">
+   <param name="G_04" value="espacio='E1' tipo='segmento' color='azul' dibujar-si='(a+b&gt;c)&amp;(a+c&gt;b)&amp;(b+c&gt;a)' expresi&oacute;n='(-10,-4)(-10+a,-4)' fuente='Times New Roman,PLAIN,12' tama&ntilde;o='0' ancho='3'">
+   <param name="G_05" value="espacio='E1' tipo='arco' color='00a000' centro='(-10,-4)' radio='c' fin='160' fuente='Monospaced,PLAIN,12'">
+   <param name="G_06" value="espacio='E1' tipo='arco' color='ffa300' centro='(-10+a,-4)' radio='b' inicio='180' fin='20' fuente='Monospaced,PLAIN,12'">
+   <param name="G_07" value="espacio='E1' tipo='punto' color='azul' dibujar-si='(a+b&gt;c)&amp;(a+c&gt;b)&amp;(b+c&gt;a)' expresi&oacute;n='(-10+n,h-4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b A\f2\fs24\b0\par}' fuente='Arial,BOLD,14' tama&ntilde;o='3'">
+   <param name="G_08" value="espacio='E1' tipo='segmento' color='00ae00' dibujar-si='(a+b&gt;c)&amp;(a+c&gt;b)&amp;(b+c&gt;a)' expresi&oacute;n='(-10,-4)(-10+n,h-4)' fuente='Arial,BOLD,14' tama&ntilde;o='0' ancho='3'">
+   <param name="G_09" value="espacio='E1' tipo='segmento' color='ff9b00' dibujar-si='(a+b&gt;c)&amp;(a+c&gt;b)&amp;(b+c&gt;a)' expresi&oacute;n='(-10+a,-4)(-10+n,h-4)' fuente='Arial,BOLD,14' tama&ntilde;o='0' ancho='3'">
+   <param name="G_10" value="espacio='E1' tipo='punto' color='azul' dibujar-si='(a+b&gt;c)&amp;(a+c&gt;b)&amp;(b+c&gt;a)' expresi&oacute;n='(-10,-4.7)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green152\blue0;\red0\green0\blue255;}\f1\fs28\b\cf0 B\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,14' tama&ntilde;o='0'">
+   <param name="G_11" value="espacio='E1' tipo='punto' color='azul' dibujar-si='(a+b&gt;c)&amp;(a+c&gt;b)&amp;(b+c&gt;a)' expresi&oacute;n='(-10+a,-4.7)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green165\blue0;\red0\green0\blue255;}\f1\fs28\b\cf0 C\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,14' tama&ntilde;o='0'">
+   <param name="G_12" value="espacio='E1' tipo='texto' color='azul' dibujar-si='!((a+b&gt;c)&amp;(a+c&gt;b)&amp;(b+c&gt;a))' expresi&oacute;n='[60,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;\red255\green160\blue0;\red0\green165\blue0;}\cf0\f1\fs32\b\ul\ol No se puede construir el tri\u225 ngulo\par \par \ulnone\olnone        \cf1 a\cf0\fs36\u8804 \fs32\cf2 b\cf0 +\cf3 c\cf0   o  \cf2 b\cf0\fs36\u8804 \fs32\cf1 a\cf0 +\cf3 c\cf0   o  \cf3 c\cf0\fs36\u8804 \fs32\cf1 a\cf0 +\cf2 b\cf1\f4\fs24\b0\par}' fuente='Arial,BOLD,16'">
+   <param name="G_13" value="espacio='E1' tipo='texto' color='ff9d00' expresi&oacute;n='[100,345]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red255\green157\blue0;\red0\green165\blue0;}\cf0\f1\fs24\b a={\*\mjaformula{\expr [a]\decimals 2\fixed1}}\cf1               b={\*\mjaformula{\expr [b]\decimals 2\fixed1}}               \cf2 c={\*\mjaformula{\expr [c]\decimals 2\fixed1}}\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,12'">
+   <param name="G_14" value="espacio='E1' tipo='punto' color='azul' expresi&oacute;n='((-10+A.x)/2,-4.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b a\f2\fs24\b0\par}' fuente='Arial,BOLD,14' tama&ntilde;o='0'">
+   <param name="G_15" value="espacio='E1' tipo='punto' color='azul' dibujar-si='(a+b&gt;c)&amp;(a+c&gt;b)&amp;(b+c&gt;a)' expresi&oacute;n='((-10+a-10+n)/2+0.4,(h-8)/2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green180\blue0;\red0\green0\blue255;}\f1\fs28\b\cf0 b\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,14' tama&ntilde;o='0'">
+   <param name="G_16" value="espacio='E1' tipo='punto' color='azul' dibujar-si='(a+b&gt;c)&amp;(a+c&gt;b)&amp;(b+c&gt;a)' expresi&oacute;n='((-10+n-10)/2-0.75,(h-8)/2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green193\blue0;\red0\green0\blue255;}\f1\fs28\b\cf0 c\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,14' tama&ntilde;o='0'">
+</ajs>
+</body>
+</html>

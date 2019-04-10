@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Fracciones equivalentes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head><ajs name="n&ordm; que simplifica" width=375 height=250
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="375x250">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="n&ordm; que simplifica">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E' fijo='s&iacute;' escala='25' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='da' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(310,25,40,30)' incr='0' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(d#mcd)*((mcd/d)=ent(mcd/d))*(w1=0)'">
+   <param name="C_02" value="id='ca1' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(105,62,45,30)' incr='0' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(ca1=0)*(mcd&gt;1)*(d=mcd)'">
+   <param name="C_03" value="id='cb1' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(105,96,45,30)' incr='0' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(cb1=0)*(mcd&gt;1)*(d=mcd)'">
+   <param name="C_04" value="id='auto' tipo='num&eacute;rico' interfaz='bot&oacute;n' espacio='E' nombre='otra fracci&oacute;n' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,14'">
+   <param name="A_01" value="id='v' expresi&oacute;n='(mcd=d)*(ca1=a/mcd)*(cb1=b/mcd)+(mcd=1)*(d=1)'">
+   <param name="A_02" value="id='a' constante='s&iacute;' expresi&oacute;n='ent(1+rnd*10)*ent(rnd*100)' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='b' constante='s&iacute;' expresi&oacute;n='ent(1+rnd*100)*ent(1+rnd*10)' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='mcd' algoritmo='s&iacute;' evaluar='siempre' inicio='mcd=b+1' hacer='mcd=mcd-1' mientras='(ent(a/mcd)&lt;(a/mcd))+(ent(b/mcd)&lt;(b/mcd))'">
+   <param name="A_05" value="id='d' constante='s&iacute;' expresi&oacute;n='da+0.1*(da=0)' evaluar='siempre'">
+   <param name="A_06" value="id='a1' constante='s&iacute;' expresi&oacute;n='a/d' evaluar='siempre'">
+   <param name="A_07" value="id='b1' constante='s&iacute;' expresi&oacute;n='b/d' evaluar='siempre'">
+   <param name="A_08" value="id='w1' constante='s&iacute;' expresi&oacute;n='(mcd/d&gt;ent(mcd/d))+(ca1#a1)*ca1+(cb1#b1)*cb1' evaluar='siempre'">
+   <param name="G_01" value="espacio='E' tipo='punto' expresi&oacute;n='(-7,3.8)' texto='Para simplificarla del todo en un solo paso divido' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_02" value="espacio='E' tipo='punto' expresi&oacute;n='(-7,2.8)' texto='numerador y denominador por el n&uacute;mero' fuente='SansSerif,PLAIN,16' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_03" value="espacio='E' tipo='segmento' expresi&oacute;n='(-6.4,0.8)(-4.4,0.8)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_04" value="espacio='E' tipo='punto' color='rojo' expresi&oacute;n='(-6-0.2*(a&gt;9)-0.2*(a&gt;99),0.95)' texto='[a]' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_05" value="espacio='E' tipo='punto' color='rojo' expresi&oacute;n='(-6-0.2*(b&gt;9)-0.2*(b&gt;99),-0.05)' texto='[b]' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_06" value="espacio='E' tipo='punto' dibujar-si='(mcd&gt;1)*d*(ca1+cb1&gt;0)' expresi&oacute;n='(-3-0.2*(ca1&gt;9)-0.2*(ca1&gt;99),0.95)' texto='[ca1]' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_07" value="espacio='E' tipo='punto' dibujar-si='(mcd&gt;1)*d*(ca1+cb1&gt;0)' expresi&oacute;n='(-3-0.2*(cb1&gt;9)-0.2*(cb1&gt;99),-0.05)' texto='[cb1]' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_08" value="espacio='E' tipo='punto' color='007d00' dibujar-si='(d#mcd)*(d&gt;0.5)*(v=0)*(w1=0)' expresi&oacute;n='(-7,-1.5)' texto='Puedes por otro n&uacute;mero mayor' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_09" value="espacio='E' tipo='punto' color='008800' dibujar-si='v*(w1=0)' expresi&oacute;n='(-7,-2.5)' texto='CORRECTO' fuente='SansSerif,PLAIN,40' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_10" value="espacio='E' tipo='punto' color='rojo' dibujar-si='w1' expresi&oacute;n='(-7,-1.8)' texto='ERROR' fuente='SansSerif,PLAIN,40' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_11" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(mcd&gt;1)*(d&gt;0)*w1*(ca1+cb1=0)' expresi&oacute;n='(-7,-2.8)' texto='Se simplifica dividiendo por [mcd]' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_12" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(mcd=1)*((d=1)+w1)' expresi&oacute;n='(-7,-4)' texto='Es una fracci&oacute;n irreducible' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_13" value="espacio='E' tipo='punto' color='008800' dibujar-si='v*(w1=0)*(d&gt;1)' expresi&oacute;n='(-7,-1)' texto='Has llegado a la fracci&oacute;n irreducible' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_14" value="espacio='E' tipo='punto' color='rojo' expresi&oacute;n='(5.3,2.75)' texto='[d]' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_15" value="espacio='E' tipo='segmento' dibujar-si='(mcd=d)*d*(mcd&gt;1)' expresi&oacute;n='(-3.4,0.8)(-1.4,0.8)' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_16" value="espacio='E' tipo='punto' dibujar-si='(mcd=d)*(d&gt;1)' expresi&oacute;n='(-4.2,0.5)' texto='=' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_17" value="espacio='E' tipo='segmento' color='rojo' dibujar-si='(ca1#a1)*ca1+(cb1#b1)*cb1' expresi&oacute;n='(-4,0.6)(-3.8,1.1)' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_18" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(mcd&gt;1)*(w1)' expresi&oacute;n='(-7,-4)' texto='Su fracci&oacute;n irreducible es' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_19" value="espacio='E' tipo='punto' color='rojo' dibujar-si='w1*(mcd&gt;1)' expresi&oacute;n='(3,-3.5)' texto='[a/mcd]' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_20" value="espacio='E' tipo='punto' color='rojo' dibujar-si='w1*(mcd&gt;1)' expresi&oacute;n='(3,-4.5)' texto='[b/mcd]' fuente='SansSerif,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_21" value="espacio='E' tipo='segmento' color='rojo' dibujar-si='w1*(mcd&gt;1)' expresi&oacute;n='(2.9,-3.7)(4.5,-3.7)' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+</ajs>
+
+</html>

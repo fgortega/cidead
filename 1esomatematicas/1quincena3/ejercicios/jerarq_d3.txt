@@ -1,0 +1,53 @@
+Jerarquía
+
+guiado='s&iacute;'
+modos='clic o arrastre'
+
+variable nombre=A rango=[2,5]
+variable nombre=C rango=[6,10]
+variable nombre=B rango=[2,5]
+variable nombre=D rango=[6,10]
+variable nombre=E rango=[2,5]
+variable nombre=F rango=[10,20]
+
+Doble clic sobre la operación
+
+A-((F-(2*E))*A)                | Multiplica en el parentésis
+A-((F-([2*E]))*A)              | Opera en el paréntesis
+A-(([F-(2*E)])*A)              | Multiplica
+A-([(F-(2*E))*A])              | Opera
+[A-((F-(2*E))*A)]              | Pulsa > para seguir
+
+Doble clic sobre la operación
+
+(-([-(D)]))*(B+(E*A))          | Simplifica el primer paréntesis
+D*(B+(E*A))                    | Multiplica en el parentésis
+D*(B+([E*A]))                  | Opera en el paréntesis
+D*([B+(E*A)])                  | Opera
+[D*(B+(E*A))]                  | Pulsa > para seguir
+
+Doble clic sobre la operación
+
+A*(B+(C*(D+E)))                | Opera en el parentésis
+A*(B+(C*([D+E])))              | Multiplica en el paréntesis
+A*(B+([C*(D+E)]))              | Opera en el paréntesis
+A*([B+(C*(D+E))])              | Opera
+[A*(B+(C*(D+E)))]              | Pulsa > para seguir
+
+Doble clic sobre la operación
+
+(-(A))-(B-(C*(D-E)))           | Opera en el parentésis
+(-(A))-(B-(C*([D-E])))         | Multiplica
+(-(A))-(B-([C*(D-E)]))         | Opera en el paréntesis
+(-(A))-([B-(C*(D-E))])         | Quita el paréntesis
+(-(A))+([(-(B))+(C*(D-E))])    | Opera
+[(-(A))-(B-(C*(D-E)))]         | Pulsa > para seguir
+
+Doble clic sobre la operación
+
+(A*(D-E))-((F-B)*A)            | Opera en el primer parentésis
+(A*([D-E]))-((F-B)*A)          | Opera en el paréntesis
+(A*([D-E]))-(([F-B])*A)        | La primera multiplicación
+([A*(D-E)])-(([F-B])*A)        | Multiplica
+([A*(D-E)])-([(F-B)*A])        | Opera
+[(A*(D-E))-((F-B)*A)]          | FIN

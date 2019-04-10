@@ -1,0 +1,22 @@
+Observa como se comprueba si un número es solución de una ecuación                                
+
+variable nombre=A rango=[2,4]
+variable nombre=B rango=[2,6]
+variable nombre=C rango=[1,10]
+variable nombre=D rango=[15,40]
+
+EJEMPLO 1  Vamos a averiguar si x = 3 es solución de la ecuación 3x - 5 = 2x 
+
+(3*x)-5=2*x                    | Se sustituye x por 3.
+(3*3)-5=2*3                    | Se calcula el producto del primer miembro
+9-5=2*3                        | Se calcula el producto del segundo miembro
+9-5=6                          | Se resta los números del primer miembro
+4=6                            | No se verifica la igualdad.  Así, x = 3 no es solución de la ecuación. Pulsa > para ver otro ejemplo.
+
+EJEMPLO 2 Vamos a comprobar que x = 2 es solución de  8 + 2x = -x + 14
+
+8+(2*x)=(-(x))+14              | Se sustituye x por 2
+8+(2*2)=(-(2))+14              | Se efectúa el producto del primer miembro
+8+4=(-(2))+14                  | Se opera en el primer miembro
+12=(-(2))+14                   | Se opera en el segundo miembro
+12=12                          | Se verifica la igualdad. Así, x = 2 es solución de la ecuación. Pulsa >> para empezar con los ejercicios.

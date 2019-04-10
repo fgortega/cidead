@@ -1,0 +1,55 @@
+Jerarquía
+
+guiado='s&iacute;'
+modos='clic o arrastre'
+
+variable nombre=A rango=[1,5]
+variable nombre=C rango=[2,10]
+variable nombre=B rango=[6,10]
+variable nombre=D rango=[1,10]
+variable nombre=E rango=[1,10]
+variable nombre=F rango=[1,10]
+variable nombre=G rango=[2,5]
+variable nombre=H rango=[2,5]
+
+Doble clic sobre la operación
+
+B-(A*(C+D))                    | Opera en el paréntesis
+B-(A*([C+D]))                  | Multiplica
+B-([A*(C+D)])                  | Opera
+[B-(A*(C+D))]                  | Pulsa > para seguir
+
+Doble clic sobre la operación
+
+A-(B*(C-([C+G])))              | Opera en el paréntesis
+A-(B*(-(G)))                   | Multiplica
+A-(-(B*G))                     | Multiplica
+A-([-(B*G)])                   | Quita el paréntesis
+A+([B*G])                      | Opera
+[A+(B*G)]                      | Pulsa > para seguir
+
+Doble clic sobre la operación
+
+(-(C))-(G*(A-B))               | Opera en el paréntesis
+(-(C))-(G*(-([B-A])))          | Multiplica
+(-(C))-(-(G*([B-A])))          | Multiplica
+(-(C))-([G*(A-B)])             | Quita el paréntesis
+(-(C))+([G*(B-A)])             | Opera
+[(-(C))-(G*(A-B))]             | Pulsa > para seguir
+
+Doble clic sobre la operación
+
+(-(D))-((E+F)*(-(H)))          | Suma en el paréntesis
+(-(D))-(([E+F])*(-(H)))        | Multiplica
+(-(D))-(-(([E+F])*H))          | Multiplica
+(-(D))-([(-(E+F))*H])          | Quita el paréntesis
+(-(D))+([(E+F)*H])             | Opera
+[(-(D))+((E+F)*H)]             | Pulsa > para seguir
+
+Doble clic sobre la operación
+
+(B-A)*(C-([C+H]))              | Opera en el primer paréntesis
+([B-A])*(C-([C+H]))            | Opera en el paréntesis
+([B-A])*(-(H))                 | Multiplica
+-(([B-A])*H)                   | Multiplica
+[(B-A)*(-(H))]                 | Pulsa >> para seguir

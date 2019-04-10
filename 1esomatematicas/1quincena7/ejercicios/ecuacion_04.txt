@@ -1,0 +1,53 @@
+Resolución de ecuaciones
+
+guiado='s&iacute;'
+modos='clic y arrastre'
+
+Resuelve la siguiente ecuación
+
+(7*x)-6=(5*x)+2                | Pasa el número 6 al segundo miembro sumando.
+7*x=((5*x)+2)+6                | Suma los términos 2 y 6.
+7*x=(5*x)+8                    | Pasa el término 5x al primer miembro restando.
+(7*x)-(5*x)=8                  | Efectúa la resta del primer miembro.
+2*x=8                          | Pasa el factor 2 al segundo miembro dividiendo.
+x=8/2                          | Simplifica la fracción.
+x=4                            | La solución de la ecuación es x=4. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+(5*x)+1=(2*x)+4                | Pasa el número 1 al segundo miembro restando.
+5*x=((2*x)+4)-1                | Resta los términos 4  y -1
+5*x=(2*x)+3                    | Pasa el término 2x al primer miembro restando.
+(5*x)-(2*x)=3                  | Efectúa la resta del primer miembro.
+3*x=3                          | Pasa el factor 3 al segundo miembro dividiendo.
+x=3/3                          | Simplifica la fracción.
+x=1                            | La solución de la ecuación es x=1. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+(6*x)-2=(4*x)+3                | Pasa el número 2 al segundo miembro sumando.
+6*x=((4*x)+3)+2                | Suma los términos 3 y 2.
+6*x=(4*x)+5                    | Pasa el término 4x al primer miembro restando.
+(6*x)-(4*x)=5                  | Efectúa la resta del primer miembro.
+2*x=5                          | Pasa el factor 2 al segundo miembro dividiendo.
+x=5/2                          | La solución de la ecuación es x=5/2. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+(6*x)-2=((3*x)+x)+6            | Suma los términos 3x  y x.
+(6*x)-2=(4*x)+6                | Pasa el número 2 al segundo miembro sumando.
+6*x=((4*x)+6)+2                | Suma los términos 6 y 2.
+6*x=(4*x)+8                    | Pasa el término 4x al primer miembro restando.
+(6*x)-(4*x)=8                  | Efectúa la resta del primer miembro.
+2*x=8                          | Pasa el factor 2 al segundo miembro dividiendo.
+x=8/2                          | Simplifica la fracción.
+x=4                            | La solución de la ecuación es x=4. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+3+5=(2*x)-6                    | Efectúa la suma del primer miembro.
+8=(2*x)-6                      | Pasa el número 6 al primer miembro sumando.
+8+6=2*x                        | Efectúa la suma del primer miembro.
+14=2*x                         | Pasa el factor 2 al primer miembro dividiendo.
+14/2=x                         | Simplifica la fracción.
+7=x                            | La solución de la ecuación es x=7. Has terminado todos los ejercicios.

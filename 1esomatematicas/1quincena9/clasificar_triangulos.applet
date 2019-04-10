@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Clasificar triángulos</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="clasificar_tri&aacute;ngulos" width=525 height=450
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="525x450">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="clasificar_tri&aacute;ngulos">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='s&iacute;' despl_imagen='arr-izq' fondo='ffffc9' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='A1' tipo='gr&aacute;fico' color='rojo' color-int='rojo' tama&ntilde;o='20' expresi&oacute;n='(1,-5.4)' dibujar-si='0' activo-si='unidad=&squot;LADOS&squot;'">
+   <param name="C_02" value="id='A2' tipo='gr&aacute;fico' color='rojo' color-int='rojo' tama&ntilde;o='20' expresi&oacute;n='(6,-5.4)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' dibujar-si='0' activo-si='unidad=&squot;LADOS&squot;'">
+   <param name="C_03" value="id='porlado' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' nombre='_._' expresi&oacute;n='(345,420,140,25)' decimales='0' fijo='s&iacute;' visible='no' imagen='./vacio.gif' opciones='elige opci&oacute;n [0], equil&aacute;tero [1], is&oacute;sceles [2], escaleno [3]' acci&oacute;n='calcular' par&aacute;metro='CONT=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='unidad=&squot;LADOS&squot;' activo-si='(unidad=&squot;LADOS&squot;)&amp;(CONT=0)' pos_mensajes='centro'">
+   <param name="C_04" value="id='porangulo' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' nombre='_._' expresi&oacute;n='(345,420,140,25)' decimales='0' fijo='s&iacute;' visible='no' imagen='./vacio.gif' opciones='elige opci&oacute;n [0], acut&aacute;ngulo [1], rect&aacute;ngulo [2], obtus&aacute;ngulo [3] ' acci&oacute;n='calcular' par&aacute;metro='CONT=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='unidad=&squot;&Aacute;NGULOS&squot;' activo-si='(unidad=&squot;&Aacute;NGULOS&squot;)&amp;(CONT=0)' pos_mensajes='centro'">
+   <param name="C_05" value="id='inicio' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='_._' expresi&oacute;n='(0,420,220,25)' fijo='s&iacute;' visible='s&iacute;' imagen='./vacio.gif' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='CONT' tipo='num&eacute;rico' regi&oacute;n='exterior' nombre='CONT' incr='1' min='0' max='1' discreto='s&iacute;' fijo='s&iacute;' visible='no' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='escala' constante='s&iacute;' expresi&oacute;n='30' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='Ox' constante='s&iacute;' expresi&oacute;n='50' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='seleccionar' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='selector=ent(rnd*10)+1;selec=selector%2;unidad=(selec=0)?&squot;LADOS&squot;:unidad;unidad=(selec=1)?&squot;&Aacute;NGULOS&squot;:unidad;equi=ent(rnd*10)+1'">
+   <param name="A_04" value="id='a' constante='s&iacute;' expresi&oacute;n='sqrt((A1.x-A2.x)^2+(A1.y-A2.y)^2)' evaluar='siempre'">
+   <param name="A_05" value="id='h' constante='s&iacute;' expresi&oacute;n='ent(rnd*9)+2' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='b' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+2' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='c' constante='s&iacute;' expresi&oacute;n='ent(rnd*12)-4' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='x1' constante='s&iacute;' expresi&oacute;n='-0.5*b' evaluar='una-sola-vez'">
+   <param name="A_09" value="id='y1' constante='s&iacute;' expresi&oacute;n='-0.5*h' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='x2' constante='s&iacute;' expresi&oacute;n='c' evaluar='una-sola-vez'">
+   <param name="A_11" value="id='y2' constante='s&iacute;' expresi&oacute;n='0.5*h' evaluar='una-sola-vez'">
+   <param name="A_12" value="id='x3' constante='s&iacute;' expresi&oacute;n='0.5*b' evaluar='una-sola-vez'">
+   <param name="A_13" value="id='y3' constante='s&iacute;' expresi&oacute;n='-0.5*h' evaluar='una-sola-vez'">
+   <param name="A_14" value="id='lado1' constante='s&iacute;' expresi&oacute;n='sqrt((x1-x2)^2+(y1-y2)^2)' evaluar='una-sola-vez'">
+   <param name="A_15" value="id='lado2' constante='s&iacute;' expresi&oacute;n='sqrt((x3-x2)^2+(y3-y2)^2)' evaluar='una-sola-vez'">
+   <param name="A_16" value="id='r10b' constante='s&iacute;' expresi&oacute;n='(porlado=1)&amp;(equi&gt;8)' evaluar='siempre'">
+   <param name="A_17" value="id='r20b' constante='s&iacute;' expresi&oacute;n='(porlado=2)&amp;((lado1=lado2)|(lado2=b)|(b=lado1))*(equi&lt;9)' evaluar='siempre'">
+   <param name="A_18" value="id='r30b' constante='s&iacute;' expresi&oacute;n='(porlado=3)&amp;(lado1!=lado2)&amp;(lado2!=b)&amp;(b!=lado1)&amp;(equi&lt;9)' evaluar='siempre'">
+   <param name="A_19" value="id='r11b' constante='s&iacute;' expresi&oacute;n='(porangulo=1)&amp;(((c&gt;-0.5*b)&amp;(c&lt;0.5*b))|(equi&gt;8))' evaluar='siempre'">
+   <param name="A_20" value="id='r21b' constante='s&iacute;' expresi&oacute;n='(porangulo=2)&amp;((c=-0.5*b)|(c=0.5*b))' evaluar='siempre'">
+   <param name="A_21" value="id='r31b' constante='s&iacute;' expresi&oacute;n='(porangulo=3)&amp;((c&lt;-0.5*b)|(c&gt;0.5*b))' evaluar='siempre'">
+   <param name="A_22" value="id='rte' constante='s&iacute;' expresi&oacute;n='sqrt(h^2+b^2)/2' evaluar='una-sola-vez'">
+   <param name="A_23" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.14159' evaluar='una-sola-vez'">
+   <param name="G_01" value="tipo='pol&iacute;gono' color='azul' dibujar-si='equi&lt;9' expresi&oacute;n='(x1-2,y1)(x2-2,y2)(x3-2,y3)(x1-2,y1)' relleno='ffc600'">
+   <param name="G_02" value="tipo='curva' color='azul' dibujar-si='equi&gt;8' expresi&oacute;n='(rte*sen(2*pi/3*t),rte*cos(2*pi/3*t))' t.intervalo='[0,3]' t.pasos='3' relleno='ffc600'">
+   <param name="G_03" value="tipo='segmento' color='azul' dibujar-si='(selec=0)&amp;(unidad=&squot;LADOS&squot;)' expresi&oacute;n='(A1.x,A1.y)(A2.x,A2.y)' fuente='SansSerif,BOLD,20' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_04" value="tipo='punto' color='azul' dibujar-si='(selec=0)&amp;(unidad=&squot;LADOS&squot;)' expresi&oacute;n='(-0.2+s/a*(A2.x-A1.x)+A1.x-0.7/a*(A1.y-A2.y)-0.1,s/a*(A2.y-A1.y)+A1.y-0.75/a*(A2.x-A1.x)-0.2)' familia='s' s.intervalo='[0,ent(a)]' s.pasos='ent(a)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs24\b{\*\mjaformula{\expr s}}\par}' fuente='Arial,BOLD,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_05" value="tipo='segmento' color='azul' dibujar-si='(selec=0)&amp;(unidad=&squot;LADOS&squot;)' expresi&oacute;n='(s/a*(A2.x-A1.x)+A1.x,s/a*(A2.y-A1.y)+A1.y)(s/a*(A2.x-A1.x)+A1.x-0.2/a*(A1.y-A2.y),s/a*(A2.y-A1.y)+A1.y-0.2/a*(A2.x-A1.x))' familia='s' s.intervalo='[0,ent(10*a)/10]' s.pasos='ent(10*a)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_06" value="tipo='segmento' color='azul' dibujar-si='(selec=0)&amp;(unidad=&squot;LADOS&squot;)' expresi&oacute;n='(s/a*(A2.x-A1.x)+A1.x,s/a*(A2.y-A1.y)+A1.y)(s/a*(A2.x-A1.x)+A1.x-0.35/a*(A1.y-A2.y),s/a*(A2.y-A1.y)+A1.y-0.35/a*(A2.x-A1.x))' familia='s' s.intervalo='[0,ent(2*a)/2]' s.pasos='ent(2*a)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_07" value="tipo='segmento' color='azul' dibujar-si='(selec=0)&amp;(unidad=&squot;LADOS&squot;)' expresi&oacute;n='(s/a*(A2.x-A1.x)+A1.x,s/a*(A2.y-A1.y)+A1.y)(s/a*(A2.x-A1.x)+A1.x-0.45/a*(A1.y-A2.y),s/a*(A2.y-A1.y)+A1.y-0.45/a*(A2.x-A1.x))' familia='s' s.intervalo='[0,ent(a)]' s.pasos='ent(a)' fuente='SansSerif,BOLD,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_08" value="tipo='texto' color='azul' expresi&oacute;n='[1,425]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green153\blue0;\red0\green0\blue255;}\f1\fs32\b\cf0 otro tri\u225 ngulo\cf1\f2\fs24\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_09" value="tipo='texto' color='azul' expresi&oacute;n='[25,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red128\green128\blue128;\red0\green0\blue255;}\cf0\f1\fs32\b\ul CLASIFICA EL TRI\u193 NGULO ATENDIENDO A SUS {\*\mjaformula{\expr unidad\decimals 0\fixed1}}\cf1\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_10" value="tipo='texto' color='azul' expresi&oacute;n='[245,425]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b respuesta\f2\fs24\par}' fuente='Arial,BOLD,18' fijo='s&iacute;'">
+   <param name="G_11" value="tipo='texto' color='azul' dibujar-si='(porlado&gt;0)*(r10b+r20b+r30b=0)+(porangulo&gt;0)*(r11b+r21b+r31b=0)' expresi&oacute;n='[10,395]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs48\b\u161 OJO!\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,24' fijo='s&iacute;'">
+   <param name="G_12" value="tipo='imagen' dibujar-si='(porlado&gt;0)*(r10b+r20b+r30b=0)+(porangulo&gt;0)*(r11b+r21b+r31b=0)' expresi&oacute;n='(-7.25,-5.7)' archivo='./imagenes9/mal.png'">
+   <param name="G_13" value="tipo='texto' color='azul' dibujar-si='(porlado&gt;0)*(r10b+r20b+r30b=1)+(porangulo&gt;0)*(r11b+r21b+r31b=1)' expresi&oacute;n='[10,395]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green175\blue0;\red0\green0\blue255;}\cf0\f1\fs48\b CORRECTO\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,24' fijo='s&iacute;'">
+   <param name="G_14" value="tipo='imagen' dibujar-si='(porlado&gt;0)*(r10b+r20b+r30b=1)+(porangulo&gt;0)*(r11b+r21b+r31b=1)' expresi&oacute;n='(-5.25,-5.7)' archivo='./imagenes9/bien.png'">
+</ajs>
+</body>
+</html>

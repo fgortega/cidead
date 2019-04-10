@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>TITULO</title>
+	<script type='text/javascript' src='http://arquimedes.matem.unam.mx/Descartes5/lib/descartes-min.js'></script>
+</head>
+<body BGCOLOR="e0e4e8">
+
+<p align="center">
+<ajs name="Descartes" width=900 height=600
+        code="Descartes.class"
+        codebase="http://arquimedes.matem.unam.mx/Descartes5/"
+        archive="lib/Descartes5.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="900x600">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="deshacer" value="no">
+   <param name="nombre" value="Descartes">
+   <param name="Versi&oacute;n" value="5.101, 2013-07-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=s&iacute; config=s&iacute; inicio=s&iacute; limpiar=s&iacute; ancho_este=150 ancho_oeste=150 alto=40">
+   <param name="E_01" value="tipo='R2' id='E1' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="A_01" value="id='pi' expresi&oacute;n='3.14159'">
+   <param name="A_02" value="id='f(x)' expresi&oacute;n='12*(x=1)+123*(x=2)+33*(x=3)+11*(x=4)+73*(x=5)+54*(x=6)+19*(x=7)+143*(x=8)+38*(x=9)+14*(x=10)+83*(x=11)+52*(x=12)+2*(x=13)+133*(x=14)+165*(x=15)+171*(x=16)+83*(x=17)+24*(x=18)+179*(x=19)+165*(x=20)'">
+   <param name="A_03" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='arco' color='negro' radio='7' inicio='-3' fin='183' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='E1' tipo='arco' color='negro' radio='5' inicio='15' fin='165' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='segmento' color='negro' expresi&oacute;n='(6.8*cos(s*pi/180),6.8*sen(s*pi/180))(7*cos(s*pi/180),7*sen(s*pi/180))' familia='s' s.intervalo='[0,180]' s.pasos='180' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_04" value="espacio='E1' tipo='segmento' color='negro' expresi&oacute;n='(6.6*cos(s*pi/180),6.6*sen(s*pi/180))(7*cos(s*pi/180),7*sen(s*pi/180))' familia='s' s.intervalo='[0,180]' s.pasos='36' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_05" value="espacio='E1' tipo='segmento' color='negro' expresi&oacute;n='(6.4*cos(s*pi/180),6.4*sen(s*pi/180))(7*cos(s*pi/180),7*sen(s*pi/180))' familia='s' s.intervalo='[0,180]' s.pasos='18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_06" value="espacio='E1' tipo='punto' expresi&oacute;n='(6.4*cos(s*pi/180),6.0*sen(s*pi/180))' familia='s' s.intervalo='[90,180]' s.pasos='9' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b{\*\mjaformula{\expr s\decimals 0\fixed0}}\u186 \f2\fs30\b0}' fuente='SansSerif,BOLD,12' decimales='0' fijo='no' tama&ntilde;o='0'">
+   <param name="G_07" value="espacio='E1' tipo='punto' expresi&oacute;n='(6.0*cos(s*pi/180),6.0*sen(s*pi/180))' familia='s' s.intervalo='[0,90]' s.pasos='9' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b{\*\mjaformula{\expr s\decimals 0\fixed0}}\u186 \f2\fs30\b0}' fuente='SansSerif,BOLD,12' decimales='0' fijo='no' tama&ntilde;o='0'">
+   <param name="G_08" value="espacio='E1' tipo='pol&iacute;gono' color='negro' expresi&oacute;n='(7*cos(183*pi/180),7*sen(183*pi/180))(5.01*cos(184.3*pi/180),5.01*sen(184.3*pi/180))(-5,-0.2)(5,-0.2)(5.01*cos(-4.3*pi/180),5.01*sen(-4.3*pi/180))(7*cos(-3*pi/180),7*sen(-3*pi/180))'">
+   <param name="G_09" value="espacio='E1' tipo='segmento' color='negro' expresi&oacute;n='(5*cos(15*pi/180),5*sen(15*pi/180))(5*cos(165*pi/180),5*sen(165*pi/180))' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_10" value="espacio='E1' tipo='flecha' color='negro' expresi&oacute;n='(-5.5,0)(5.5,0)' fijo='s&iacute;' tama&ntilde;o='1' ancho='0' ancho='0' punta='3'">
+   <param name="G_11" value="espacio='E1' tipo='flecha' color='negro' expresi&oacute;n='(5.5,0)(-5.5,0)' fijo='s&iacute;' tama&ntilde;o='1' ancho='0' ancho='0' punta='3'">
+   <param name="G_12" value="espacio='E1' tipo='segmento' color='negro' expresi&oacute;n='(0,-0.2)(0,5*sen(15*pi/180))' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_13" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='u=1' expresi&oacute;n='[10,400]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs28\b\u225 ngulo n\u186 :\fs30\b0}' fuente='Monospaced,BOLD,14' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='u=1' expresi&oacute;n='[60+s*27.6,400]' familia='s' s.intervalo='[1,20]' s.pasos='19' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs22\b{\*\mjaformula{\expr s\decimals 0\fixed1}}\f2\fs28}' fuente='SansSerif,BOLD,11' decimales='0' fijo='s&iacute;'">
+   <param name="G_15" value="espacio='E1' tipo='texto' color='naranja' dibujar-si='u=1' expresi&oacute;n='[10,415]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;\f2\fcharset0 Courier New;}\f1\fs28\b valor:\fs30\b0}' fuente='Monospaced,BOLD,14' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='E1' tipo='texto' color='naranja' dibujar-si='u=1' expresi&oacute;n='[60+s*27.5,415]' familia='s' s.intervalo='[0,20]' s.pasos='19' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs22\b{\*\mjaformula{\expr f(x)\decimals 0\fixed1}\u186 }\f2\fs28}' fuente='SansSerif,BOLD,11' fijo='s&iacute;'">
+</ajs></p>
+
+</body>
+</html>

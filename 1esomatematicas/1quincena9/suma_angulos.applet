@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Suma de los ángulos de un triángulo</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="suma_angulos_triangulo" width=441 height=361
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="441x361">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="suma_angulos_triangulo">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=s&iacute; config=no inicio=no limpiar=no alto=0">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='s&iacute;' escala='20' O.x='-1' O.y='-1' despl_imagen='arr-izq' fondo='ffffcc' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='iniciar' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='_._' expresi&oacute;n='(20,335,50,25)' fijo='s&iacute;' visible='no' imagen='vacio.gif' acci&oacute;n='inicio'">
+   <param name="C_02" value="id='S' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='E1' nombre='_._' expresi&oacute;n='(410,330,15,25)' incr='1' min='0' max='1' decimales='0' fijo='s&iacute;' visible='no' imagen='./imagenes9/sig.png'">
+   <param name="C_03" value="id='A' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(0,2)' fijo='s&iacute;' dibujar-si='S=0' activo-si='S=0'">
+   <param name="C_04" value="id='A.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='A.x' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='A.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='A.x' valor='2' min='-5' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='B' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(-3,-6)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' dibujar-si='S=0' activo-si='S=0'">
+   <param name="C_07" value="id='B.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='B.x' valor='-3' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_08" value="id='B.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='B.y' valor='-6' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_09" value="id='C' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(5,-6)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' dibujar-si='S=0' activo-si='S=0'">
+   <param name="C_10" value="id='C.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='C.x' valor='5' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_11" value="id='C.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='C.y' valor='-6' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_12" value="id='gira' tipo='num&eacute;rico' interfaz='barra' regi&oacute;n='interior' espacio='E1' nombre='gira' expresi&oacute;n='(110,330,240,25)' incr='0.05' min='0' max='pi' fijo='s&iacute;' visible='no' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='S=1' activo-si='S=1'">
+   <param name="A_01" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.14159' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='Mabx' constante='s&iacute;' expresi&oacute;n='(A.x+B.x)/2' evaluar='siempre'">
+   <param name="A_03" value="id='Maby' constante='s&iacute;' expresi&oacute;n='(A.y+B.y)/2' evaluar='siempre'">
+   <param name="A_04" value="id='Macx' constante='s&iacute;' expresi&oacute;n='(A.x+C.x)/2' evaluar='siempre'">
+   <param name="A_05" value="id='Macy' constante='s&iacute;' expresi&oacute;n='(A.y+C.y)/2' evaluar='siempre'">
+   <param name="A_06" value="id='Mbcx' constante='s&iacute;' expresi&oacute;n='(C.x+B.x)/2' evaluar='siempre'">
+   <param name="A_07" value="id='Mbcy' constante='s&iacute;' expresi&oacute;n='(C.y+B.y)/2' evaluar='siempre'">
+   <param name="A_08" value="id='G1x' constante='s&iacute;' expresi&oacute;n='Mbcx*cos(-gira)-Mbcy*sen(-gira)+(Mabx-Mabx*cos(-gira)+Maby*sen(-gira))' evaluar='siempre'">
+   <param name="A_09" value="id='G1y' constante='s&iacute;' expresi&oacute;n='Mbcx*sen(-gira)+Mbcy*cos(-gira)+(Maby-Mabx*sen(-gira)-Maby*cos(-gira))' evaluar='siempre'">
+   <param name="A_10" value="id='G2x' constante='s&iacute;' expresi&oacute;n='B.x*cos(-gira)-B.y*sen(-gira)+(Mabx-Mabx*cos(-gira)+Maby*sen(-gira))' evaluar='siempre'">
+   <param name="A_11" value="id='G2y' constante='s&iacute;' expresi&oacute;n='B.x*sen(-gira)+B.y*cos(-gira)+(Maby-Mabx*sen(-gira)-Maby*cos(-gira))' evaluar='siempre'">
+   <param name="A_12" value="id='G3x' constante='s&iacute;' expresi&oacute;n='C.x*cos(gira)-C.y*sen(gira)+(Macx-Macx*cos(gira)+Macy*sen(gira))' evaluar='siempre'">
+   <param name="A_13" value="id='G3y' constante='s&iacute;' expresi&oacute;n='C.x*sen(gira)+C.y*cos(gira)+(Macy-Macx*sen(gira)-Macy*cos(gira))' evaluar='siempre'">
+   <param name="A_14" value="id='G4x' constante='s&iacute;' expresi&oacute;n='Mbcx*cos(gira)-Mbcy*sen(gira)+(Macx-Macx*cos(gira)+Macy*sen(gira))' evaluar='siempre'">
+   <param name="A_15" value="id='G4y' constante='s&iacute;' expresi&oacute;n='Mbcx*sen(gira)+Mbcy*cos(gira)+(Macy-Macx*sen(gira)-Macy*cos(gira))' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='pol&iacute;gono' dibujar-si='S=0' expresi&oacute;n='(A.x,A.y)(B.x,B.y)(C.x,C.y)(A.x,A.y)' relleno='turquesa' ancho='2'">
+   <param name="G_02" value="espacio='E1' tipo='pol&iacute;gono' dibujar-si='S=1' expresi&oacute;n='(A.x,A.y)(Mabx,Maby)(Mbcx,Mbcy)(Macx,Macy)(A.x,A.y)' relleno='turquesa' ancho='2'">
+   <param name="G_03" value="espacio='E1' tipo='arco' color='007a00' centro='(A.x,A.y)' radio='1.3' inicio='(Macx,Macy)' fin='(Mabx,Maby)' fijo='s&iacute;' relleno='008d00'">
+   <param name="G_04" value="espacio='E1' tipo='arco' dibujar-si='S=0' centro='(B.x,B.y)' radio='1.3' inicio='(Mbcx,Mbcy)' fin='(Mabx,Maby)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b B\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;' relleno='ff9200'">
+   <param name="G_05" value="espacio='E1' tipo='arco' dibujar-si='S=0' centro='(C.x,C.y)' radio='1.3' inicio='(Mbcx,Mbcy)' fin='(Macx,Macy)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b C\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;' relleno='grisClaro'">
+   <param name="G_06" value="espacio='E1' tipo='punto' dibujar-si='S=1' expresi&oacute;n='(Mabx,Maby)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='3'">
+   <param name="G_07" value="espacio='E1' tipo='punto' dibujar-si='S=1' expresi&oacute;n='(Macx,Macy)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='3'">
+   <param name="G_08" value="espacio='E1' tipo='texto' expresi&oacute;n='[20,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b\ul SUMA DE LOS \u193 NGULOS INTERIORES DE UN TRI\u193 NGULO\f2\fs24\b0\ulnone\par }' fuente='SansSerif,BOLD,14' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='E1' tipo='texto' expresi&oacute;n='[20,335]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green157\blue0;\red0\green0\blue255;}\f1\fs32\b\ul\cf0 inicio\cf1\f2\fs24\b0\ulnone\par }' fuente='SansSerif,BOLD,16' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E1' tipo='pol&iacute;gono' dibujar-si='S=1' expresi&oacute;n='(Mabx,Maby)(G1x,G1y)(G2x,G2y)(Mabx,Maby)' relleno='amarillo' ancho='2'">
+   <param name="G_11" value="espacio='E1' tipo='pol&iacute;gono' dibujar-si='S=1' expresi&oacute;n='(Macx,Macy)(G3x,G3y)(G4x,G4y)(Macx,Macy)' relleno='gris' ancho='2'">
+   <param name="G_12" value="espacio='E1' tipo='arco' dibujar-si='S=1' centro='(G3x,G3y)' radio='1.3' inicio='(G4x,G4y)' fin='(Macx,Macy)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b C\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;' relleno='grisClaro'">
+   <param name="G_13" value="espacio='E1' tipo='arco' dibujar-si='S=1' centro='(G2x,G2y)' radio='1.3' inicio='(G1x,G1y)' fin='(Mabx,Maby)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b B\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;' relleno='ff9200'">
+   <param name="G_14" value="espacio='E1' tipo='punto' expresi&oacute;n='(A.x,A.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b A\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_15" value="espacio='E1' tipo='ecuaci&oacute;n' color='negro' dibujar-si='(S=1)&amp;(pi-gira&lt;0.01)' expresi&oacute;n='y-A.y=((G1y-A.y)/(G1x-A.x))*(x-A.x)' ancho='2' visible='s&iacute;'">
+   <param name="G_16" value="espacio='E1' tipo='texto' dibujar-si='S=0' expresi&oacute;n='[5,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green176\blue0;\red0\green0\blue255;}\f1\fs24\b  \cf0 Puedes mover cualquiera de los tres v\u233 rtices del tri\u225 ngulo, despu\u233 s pulsa \par sobre la flecha azul que aparece en la esquina inferior. La flecha roja te\par permite volver al paso anterior.\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_17" value="espacio='E1' tipo='texto' dibujar-si='(S=1)&amp;(pi-gira&lt;0.01)' expresi&oacute;n='[150,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green171\blue0;\red0\green0\blue255;\red255\green255\blue204;\red255\green163\blue0;\red192\green192\blue192;\red0\green168\blue0;\red255\green160\blue0;\red0\green0\blue0;}\f1\fs28\b  \cf0\fs32\u8743 \cf1  \cf2 +\cf3\u8743 \cf1  \cf4  \cf2 +\cf4\u8743 \cf1\par  \cf5 A\cf1  + \cf6 B\cf1  + \cf4 C\cf1  = \cf7 180\u186 \cf1\f3\fs24\b0\par }' fuente='SansSerif,BOLD,14' fijo='s&iacute;'">
+</ajs>
+</body>
+</html>

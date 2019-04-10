@@ -1,0 +1,1 @@
+Esta quincena presenta el problema de que la autoevaluación no se carga. El resto de escenasfunciona correctamente.

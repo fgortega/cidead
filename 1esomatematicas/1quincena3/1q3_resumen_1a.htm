@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Enteros</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body onload="MM_preloadImages('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes2.png','imagen1/paracont2.png','imagen1/adelanteb.png','imagen1/atrasb.png','imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/paraejer3.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paracont3.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0px; top: 0px; width: 800px; height: 528px; z-index: 1;"> 
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="1quincena3_presenta_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes.png" alt="" name="antes" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','imagen1/paracont3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paracont3.png" alt="" name="contenidos" onload="MM_nbGroup('init','group1','contenidos','imagen1/paraconte.png',1)" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena3_ejercicios_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer.png" alt="" name="ejercicios" onload="" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena3_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" onload="" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena3_tutor_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onmouseover="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" onload="" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena3_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0" width="130" height="18"></a></td>
+    </tr>
+  </table>
+<table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+  <table align="center" border="0" cellspacing="0" height="85%" width="800">
+     <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8"></td>
+      <td bgcolor="#ffffff" valign="top"> 
+        <table cellspacing="6" width="100%">
+          <tr> 
+            <td colspan="2" valign="top"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong><img src="imagen1/recuerda.png" width="50" height="38" align="left">Recuerda 
+              lo m&aacute;s importante</strong></font> <div align="right"></div></td>
+          </tr>
+          <tr> 
+            <td width="43%" valign="top"> 
+              <div align="justify">
+                <table border="0" width="100%" cellspacing="4">
+                  <tr>
+                  <td width="100%" colspan="2" style="border: 1 solid #33CCFF; padding: 8" bgcolor="#F4F6FE"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">El
+                    conjunto de los <b>números enteros está formado por los
+                    números positivos, los negativos y el cero.</b>
+                    </font>
+                  </td>
+                </tr>
+                  <tr>
+                  <td width="100%" colspan="2" style="border: 1 solid #33CCFF; padding: 8" bgcolor="#F4F6FE"><div align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Los 
+                        enteros aparecen en muchas situaciones </b>de nuestro 
+                        alrededor: temperaturas, fechas, dinero y deudas, ascensores, 
+                        alturas y profundidades ...</font> </div></td>
+                </tr>
+                <tr>
+                  <td width="100%" colspan="2" style="border: 1 solid #33CCFF; padding: 8" bgcolor="#F4F6FE"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+                    Se pueden representar en la recta :<br>
+                    <br>
+                    <br>
+                    <img border="0" src="imagenes3/recta3.bmp" width="342" height="25"><br>
+                    <br>
+                    Los
+                    números enteros <b>están ordenados.</b><br>
+                    Un número es menor que otro si, en la recta, está situado
+                    más a la izquierda.<br>
+                    Un número es mayor que otro si, en la recta, está situado más a la derecha.</font>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%" style="border: 1 solid #33CCFF; padding: 8" bgcolor="#F4F6FE" bordercolor="#33CCFF" align="justify" valign="middle">
+                    <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">El <b>opuesto</b> 
+                        de un nº&nbsp; es otro número con la misma magnitud y 
+                        distinto signo.</font></p>
+                      <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> <b>Op (+a) 
+                        = -a<br>
+                        Op (-a) = +a</b></font></p>
+                  </td>
+                  <td width="50%" style="border: 1 solid #33CCFF; padding: 8" bgcolor="#F4F6FE">
+                    <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">El <b>valor 
+                        absoluto</b> de un número es la distancia del número al 
+                        cero.</font></p>
+                      <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> <b>|+a 
+                        | = a<br>
+                        | -a | = a</b></font></p>
+                  </td>
+                </tr>
+              </table>
+              </div>
+              <div align="justify"> </div></td>
+            <td width="57%" valign="top"> 
+              <div align="justify">
+                <table border="0" width="100%" cellspacing="4">
+                  <tr> 
+                    <td bordercolor="#33CCFF" bgcolor="#F4F6FE" style="border: 1 solid #33CCFF" colspan="2"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Suma 
+                      de enteros<br>
+                      </b>Se eliminan paréntesis<b><br>
+                      </b>Si tienen el mismo signo: se suman y se pone el mismo 
+                      signo<br>
+                      Si tienen distinto signo: se restan y se pone el signo del 
+                      mayor</font></td>
+                  </tr>
+                  <tr> 
+                    <td width="100%" height="64" colspan="2" bordercolor="#33CCFF" bgcolor="#F4F6FE" style="border: 1 solid #33CCFF"> 
+                      <table border="0" width="100%" cellspacing="3">
+                        <tr> 
+                          <td width="50%" height="51"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Resta 
+                            de enteros<br>
+                            </b>Se aplica la regla del cuadro de la derecha.<br>
+                            Se procede como en la suma</font></td>
+                          <td width="50%" bgcolor="#FFFFFF"><font face="Verdana, Arial, Helvetica, sans-serif" size="1">Recuerda:<br>
+                            <font size="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            </font></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><b>-(+a) 
+                            =&nbsp; -a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            -(-a ) = +a</b></font></td>
+                        </tr>
+                      </table></td>
+                  </tr>
+                  <tr> 
+                    <td width="50%" style="border: 1 solid #33CCFF; padding: 8" bgcolor="#F4F6FE" bordercolor="#33CCFF"> 
+                      <font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Producto</b></font> <p align="left" style="margin-top: 0"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+                        Se multiplican los números sin signo.<br>
+                        <img border="0" src="imagenes3/reglaproducto.gif" width="77" height="80" align="right"> 
+                        Se aplica la regla de los signos</font><font face="Verdana" size="1"><br>
+                        </font> </p>
+                      </td>
+                    <td width="50%" style="border: 1 solid #33CCFF; padding: 8" bgcolor="#F4F6FE" bordercolor="#33CCFF"> 
+                      <font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>División<br>
+                      </b>Se dividen los números sin signo<br>
+                      <img border="0" src="imagenes3/reglasignodivision.jpg" align="right" width="77" height="80" hspace="6"> 
+                      Se aplica la regla de los signos</font></td>
+                  </tr>
+                  <tr valign="top"> 
+                    <td width="100%" colspan="2" bordercolor="#33CCFF" bgcolor="#F4F6FE" style="border: 1 solid #33CCFF; padding: 8"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b>Jerarquía 
+                      de operaciones</b></font>&nbsp;<br> 
+                      <font face="Verdana, Arial, Helvetica, sans-serif" size="1">En operaciones combinadas 
+                      debe respetarse este orden:<br>
+                      1.- Los paréntesis</font> 
+                      <font face="Verdana, Arial, Helvetica, sans-serif" size="1"><br>
+                      2.- Las multiplicaciones 
+                      y las divisiones.<br>
+                      3.- Las sumas y las 
+                      restas</font> </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8"> </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="8" width="8"></td>
+      <td background="imagen1/bor3.gif" height="8"></td>
+      <td background="imagen1/es3.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td width="684"><div align="right"> </div></td>
+      <td width="30"><div align="center"><a href="1quincena3_contenidos_5a.htm" target="_parent" onMouseOver="MM_swapImage('atras','','imagen1/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/atras.png" alt="anterior" name="atras" width="25" height="25" border="0"></a></div></td>
+      <td width="30"> 
+        <div align="center"><a href="1quincena3_ejercicios_1a.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>

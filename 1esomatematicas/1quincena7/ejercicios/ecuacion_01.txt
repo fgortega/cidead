@@ -1,0 +1,37 @@
+Resolución de ecuaciones
+
+guiado='s&iacute;'
+modos='clic y arrastre'
+
+Resuelve la siguiente ecuación
+
+x+3=5                          | Pasa el número 3 al segundo miembro restando.
+x=5-3                          | Efectúa la resta del segundo miembro.
+x=2                            | La solución de la ecuación es x=2. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+x-2=7                          | Pasa el número 2 al segundo miembro sumando.
+x=7+2                          | Efectúa la suma del segundo miembro.
+x=9                            | La solución de la ecuación es x=9. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+x-5=0                          | Pasa el número 5 al segundo miembro sumando.
+x=0+5                          | Efectúa la suma del segundo miembro.
+x=5                            | La solución de la ecuación es x=5. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+9=5+x                          | Pasa el número 5 al primer miembro restando.
+9-5=x                          | Efectúa la resta del primer miembro.
+4=x                            | La solución de la ecuación es x=4. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+-(8)=x-4                       | Pasa el número 4 al primer miembro sumando.
+(-(8))+4=x                     | Efectúa la operación del primer miembro.
+-(4)=x                         | La solución de la ecuación es x=-4. Pulsa >> para empezar otra serie de ejercicios.
+
+  
+

@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Ejercicios resueltos. Sucesos y espacio muestral</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="ejercicios variable" width=500 height=290
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="500x290">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="ejercicios variable">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='dados' x='0' ancho='250' fijo='s&iacute;' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' x='250' ancho='250' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fff7d7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='texto' alto='40' fijo='s&iacute;' despl_imagen='arr-izq' fondo='ffffb7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='n1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='dados' nombre='Tirar dados' expresi&oacute;n='(40,50,150,20)' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='eva=0;tirar=1;u=1+ent(rnd*5.99);o=1+ent(rnd*5.99)\ns1=0;s2=0;s3=0;s4=0;s5=0;s6=0' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(tirar=0)|(bien=6)&amp;(eva=1)'">
+   <param name="C_02" value="id='s1' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' expresi&oacute;n='(195,50,50,25)' fijo='s&iacute;' visible='no' opciones=' ,s&iacute;,no' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='s2' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' expresi&oacute;n='(195,90,50,25)' fijo='s&iacute;' visible='no' opciones=' ,s&iacute;,no' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='s3' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' expresi&oacute;n='(195,130,50,25)' fijo='s&iacute;' visible='no' opciones=' ,s&iacute;,no' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='s4' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' expresi&oacute;n='(195,170,50,25)' fijo='s&iacute;' visible='no' opciones=' ,s&iacute;,no' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='s5' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' expresi&oacute;n='(195,210,50,25)' fijo='s&iacute;' visible='no' opciones=' ,s&iacute;,no' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_07" value="id='s6' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' expresi&oacute;n='(195,250,50,25)' fijo='s&iacute;' visible='no' opciones=' ,s&iacute;,no' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_08" value="id='n2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='dados' nombre='Evaluar' expresi&oacute;n='(40,255,150,20)' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='eva=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(tirar=1)&amp;todos&amp;(eva=0)'">
+   <param name="A_01" value="id='comprobar' algoritmo='s&iacute;' evaluar='siempre' hacer='todos=(s1#0)&amp;(s2#0)&amp;(s3#0)&amp;(s4#0)&amp;(s5#0)&amp;(s6#0);bien=0;bien=((u+o)%2=0)&amp;(s1=1)|((u+o)%2=1)&amp;(s1=2)?bien+1:bien;bien=((u%2=0)|(o%2=0))&amp;(s2=1)|(u%2=1)&amp;(o%2=1)&amp;(s2=2)?bien+1:bien;bien=((u-o)%2=1)&amp;(s3=1)|((u-o)%2=0)&amp;(s3=2)?bien+1:bien;bien=(u+o=7)&amp;(s4=1)|(u+o#7)&amp;(s4=2)?bien+1:bien;bien=((u%3#0)&amp;(o%3#0))&amp;(s5=1)|((u%3=0)|(o%3=0))&amp;(s5=2)?bien+1:bien;bien=((u=6)|(o=6))&amp;(s6=1)|((u#6)&amp;(o#6))&amp;(s6=2)?bien+1:bien;;;'">
+   <param name="G_01" value="espacio='dados' tipo='imagen' dibujar-si='u=0' coord_abs='s&iacute;' expresi&oacute;n='(20,80)' archivo='imagenes12/cubilete.jpg'">
+   <param name="G_02" value="espacio='dados' tipo='imagen' dibujar-si='u=1' coord_abs='s&iacute;' expresi&oacute;n='(70,150)' archivo='imagenes12/dado1.png'">
+   <param name="G_03" value="espacio='dados' tipo='imagen' dibujar-si='u=2' coord_abs='s&iacute;' expresi&oacute;n='(70,150)' archivo='imagenes12/dado2.png'">
+   <param name="G_04" value="espacio='dados' tipo='imagen' dibujar-si='u=3' coord_abs='s&iacute;' expresi&oacute;n='(70,150)' archivo='imagenes12/dado3.png'">
+   <param name="G_05" value="espacio='dados' tipo='imagen' dibujar-si='u=4' coord_abs='s&iacute;' expresi&oacute;n='(70,150)' archivo='imagenes12/dado4.png'">
+   <param name="G_06" value="espacio='dados' tipo='imagen' dibujar-si='u=5' coord_abs='s&iacute;' expresi&oacute;n='(70,150)' archivo='imagenes12/dado5.png'">
+   <param name="G_07" value="espacio='dados' tipo='imagen' dibujar-si='u=6' coord_abs='s&iacute;' expresi&oacute;n='(70,150)' archivo='imagenes12/dado6.png'">
+   <param name="G_08" value="espacio='dados' tipo='imagen' dibujar-si='o=1' coord_abs='s&iacute;' expresi&oacute;n='(130,150)' archivo='imagenes12/dado1.png'">
+   <param name="G_09" value="espacio='dados' tipo='imagen' dibujar-si='o=2' coord_abs='s&iacute;' expresi&oacute;n='(130,150)' archivo='imagenes12/dado2.png'">
+   <param name="G_10" value="espacio='dados' tipo='imagen' dibujar-si='o=3' coord_abs='s&iacute;' expresi&oacute;n='(130,150)' archivo='imagenes12/dado3.png'">
+   <param name="G_11" value="espacio='dados' tipo='imagen' dibujar-si='o=4' coord_abs='s&iacute;' expresi&oacute;n='(130,150)' archivo='imagenes12/dado4.png'">
+   <param name="G_12" value="espacio='dados' tipo='imagen' dibujar-si='o=5' coord_abs='s&iacute;' expresi&oacute;n='(130,150)' archivo='imagenes12/dado5.png'">
+   <param name="G_13" value="espacio='dados' tipo='imagen' dibujar-si='o=6' coord_abs='s&iacute;' expresi&oacute;n='(130,150)' archivo='imagenes12/dado6.png'">
+   <param name="G_14" value="espacio='texto' tipo='texto' color='grisObscuro' expresi&oacute;n='[40,12]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Despu\u233 s de tirar los dados decide que sucesos se verifican en la tirada.\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_15" value="espacio='dados' tipo='texto' color='azul' dibujar-si='(tirar=1)&amp;(eva=1)' expresi&oacute;n='[40,255]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\f1\fs32\b Bien={\*\mjaformula{\expr bien\decimals 2\fixed0}}     \cf0\b0 Mal={\*\mjaformula{\expr 6-bien\decimals 2\fixed0}}\b\cf1      \f3\fs24\b0    \par }' fuente='SansSerif,BOLD,16' fijo='s&iacute;'">
+   <param name="G_16" value="tipo='texto' color='grisObscuro' expresi&oacute;n='[5,55]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 La suma es un n\u250 mero par\f2\fs24\par}' fuente='Arial,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_17" value="tipo='texto' color='grisObscuro' expresi&oacute;n='[5,95]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 Al menos uno es par\f2\fs24\par}' fuente='Arial,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_18" value="tipo='texto' color='grisObscuro' expresi&oacute;n='[5,135]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 La diferencia es impar\f2\fs24\par}' fuente='Arial,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_19" value="tipo='texto' color='grisObscuro' expresi&oacute;n='[5,175]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 Suman 7\f2\fs24\par}' fuente='Arial,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_20" value="tipo='texto' color='grisObscuro' expresi&oacute;n='[5,215]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 Ninguno es m\u250 ltiplo de 3\f2\fs24\par}' fuente='Arial,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_21" value="tipo='texto' color='grisObscuro' expresi&oacute;n='[5,255]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 Ha salido un seis\f2\fs24\par}' fuente='Arial,PLAIN,14' fijo='s&iacute;'">
+</ajs>
+</body>
+</html>

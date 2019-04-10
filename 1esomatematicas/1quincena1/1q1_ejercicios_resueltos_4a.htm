@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ejercicios resueltos. Ra&iacute;ces cuadradas</title>
+<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body bgcolor="FFFADA">
+<ajs name="probando" width=420 height=360
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar,lib/Descartes5_Sonido.jar,lib/Descartes5_Algebra.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="420x360">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="probando">
+   <param name="Versi&oacute;n" value="5.099, 2013-07-13">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='s&iacute;' escala='20' O.x='-151' O.y='140' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='n1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='ejemplos' expresi&oacute;n='(0,5)' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='ej=1; ini=1'">
+   <param name="A_01" value="id='nu' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='26' expresi&oacute;n='nu[0]=0;nu[1]=0;nu[2]=0'">
+   <param name="A_02" value="id='panu' algoritmo='s&iacute;' evaluar='siempre' inicio='i=0; j=0' hacer='nu[i]=j;i=i+1;j=j+(j&lt;15)+5*(j&gt;=15)*(j&lt;30)+10*(j&gt;=30)' mientras='i&lt;26'">
+   <param name="A_03" value="id='ev' evento='s&iacute;' condici&oacute;n='ej=1' acci&oacute;n='calcular' par&aacute;metro='nn=ent(26*rnd)\nej=0' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="G_01" value="tipo='texto' color='negro' expresi&oacute;n='[30,80+15*s]' familia='s' s.intervalo='[0,9]' s.pasos='9' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28{\*\mjaformula{\expr nu[s]}}\u183 {\*\mjaformula{\expr nu[s]}}={\*\mjaformula{\expr nu[s]^2}}\f2\fs24\par }' fuente='Monospaced,PLAIN,14' decimales='0' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='E1' tipo='texto' color='negro' expresi&oacute;n='[140,-70+15*s]' familia='s' s.intervalo='[10,17]' s.pasos='7' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28{\*\mjaformula{\expr nu[s]}}\u183 {\*\mjaformula{\expr nu[s]}}={\*\mjaformula{\expr nu[s]^2}}\f2\fs24\par }' fuente='Monospaced,PLAIN,14' decimales='0' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='texto' color='negro' expresi&oacute;n='[270,-190+15*s]' familia='s' s.intervalo='[18,25]' s.pasos='7' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28{\*\mjaformula{\expr nu[s]}}\u183 {\*\mjaformula{\expr nu[s]}}={\*\mjaformula{\expr nu[s]^2}}\f2\fs24\par }' fuente='Monospaced,PLAIN,14' decimales='0' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='texto' color='azul' dibujar-si='ini=1' expresi&oacute;n='[140,0]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28{\*\mjaformula{\radical{\index}{\radicand{\expr (nu[nn])^2\decimals 0\fixed1}}}}={\*\mjaformula{\expr nu[nn]\decimals 0\fixed1}} porque {\*\mjaformula{\expr nu[nn]\decimals 0\fixed1}{\supix 2}={\expr (nu[nn])^2\decimals 0\fixed1}}\f2\fs24\par }' fuente='Monospaced,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='E1' tipo='texto' color='fffada' dibujar-si='(ini=1)&amp;(nu[nn]&lt;10)&amp;(nn=s)' expresi&oacute;n='[30,80+15*s]' familia='s' s.intervalo='[0,9]' s.pasos='9' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28{\*\mjaformula{\expr nu[s]}}\u183 {\*\mjaformula{\expr nu[s]}}={\*\mjaformula{\expr nu[s]^2}}\f2\fs24\par }' fuente='Monospaced,PLAIN,14' decimales='0' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(ini=1)&amp;(nu[nn]&gt;9)&amp;(nu[nn]&lt;30)&amp;(nn=s)' expresi&oacute;n='[140,-70+15*s]' familia='s' s.intervalo='[10,17]' s.pasos='7' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28{\*\mjaformula{\expr nu[s]}}\u183 {\*\mjaformula{\expr nu[s]}}={\*\mjaformula{\expr nu[s]^2}}\f2\fs24\par }' fuente='Monospaced,PLAIN,14' decimales='0' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(ini=1)&amp;(nu[nn]&gt;25)&amp;(nn=s)' expresi&oacute;n='[270,-190+15*s]' familia='s' s.intervalo='[18,25]' s.pasos='7' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28{\*\mjaformula{\expr nu[s]}}\u183 {\*\mjaformula{\expr nu[s]}}={\*\mjaformula{\expr nu[s]^2}}\f2\fs24\par }' fuente='Monospaced,PLAIN,14' decimales='0' fijo='s&iacute;'">
+<param name="G_08" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(ini=1)&amp;(nu[nn]&lt;10)&amp;(nn=s)' expresi&oacute;n='[30,80+15*s]' familia='s' s.intervalo='[0,9]' s.pasos='9' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28{\*\mjaformula{\expr nu[s]}}\u183 {\*\mjaformula{\expr nu[s]}}={\*\mjaformula{\expr nu[s]^2}}\f2\fs24\par }' fuente='Monospaced,PLAIN,14' decimales='0' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(ini=1)&amp;(nu[nn]&gt;9)&amp;(nu[nn]&lt;30)&amp;(nn=s)' expresi&oacute;n='[140,-70+15*s]' familia='s' s.intervalo='[10,17]' s.pasos='7' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28{\*\mjaformula{\expr nu[s]}}\u183 {\*\mjaformula{\expr nu[s]}}={\*\mjaformula{\expr nu[s]^2}}\f2\fs24\par }' fuente='Monospaced,PLAIN,14' decimales='0' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(ini=1)&amp;(nu[nn]&gt;25)&amp;(nn=s)' expresi&oacute;n='[270,-190+15*s]' familia='s' s.intervalo='[18,25]' s.pasos='7' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28{\*\mjaformula{\expr nu[s]}}\u183 {\*\mjaformula{\expr nu[s]}}={\*\mjaformula{\expr nu[s]^2}}\f2\fs24\par }' fuente='Monospaced,PLAIN,14' decimales='0' fijo='s&iacute;'">
+
+</ajs>
+</body>
+</html>

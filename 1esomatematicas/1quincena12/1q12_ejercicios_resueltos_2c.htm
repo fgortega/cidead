@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Ejercicios resueltos. Pictogramas</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="ejercicios variable" width=500 height=310
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="500x310">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="ejercicios variable">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='fondo' y='30' alto='342' fijo='s&iacute;' escala='120' O.y='40' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='escoge' alto='30' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fff7d7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='texto' x='260' y='30' alto='342' dibujar-si='sol=1' fijo='s&iacute;' escala='120' O.y='40' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='adelante' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='escoge' expresi&oacute;n='(400,2,25,25)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/siguiente.png' acci&oacute;n='calcular' par&aacute;metro='p=p+1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(ang#0)&amp;(p&lt;fin)'">
+   <param name="C_02" value="id='atras' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='escoge' expresi&oacute;n='(370,2,25,25)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/anterior.png' acci&oacute;n='calcular' par&aacute;metro='p=p-1' dibujar-si='(ang#0)&amp;(p&gt;0)'">
+   <param name="C_03" value="id='Soluciones' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='escoge' expresi&oacute;n='(400,0)' fijo='s&iacute;' visible='s&iacute;' imagen='vacio.gif' acci&oacute;n='calcular' par&aacute;metro='sol=1;p=0' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(p=4)&amp;(sol=0)'">
+   <param name="C_04" value="id='guia' tipo='gr&aacute;fico' espacio='fondo' color='negro' color-int='77ff0000' expresi&oacute;n='(-1.9,0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Mueve\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;' dibujar-si='p#3' activo-si='p#3'">
+   <param name="C_05" value="id='guia.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='fondo' nombre='guia.x' valor='-1.9' min='-2.1' max='-0.5' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='fin' algoritmo='s&iacute;' evaluar='siempre' hacer='ang=1;fin=4'">
+   <param name="G_01" value="espacio='escoge' tipo='texto' color='grisObscuro' expresi&oacute;n='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Responde en el cuaderno a las preguntas sobre estos gr\u225 ficos.\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='fondo' tipo='imagen' dibujar-si='p=0' coord_abs='s&iacute;' expresi&oacute;n='(0,0)' archivo='imagenes12/madres.jpg'">
+   <param name="G_03" value="espacio='fondo' tipo='imagen' dibujar-si='p=1' coord_abs='s&iacute;' expresi&oacute;n='(0,0)' archivo='imagenes12/piramide2007.jpg'">
+   <param name="G_04" value="espacio='fondo' tipo='imagen' dibujar-si='p=2' coord_abs='s&iacute;' expresi&oacute;n='(0,0)' archivo='imagenes12/matrimonios.jpg'">
+   <param name="G_05" value="espacio='fondo' tipo='imagen' dibujar-si='p=3' coord_abs='s&iacute;' expresi&oacute;n='(0,0)' archivo='imagenes12/hoteles.jpg'">
+   <param name="G_06" value="espacio='fondo' tipo='imagen' dibujar-si='p=4' coord_abs='s&iacute;' expresi&oacute;n='(0,0)' archivo='imagenes12/picto.jpg'">
+   <param name="G_07" value="espacio='fondo' tipo='texto' color='grisObscuro' dibujar-si='p=0' expresi&oacute;n='[260,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 1. El porcentaje de nacimientos de madre\par     extranjera, \u191  aumenta o  disminuye con\par     paso de los a\u241 os?\par \par 2. \u191 Cu\u225 l es el porcentaje de  nacimientos\par     de  madre espa\u241 ola en  el 2002?  \u191 Y el\par     de madre extranjera ese mismo a\u241 o?\par \par     Escribe las respuestas en tu cuaderno.\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='fondo' tipo='texto' color='grisObscuro' dibujar-si='p=1' expresi&oacute;n='[260,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 1. \u191 Qu\u233  tramo de edad tiene m\u225 s varones\par      extranjeros? \u191 Y mujeres extranjeras?\par \par 2. Los varones  y  mujeres  espa\u241 oles son \par     casi  iguales en cada tramo  hasta cierta \par     edad  \u191  A  partir  de  qu\u233   edad  hay  m\u225 s \par     mujeres que varones espa\u241 oles?\par \par     Escribe las respuestas en tu cuaderno.\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='fondo' tipo='texto' color='grisObscuro' dibujar-si='p=2' expresi&oacute;n='[260,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 1. \u191 Cu\u225 ntos matrimonios hubo en el a\u241 o\par     2006? \par \par \par 2. \u191 Cu\u225 l fue el n\u250 mero de disoluciones\par      ese mismo a\u241 o?\par \par \par     Escribe las respuestas en tu cuaderno.\f2\fs24\par \par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='fondo' tipo='texto' color='grisObscuro' dibujar-si='p=3' expresi&oacute;n='[260,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24   1. \u191 En qu\u233  tipo de establecimiento hubo\par       m\u225 s pernoctaciones?\par \par \par   2. \u191 Cu\u225 l fue el porcentaje de \par        pernoctaciones en hostales?\par \par \par     Escribe las respuestas en tu cuaderno.\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='fondo' tipo='texto' color='grisObscuro' dibujar-si='p=4' expresi&oacute;n='[280,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Escribe en tu cuaderno un resumen\par de  los datos  que  nos  aporta  este\par pictograma.\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='escoge' tipo='texto' color='ff9900' dibujar-si='(p=4)&amp;(sol=0)' expresi&oacute;n='[400,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b Soluciones\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='texto' tipo='texto' color='grisObscuro' dibujar-si='p=0' expresi&oacute;n='[4,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 1. El porcentaje de nacimientos de madre\par     extranjera es cada vez mayor.\par \par \par 2. En el 2002 el 90% de los nacimientos\par     fueron de madre espa\u241 ola y el 10% de\par     madre extranjera\f2\fs24 .\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='texto' tipo='texto' color='grisObscuro' dibujar-si='p=1' expresi&oacute;n='[0,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 1. El  tramo con  m\u225 s varones extranjeros\par     es de 30 a 34 a\u241 os.  El tramo  con m\u225 s \par     mujeres extranjeras es de 25 a 29.\par \par 2. A partir de los 45 a\u241 os ya se aprecia un  \par     aumento del n\u250 mero de mujeres sobre\par     el de varones espa\u241 oles, este aumento\par     es bastante significativo a partir de los\par     75 a\u241 os.\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_15" value="espacio='texto' tipo='texto' color='grisObscuro' dibujar-si='p=2' expresi&oacute;n='[4,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs24 1. En el 2006 hubo aproximadamente \par     200000 matrimonios.\par \par \par 2. En el a\u241 o 2006 hubo unas 150000\par     disoluciones.\fs28\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='texto' tipo='texto' color='grisObscuro' dibujar-si='p=3' expresi&oacute;n='[14,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 1. El tipo de establecimiento  con m\u225 s \par     pernoctaciones fue el de 4 estrellas.\par \par \par 2. Un 9% de las pernoctaciones fue en\par      hostales.\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_17" value="espacio='texto' tipo='texto' color='grisObscuro' dibujar-si='p=4' expresi&oacute;n='[4,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 El pictograma nos indica que cada vez \par es  mayor  la recogida  de envases  de \par vidrio para reciclar.\par \par En el 2001 se recogieron cerca de 500\par Tm y en el 2005 unas 700 Tm.\par \par Este no es un diagrama muy preciso. \f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_18" value="espacio='fondo' tipo='segmento' color='negro' dibujar-si='p#3' expresi&oacute;n='(guia.x,guia.y)(0.05,guia.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+</ajs>
+</body>
+</html>

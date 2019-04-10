@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Ejercicios resueltos: Dividir</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000"><ajs name="suma directa" width=410 height=250
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="410x250">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="suma directa">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E' fijo='s&iacute;' escala='60' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='a1' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(128,30,40,30)' min='0' decimales='0' fijo='no' visible='s&iacute;' dibujar-si='a1#a' pos_mensajes='centro'">
+   <param name="C_02" value="id='b1' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(128,68,40,30)' decimales='0' fijo='s&iacute;' visible='s&iacute;' dibujar-si='b1#b' pos_mensajes='centro'">
+   <param name="C_03" value="id='a2' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(185,30,40,30)' min='0' decimales='0' fijo='no' visible='s&iacute;' dibujar-si='(a2#d)' pos_mensajes='centro'">
+   <param name="C_04" value="id='b2' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(185,68,40,30)' discreto='s&iacute;' decimales='0' fijo='s&iacute;' visible='s&iacute;' dibujar-si='(b2#c)'">
+   <param name="C_05" value="id='a3' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(245,30,40,30)' min='0' decimales='0' fijo='no' visible='s&iacute;' dibujar-si='(a1=a)*(b1=b)*(a2=d)*(b2=c)*(a3#e)' pos_mensajes='centro'">
+   <param name="C_06" value="id='b3' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(245,68,40,30)' discreto='s&iacute;' decimales='0' fijo='s&iacute;' visible='s&iacute;' dibujar-si='(a1=a)*(b1=b)*(a2=d)*(b2=c)*(b3#f)' pos_mensajes='centro'">
+   <param name="C_07" value="id='a5' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(365,47,40,30)' discreto='s&iacute;' decimales='0' fijo='s&iacute;' visible='s&iacute;' dibujar-si='(a1=a)*(b1=b)*(a2=d)*(b2=c)*(a3=a*d)*(b3=b*c)*(a4=e/mcd)*(b4=f/mcd)*(mcd&gt;1)*(f/mcd=1)*(a5#e/mcd)'">
+   <param name="C_08" value="id='b4' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(305,70,40,30)' min='0' decimales='0' fijo='no' visible='s&iacute;' dibujar-si='(a1=a)*(b1=b)*(a2=d)*(b2=c)*(a3=a*d)*(b3=b*c)*(mcd&gt;1)*(b4#f/mcd)'">
+   <param name="C_09" value="id='n10' tipo='num&eacute;rico' interfaz='bot&oacute;n' espacio='E' nombre='Otras fracciones' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' acci&oacute;n='inicio' pos_mensajes='centro'">
+   <param name="A_01" value="id='a' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='b' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='c' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='d' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='e' constante='s&iacute;' expresi&oacute;n='a*d' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='f' constante='s&iacute;' expresi&oacute;n='b*c' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='mcd' algoritmo='s&iacute;' evaluar='siempre' inicio='mcd=f+1' hacer='mcd=mcd-1' mientras='(ent(f/mcd)&lt;(f/mcd))+(ent(e/mcd)&lt;(e/mcd))'">
+   <param name="A_08" value="id='g' constante='s&iacute;' expresi&oacute;n='e/mcd' evaluar='siempre'">
+   <param name="A_09" value="id='h' constante='s&iacute;' expresi&oacute;n='f/mcd' evaluar='siempre'">
+   <param name="A_10" value="id='p' constante='s&iacute;' expresi&oacute;n='(a1=a)+(b1=b)+(a2=d)+(b2=c)+(b2=c)*(a3=e)+(b3=f)+(b3=f)*(a4=g)+(b3=f)*(b4=h)+(b4=h)*(a5=g)' evaluar='siempre'">
+   <param name="G_01" value="espacio='E' tipo='pol&iacute;gono' color='ffffaa' dibujar-si='(a1=a)*(b1=b)*((a2#d)+(b2#c))' expresi&oacute;n='(-0.3,0.35)(0.4,0.35)(0.4,1.35)(-0.3,1.35)(-0.3,0.35)' relleno='ffffaa'">
+   <param name="G_02" value="tipo='pol&iacute;gono' color='ffffaa' dibujar-si='(a1=a)*(b1=b)*((a2#d)+(b2#c))' expresi&oacute;n='(-2.3,0.35)(-1.6,0.35)(-1.6,1.35)(-2.3,1.35)(-2.3,0.35)' relleno='ffffaa'">
+   <param name="G_03" value="tipo='segmento' color='azul' expresi&oacute;n='(-3.35,0.85)(-2.7,0.85)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_04" value="tipo='punto' color='rojo' expresi&oacute;n='(-3.2-0.1*(a&gt;9),1)' texto='[a]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_05" value="tipo='punto' color='rojo' expresi&oacute;n='(-3.2-0.1*(b&gt;9),0.4)' texto='[b]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_06" value="tipo='punto' color='azul' expresi&oacute;n='(-2.6,0.75)' texto=':' fuente='Helvetica,PLAIN,20' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_07" value="tipo='segmento' color='azul' expresi&oacute;n='(-2.4,0.85)(-1.8,0.85)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_08" value="tipo='punto' color='rojo' expresi&oacute;n='(-2.2-0.1*(c&gt;9),1)' texto='[c]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_09" value="tipo='punto' color='rojo' expresi&oacute;n='(-2.2-0.1*(d&gt;9),0.4)' texto='[d]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_10" value="tipo='punto' color='azul' expresi&oacute;n='(-1.65,0.71)' texto='=' fuente='Helvetica,PLAIN,20' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_11" value="tipo='segmento' color='azul' expresi&oacute;n='(-1.3,0.85)(-0.65,0.85)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_12" value="tipo='punto' color='azul' dibujar-si='(a1=a)' expresi&oacute;n='(-1.15-0.1*(a&gt;9),1)' texto='[a]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_13" value="tipo='punto' color='azul' dibujar-si='(b1=b)' expresi&oacute;n='(-1.15-0.1*(b&gt;9),0.4)' texto='[b]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_14" value="tipo='punto' color='azul' expresi&oacute;n='(-0.55,0.71)' texto='&middot;' fuente='Helvetica,PLAIN,20' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_15" value="tipo='segmento' color='azul' expresi&oacute;n='(-0.35,0.85)(0.35,0.85)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_16" value="tipo='punto' color='azul' dibujar-si='(a2=d)' expresi&oacute;n='(-0.2-0.1*(d&gt;9),1)' texto='[d]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_17" value="tipo='punto' color='azul' dibujar-si='(b2=c)' expresi&oacute;n='(-0.2-0.1*(c&gt;9),0.4)' texto='[c]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_18" value="tipo='punto' color='azul' dibujar-si='(a1=a)*(b1=b)*(a2=d)*(b2=c)' expresi&oacute;n='(0.4,0.71)' texto='=' fuente='Helvetica,PLAIN,20' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_19" value="tipo='segmento' color='azul' dibujar-si='(a1=a)*(b1=b)*(a2=d)*(b2=c)' expresi&oacute;n='(0.7,0.85)(1.35,0.85)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_20" value="tipo='punto' color='azul' dibujar-si='(a1=a)*(b1=b)*(a2=d)*(b2=c)*(a3=e)' expresi&oacute;n='(0.9-0.1*(e&gt;9),1)' texto='[e]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_21" value="tipo='punto' color='azul' dibujar-si='(a1=a)*(b1=b)*(a2=d)*(b2=c)*(b3=f)' expresi&oacute;n='(0.9-0.1*(f&gt;9),0.4)' texto='[f]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_22" value="tipo='punto' color='azul' dibujar-si='(a3=e)*(b3=f)*(mcd&gt;1)' expresi&oacute;n='(1.4,0.71)' texto='=' fuente='Helvetica,PLAIN,20' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_23" value="tipo='segmento' color='azul' dibujar-si='(a3=e)*(b3=f)*(mcd&gt;1)' expresi&oacute;n='(1.7,0.85)(2.3,0.85)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_24" value="tipo='punto' color='azul' dibujar-si='(a3=e)*(b3=f)*(mcd&gt;1)' expresi&oacute;n='(1.8-0.1*(g&gt;9),1)' texto='[g]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_25" value="tipo='punto' color='azul' dibujar-si='(a3=e)*(b3=f)*(mcd&gt;1)' expresi&oacute;n='(1.8-0.1*(h&gt;9),0.4)' texto='[h]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_26" value="tipo='punto' color='azul' dibujar-si='(p&gt;3)*(f=1)' expresi&oacute;n='(2-0.1*(g&gt;9),0.75)' texto='[g]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_27" value="tipo='punto' color='azul' dibujar-si='(p&gt;4)*(f=1)' expresi&oacute;n='(2-0.1*(e/mcd&gt;9),0-0.75)' texto='[e/mcd]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_28" value="tipo='punto' color='azul' dibujar-si='(a3=e)*(b3=f)*(mcd&gt;1)*(h=1)*(b4=h)' expresi&oacute;n='(2.4,0.71)' texto='=' fuente='Helvetica,PLAIN,20' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_29" value="tipo='punto' color='azul' dibujar-si='(a3=e)*(b3=f)*(mcd&gt;1)*(h=1)*(b4=h)' expresi&oacute;n='(2.8-0.1*(g&gt;9),0.75)' texto='[g]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_30" value="tipo='punto' color='azul' dibujar-si='(p=0)+(p=1)+(p=2)+(p=3)' expresi&oacute;n='(-3,-1)' texto='Dividir una fracci&oacute;n por otra es lo mismo que' fuente='Helvetica,PLAIN,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_31" value="tipo='punto' color='azul' dibujar-si='(p=0)+(p=1)+(p=2)+(p=3)' expresi&oacute;n='(-3,-1.5)' texto='multiplicarla por la inversa' fuente='Helvetica,PLAIN,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_32" value="tipo='punto' color='azul' dibujar-si='(p=4)+(p=5)' expresi&oacute;n='(-3,-0.5)' texto='Realizamos el producto de esas fracciones' fuente='Helvetica,PLAIN,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_33" value="tipo='punto' color='azul' dibujar-si='(p=4)+(p=5)' expresi&oacute;n='(-3,-1)' texto='Multiplicamos numeradores' fuente='Helvetica,PLAIN,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_34" value="tipo='punto' color='azul' dibujar-si='(p=4)+(p=5)' expresi&oacute;n='(-3,-1.5)' texto='Multiplicamos denominadores' fuente='Helvetica,PLAIN,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_35" value="tipo='punto' color='azul' dibujar-si='((p=6)+(p=7))*(mcd&gt;1)' expresi&oacute;n='(-3,-1)' texto='Podemos simplificarlo' fuente='Helvetica,PLAIN,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_36" value="tipo='punto' color='azul' dibujar-si='((p=6)+(p=7))*(mcd&gt;1)' expresi&oacute;n='(-3,-1.5)' texto='dividiendo numerador y denominador por [mcd]' fuente='Helvetica,PLAIN,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_37" value="tipo='punto' color='azul' dibujar-si='(h=1)*(p=8)+(f=1)*(p=8)' expresi&oacute;n='(-3,-1)' texto='Cuando el denominador es 1 no lo ponemos,' fuente='Helvetica,PLAIN,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_38" value="tipo='punto' color='azul' dibujar-si='(h=1)*(p=8)+(f=1)*(p=8)' expresi&oacute;n='(-3,-1.5)' texto='lo dejamos en forma de n&uacute;mero natural.' fuente='Helvetica,PLAIN,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_39" value="tipo='punto' color='azul' dibujar-si='(p=2)+(p=3)' expresi&oacute;n='(-1.7,1.5)' texto='su inversa es       (pon los mismos n&uacute;meros)' fuente='Helvetica,PLAIN,16' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_40" value="tipo='punto' color='azul' dibujar-si='(p=4)+(p=5)' expresi&oacute;n='(0.5,-1)' texto='[a] &middot; [d] = [e]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_41" value="tipo='punto' color='azul' dibujar-si='(p=4)+(p=5)' expresi&oacute;n='(0.5,-1.5)' texto='[b] &middot; [c] = [f]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_42" value="tipo='punto' color='009500' dibujar-si='(p=6+2*(mcd&gt;1)+(h=1))' expresi&oacute;n='(0,-0.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs80 BIEN\f2\fs40\par}' fuente='SansSerif,PLAIN,40' fijo='s&iacute;' tama&ntilde;o='0'">
+</ajs>
+
+
+</body>
+</html>

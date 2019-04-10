@@ -1,0 +1,52 @@
+RESOLUCIÓN DE ECUACIONES
+
+guiado='no'
+modos='clic o arrastre'
+
+variable nombre=A rango=[1,15]
+variable nombre=B rango=[2,15]
+variable nombre=C rango=[2,9]
+variable nombre=D rango=[2,8]
+variable nombre=E rango=[2,10]
+
+Resuelve la siguiente ecuación
+
+(([C+1])*x)+B=([A+B])+(C*x)    | 
+([C+1])*x=(([A+B])+(C*x))-B    | 
+([C+1])*x=((C*x)+([A+B]))-B    | 
+([C+1])*x=(C*x)+(([A+B])-B)    | 
+([C+1])*x=(C*x)+A              | 
+(([C+1])*x)-(C*x)=A            | 
+x=A                            | 
+
+Resuelve la siguiente ecuación
+
+(([B-1])*x)-E=([(C*B)-E])-x    | 
+([B-1])*x=(([(C*B)-E])-x)+E    | 
+([B-1])*x=((-(x))+([(C*B)-E]))+E | 
+([B-1])*x=(-(x))+([C*B])       | 
+(([B-1])*x)+x=[C*B]            | 
+B*x=[C*B]                      | 
+x=([C*B])/B                    | 
+x=C                            | 
+
+Resuelve la siguiente ecuación
+
+(([C+1])*x)-A=(C*x)+([B-A])    | 
+([C+1])*x=((C*x)+([B-A]))+A    | 
+([C+1])*x=(C*x)+B              | 
+(([C+1])*x)-(C*x)=[B]          | 
+x=B                            | 
+
+Resuelve la siguiente ecuación
+
+B-(D*x)=(E*x)+A                | 
+-(D*x)=((E*x)+A)-B             | 
+-(D*x)=(E*x)+(A-B)             | 
+-(D*x)=(E*x)+(-([B-A]))        | 
+(-(D*x))-(E*x)=-([B-A])        | 
+-((D*x)+(E*x))=-([B-A])        | 
+(-([D+E]))*x=-([B-A])          | 
+(-([D+E]))*x=-([B-A])          | 
+x=(-([B-A]))/(-([D+E]))        | 
+x=([B-A])/([D+E])              | 

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ejercicios resueltos. Ra&iacute;ces cuadradas</title>
+<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body bgcolor="FFFADA">
+<ajs name="probando" width=420 height=360
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="420x360">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="probando">
+   <param name="Versi&oacute;n" value="5.099, 2013-07-13">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='si' escala='20' O.x='-151' O.y='140' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='n2' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' nombre='ra&iacute;z' expresi&oacute;n='(300,70)' decimales='0' visible='si' acci&oacute;n='calcular' par&aacute;metro='int=int+1; ej=3' dibujar-si='((ej=2)|(ej=3))&amp;(int&lt;5)' pos_mensajes='centro'">
+   <param name="C_02" value="id='n3' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='inicio' expresi&oacute;n='(300,5)' visible='si' acci&oacute;n='inicio' dibujar-si='(fin=1)|(int&gt;4)' pos_mensajes='centro'">
+   <param name="A_01" value="id='ej' constante='si' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='V' vector='si' evaluar='una-sola-vez' tama&ntilde;o='5' expresi&oacute;n='V3[0]=0;V3[1]=0;V3[2]=0'">
+   <param name="A_03" value="id='f()' algoritmo='si' expresi&oacute;n='g1' algoritmo='si' inicio='k=0; g1=0' hacer='g1=g1+(V[k]=n)+(V[k]=n+1);k=k+1' mientras='k&lt;5'">
+   <param name="A_04" value="id='ev' evento='s&iacute;' condici&oacute;n='ej=1' acci&oacute;n='calcular' par&aacute;metro='nn=ent(5000*rnd)+226\nn=ent(ra&iacute;z(nn))\nresto=nn-n^2\na=ent(n/10)\nej=2' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_05" value="id='e2' evento='s&iacute;' condici&oacute;n='ej=3' acci&oacute;n='calcular' par&aacute;metro='V[h]=n2\nh=h+1' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_06" value="id='e3' evento='s&iacute;' condici&oacute;n='ej=3' acci&oacute;n='calcular' par&aacute;metro='fin=(f()=2)' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="G_01" value="tipo='texto' color='grisObscuro' dibujar-si='ej&gt;0' expresi&oacute;n='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40{\*\mjaformula{\radical{\expr nn\decimals 0\fixed1}}}\fs32 .\f3\fs24\par}' fuente='Arial,PLAIN,20' decimales='0'">
+   <param name="G_02" value="tipo='texto' color='grisObscuro' dibujar-si='ej&gt;0' expresi&oacute;n='[20,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red64\green64\blue64;}\f1\fs32 Observa que {\*\mjaformula{\expr 10*a}{\supix 2}}={\*\mjaformula{\expr (10*a)^2}} y {\*\mjaformula{\expr (a+1)*10\decimals 0\fixed1}{\supix 2}}={\*\mjaformula{\expr ((a+1)*10)^2}}.\par La ra\u237 z est\u225  entre {\*\mjaformula{\expr 10*a\decimals 0\fixed1}} y {\*\mjaformula{\expr (a+1)*10\decimals 0\fixed1}}\cf0\par Introduce valores en la ra\u237 z para que, \par al ser elevados al cuadrado,\par se obtengan el valor m\u225 s pr\u243 ximo a {\*\mjaformula{\expr nn\decimals 0\fixed1}} \par sobrepas\u225 ndolo y sin alcanzarlo.\par \u161 Tienes 5 intentos!\cf1\f2\fs24\par}' fuente='Arial,PLAIN,16' decimales='0'">
+   <param name="G_03" value="tipo='texto' color='00bb00' dibujar-si='int&gt;0' expresi&oacute;n='[20,165+20*int]' rastro='grisObscuro' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32{\*\mjaformula{\expr n2}{\supix 2}}={\*\mjaformula{\expr n2^2\decimals 0\fixed1}}\f2\fs24\par}' fuente='Arial,PLAIN,16' decimales='0'">
+   <param name="G_04" value="tipo='texto' color='0000aa' dibujar-si='(fin=1)|(int&gt;4)' expresi&oacute;n='[20,285]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32{\*\mjaformula{\expr n\decimals 0\fixed1}{\supix 2}={\expr n^2\decimals 0\fixed1}}   y   {\*\mjaformula{\expr n+1\decimals 0\fixed1}{\supix 2}={\expr (n+1)^2\decimals 0\fixed1}}\par {\*\mjaformula{\expr nn\decimals 0\fixed1}}\u8722 {\*\mjaformula{\expr n^2\decimals 0\fixed1}}={\*\mjaformula{\expr resto\decimals 0\fixed1}}\par {\*\mjaformula{\radical{\expr nn\decimals 0\fixed1}}}={\*\mjaformula{\expr n\decimals 0\fixed1}} y resto {\*\mjaformula{\expr resto\decimals 0\fixed1}}\f2\fs24\par}' fuente='Arial,PLAIN,16'">
+</ajs>
+</body>
+</html>

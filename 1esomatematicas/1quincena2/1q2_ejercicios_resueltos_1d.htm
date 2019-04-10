@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ejercicios resueltos: Criterios de divisibilidad</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body>
+<div align="center"> <ajs name="divisi&oacute;n por una cifra" width=375 height=375
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="375x375">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="divisi&oacute;n por una cifra">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='si' O.y='-30' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='g02' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='12' expresi&oacute;n='[-4.5,-4.5]' dibujar-si='0'">
+   <param name="C_02" value="id='g03' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='12' expresi&oacute;n='[-3.4,-4.5]' dibujar-si='0'">
+   <param name="C_03" value="id='g04' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='12' expresi&oacute;n='[-2.3,-4.5]' dibujar-si='0'">
+   <param name="C_04" value="id='g05' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='12' expresi&oacute;n='[-1.2,-4.5]' dibujar-si='0'">
+   <param name="C_05" value="id='g06' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='12' expresi&oacute;n='[-0.1,-4.5]' dibujar-si='0'">
+   <param name="C_06" value="id='g08' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='12' expresi&oacute;n='[1,-4.5]' dibujar-si='0'">
+   <param name="C_07" value="id='g09' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='12' expresi&oacute;n='[2.2,-4.5]' dibujar-si='0'">
+   <param name="C_08" value="id='g10' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='12' expresi&oacute;n='[3.3,-4.5]' dibujar-si='0'">
+   <param name="C_09" value="id='g11' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='12' expresi&oacute;n='[4.4,-4.5]' dibujar-si='0'">
+   <param name="C_10" value="id='otro' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='otro n&uacute;mero' expresi&oacute;n='(120,320,120,20)' visible='si' acci&oacute;n='inicio' dibujar-si='b*v' pos_mensajes='centro'">
+   <param name="A_01" value="id='escala' constante='si' expresi&oacute;n='35' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='n' constante='si' expresi&oacute;n='ent(rnd*99999)+1' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='c2' constante='si' expresi&oacute;n='(abs(g02.x)&lt;5)*(abs(g02.y-0.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_04" value="id='c3' constante='si' expresi&oacute;n='(abs(g03.x)&lt;5)*(abs(g03.y-0.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_05" value="id='c4' constante='si' expresi&oacute;n='(abs(g04.x)&lt;5)*(abs(g04.y-0.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_06" value="id='c5' constante='si' expresi&oacute;n='(abs(g05.x)&lt;5)*(abs(g05.y-0.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_07" value="id='c6' constante='si' expresi&oacute;n='(abs(g06.x)&lt;5)*(abs(g06.y-0.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_08" value="id='c8' constante='si' expresi&oacute;n='(abs(g08.x)&lt;5)*(abs(g08.y-0.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_09" value="id='c9' constante='si' expresi&oacute;n='(abs(g09.x)&lt;5)*(abs(g09.y-0.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_10" value="id='c10' constante='si' expresi&oacute;n='(abs(g10.x)&lt;5)*(abs(g10.y-0.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_11" value="id='c11' constante='si' expresi&oacute;n='(abs(g11.x)&lt;5)*(abs(g11.y-0.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_12" value="id='b' constante='si' expresi&oacute;n='((n/2=ent(n/2))=c2)*((n/3=ent(n/3))=c3)*((n/4=ent(n/4))=c4)*((n/5=ent(n/5))=c5)*((n/6=ent(n/6))=c6)*((n/8=ent(n/8))=c8)*((n/9=ent(n/9))=c9)*((n/10=ent(n/10))=c10)*((n/11=ent(n/11))=c11)' evaluar='siempre'">
+   <param name="A_13" value="id='v2' constante='si' expresi&oacute;n='(abs(g02.x)&lt;5)*(abs(g02.y+2.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_14" value="id='v3' constante='si' expresi&oacute;n='(abs(g03.x)&lt;5)*(abs(g03.y+2.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_15" value="id='v4' constante='si' expresi&oacute;n='(abs(g04.x)&lt;5)*(abs(g04.y+2.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_16" value="id='v5' constante='si' expresi&oacute;n='(abs(g05.x)&lt;5)*(abs(g05.y+2.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_17" value="id='v6' constante='si' expresi&oacute;n='(abs(g06.x)&lt;5)*(abs(g06.y+2.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_18" value="id='v7' constante='si' expresi&oacute;n='(abs(g07.x)&lt;5)*(abs(g07.y+2.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_19" value="id='v8' constante='si' expresi&oacute;n='(abs(g08.x)&lt;5)*(abs(g08.y+2.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_20" value="id='v9' constante='si' expresi&oacute;n='(abs(g09.x)&lt;5)*(abs(g09.y+2.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_21" value="id='v10' constante='si' expresi&oacute;n='(abs(g10.x)&lt;5)*(abs(g10.y+2.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_22" value="id='v11' constante='si' expresi&oacute;n='(abs(g11.x)&lt;5)*(abs(g11.y+2.5)&lt;0.6)' evaluar='siempre'">
+   <param name="A_23" value="id='v' constante='si' expresi&oacute;n='((n/2&gt;ent(n/2))=v2)*((n/3&gt;ent(n/3))=v3)*((n/4&gt;ent(n/4))=v4)*((n/5&gt;ent(n/5))=v5)*((n/6&gt;ent(n/6))=v6)*((n/8&gt;ent(n/8))=v8)*((n/9&gt;ent(n/9))=v9)*((n/10&gt;ent(n/10))=v10)*((n/11&gt;ent(n/11))=v11)' evaluar='siempre'">
+   <param name="G_01" value="tipo='punto' color='rojo' expresi&oacute;n='(-1.7,3)' texto='[n]' fuente='Helvetica,PLAIN,30' decimales='0' tama&ntilde;o='0'">
+   <param name="G_02" value="tipo='pol&iacute;gono' color='e1ebff' expresi&oacute;n='(-5.3,-0.2)(5.3,-0.2)(5.3,1.2)(-5.3,1.2)(-5.3,-0.2)' relleno='e1ebff'">
+   <param name="G_03" value="tipo='pol&iacute;gono' color='e1ebff' expresi&oacute;n='(-5.3,-3.2)(5.3,-3.2)(5.3,-1.8)(-5.3,-1.8)(-5.3,-3.2)' relleno='e1ebff'">
+   <param name="G_04" value="tipo='punto' color='azul' expresi&oacute;n='(-5,3)' texto='El n&uacute;mero' fuente='Helvetica,PLAIN,18' decimales='0' tama&ntilde;o='0'">
+   <param name="G_05" value="tipo='punto' color='azul' expresi&oacute;n='(-5,1.5)' texto='Es divisible por:' fuente='Helvetica,PLAIN,18' decimales='0' tama&ntilde;o='0'">
+   <param name="G_06" value="tipo='punto' color='azul' expresi&oacute;n='(-5,-1.5)' texto='No es divisible por:' fuente='Helvetica,PLAIN,18' decimales='0' tama&ntilde;o='0'">
+   <param name="G_07" value="tipo='punto' color='fff0b9' expresi&oacute;n='(g02.x,g02.y)' fuente='Helvetica,PLAIN,32' decimales='0' tama&ntilde;o='18'">
+   <param name="G_08" value="tipo='punto' color='fff0b9' expresi&oacute;n='(g03.x,g03.y)' fuente='Helvetica,PLAIN,32' decimales='0' tama&ntilde;o='18'">
+   <param name="G_09" value="tipo='punto' color='fff0b9' expresi&oacute;n='(g04.x,g04.y)' fuente='Helvetica,PLAIN,32' decimales='0' tama&ntilde;o='18'">
+   <param name="G_10" value="tipo='punto' color='fff0b9' expresi&oacute;n='(g05.x,g05.y)' fuente='Helvetica,PLAIN,32' decimales='0' tama&ntilde;o='18'">
+   <param name="G_11" value="tipo='punto' color='fff0b9' expresi&oacute;n='(g06.x,g06.y)' fuente='Helvetica,PLAIN,32' decimales='0' tama&ntilde;o='18'">
+   <param name="G_12" value="tipo='punto' color='fff0b9' expresi&oacute;n='(g08.x,g08.y)' fuente='Helvetica,PLAIN,32' decimales='0' tama&ntilde;o='18'">
+   <param name="G_13" value="tipo='punto' color='fff0b9' expresi&oacute;n='(g09.x,g09.y)' fuente='Helvetica,PLAIN,32' decimales='0' tama&ntilde;o='18'">
+   <param name="G_14" value="tipo='punto' color='fff0b9' expresi&oacute;n='(g10.x,g10.y)' fuente='Helvetica,PLAIN,32' decimales='0' tama&ntilde;o='18'">
+   <param name="G_15" value="tipo='punto' color='fff0b9' expresi&oacute;n='(g11.x,g11.y)' fuente='Helvetica,PLAIN,32' decimales='0' tama&ntilde;o='18'">
+   <param name="G_16" value="tipo='punto' color='negro' expresi&oacute;n='(g02.x-0.2,g02.y-0.3)' texto='2' fuente='Helvetica,PLAIN,28' decimales='0' tama&ntilde;o='0'">
+   <param name="G_17" value="tipo='punto' color='negro' expresi&oacute;n='(g03.x-0.2,g03.y-0.3)' texto='3' fuente='Helvetica,PLAIN,28' decimales='0' tama&ntilde;o='0'">
+   <param name="G_18" value="tipo='punto' color='negro' expresi&oacute;n='(g04.x-0.2,g04.y-0.3)' texto='4' fuente='Helvetica,PLAIN,28' decimales='0' tama&ntilde;o='0'">
+   <param name="G_19" value="tipo='punto' color='negro' expresi&oacute;n='(g05.x-0.2,g05.y-0.3)' texto='5' fuente='Helvetica,PLAIN,28' decimales='0' tama&ntilde;o='0'">
+   <param name="G_20" value="tipo='punto' color='negro' expresi&oacute;n='(g06.x-0.2,g06.y-0.3)' texto='6' fuente='Helvetica,PLAIN,28' decimales='0' tama&ntilde;o='0'">
+   <param name="G_21" value="tipo='punto' color='negro' expresi&oacute;n='(g08.x-0.2,g08.y-0.3)' texto='8' fuente='Helvetica,PLAIN,28' decimales='0' tama&ntilde;o='0'">
+   <param name="G_22" value="tipo='punto' color='negro' expresi&oacute;n='(g09.x-0.2,g09.y-0.3)' texto='9' fuente='Helvetica,PLAIN,28' decimales='0' tama&ntilde;o='0'">
+   <param name="G_23" value="tipo='punto' color='negro' expresi&oacute;n='(g10.x-0.5,g10.y-0.3)' texto='10' fuente='Helvetica,PLAIN,28' decimales='0' tama&ntilde;o='0'">
+   <param name="G_24" value="tipo='punto' color='negro' expresi&oacute;n='(g11.x-0.5,g11.y-0.3)' texto='11' fuente='Helvetica,PLAIN,28' decimales='0' tama&ntilde;o='0'">
+   <param name="G_25" value="tipo='punto' color='rojo' dibujar-si='b*v' expresi&oacute;n='(-2.5,-4.5)' texto='CORRECTO' fuente='Helvetica,PLAIN,30' decimales='0' tama&ntilde;o='0'">
+</ajs>
+
+
+
+</div>
+</body>
+</html>

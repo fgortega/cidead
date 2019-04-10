@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Ejercicios resueltos: ¿Qué fracción es?</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<ajs name="halla la fracci&oacute;n representada 1" width=425 height=350
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="425x350">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="halla la fracci&oacute;n representada 1">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E' fijo='s&iacute;' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='nu' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(340,225,45,30)' incr='1' min='0' max='300' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='nu=0'">
+   <param name="C_02" value="id='de' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' expresi&oacute;n='(340,261,45,30)' incr='1' min='0' max='200' decimales='0' fijo='s&iacute;' visible='s&iacute;' dibujar-si='de=0' pos_mensajes='centro'">
+   <param name="C_03" value="id='in' tipo='num&eacute;rico' interfaz='bot&oacute;n' espacio='E' nombre='Otra fracci&oacute;n' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' acci&oacute;n='inicio' pos_mensajes='centro'">
+   <param name="A_01" value="id='escala' constante='s&iacute;' expresi&oacute;n='46' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.1416' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='a' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='b' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='c' constante='s&iacute;' expresi&oacute;n='ent(a-b)*(a&gt;b)' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='d' constante='s&iacute;' expresi&oacute;n='ent(a-2*b)*(a&gt;(2*b))' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='e' constante='s&iacute;' expresi&oacute;n='ent(a-3*b)*(a&gt;(3*b))' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='f' constante='s&iacute;' expresi&oacute;n='ent(a-4*b)*(a&gt;(4*b))' evaluar='una-sola-vez'">
+   <param name="A_09" value="id='g' constante='s&iacute;' expresi&oacute;n='ent(a-5*b)*(a&gt;(5*b))' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='h' constante='s&iacute;' expresi&oacute;n='ent(a-6*b)*(a&gt;(6*b))' evaluar='una-sola-vez'">
+   <param name="A_11" value="id='i' constante='s&iacute;' expresi&oacute;n='ent(a-7*b)*(a&gt;(7*b))' evaluar='una-sola-vez'">
+   <param name="A_12" value="id='j' constante='s&iacute;' expresi&oacute;n='ent(a-8*b)*(a&gt;(8*b))' evaluar='una-sola-vez'">
+   <param name="A_13" value="id='k' constante='s&iacute;' expresi&oacute;n='ent(a-9*b)*(a&gt;(9*b))' evaluar='una-sola-vez'">
+   <param name="A_14" value="id='l' constante='s&iacute;' expresi&oacute;n='ent(a-10*b)*(a&gt;(10*b))' evaluar='una-sola-vez'">
+   <param name="G_01" value="espacio='E' tipo='arco' color='blanco' centro='(-3,2)' fin='(360*a)/b' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' relleno='azul'">
+   <param name="G_02" value="tipo='arco' color='blanco' dibujar-si='a&gt;0' centro='(-1,2)' fin='(360*c)/b' decimales='0' fijo='s&iacute;' relleno='azul'">
+   <param name="G_03" value="tipo='arco' color='blanco' centro='(1,2)' fin='(360*d)/b' decimales='0' fijo='s&iacute;' relleno='azul'">
+   <param name="G_04" value="tipo='arco' color='blanco' centro='(3,2)' fin='(360*e)/b' decimales='0' fijo='s&iacute;' relleno='azul'">
+   <param name="G_05" value="tipo='arco' color='blanco' centro='(-3,0)' fin='(360*f)/b' decimales='0' fijo='s&iacute;' relleno='azul'">
+   <param name="G_06" value="tipo='arco' color='blanco' centro='(-1,0)' fin='(360*g)/b' decimales='0' fijo='s&iacute;' relleno='azul'">
+   <param name="G_07" value="tipo='arco' color='blanco' centro='(1,0)' fin='(360*h)/b' decimales='0' fijo='s&iacute;' relleno='azul'">
+   <param name="G_08" value="tipo='arco' color='blanco' centro='(3,0)' fin='(360*i)/b' decimales='0' fijo='s&iacute;' relleno='azul'">
+   <param name="G_09" value="tipo='arco' color='blanco' centro='(-3,-2)' fin='(360*j)/b' decimales='0' fijo='s&iacute;' relleno='azul'">
+   <param name="G_10" value="tipo='arco' color='blanco' centro='(-1,-2)' fin='(360*k)/b' decimales='0' fijo='s&iacute;' relleno='azul'">
+   <param name="G_11" value="tipo='arco' color='blanco' centro='(1,-2)' fin='(360*l)/b' decimales='0' fijo='s&iacute;'">
+   <param name="G_12" value="tipo='segmento' color='blanco' dibujar-si='b&gt;1' expresi&oacute;n='(-3,2)(cos(2*s*pi/b)-3,2+sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_13" value="tipo='segmento' color='blanco' dibujar-si='b&gt;1' expresi&oacute;n='(-1,2)(cos(2*s*pi/b)-1,2+sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_14" value="tipo='segmento' color='blanco' dibujar-si='b&gt;1' expresi&oacute;n='(1,2)(cos(2*s*pi/b)+1,2+sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_15" value="tipo='segmento' color='blanco' dibujar-si='b&gt;1' expresi&oacute;n='(3,2)(cos(2*s*pi/b)+3,2+sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_16" value="tipo='segmento' color='blanco' dibujar-si='b&gt;1' expresi&oacute;n='(-3,0)(cos(2*s*pi/b)-3,sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_17" value="tipo='segmento' color='blanco' dibujar-si='b&gt;1' expresi&oacute;n='(-1,0)(cos(2*s*pi/b)-1,sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_18" value="tipo='segmento' color='blanco' dibujar-si='b&gt;1' expresi&oacute;n='(1,0)(cos(2*s*pi/b)+1,sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_19" value="tipo='segmento' color='blanco' dibujar-si='b&gt;1' expresi&oacute;n='(3,0)(cos(2*s*pi/b)+3,sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_20" value="tipo='segmento' color='blanco' dibujar-si='b&gt;1' expresi&oacute;n='(-3,-2)(cos(2*s*pi/b)-3,-2+sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_21" value="tipo='segmento' color='blanco' dibujar-si='b&gt;1' expresi&oacute;n='(-1,-2)(cos(2*s*pi/b)-1,-2+sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_22" value="tipo='segmento' color='blanco' dibujar-si='b&gt;1' expresi&oacute;n='(1,-2)(cos(2*s*pi/b)+1,-2+sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_23" value="tipo='segmento' color='gris' dibujar-si='(a+1&lt;b)*(s&gt;a)*(s&lt;b)*(s&gt;a)' expresi&oacute;n='(-3,2)(cos(2*s*pi/b)-3,2+sen(2*s*pi/b))' familia='s' s.intervalo='[0,b]' s.pasos='b' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_24" value="espacio='E' tipo='punto' color='ff9500' expresi&oacute;n='(-4,-2.2)' texto='Escribe la fracci&oacute;n representada' fuente='SansSerif,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_25" value="espacio='E' tipo='segmento' color='azul' expresi&oacute;n='(3.65,-1.95)(2.55,-1.95)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_26" value="espacio='E' tipo='punto' color='azul' dibujar-si='nu' expresi&oacute;n='(2.9,-1.85)' texto='[nu]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_27" value="espacio='E' tipo='punto' color='azul' dibujar-si='de' expresi&oacute;n='(2.9,-2.55)' texto='[de]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_28" value="espacio='E' tipo='punto' color='008200' dibujar-si='(a=nu)*(b=de)' expresi&oacute;n='(-3.9,-3.4)' texto='BIEN' fuente='Helvetica,BOLD,40' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_29" value="espacio='E' tipo='punto' color='rojo' dibujar-si='((a#nu)+(b#de))*nu*de' expresi&oacute;n='(-3.9,-3.4)' texto='MAL' fuente='Helvetica,BOLD,40' fijo='s&iacute;' tama&ntilde;o='0'">
+</ajs>
+
+</body>
+</html>

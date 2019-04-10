@@ -1,0 +1,327 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>M&uacute;ltiplos y divisores</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+
+<body onload="MM_preloadImages('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes2.png','imagen1/paracont2.png','imagen1/adelanteb.png','imagen1/atrasb.png','imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/paraejer3.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paracont3.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0px; top: 0px; width: 800px; height: 528px; z-index: 1;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="1quincena2_presenta_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes.png" alt="" name="antes" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','imagen1/paracont3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paracont3.png" alt="" name="contenidos" onload="MM_nbGroup('init','group1','contenidos','imagen1/paraconte.png',1)" border="0"></a></td>
+      <td><a href="1quincena2_ejercicios_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer.png" alt="" name="ejercicios" onload="" border="0"></a></td>
+      <td><a href="1quincena2_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" onload="" border="0"></a></td>
+      <td><a href="1quincena2_tutor_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onmouseover="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" onload="" border="0"></a></td>
+      <td><a href="1quincena2_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0"></a></td>
+    </tr>
+  </table>
+<table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+  <table align="center" border="0" cellspacing="0" height="85%" width="800">
+     <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8"></td>
+      <td bgcolor="#ffffff" height="364" valign="top">
+        <table cellspacing="12" width="100%">
+          <tr>
+            <td valign="top"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong>1.
+              Múltiplos y divisores</strong></font></td>
+            <td> <div align="right"></div></td>
+          </tr>
+          <tr>
+            <td valign="top"> <p><font color="#666666" face="Geneva, Arial, Helvetica, sans-serif" size="3"><strong>La
+                división exacta de números naturales</strong></font></p>
+              <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Al
+                dividir dos números naturales puede suceder que su resto
+                sea 0, eso es porque el <strong>dividendo</strong> es <strong>múltiplo</strong>
+                del divisor, decimos que es una división <strong>exacta</strong>.
+                <br>
+                <br>
+                Si el resto es otro número mayor que 0 la división
+                no es exacta. El dividendo no es múltiplo del divisor.<br>
+                </font> </p>
+              <div align="justify">
+                <table width="90%" align="center" cellpadding="10" cellspacing="0" background="imagen1/clipcon.png">
+                  <tr>
+                    <td valign="bottom"> <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br>
+                        <strong>División</strong> <strong>exacta</strong>
+                        es la que tiene de <strong>resto 0</strong></font></p></td>
+                  </tr>
+                </table>
+                <p><br>
+                </p>
+                <p>&nbsp; </p>
+                <p align="right"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" class="textopeque">Comprueba 
+                  si esta división es exacta o no, </font><font size="2" face="Verdana, Arial, Helvetica, sans-serif" class="textopeque"><br>
+                  utiliza las cifras de abajo que necesites, <br>
+                  pon cada una en su cuadradito. </font></p>
+                </div>
+              </td>
+            <td valign="bottom">
+              <div align="right">
+                <ajs name="divisi&oacute;n por una cifra" width=350 height=350
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="350x350">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="divisi&oacute;n por una cifra">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='s&iacute;' escala='30' O.y='-60' despl_imagen='arr-izq' fondo='blanco' red='e1e1d1' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='g1' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-4.45+m1,-6.5]' dibujar-si='0' activo-si='1'">
+   <param name="C_02" value="id='g2' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-4.45+c1,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_03" value="id='g3' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-4.45+c2,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_04" value="id='g4' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-4.45+d2,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_05" value="id='g5' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-4.45+d3,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_06" value="id='g6' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-4.45+u3,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_07" value="id='g7' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-4.45+u4,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_08" value="id='g8' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-4.45+cm,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_09" value="id='g9' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-4.45+cc,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_10" value="id='g10' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-4.45+cd,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_11" value="id='g11' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-4.45+cu,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_12" value="id='g00' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-4.45,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_13" value="id='g01' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-3.45,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_14" value="id='g02' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-2.45,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_15" value="id='g03' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-1.45,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_16" value="id='g04' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[-0.45,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_17" value="id='g05' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[0.55,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_18" value="id='g06' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[1.55,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_19" value="id='g07' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[2.55,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_20" value="id='g08' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[3.55,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_21" value="id='g09' tipo='gr&aacute;fico' tama&ntilde;o='12' expresi&oacute;n='[4.55,-6.5]' fijo='s&iacute;' dibujar-si='0' activo-si='1'">
+   <param name="C_22" value="id='n22' tipo='num&eacute;rico' interfaz='bot&oacute;n' nombre='otra divisi&oacute;n' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' acci&oacute;n='inicio' pos_mensajes='centro'">
+   <param name="A_01" value="id='D' constante='s&iacute;' expresi&oacute;n='ent(rnd*99)+1' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='d' constante='s&iacute;' expresi&oacute;n='ent(rnd*9)+1' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='c' constante='s&iacute;' expresi&oacute;n='ent(D/d)' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='am' constante='s&iacute;' expresi&oacute;n='ent(D/1000)' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='ac' constante='s&iacute;' expresi&oacute;n='ent(D/100)%10' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='ad' constante='s&iacute;' expresi&oacute;n='ent(D/10)%10' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='au' constante='s&iacute;' expresi&oacute;n='ent(D)%10' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='cm' constante='s&iacute;' expresi&oacute;n='ent(c/1000)' evaluar='una-sola-vez'">
+   <param name="A_09" value="id='cc' constante='s&iacute;' expresi&oacute;n='(ent(c/100))%10' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='cd' constante='s&iacute;' expresi&oacute;n='(ent(c/10))%10' evaluar='una-sola-vez'">
+   <param name="A_11" value="id='cu' constante='s&iacute;' expresi&oacute;n='c%10' evaluar='una-sola-vez'">
+   <param name="A_12" value="id='m1' constante='s&iacute;' expresi&oacute;n='am-d*cm' evaluar='una-sola-vez'">
+   <param name="A_13" value="id='c1' constante='s&iacute;' expresi&oacute;n='ac' evaluar='una-sola-vez'">
+   <param name="A_14" value="id='c2' constante='s&iacute;' expresi&oacute;n='10*m1+c1-(d*cc)' evaluar='una-sola-vez'">
+   <param name="A_15" value="id='d2' constante='s&iacute;' expresi&oacute;n='ad' evaluar='una-sola-vez'">
+   <param name="A_16" value="id='d3' constante='s&iacute;' expresi&oacute;n='(10*c2+ad)-(cd*d)' evaluar='una-sola-vez'">
+   <param name="A_17" value="id='u3' constante='s&iacute;' expresi&oacute;n='au' evaluar='una-sola-vez'">
+   <param name="A_18" value="id='u4' constante='s&iacute;' expresi&oacute;n='10*d3+au-d*cu' evaluar='una-sola-vez'">
+   <param name="A_19" value="id='s1' constante='s&iacute;' expresi&oacute;n='cm=0' evaluar='una-sola-vez'">
+   <param name="A_20" value="id='s2' constante='s&iacute;' expresi&oacute;n='cc=0' evaluar='una-sola-vez'">
+   <param name="A_21" value="id='s3' constante='s&iacute;' expresi&oacute;n='cd=0' evaluar='una-sola-vez'">
+   <param name="A_22" value="id='s4' constante='s&iacute;' expresi&oacute;n='cu=0' evaluar='una-sola-vez'">
+   <param name="A_23" value="id='p10' constante='s&iacute;' expresi&oacute;n='(s4+s3+s2+s1=0)*u4' evaluar='una-sola-vez'">
+   <param name="A_24" value="id='p9' constante='s&iacute;' expresi&oacute;n='(s4+s3+s2+s1=1)*u4+au*(s1+s2+s3+s4=0)' evaluar='una-sola-vez'">
+   <param name="A_25" value="id='p8' constante='s&iacute;' expresi&oacute;n='(s3+s2+s1=0)*d3' evaluar='una-sola-vez'">
+   <param name="A_26" value="id='p7' constante='s&iacute;' expresi&oacute;n='(s3+s2+s1=1)*au+(s3+s2+s1=2)*u4' evaluar='una-sola-vez'">
+   <param name="A_27" value="id='p6' constante='s&iacute;' expresi&oacute;n='(s3+s2+s1=1)*d3+(s3+s2+s1=0)*ad' evaluar='una-sola-vez'">
+   <param name="A_28" value="id='p5' constante='s&iacute;' expresi&oacute;n='c2*(s2+s1=0)' evaluar='una-sola-vez'">
+   <param name="A_29" value="id='p4' constante='s&iacute;' expresi&oacute;n='(s1+s2+s3=2)*au+(s1+s2+s3=3)*u4' evaluar='una-sola-vez'">
+   <param name="A_30" value="id='p3' constante='s&iacute;' expresi&oacute;n='(s1+s2=1)*ad+(s1+s2=2)*d3' evaluar='una-sola-vez'">
+   <param name="A_31" value="id='p2' constante='s&iacute;' expresi&oacute;n='(s1+s2=0)*ac+(s1+s2=1)*c2' evaluar='una-sola-vez'">
+   <param name="A_32" value="id='p1' constante='s&iacute;' expresi&oacute;n='(s1=0)*m1' evaluar='una-sola-vez'">
+   <param name="A_33" value="id='p11' constante='s&iacute;' expresi&oacute;n='(s1=0)*cm+s1*(s2=0)*cc+s1*s2*(s3=0)*cd+s1*s2*s3*(s4=0)*cu' evaluar='una-sola-vez'">
+   <param name="A_34" value="id='p12' constante='s&iacute;' expresi&oacute;n='(s1=0)*cc+s1*(s2=0)*cd+s1*s2*(s3=0)*cu' evaluar='una-sola-vez'">
+   <param name="A_35" value="id='p13' constante='s&iacute;' expresi&oacute;n='(s1=0)*cd+s1*(s2=0)*cu' evaluar='una-sola-vez'">
+   <param name="A_36" value="id='p14' constante='s&iacute;' expresi&oacute;n='(s1=0)*cu' evaluar='una-sola-vez'">
+   <param name="A_37" value="id='m1p' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x+3.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+c1*(abs(g2.x+3.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+c2*(abs(g3.x+3.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+d2*(abs(g4.x+3.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+d3*(abs(g5.x+3.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+u3*(abs(g6.x+3.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+u4*(abs(g7.x+3.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+cm*(abs(g8.x+3.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+cc*(abs(g9.x+3.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+cd*(abs(g10.x+3.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+cu*(abs(g11.x+3.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x+3.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+2*(abs(g02.x+3.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+3*(abs(g03.x+3.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+4*(abs(g04.x+3.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+5*(abs(g05.x+3.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+6*(abs(g06.x+3.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+7*(abs(g07.x+3.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+8*(abs(g08.x+3.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+9*(abs(g09.x+3.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_38" value="id='c1p' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x+2.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+c1*(abs(g2.x+2.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+c2*(abs(g3.x+2.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+d2*(abs(g4.x+2.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+d3*(abs(g5.x+2.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+u3*(abs(g6.x+2.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+u4*(abs(g7.x+2.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+cm*(abs(g8.x+2.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+cc*(abs(g9.x+2.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+cd*(abs(g10.x+2.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+cu*(abs(g11.x+2.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x+2.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+2*(abs(g02.x+2.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+3*(abs(g03.x+2.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+4*(abs(g04.x+2.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+5*(abs(g05.x+2.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+6*(abs(g06.x+2.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+7*(abs(g07.x+2.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+8*(abs(g08.x+2.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+9*(abs(g09.x+2.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_39" value="id='d1p' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x+1.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+c1*(abs(g2.x+1.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+c2*(abs(g3.x+1.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+d2*(abs(g4.x+1.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+d3*(abs(g5.x+1.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+u3*(abs(g6.x+1.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+u4*(abs(g7.x+1.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+cm*(abs(g8.x+1.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+cc*(abs(g9.x+1.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+cd*(abs(g10.x+1.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+cu*(abs(g11.x+1.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x+1.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+2*(abs(g02.x+1.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+3*(abs(g03.x+1.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+4*(abs(g04.x+1.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+5*(abs(g05.x+1.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+6*(abs(g06.x+1.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+7*(abs(g07.x+1.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+8*(abs(g08.x+1.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+9*(abs(g09.x+1.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_40" value="id='u1p' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x+0.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+c1*(abs(g2.x+0.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+c2*(abs(g3.x+0.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+d2*(abs(g4.x+0.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+d3*(abs(g5.x+0.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+u3*(abs(g6.x+0.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+u4*(abs(g7.x+0.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+cm*(abs(g8.x+0.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+cc*(abs(g9.x+0.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+cd*(abs(g10.x+0.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+cu*(abs(g11.x+0.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x+0.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+2*(abs(g02.x+0.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+3*(abs(g03.x+0.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+4*(abs(g04.x+0.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+5*(abs(g05.x+0.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+6*(abs(g06.x+0.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+7*(abs(g07.x+0.5)&lt;0.3)*(abs(g07.y+0.5)&lt;0.3)+8*(abs(g08.x+0.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+9*(abs(g09.x+0.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_41" value="id='c2p' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x+2.5)&lt;0.35)*(abs(g1.y+1.5)&lt;0.3)+c1*(abs(g2.x+2.5)&lt;0.35)*(abs(g2.y+1.5)&lt;0.3)+c2*(abs(g3.x+2.5)&lt;0.35)*(abs(g3.y+1.5)&lt;0.3)+d2*(abs(g4.x+2.5)&lt;0.35)*(abs(g4.y+1.5)&lt;0.3)+d3*(abs(g5.x+2.5)&lt;0.35)*(abs(g5.y+1.5)&lt;0.3)+u3*(abs(g6.x+2.5)&lt;0.35)*(abs(g6.y+1.5)&lt;0.3)+u4*(abs(g7.x+2.5)&lt;0.35)*(abs(g7.y+1.5)&lt;0.3)+cm*(abs(g8.x+2.5)&lt;0.35)*(abs(g8.y+1.5)&lt;0.3)+cc*(abs(g9.x+2.5)&lt;0.35)*(abs(g9.y+1.5)&lt;0.3)+cd*(abs(g10.x+2.5)&lt;0.35)*(abs(g10.y+1.5)&lt;0.3)+cu*(abs(g11.x+2.5)&lt;0.35)*(abs(g11.y+1.5)&lt;0.3)+(abs(g01.x+2.5)&lt;0.35)*(abs(g01.y+1.5)&lt;0.3)+2*(abs(g02.x+2.5)&lt;0.35)*(abs(g02.y+1.5)&lt;0.3)+3*(abs(g03.x+2.5)&lt;0.35)*(abs(g03.y+1.5)&lt;0.3)+4*(abs(g04.x+2.5)&lt;0.35)*(abs(g04.y+1.5)&lt;0.3)+5*(abs(g05.x+2.5)&lt;0.35)*(abs(g05.y+1.5)&lt;0.3)+6*(abs(g06.x+2.5)&lt;0.35)*(abs(g06.y+1.5)&lt;0.3)+7*(abs(g07.x+2.5)&lt;0.35)*(abs(g07.y+1.5)&lt;0.3)+8*(abs(g08.x+2.5)&lt;0.35)*(abs(g08.y+1.5)&lt;0.3)+9*(abs(g09.x+2.5)&lt;0.35)*(abs(g09.y+1.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_42" value="id='d2p' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x+1.5)&lt;0.35)*(abs(g1.y+1.5)&lt;0.3)+c1*(abs(g2.x+1.5)&lt;0.35)*(abs(g2.y+1.5)&lt;0.3)+c2*(abs(g3.x+1.5)&lt;0.35)*(abs(g3.y+1.5)&lt;0.3)+d2*(abs(g4.x+1.5)&lt;0.35)*(abs(g4.y+1.5)&lt;0.3)+d3*(abs(g5.x+1.5)&lt;0.35)*(abs(g5.y+1.5)&lt;0.3)+u3*(abs(g6.x+1.5)&lt;0.35)*(abs(g6.y+1.5)&lt;0.3)+u4*(abs(g7.x+1.5)&lt;0.35)*(abs(g7.y+1.5)&lt;0.3)+cm*(abs(g8.x+1.5)&lt;0.35)*(abs(g8.y+1.5)&lt;0.3)+cc*(abs(g9.x+1.5)&lt;0.35)*(abs(g9.y+1.5)&lt;0.3)+cd*(abs(g10.x+1.5)&lt;0.35)*(abs(g10.y+1.5)&lt;0.3)+cu*(abs(g11.x+1.5)&lt;0.35)*(abs(g11.y+1.5)&lt;0.3)+(abs(g01.x+1.5)&lt;0.35)*(abs(g01.y+1.5)&lt;0.3)+2*(abs(g02.x+1.5)&lt;0.35)*(abs(g02.y+1.5)&lt;0.3)+3*(abs(g03.x+1.5)&lt;0.35)*(abs(g03.y+1.5)&lt;0.3)+4*(abs(g04.x+1.5)&lt;0.35)*(abs(g04.y+1.5)&lt;0.3)+5*(abs(g05.x+1.5)&lt;0.35)*(abs(g05.y+1.5)&lt;0.3)+6*(abs(g06.x+1.5)&lt;0.35)*(abs(g06.y+1.5)&lt;0.3)+7*(abs(g07.x+1.5)&lt;0.35)*(abs(g07.y+1.5)&lt;0.3)+8*(abs(g08.x+1.5)&lt;0.35)*(abs(g08.y+1.5)&lt;0.3)+9*(abs(g09.x+1.5)&lt;0.35)*(abs(g09.y+1.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_43" value="id='u2p' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x+0.5)&lt;0.35)*(abs(g1.y+1.5)&lt;0.3)+c1*(abs(g2.x+0.5)&lt;0.35)*(abs(g2.y+1.5)&lt;0.3)+c2*(abs(g3.x+0.5)&lt;0.35)*(abs(g3.y+1.5)&lt;0.3)+d2*(abs(g4.x+0.5)&lt;0.35)*(abs(g4.y+1.5)&lt;0.3)+d3*(abs(g5.x+0.5)&lt;0.35)*(abs(g5.y+1.5)&lt;0.3)+u3*(abs(g6.x+0.5)&lt;0.35)*(abs(g6.y+1.5)&lt;0.3)+u4*(abs(g7.x+0.5)&lt;0.35)*(abs(g7.y+1.5)&lt;0.3)+cm*(abs(g8.x+0.5)&lt;0.35)*(abs(g8.y+1.5)&lt;0.3)+cc*(abs(g9.x+0.5)&lt;0.35)*(abs(g9.y+1.5)&lt;0.3)+cd*(abs(g10.x+0.5)&lt;0.35)*(abs(g10.y+1.5)&lt;0.3)+cu*(abs(g11.x+0.5)&lt;0.35)*(abs(g11.y+1.5)&lt;0.3)+(abs(g01.x+0.5)&lt;0.35)*(abs(g01.y+1.5)&lt;0.3)+2*(abs(g02.x+0.5)&lt;0.35)*(abs(g02.y+1.5)&lt;0.3)+3*(abs(g03.x+0.5)&lt;0.35)*(abs(g03.y+1.5)&lt;0.3)+4*(abs(g04.x+0.5)&lt;0.35)*(abs(g04.y+1.5)&lt;0.3)+5*(abs(g05.x+0.5)&lt;0.35)*(abs(g05.y+1.5)&lt;0.3)+6*(abs(g06.x+0.5)&lt;0.35)*(abs(g06.y+1.5)&lt;0.3)+7*(abs(g07.x+0.5)&lt;0.35)*(abs(g07.y+1.5)&lt;0.3)+8*(abs(g08.x+0.5)&lt;0.35)*(abs(g08.y+1.5)&lt;0.3)+9*(abs(g09.x+0.5)&lt;0.35)*(abs(g09.y+1.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_44" value="id='d3p' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x+1.5)&lt;0.35)*(abs(g1.y+2.5)&lt;0.3)+c1*(abs(g2.x+1.5)&lt;0.35)*(abs(g2.y+2.5)&lt;0.3)+c2*(abs(g3.x+1.5)&lt;0.35)*(abs(g3.y+2.5)&lt;0.3)+d2*(abs(g4.x+1.5)&lt;0.35)*(abs(g4.y+2.5)&lt;0.3)+d3*(abs(g5.x+1.5)&lt;0.35)*(abs(g5.y+2.5)&lt;0.3)+u3*(abs(g6.x+1.5)&lt;0.35)*(abs(g6.y+2.5)&lt;0.3)+u4*(abs(g7.x+1.5)&lt;0.35)*(abs(g7.y+2.5)&lt;0.3)+cm*(abs(g8.x+1.5)&lt;0.35)*(abs(g8.y+2.5)&lt;0.3)+cc*(abs(g9.x+1.5)&lt;0.35)*(abs(g9.y+2.5)&lt;0.3)+cd*(abs(g10.x+1.5)&lt;0.35)*(abs(g10.y+2.5)&lt;0.3)+cu*(abs(g11.x+1.5)&lt;0.35)*(abs(g11.y+2.5)&lt;0.3)+(abs(g01.x+1.5)&lt;0.35)*(abs(g01.y+2.5)&lt;0.3)+2*(abs(g02.x+1.5)&lt;0.35)*(abs(g02.y+2.5)&lt;0.3)+3*(abs(g03.x+1.5)&lt;0.35)*(abs(g03.y+2.5)&lt;0.3)+4*(abs(g04.x+1.5)&lt;0.35)*(abs(g04.y+2.5)&lt;0.3)+5*(abs(g05.x+1.5)&lt;0.35)*(abs(g05.y+2.5)&lt;0.3)+6*(abs(g06.x+1.5)&lt;0.35)*(abs(g06.y+2.5)&lt;0.3)+7*(abs(g07.x+1.5)&lt;0.35)*(abs(g07.y+2.5)&lt;0.3)+8*(abs(g08.x+1.5)&lt;0.35)*(abs(g08.y+2.5)&lt;0.3)+9*(abs(g09.x+1.5)&lt;0.35)*(abs(g09.y+2.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_45" value="id='u3p' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x+0.5)&lt;0.35)*(abs(g1.y+2.5)&lt;0.3)+c1*(abs(g2.x+0.5)&lt;0.35)*(abs(g2.y+2.5)&lt;0.3)+c2*(abs(g3.x+0.5)&lt;0.35)*(abs(g3.y+2.5)&lt;0.3)+d2*(abs(g4.x+0.5)&lt;0.35)*(abs(g4.y+2.5)&lt;0.3)+d3*(abs(g5.x+0.5)&lt;0.35)*(abs(g5.y+2.5)&lt;0.3)+u3*(abs(g6.x+0.5)&lt;0.35)*(abs(g6.y+2.5)&lt;0.3)+u4*(abs(g7.x+0.5)&lt;0.35)*(abs(g7.y+2.5)&lt;0.3)+cm*(abs(g8.x+0.5)&lt;0.35)*(abs(g8.y+2.5)&lt;0.3)+cc*(abs(g9.x+0.5)&lt;0.35)*(abs(g9.y+2.5)&lt;0.3)+cd*(abs(g10.x+0.5)&lt;0.35)*(abs(g10.y+2.5)&lt;0.3)+cu*(abs(g11.x+0.5)&lt;0.35)*(abs(g11.y+2.5)&lt;0.3)+(abs(g01.x+0.5)&lt;0.35)*(abs(g01.y+2.5)&lt;0.3)+2*(abs(g02.x+0.5)&lt;0.35)*(abs(g02.y+2.5)&lt;0.3)+3*(abs(g03.x+0.5)&lt;0.35)*(abs(g03.y+2.5)&lt;0.3)+4*(abs(g04.x+0.5)&lt;0.35)*(abs(g04.y+2.5)&lt;0.3)+5*(abs(g05.x+0.5)&lt;0.35)*(abs(g05.y+2.5)&lt;0.3)+6*(abs(g06.x+0.5)&lt;0.35)*(abs(g06.y+2.5)&lt;0.3)+7*(abs(g07.x+0.5)&lt;0.35)*(abs(g07.y+2.5)&lt;0.3)+8*(abs(g08.x+0.5)&lt;0.35)*(abs(g08.y+2.5)&lt;0.3)+9*(abs(g09.x+0.5)&lt;0.35)*(abs(g09.y+2.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_46" value="id='u4p' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x+0.5)&lt;0.35)*(abs(g1.y+3.5)&lt;0.3)+c1*(abs(g2.x+0.5)&lt;0.35)*(abs(g2.y+3.5)&lt;0.3)+c2*(abs(g3.x+0.5)&lt;0.35)*(abs(g3.y+3.5)&lt;0.3)+d2*(abs(g4.x+0.5)&lt;0.35)*(abs(g4.y+3.5)&lt;0.3)+d3*(abs(g5.x+0.5)&lt;0.35)*(abs(g5.y+3.5)&lt;0.3)+u3*(abs(g6.x+0.5)&lt;0.35)*(abs(g6.y+3.5)&lt;0.3)+u4*(abs(g7.x+0.5)&lt;0.35)*(abs(g7.y+3.5)&lt;0.3)+cm*(abs(g8.x+0.5)&lt;0.35)*(abs(g8.y+3.5)&lt;0.3)+cc*(abs(g9.x+0.5)&lt;0.35)*(abs(g9.y+3.5)&lt;0.3)+cd*(abs(g10.x+0.5)&lt;0.35)*(abs(g10.y+3.5)&lt;0.3)+cu*(abs(g11.x+0.5)&lt;0.35)*(abs(g11.y+3.5)&lt;0.3)+(abs(g01.x+0.5)&lt;0.35)*(abs(g01.y+3.5)&lt;0.3)+2*(abs(g02.x+0.5)&lt;0.35)*(abs(g02.y+3.5)&lt;0.3)+3*(abs(g03.x+0.5)&lt;0.35)*(abs(g03.y+3.5)&lt;0.3)+4*(abs(g04.x+0.5)&lt;0.35)*(abs(g04.y+3.5)&lt;0.3)+5*(abs(g05.x+0.5)&lt;0.35)*(abs(g05.y+3.5)&lt;0.3)+6*(abs(g06.x+0.5)&lt;0.35)*(abs(g06.y+3.5)&lt;0.3)+7*(abs(g07.x+0.5)&lt;0.35)*(abs(g07.y+3.5)&lt;0.3)+8*(abs(g08.x+0.5)&lt;0.35)*(abs(g08.y+3.5)&lt;0.3)+9*(abs(g09.x+0.5)&lt;0.35)*(abs(g09.y+3.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_47" value="id='cup' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x-3.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+c1*(abs(g2.x-3.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+c2*(abs(g3.x-3.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+d2*(abs(g4.x-3.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+d3*(abs(g5.x-3.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+u3*(abs(g6.x-3.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+u4*(abs(g7.x-3.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+cm*(abs(g8.x-3.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+cc*(abs(g9.x-3.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+cd*(abs(g10.x-3.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+cu*(abs(g11.x-3.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x-3.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+2*(abs(g02.x-3.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+3*(abs(g03.x-3.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+4*(abs(g04.x-3.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+5*(abs(g05.x-3.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+6*(abs(g06.x-3.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+7*(abs(g07.x-3.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+8*(abs(g08.x-3.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+9*(abs(g09.x-3.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_48" value="id='cdp' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x-2.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+c1*(abs(g2.x-2.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+c2*(abs(g3.x-2.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+d2*(abs(g4.x-2.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+d3*(abs(g5.x-2.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+u3*(abs(g6.x-2.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+u4*(abs(g7.x-2.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+cm*(abs(g8.x-2.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+cc*(abs(g9.x-2.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+cd*(abs(g10.x-2.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+cu*(abs(g11.x-2.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x-2.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+2*(abs(g02.x-2.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+3*(abs(g03.x-2.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+4*(abs(g04.x-2.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+5*(abs(g05.x-2.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+6*(abs(g06.x-2.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+7*(abs(g07.x-2.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+8*(abs(g08.x-2.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+9*(abs(g09.x-2.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_49" value="id='ccp' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x-1.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+c1*(abs(g2.x-1.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+c2*(abs(g3.x-1.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+d2*(abs(g4.x-1.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+d3*(abs(g5.x-1.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+u3*(abs(g6.x-1.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+u4*(abs(g7.x-1.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+cm*(abs(g8.x-1.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+cc*(abs(g9.x-1.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+cd*(abs(g10.x-1.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+cu*(abs(g11.x-1.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x-1.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+2*(abs(g02.x-1.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+3*(abs(g03.x-1.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+4*(abs(g04.x-1.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+5*(abs(g05.x-1.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+6*(abs(g06.x-1.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+7*(abs(g07.x-1.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+8*(abs(g08.x-1.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+9*(abs(g09.x-1.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_50" value="id='cmp' constante='s&iacute;' expresi&oacute;n='m1*(abs(g1.x-0.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+c1*(abs(g2.x-0.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+c2*(abs(g3.x-0.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+d2*(abs(g4.x-0.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+d3*(abs(g5.x-0.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+u3*(abs(g6.x-0.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+u4*(abs(g7.x-0.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+cm*(abs(g8.x-0.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+cc*(abs(g9.x-0.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+cd*(abs(g10.x-0.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+cu*(abs(g11.x-0.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x-0.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+2*(abs(g02.x-0.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+3*(abs(g03.x-0.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+4*(abs(g04.x-0.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+5*(abs(g05.x-0.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+6*(abs(g06.x-0.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+7*(abs(g07.x-0.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+8*(abs(g08.x-0.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+9*(abs(g09.x-0.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_51" value="id='m10' constante='s&iacute;' expresi&oacute;n='(abs(g00.x+3.5)&lt;0.35)*(abs(g00.y+0.5)&lt;0.3)+(abs(g1.x+3.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+(abs(g2.x+3.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+(abs(g3.x+3.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+(abs(g4.x+3.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+(abs(g5.x+3.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+(abs(g6.x+3.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+(abs(g7.x+3.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+(abs(g8.x+3.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+(abs(g9.x+3.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+(abs(g10.x+3.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+(abs(g11.x+3.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x+3.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+(abs(g02.x+3.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+(abs(g03.x+3.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+(abs(g04.x+3.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+(abs(g05.x+3.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+(abs(g06.x+3.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+(abs(g07.x+3.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+(abs(g08.x+3.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+(abs(g09.x+3.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_52" value="id='c10' constante='s&iacute;' expresi&oacute;n='(abs(g00.x+2.5)&lt;0.35)*(abs(g00.y+0.5)&lt;0.3)+(abs(g1.x+2.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+(abs(g2.x+2.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+(abs(g3.x+2.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+(abs(g4.x+2.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+(abs(g5.x+2.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+(abs(g6.x+2.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+(abs(g7.x+2.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+(abs(g8.x+2.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+(abs(g9.x+2.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+(abs(g10.x+2.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+(abs(g11.x+2.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x+2.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+(abs(g02.x+2.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+(abs(g03.x+2.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+(abs(g04.x+2.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+(abs(g05.x+2.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+(abs(g06.x+2.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+(abs(g07.x+2.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+(abs(g08.x+2.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+(abs(g09.x+2.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_53" value="id='d10' constante='s&iacute;' expresi&oacute;n='(abs(g00.x+1.5)&lt;0.35)*(abs(g00.y+0.5)&lt;0.3)+(abs(g1.x+1.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+(abs(g2.x+1.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+(abs(g3.x+1.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+(abs(g4.x+1.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+(abs(g5.x+1.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+(abs(g6.x+1.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+(abs(g7.x+1.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+(abs(g8.x+1.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+(abs(g9.x+1.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+(abs(g10.x+1.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+(abs(g11.x+1.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x+1.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+(abs(g02.x+1.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+(abs(g03.x+1.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+(abs(g04.x+1.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+(abs(g05.x+1.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+(abs(g06.x+1.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+(abs(g07.x+1.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+(abs(g08.x+1.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+(abs(g09.x+1.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_54" value="id='u10' constante='s&iacute;' expresi&oacute;n='(abs(g00.x+0.5)&lt;0.35)*(abs(g00.y+0.5)&lt;0.3)+(abs(g1.x+0.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+(abs(g2.x+0.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+(abs(g3.x+0.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+(abs(g4.x+0.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+(abs(g5.x+0.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+(abs(g6.x+0.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+(abs(g7.x+0.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+(abs(g8.x+0.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+(abs(g9.x+0.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+(abs(g10.x+0.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+(abs(g11.x+0.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x+0.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+(abs(g02.x+0.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+(abs(g03.x+0.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+(abs(g04.x+0.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+(abs(g05.x+0.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+(abs(g06.x+0.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+(abs(g07.x+0.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+(abs(g08.x+0.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+(abs(g09.x+0.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_55" value="id='c20' constante='s&iacute;' expresi&oacute;n='(abs(g00.x+2.5)&lt;0.35)*(abs(g00.y+1.5)&lt;0.3)+(abs(g1.x+2.5)&lt;0.35)*(abs(g1.y+1.5)&lt;0.3)+(abs(g2.x+2.5)&lt;0.35)*(abs(g2.y+1.5)&lt;0.3)+(abs(g3.x+2.5)&lt;0.35)*(abs(g3.y+1.5)&lt;0.3)+(abs(g4.x+2.5)&lt;0.35)*(abs(g4.y+1.5)&lt;0.3)+(abs(g5.x+2.5)&lt;0.35)*(abs(g5.y+1.5)&lt;0.3)+(abs(g6.x+2.5)&lt;0.35)*(abs(g6.y+1.5)&lt;0.3)+(abs(g7.x+2.5)&lt;0.35)*(abs(g7.y+1.5)&lt;0.3)+(abs(g8.x+2.5)&lt;0.35)*(abs(g8.y+1.5)&lt;0.3)+(abs(g9.x+2.5)&lt;0.35)*(abs(g9.y+1.5)&lt;0.3)+(abs(g10.x+2.5)&lt;0.35)*(abs(g10.y+1.5)&lt;0.3)+(abs(g11.x+2.5)&lt;0.35)*(abs(g11.y+1.5)&lt;0.3)+(abs(g01.x+2.5)&lt;0.35)*(abs(g01.y+1.5)&lt;0.3)+(abs(g02.x+2.5)&lt;0.35)*(abs(g02.y+1.5)&lt;0.3)+(abs(g03.x+2.5)&lt;0.35)*(abs(g03.y+1.5)&lt;0.3)+(abs(g04.x+2.5)&lt;0.35)*(abs(g04.y+1.5)&lt;0.3)+(abs(g05.x+2.5)&lt;0.35)*(abs(g05.y+1.5)&lt;0.3)+(abs(g06.x+2.5)&lt;0.35)*(abs(g06.y+1.5)&lt;0.3)+(abs(g07.x+2.5)&lt;0.35)*(abs(g07.y+1.5)&lt;0.3)+(abs(g08.x+2.5)&lt;0.35)*(abs(g08.y+1.5)&lt;0.3)+(abs(g09.x+2.5)&lt;0.35)*(abs(g09.y+1.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_56" value="id='d20' constante='s&iacute;' expresi&oacute;n='(abs(g00.x+1.5)&lt;0.35)*(abs(g00.y+1.5)&lt;0.3)+(abs(g1.x+1.5)&lt;0.35)*(abs(g1.y+1.5)&lt;0.3)+(abs(g2.x+1.5)&lt;0.35)*(abs(g2.y+1.5)&lt;0.3)+(abs(g3.x+1.5)&lt;0.35)*(abs(g3.y+1.5)&lt;0.3)+(abs(g4.x+1.5)&lt;0.35)*(abs(g4.y+1.5)&lt;0.3)+(abs(g5.x+1.5)&lt;0.35)*(abs(g5.y+1.5)&lt;0.3)+(abs(g6.x+1.5)&lt;0.35)*(abs(g6.y+1.5)&lt;0.3)+(abs(g7.x+1.5)&lt;0.35)*(abs(g7.y+1.5)&lt;0.3)+(abs(g8.x+1.5)&lt;0.35)*(abs(g8.y+1.5)&lt;0.3)+(abs(g9.x+1.5)&lt;0.35)*(abs(g9.y+1.5)&lt;0.3)+(abs(g10.x+1.5)&lt;0.35)*(abs(g10.y+1.5)&lt;0.3)+(abs(g11.x+1.5)&lt;0.35)*(abs(g11.y+1.5)&lt;0.3)+(abs(g01.x+1.5)&lt;0.35)*(abs(g01.y+1.5)&lt;0.3)+(abs(g02.x+1.5)&lt;0.35)*(abs(g02.y+1.5)&lt;0.3)+(abs(g03.x+1.5)&lt;0.35)*(abs(g03.y+1.5)&lt;0.3)+(abs(g04.x+1.5)&lt;0.35)*(abs(g04.y+1.5)&lt;0.3)+(abs(g05.x+1.5)&lt;0.35)*(abs(g05.y+1.5)&lt;0.3)+(abs(g06.x+1.5)&lt;0.35)*(abs(g06.y+1.5)&lt;0.3)+(abs(g07.x+1.5)&lt;0.35)*(abs(g07.y+1.5)&lt;0.3)+(abs(g08.x+1.5)&lt;0.35)*(abs(g08.y+1.5)&lt;0.3)+(abs(g09.x+1.5)&lt;0.35)*(abs(g09.y+1.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_57" value="id='u20' constante='s&iacute;' expresi&oacute;n='(abs(g00.x+0.5)&lt;0.35)*(abs(g00.y+1.5)&lt;0.3)+(abs(g1.x+0.5)&lt;0.35)*(abs(g1.y+1.5)&lt;0.3)+(abs(g2.x+0.5)&lt;0.35)*(abs(g2.y+1.5)&lt;0.3)+(abs(g3.x+0.5)&lt;0.35)*(abs(g3.y+1.5)&lt;0.3)+(abs(g4.x+0.5)&lt;0.35)*(abs(g4.y+1.5)&lt;0.3)+(abs(g5.x+0.5)&lt;0.35)*(abs(g5.y+1.5)&lt;0.3)+(abs(g6.x+0.5)&lt;0.35)*(abs(g6.y+1.5)&lt;0.3)+(abs(g7.x+0.5)&lt;0.35)*(abs(g7.y+1.5)&lt;0.3)+(abs(g8.x+0.5)&lt;0.35)*(abs(g8.y+1.5)&lt;0.3)+(abs(g9.x+0.5)&lt;0.35)*(abs(g9.y+1.5)&lt;0.3)+(abs(g10.x+0.5)&lt;0.35)*(abs(g10.y+1.5)&lt;0.3)+(abs(g11.x+0.5)&lt;0.35)*(abs(g11.y+1.5)&lt;0.3)+(abs(g01.x+0.5)&lt;0.35)*(abs(g01.y+1.5)&lt;0.3)+(abs(g02.x+0.5)&lt;0.35)*(abs(g02.y+1.5)&lt;0.3)+(abs(g03.x+0.5)&lt;0.35)*(abs(g03.y+1.5)&lt;0.3)+(abs(g04.x+0.5)&lt;0.35)*(abs(g04.y+1.5)&lt;0.3)+(abs(g05.x+0.5)&lt;0.35)*(abs(g05.y+1.5)&lt;0.3)+(abs(g06.x+0.5)&lt;0.35)*(abs(g06.y+1.5)&lt;0.3)+(abs(g07.x+0.5)&lt;0.35)*(abs(g07.y+1.5)&lt;0.3)+(abs(g08.x+0.5)&lt;0.35)*(abs(g08.y+1.5)&lt;0.3)+(abs(g09.x+0.5)&lt;0.35)*(abs(g09.y+1.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_58" value="id='d30' constante='s&iacute;' expresi&oacute;n='(abs(g00.x+1.5)&lt;0.35)*(abs(g00.y+2.5)&lt;0.3)+(abs(g1.x+1.5)&lt;0.35)*(abs(g1.y+2.5)&lt;0.3)+(abs(g2.x+1.5)&lt;0.35)*(abs(g2.y+2.5)&lt;0.3)+(abs(g3.x+1.5)&lt;0.35)*(abs(g3.y+2.5)&lt;0.3)+(abs(g4.x+1.5)&lt;0.35)*(abs(g4.y+2.5)&lt;0.3)+(abs(g5.x+1.5)&lt;0.35)*(abs(g5.y+2.5)&lt;0.3)+(abs(g6.x+1.5)&lt;0.35)*(abs(g6.y+2.5)&lt;0.3)+(abs(g7.x+1.5)&lt;0.35)*(abs(g7.y+2.5)&lt;0.3)+(abs(g8.x+1.5)&lt;0.35)*(abs(g8.y+2.5)&lt;0.3)+(abs(g9.x+1.5)&lt;0.35)*(abs(g9.y+2.5)&lt;0.3)+(abs(g10.x+1.5)&lt;0.35)*(abs(g10.y+2.5)&lt;0.3)+(abs(g11.x+1.5)&lt;0.35)*(abs(g11.y+2.5)&lt;0.3)+(abs(g01.x+1.5)&lt;0.35)*(abs(g01.y+2.5)&lt;0.3)+(abs(g02.x+1.5)&lt;0.35)*(abs(g02.y+2.5)&lt;0.3)+(abs(g03.x+1.5)&lt;0.35)*(abs(g03.y+2.5)&lt;0.3)+(abs(g04.x+1.5)&lt;0.35)*(abs(g04.y+2.5)&lt;0.3)+(abs(g05.x+1.5)&lt;0.35)*(abs(g05.y+2.5)&lt;0.3)+(abs(g06.x+1.5)&lt;0.35)*(abs(g06.y+2.5)&lt;0.3)+(abs(g07.x+1.5)&lt;0.35)*(abs(g07.y+2.5)&lt;0.3)+(abs(g08.x+1.5)&lt;0.35)*(abs(g08.y+2.5)&lt;0.3)+(abs(g09.x+1.5)&lt;0.35)*(abs(g09.y+2.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_59" value="id='u30' constante='s&iacute;' expresi&oacute;n='(abs(g00.x+0.5)&lt;0.35)*(abs(g00.y+2.5)&lt;0.3)+(abs(g1.x+0.5)&lt;0.35)*(abs(g1.y+2.5)&lt;0.3)+(abs(g2.x+0.5)&lt;0.35)*(abs(g2.y+2.5)&lt;0.3)+(abs(g3.x+0.5)&lt;0.35)*(abs(g3.y+2.5)&lt;0.3)+(abs(g4.x+0.5)&lt;0.35)*(abs(g4.y+2.5)&lt;0.3)+(abs(g5.x+0.5)&lt;0.35)*(abs(g5.y+2.5)&lt;0.3)+(abs(g6.x+0.5)&lt;0.35)*(abs(g6.y+2.5)&lt;0.3)+(abs(g7.x+0.5)&lt;0.35)*(abs(g7.y+2.5)&lt;0.3)+(abs(g8.x+0.5)&lt;0.35)*(abs(g8.y+2.5)&lt;0.3)+(abs(g9.x+0.5)&lt;0.35)*(abs(g9.y+2.5)&lt;0.3)+(abs(g10.x+0.5)&lt;0.35)*(abs(g10.y+2.5)&lt;0.3)+(abs(g11.x+0.5)&lt;0.35)*(abs(g11.y+2.5)&lt;0.3)+(abs(g01.x+0.5)&lt;0.35)*(abs(g01.y+2.5)&lt;0.3)+(abs(g02.x+0.5)&lt;0.35)*(abs(g02.y+2.5)&lt;0.3)+(abs(g03.x+0.5)&lt;0.35)*(abs(g03.y+2.5)&lt;0.3)+(abs(g04.x+0.5)&lt;0.35)*(abs(g04.y+2.5)&lt;0.3)+(abs(g05.x+0.5)&lt;0.35)*(abs(g05.y+2.5)&lt;0.3)+(abs(g06.x+0.5)&lt;0.35)*(abs(g06.y+2.5)&lt;0.3)+(abs(g07.x+0.5)&lt;0.35)*(abs(g07.y+2.5)&lt;0.3)+(abs(g08.x+0.5)&lt;0.35)*(abs(g08.y+2.5)&lt;0.3)+(abs(g09.x+0.5)&lt;0.35)*(abs(g09.y+2.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_60" value="id='u40' constante='s&iacute;' expresi&oacute;n='(abs(g00.x+0.5)&lt;0.35)*(abs(g00.y+3.5)&lt;0.3)+(abs(g1.x+0.5)&lt;0.35)*(abs(g1.y+3.5)&lt;0.3)+(abs(g2.x+0.5)&lt;0.35)*(abs(g2.y+3.5)&lt;0.3)+(abs(g3.x+0.5)&lt;0.35)*(abs(g3.y+3.5)&lt;0.3)+(abs(g4.x+0.5)&lt;0.35)*(abs(g4.y+3.5)&lt;0.3)+(abs(g5.x+0.5)&lt;0.35)*(abs(g5.y+3.5)&lt;0.3)+(abs(g6.x+0.5)&lt;0.35)*(abs(g6.y+3.5)&lt;0.3)+(abs(g7.x+0.5)&lt;0.35)*(abs(g7.y+3.5)&lt;0.3)+(abs(g8.x+0.5)&lt;0.35)*(abs(g8.y+3.5)&lt;0.3)+(abs(g9.x+0.5)&lt;0.35)*(abs(g9.y+3.5)&lt;0.3)+(abs(g10.x+0.5)&lt;0.35)*(abs(g10.y+3.5)&lt;0.3)+(abs(g11.x+0.5)&lt;0.35)*(abs(g11.y+3.5)&lt;0.3)+(abs(g01.x+0.5)&lt;0.35)*(abs(g01.y+3.5)&lt;0.3)+(abs(g02.x+0.5)&lt;0.35)*(abs(g02.y+3.5)&lt;0.3)+(abs(g03.x+0.5)&lt;0.35)*(abs(g03.y+3.5)&lt;0.3)+(abs(g04.x+0.5)&lt;0.35)*(abs(g04.y+3.5)&lt;0.3)+(abs(g05.x+0.5)&lt;0.35)*(abs(g05.y+3.5)&lt;0.3)+(abs(g06.x+0.5)&lt;0.35)*(abs(g06.y+3.5)&lt;0.3)+(abs(g07.x+0.5)&lt;0.35)*(abs(g07.y+3.5)&lt;0.3)+(abs(g08.x+0.5)&lt;0.35)*(abs(g08.y+3.5)&lt;0.3)+(abs(g09.x+0.5)&lt;0.35)*(abs(g09.y+3.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_61" value="id='cd0' constante='s&iacute;' expresi&oacute;n='(abs(g00.x-2.5)&lt;0.35)*(abs(g00.y+0.5)&lt;0.3)+(abs(g1.x-2.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+(abs(g2.x-2.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+(abs(g3.x-2.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+(abs(g4.x-2.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+(abs(g5.x-2.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+(abs(g6.x-2.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+(abs(g7.x-2.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+(abs(g8.x-2.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+(abs(g9.x-2.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+(abs(g10.x-2.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+(abs(g11.x-2.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x-2.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+(abs(g02.x-2.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+(abs(g03.x-2.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+(abs(g04.x-2.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+(abs(g05.x-2.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+(abs(g06.x-2.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+(abs(g07.x-2.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+(abs(g08.x-2.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+(abs(g09.x-2.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_62" value="id='cu0' constante='s&iacute;' expresi&oacute;n='(abs(g00.x-3.5)&lt;0.35)*(abs(g00.y+0.5)&lt;0.3)+(abs(g1.x-3.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+(abs(g2.x-3.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+(abs(g3.x-3.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+(abs(g4.x-3.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+(abs(g5.x-3.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+(abs(g6.x-3.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+(abs(g7.x-3.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+(abs(g8.x-3.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+(abs(g9.x-3.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+(abs(g10.x-3.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+(abs(g11.x-3.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x-3.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+(abs(g02.x-3.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+(abs(g03.x-3.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+(abs(g04.x-3.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+(abs(g05.x-3.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+(abs(g06.x-3.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+(abs(g07.x-3.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+(abs(g08.x-3.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+(abs(g09.x-3.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_63" value="id='cc0' constante='s&iacute;' expresi&oacute;n='(abs(g00.x-1.5)&lt;0.35)*(abs(g00.y+0.5)&lt;0.3)+(abs(g1.x-1.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+(abs(g2.x-1.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+(abs(g3.x-1.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+(abs(g4.x-1.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+(abs(g5.x-1.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+(abs(g6.x-1.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+(abs(g7.x-1.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+(abs(g8.x-1.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+(abs(g9.x-1.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+(abs(g10.x-1.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+(abs(g11.x-1.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x-1.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+(abs(g02.x-1.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+(abs(g03.x-1.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+(abs(g04.x-1.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+(abs(g05.x-1.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+(abs(g06.x-1.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+(abs(g07.x-1.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+(abs(g08.x-1.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+(abs(g09.x-1.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_64" value="id='cm0' constante='s&iacute;' expresi&oacute;n='(abs(g00.x-0.5)&lt;0.35)*(abs(g00.y+0.5)&lt;0.3)+(abs(g1.x-0.5)&lt;0.35)*(abs(g1.y+0.5)&lt;0.3)+(abs(g2.x-0.5)&lt;0.35)*(abs(g2.y+0.5)&lt;0.3)+(abs(g3.x-0.5)&lt;0.35)*(abs(g3.y+0.5)&lt;0.3)+(abs(g4.x-0.5)&lt;0.35)*(abs(g4.y+0.5)&lt;0.3)+(abs(g5.x-0.5)&lt;0.35)*(abs(g5.y+0.5)&lt;0.3)+(abs(g6.x-0.5)&lt;0.35)*(abs(g6.y+0.5)&lt;0.3)+(abs(g7.x-0.5)&lt;0.35)*(abs(g7.y+0.5)&lt;0.3)+(abs(g8.x-0.5)&lt;0.35)*(abs(g8.y+0.5)&lt;0.3)+(abs(g9.x-0.5)&lt;0.35)*(abs(g9.y+0.5)&lt;0.3)+(abs(g10.x-0.5)&lt;0.35)*(abs(g10.y+0.5)&lt;0.3)+(abs(g11.x-0.5)&lt;0.35)*(abs(g11.y+0.5)&lt;0.3)+(abs(g01.x-0.5)&lt;0.35)*(abs(g01.y+0.5)&lt;0.3)+(abs(g02.x-0.5)&lt;0.35)*(abs(g02.y+0.5)&lt;0.3)+(abs(g03.x-0.5)&lt;0.35)*(abs(g03.y+0.5)&lt;0.3)+(abs(g04.x-0.5)&lt;0.35)*(abs(g04.y+0.5)&lt;0.3)+(abs(g05.x-0.5)&lt;0.35)*(abs(g05.y+0.5)&lt;0.3)+(abs(g06.x-0.5)&lt;0.35)*(abs(g06.y+0.5)&lt;0.3)+(abs(g07.x-0.5)&lt;0.35)*(abs(g07.y+0.5)&lt;0.3)+(abs(g08.x-0.5)&lt;0.35)*(abs(g08.y+0.5)&lt;0.3)+(abs(g09.x-0.5)&lt;0.35)*(abs(g09.y+0.5)&lt;0.3)' evaluar='siempre'">
+   <param name="A_65" value="id='co0' constante='s&iacute;' expresi&oacute;n='(s1=0)*(m10*m1p=p1)*m10+(s1*s2=0)*(c10*c1p=p2)*c10+(d10*d1p=p3)*d10*(s1+s2&gt;0)+(u10*u1p=p4)*u10*(s1+s2+s3&gt;1)+(s1+s2=0)*(c20*c2p=p5)*c20+(s1+s2+s3&lt;2)*(d20*d2p=p6)*d20+(s1+s2+s3+s4&lt;3)*(u20*u2p=p7)*u20*(s1+s2+s3&gt;0)+(s1+s2+s3=0)*(d30*d3p=p8)*d30+(s1+s2+s3+s4&lt;2)*(u30*u3p=p9)*u30+(s1+s2+s3+s4=0)*(u40*u4p=p10)*u40+(cmp*cm0=p11)*cm0+(s1*s2*s3=0)*(cc0*ccp=p12)*cc0+(s1*s2=0)*(cd0*cdp=p13)*cd0+(s1=0)*(cu0*cup=p14)*cu0' evaluar='siempre'">
+   <param name="A_66" value="id='nap' constante='s&iacute;' expresi&oacute;n='11-2*s1-s2-s3-s4-s1-2*s1*s2-2*s1*s2*s3' evaluar='siempre'">
+   <param name="A_67" value="id='np' constante='s&iacute;' expresi&oacute;n='(m10=1)+(c10=1)+(d10=1)+(u10=1)+(c20=1)+(d20=1)+(u20=1)+(d30=1)+(u30=1)+(u40=1)+(cm0=1)+(cc0=1)+(cd0=1)+(cu0=1)' evaluar='siempre'">
+   <param name="A_68" value="id='sub' constante='s&iacute;' expresi&oacute;n='(g1.y&gt;-5)+(g2.y&gt;-5)+(g3.y&gt;-5)+(g4.y&gt;-5)+(g5.y&gt;-5)+(g6.y&gt;-5)+(g7.y&gt;-5)+(g8.y&gt;-5)+(g9.y&gt;-5)+(g10.y&gt;-5)+(g11.y&gt;-5)+(g00.y&gt;-5)+(g01.y&gt;-5)+(g02.y&gt;-5)+(g03.y&gt;-5)+(g04.y&gt;-5)+(g05.y&gt;-5)+(g06.y&gt;-5)+(g07.y&gt;-5)+(g08.y&gt;-5)+(g09.y&gt;-5)' evaluar='siempre'">
+   <param name="A_69" value="id='iz' constante='s&iacute;' expresi&oacute;n='m10+c10+d10+u10+(m10+c10+d10+u10&gt;0)*(c20+d20+u20)+(c20+d20+u20&gt;0)*(d30+u30)+(d30+u30&gt;0)*u40' evaluar='siempre'">
+   <param name="A_70" value="id='de' constante='s&iacute;' expresi&oacute;n='cm0+cc0+cd0+cu0' evaluar='siempre'">
+   <param name="A_71" value="id='de0' constante='s&iacute;' expresi&oacute;n='cm0*((cc0&gt;ccp)+(cd0&gt;cdp)+(cu0&gt;cup))' evaluar='siempre'">
+   <param name="A_72" value="id='b' constante='s&iacute;' expresi&oacute;n='co0=np' evaluar='una-sola-vez'">
+   <param name="G_01" value="tipo='segmento' fondo='s&iacute;' expresi&oacute;n='(0,1)(0,0)' decimales='0' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_02" value="tipo='segmento' fondo='s&iacute;' expresi&oacute;n='(0,0)(2,0)' decimales='0' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_03" value="tipo='punto' fondo='s&iacute;' color='0000a5' expresi&oacute;n='(-0.85,0)' texto='[au]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_04" value="tipo='punto' fondo='s&iacute;' color='0000a5' dibujar-si='am+ac+ad' expresi&oacute;n='(-1.85,0)' texto='[ad]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_05" value="tipo='punto' fondo='s&iacute;' color='0000a5' dibujar-si='am+ac' expresi&oacute;n='(-2.85,0)' texto='[ac]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_06" value="tipo='punto' fondo='s&iacute;' color='0000a5' dibujar-si='am' expresi&oacute;n='(-3.85,0)' texto='[am]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_07" value="tipo='punto' fondo='s&iacute;' color='0000a5' expresi&oacute;n='(0.15,0)' texto='[d]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_08" value="tipo='punto' color='965500' expresi&oacute;n='(g1.x-0.4,g1.y-0.5)' texto='[ent(D/1000)-d*cm]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_09" value="tipo='punto' color='965500' expresi&oacute;n='(g2.x-0.4,g2.y-0.5)' texto='[ac]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_10" value="tipo='punto' color='965500' expresi&oacute;n='(g3.x-0.4,g3.y-0.5)' texto='[c2]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_11" value="tipo='punto' color='965500' expresi&oacute;n='(g4.x-0.4,g4.y-0.5)' texto='[ad]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_12" value="tipo='punto' color='965500' expresi&oacute;n='(g5.x-0.4,g5.y-0.5)' texto='[10*c2+ad-cd*d]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_13" value="tipo='punto' color='965500' expresi&oacute;n='(g6.x-0.4,g6.y-0.5)' texto='[au]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_14" value="tipo='punto' color='965500' expresi&oacute;n='(g7.x-0.4,g7.y-0.5)' texto='[u4]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_15" value="tipo='punto' color='965500' expresi&oacute;n='(g8.x-0.4,g8.y-0.5)' texto='[cm]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_16" value="tipo='punto' color='965500' expresi&oacute;n='(g9.x-0.4,g9.y-0.5)' texto='[cc]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_17" value="tipo='punto' color='965500' expresi&oacute;n='(g10.x-0.4,g10.y-0.5)' texto='[cd]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_18" value="tipo='punto' color='965500' expresi&oacute;n='(g11.x-0.4,g11.y-0.5)' texto='[cu]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_19" value="tipo='punto' color='965500' expresi&oacute;n='(g00.x-0.4,g00.y-0.5)' texto='[0]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_20" value="tipo='punto' color='965500' expresi&oacute;n='(g01.x-0.4,g01.y-0.5)' texto='[1]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_21" value="tipo='punto' color='965500' expresi&oacute;n='(g02.x-0.4,g02.y-0.5)' texto='[2]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_22" value="tipo='punto' color='965500' expresi&oacute;n='(g03.x-0.4,g03.y-0.5)' texto='[3]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_23" value="tipo='punto' color='965500' expresi&oacute;n='(g04.x-0.4,g04.y-0.5)' texto='[4]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_24" value="tipo='punto' color='965500' expresi&oacute;n='(g05.x-0.4,g05.y-0.5)' texto='[5]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_25" value="tipo='punto' color='965500' expresi&oacute;n='(g06.x-0.4,g06.y-0.5)' texto='[6]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_26" value="tipo='punto' color='965500' expresi&oacute;n='(g07.x-0.4,g07.y-0.5)' texto='[7]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_27" value="tipo='punto' color='965500' expresi&oacute;n='(g08.x-0.4,g08.y-0.5)' texto='[8]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_28" value="tipo='punto' color='965500' expresi&oacute;n='(g09.x-0.4,g09.y-0.5)' texto='[9]' fuente='Helvetica,PLAIN,36' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_29" value="tipo='punto' color='rojo' dibujar-si='abs(1+iz+de0-2*de)&gt;1' expresi&oacute;n='(0,1.2)' texto='Te saltas alg&uacute;n paso' fuente='Helvetica,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_30" value="tipo='punto' color='rojo' dibujar-si='(co0+1&lt;sub)' expresi&oacute;n='(0,-4)' texto='Est&aacute; mal' fuente='Helvetica,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_31" value="tipo='punto' color='rojo' dibujar-si='(D-ent(D/d)*d&gt;0)*(co0=nap)*(np=sub)*(co0=np)*(cm0+cc0+cd0+cu0=4-s1-s1*s2-s1*s2*s3)' expresi&oacute;n='(-5,1.5)' texto='Esta divisi&oacute;n tiene de resto [D-ent(D/d)*d]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_32" value="tipo='punto' dibujar-si='(D-ent(D/d)*d=0)*(co0=nap)*(np=sub)*(co0=np)*(cm0+cc0+cd0+cu0=4-s1-s1*s2-s1*s2*s3)' expresi&oacute;n='(-5,1.5)' texto='Esta divisi&oacute;n tiene de resto [D-ent(D/d)*d]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_33" value="tipo='punto' dibujar-si='(D-ent(D/d)*d=0)*(co0=nap)*(np=sub)*(co0=np)*(cm0+cc0+cd0+cu0=4-s1-s1*s2-s1*s2*s3)' expresi&oacute;n='(-5,-3)' texto='Es una divisi&oacute;n exacta' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_34" value="tipo='punto' color='rojo' dibujar-si='(D-ent(D/d)*d&gt;0)*(co0=nap)*(np=sub)*(co0=np)*(cm0+cc0+cd0+cu0=4-s1-s1*s2-s1*s2*s3)' expresi&oacute;n='(-5,-3)' texto='No es una divisi&oacute;n exacta' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+</ajs>
+
+
+              </div></td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8"> </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="8" width="8"></td>
+      <td background="imagen1/bor3.gif" height="8"></td>
+      <td background="imagen1/es3.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td>
+<div align="right"> </div></td>
+      <td width="30">
+        <div align="center"><a href="1quincena2_contenidos_1a.htm" target="_parent" onMouseOver="MM_swapImage('atras','','imagen1/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/atras.png" alt="anterior" name="atras" width="25" height="25" border="0"></a></div>
+      </td>
+      <td width="30">
+        <div align="center"><a href="1quincena2_contenidos_1c.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>

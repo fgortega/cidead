@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Ángulos en polígonos</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="angulos_poligonos" width=441 height=361
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="441x361">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="angulos_poligonos">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=s&iacute; config=no inicio=no limpiar=no alto=0">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='s&iacute;' escala='18' O.x='-1' O.y='-15' despl_imagen='arr-izq' fondo='ffffcc' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='N' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='E1' nombre='_._' expresi&oacute;n='(380,330,50,30)' valor='6' incr='1' min='3' max='16' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='I' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(10,330,60,20)' fijo='s&iacute;' visible='s&iacute;' imagen='vacio.gif' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='f(x)' expresi&oacute;n='r*sen(2*pi/N*x)'">
+   <param name="A_02" value="id='g(x)' expresi&oacute;n='r*cos(2*pi/N*x)'">
+   <param name="A_03" value="id='cox' constante='s&iacute;' expresi&oacute;n='ent(E1.mouse_x)' evaluar='siempre'">
+   <param name="A_04" value="id='coy' constante='s&iacute;' expresi&oacute;n='ent(E1.mouse_y)' evaluar='siempre'">
+   <param name="A_05" value="id='r' constante='s&iacute;' expresi&oacute;n='6' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='m' constante='s&iacute;' expresi&oacute;n='((g(-1)-g(0))/(f(-1)-f(0)))' evaluar='siempre'">
+   <param name="A_07" value="id='b' constante='s&iacute;' expresi&oacute;n='g(0)-m*f(0)' evaluar='una-sola-vez'">
+   <param name="G_01" value="espacio='E1' tipo='curva' color='00cbff' expresi&oacute;n='(f(t),g(t))' t.intervalo='[0,N]' t.pasos='N' relleno='a000ffff' ancho='3'">
+   <param name="G_02" value="espacio='E1' tipo='punto' color='rojo' expresi&oacute;n='(0,0)' fuente='Arial,BOLD,14' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_03" value="espacio='E1' tipo='arco' color='ff9500' centro='(f(1),g(1))' radio='1.5' inicio='(f(0),g(0))' fin='(f(2),g(2))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b\par \par \u225 ngulo interior\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;' relleno='ff9500'">
+   <param name="G_04" value="espacio='E1' tipo='segmento' color='ff8080' expresi&oacute;n='(f(0),g(0))(4,4*m+b)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='3'">
+   <param name="G_05" value="espacio='E1' tipo='segmento' color='azul' expresi&oacute;n='(f(2),g(2))(f(1),g(1))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='3'">
+   <param name="G_06" value="espacio='E1' tipo='segmento' color='azul' expresi&oacute;n='(f(0),g(0))(f(1),g(1))' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='3'">
+   <param name="G_07" value="espacio='E1' tipo='arco' color='ff8080' centro='(f(0),g(0))' radio='1.5' inicio='(1,m+b)' fin='(f(1),g(1))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b         \u225 ngulo exterior\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;' relleno='ff8080'">
+   <param name="G_08" value="espacio='E1' tipo='pol&iacute;gono' color='grisObscuro' dibujar-si='N%2=0' expresi&oacute;n='(f(N/2),g(N/2))(0,0)(f(N/2+1),g(N/2+1))' ancho='2'">
+   <param name="G_09" value="espacio='E1' tipo='arco' color='grisObscuro' dibujar-si='N%2=0' radio='1.5' inicio='(f(N/2),g(N/2))' fin='(f(N/2+1),g(N/2+1))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b  \u225 ngulo central\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;' relleno='grisClaro'">
+   <param name="G_10" value="espacio='E1' tipo='pol&iacute;gono' color='grisObscuro' dibujar-si='N%2!=0' expresi&oacute;n='(f((N+1)/2),g((N+1)/2))(0,0)(f((N+1)/2+1),g((N+1)/2+1))' ancho='2'">
+   <param name="G_11" value="espacio='E1' tipo='arco' color='grisObscuro' dibujar-si='N%2!=0' radio='1.5' inicio='(f((N+1)/2),g((N+1)/2))' fin='(f((N+1)/2+1),g((N+1)/2+1))' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b  \u225 ngulo central\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;' relleno='grisClaro'">
+   <param name="G_12" value="espacio='E1' tipo='texto' color='ff6600' expresi&oacute;n='[15,330]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b\ul Inicio\f2\fs24\b0\ulnone\par }' fuente='SansSerif,BOLD,14' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='E1' tipo='texto' color='grisObscuro' expresi&oacute;n='[285,335]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32\b n\u186  de lados\f2\fs24\par }' fuente='SansSerif,BOLD,16' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='E1' tipo='texto' color='azul' expresi&oacute;n='[20,270]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;\red255\green128\blue128;\red255\green163\blue0;\red255\green157\blue0;\red255\green128\blue0;}\cf0\f1\fs32\b\u193 ngulo central \cf1 = \cf2\u193 ngulo exterior \cf1 ={\*\mjaformula{\fraction{\num 360\u186 }{\den N}}}={\*\mjaformula{\expr [360/N]\decimals 2\fixed0}\u186 }\cf3\par \u193 ngulo interior\cf1  = 180\u186  - \cf0\u225 ngulo central \cf1 =\cf4{\*\mjaformula\cf5{\expr [180-360/N]\decimals 2\fixed0}\u186 \cf4}\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,16' fijo='s&iacute;'">
+</ajs>
+</body>
+</html>

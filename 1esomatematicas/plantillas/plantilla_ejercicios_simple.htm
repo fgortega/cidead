@@ -1,0 +1,35 @@
+<applet name="ejercicios9"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=740 height=370 style="border: 1 solid #cccc99">
+   <param name="nombre" value="ejercicios9">
+   <param name="Versi&oacute;n" value="3.893, 2007-02-12">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="fijo='si' despl_imagen='arr-izq' fondo='e7e7d7' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="E_01" value="id='controles' fijo='si' y='345' alto='24' despl_imagen='arr-izq' fondo='ffffffff' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="E_02" value="id='text' fijo='si' x='260' y='3' ancho='474' alto='340' despl_imagen='arr-izq' fondo='70ffffff' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="E_03" value="id='solu' fijo='si' x='260' y='3' ancho='474' alto='340' despl_imagen='arr-izq' fondo='eeffffff' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no' dibujar-si='versol=1'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='versol' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='controles' expresi&oacute;n='(500,0,120,24)' decimales='0' nombre='VER LA SOLUCI&Oacute;N' discreto='si' visible='si' dibujar-si='(ay#0)&amp;(emp=1)' activo-si='ay#0' Explicaci&oacute;n='Pulsa para ver la soluci&oacute;n.' acci&oacute;n='calcular' par&aacute;metro='versol=1' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='h' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='controles' expresi&oacute;n='(380,0,120,24)' decimales='0' nombre='OTRO EJERCICIO' discreto='si' visible='si' dibujar-si='(ay#0)&amp;(emp=1)' activo-si='ay#0' Explicaci&oacute;n='Pulsa para generar otro ejercicio.' acci&oacute;n='calcular' par&aacute;metro='versol=0' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='ay' interfaz='men&uacute;' regi&oacute;n='interior' expresi&oacute;n='(75,20,180,22)' decimales='0' fijo='no' visible='no' dibujar-si='emp=1' activo-si='emp=1' opciones='[Suma]1,[Multiplica y suma]2,' acci&oacute;n='calcular' par&aacute;metro='versol=0;h=0;emp=(ay#0)?1:emp;' pos_mensajes='centro'">
+   <param name="C_03" value="tipo='num&eacute;rico' id='ay1' interfaz='men&uacute;' regi&oacute;n='interior' expresi&oacute;n='(75,20,180,22)' decimales='0' fijo='no' visible='no' dibujar-si='emp=0' activo-si='emp=0' opciones='[elige opci&oacute;n]0,[Suma]1,[Multiplica y suma]2,' acci&oacute;n='calcular' par&aacute;metro='versol=0;h=0;;emp=(ay#0)?1:emp;ay=ay1;' pos_mensajes='centro'">
+   <param name="C_04" value="tipo='num&eacute;rico' id='AUTO' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='controles' expresi&oacute;n='(10,0,60,22)' decimales='0' nombre='INICIO' discreto='si' visible='si' dibujar-si='emp=1' Explicaci&oacute;n='Pulsa para generar un problema.' acci&oacute;n='inicio' pos_mensajes='centro'">
+   <param name="A_00" value="id='f1()' hacer='a=ent(rnd*9)+1;b=ent(rnd*9)+1;c=a+b;;' algoritmo='si'">
+   <param name="A_01" value="id='f2()' hacer='a=ent(rnd*9)+1;b=ent(rnd*9)+1;c=ent(rnd*9)+1;d=a+b*c;' algoritmo='si'">
+   <param name="A_02" value="id='fabc()' hacer='apli=ay;asas=(apli=1)?f1():0;asas=(apli=2)?f2():0;;' algoritmo='si'">
+   <param name="A_03" value="id='empezar' condici&oacute;n='(h=0)' acci&oacute;n='calcular' par&aacute;metro='\nitem=item+1\n\n\naaa=fabc()\n\nhh=0\nh=1' ejecuci&oacute;n='siempre' pos_mensajes='centro' evento='si'">
+   <param name="A_04" value="id='Condiciones_iniciales' inicio='pxdt=200;pydt=250-10;nitem=1000' hacer='pi=asen(1/2)*6;pxs=0;pys=120;pxst=100;;;h=11;ay=1;pxt=40;pyt=25;;' evaluar='una-sola-vez' algoritmo='si'">
+   <param name="G_00" value="tipo='pol&iacute;gono' dibujar-si='(item&gt;0)&amp;(item&lt;nitem+1)' color='ff7000' expresi&oacute;n='(2,6)(737,6)(737,94)(2,94)(2,6)' relleno='ffeebb' coord_abs='si'">
+   <param name="G_01" value="tipo='pol&iacute;gono' color='ff7000' expresi&oacute;n='(2,6)(737,6)(737,94)(2,94)(2,6)' coord_abs='si'">
+   <param name="G_02" value="espacio='text' tipo='texto' dibujar-si='item=0' color='azul' expresi&oacute;n='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue144;\red0\green0\blue255;}\f1\fs24\b\cf0 Elige el tipo de problema que prefieras.\cf1\f2\fs24\b0\par}' fuente='SansSerif,BOLD,12'">
+   <param name="G_03" value="espacio='text' tipo='texto' dibujar-si='emp=0' color='rojo' expresi&oacute;n='[90,118]' texto='Imagen o Explicaci&oacute;n o gr&aacute;fico al comienzo'">
+   <param name="G_04" value="espacio='text' tipo='texto' dibujar-si='(item&gt;0)&amp;(item&lt;nitem+1)&amp;(ay=1)' color='negro' expresi&oacute;n='[pxt,pyt]' texto='Enunciado del problema 1 en Sans Serif\n realiza [a]+[b]' fuente='SansSerif,PLAIN,16' decimales='0' fijo='no'">
+   <param name="G_05" value="tipo='texto' dibujar-si='(ay=1)&amp;(item&gt;0)&amp;(item&lt;nitem+1)' color='azul' expresi&oacute;n='[35,140]' texto='Ayuda para resolver el enunciado' fuente='SansSerif,PLAIN,14'">
+   <param name="G_06" value="espacio='solu' tipo='texto' dibujar-si='(item&gt;0)&amp;(item&lt;nitem+1)&amp;(ay=1)' color='990000' expresi&oacute;n='[pxst,pys]' texto='Soluci&oacute;n del ejercicio \n [a]+[b]=[c]' fuente='SansSerif,PLAIN,14' fijo='no'">
+   <param name="G_07" value="tipo='texto' dibujar-si='(ay=2)&amp;(item&gt;0)&amp;(item&lt;nitem+1)' color='azul' expresi&oacute;n='[35,140]' texto='Ayuda para resolver el \n enunciado 2' fuente='SansSerif,PLAIN,14'">
+   <param name="G_08" value="espacio='text' tipo='texto' dibujar-si='(item&gt;0)&amp;(item&lt;nitem+1)&amp;(ay=2)' color='negro' expresi&oacute;n='[pxt,pyt]' texto='Enunciado problema 2 \n Calcula [a]+[b]&middot;[c]' fuente='SansSerif,PLAIN,12' decimales='0' fijo='no'">
+   <param name="G_09" value="espacio='solu' tipo='texto' dibujar-si='(item&gt;0)&amp;(item&lt;nitem+1)&amp;(ay=2)' color='990000' expresi&oacute;n='[pxst,pys]' texto='Soluci&oacute;n del problema 2 \n [d]' fuente='SansSerif,PLAIN,16' fijo='no'">
+</applet>

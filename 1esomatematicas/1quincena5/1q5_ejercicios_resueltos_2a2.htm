@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Ejercicios resueltos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000"><ajs name="iguales" width=400 height=290
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="400x290">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="iguales">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E' fijo='s&iacute;' escala='66' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='n1' tipo='gr&aacute;fico' espacio='E' tama&ntilde;o='25' expresi&oacute;n='[-2.55,-1.5]' dibujar-si='0'">
+   <param name="C_02" value="id='n2' tipo='gr&aacute;fico' espacio='E' tama&ntilde;o='25' expresi&oacute;n='[-1.7,-1.5]' fijo='s&iacute;' dibujar-si='0'">
+   <param name="C_03" value="id='n3' tipo='gr&aacute;fico' espacio='E' tama&ntilde;o='25' expresi&oacute;n='[-0.85,-1.5]' fijo='s&iacute;' dibujar-si='0'">
+   <param name="C_04" value="id='n4' tipo='gr&aacute;fico' espacio='E' tama&ntilde;o='25' expresi&oacute;n='[-0,-1.5]' fijo='s&iacute;' dibujar-si='0'">
+   <param name="C_05" value="id='n5' tipo='gr&aacute;fico' espacio='E' tama&ntilde;o='25' expresi&oacute;n='[0.85,-1.5]' fijo='s&iacute;' dibujar-si='0'">
+   <param name="C_06" value="id='n6' tipo='gr&aacute;fico' espacio='E' tama&ntilde;o='25' expresi&oacute;n='[1.7,-1.5]' fijo='s&iacute;' dibujar-si='0'">
+   <param name="C_07" value="id='n7' tipo='gr&aacute;fico' espacio='E' tama&ntilde;o='25' expresi&oacute;n='[2.55,-1.5]' fijo='s&iacute;' dibujar-si='0'">
+   <param name="C_08" value="id='n8' tipo='num&eacute;rico' interfaz='bot&oacute;n' espacio='E' nombre='Otras fracciones' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' acci&oacute;n='inicio' pos_mensajes='centro'">
+   <param name="A_01" value="id='v' expresi&oacute;n='az1*((vaz1#vaz2)*az2+(vaz1#vaz3)*az3+(vaz1#vaz4)*az4+(vaz1#vaz5)*az5+(vaz1#vaz6)*az6+(vaz1#vaz7)*az7)+az2*((vaz2#vaz3)*az3+(vaz2#vaz4)*az4+(vaz2#vaz5)*az5+(vaz2#vaz6)*az6+(vaz2#vaz7)*az7)+az3*((vaz3#vaz4)*az4+(vaz3#vaz5)*az5+(vaz3#vaz6)*az6+(vaz3#vaz7)*az7)+az4*((vaz4#vaz5)*az5+(vaz4#vaz6)*az6+(vaz4#vaz7)*az7)+az5*((vaz5#vaz6)*az6+(vaz5#vaz7)*az7)+az6*(vaz6#vaz7)*az7+ve1*((vve1#vve2)*ve2+(vve1#vve3)*ve3+(vve1#vve4)*ve4+(vve1#vve5)*ve5+(vve1#vve6)*ve6+(vve1#vve7)*ve7)+ve2*((vve2#vve3)*ve3+(vve2#vve4)*ve4+(vve2#vve5)*ve5+(vve2#vve6)*ve6+(vve2#vve7)*ve7)+ve3*((vve3#vve4)*ve4+(vve3#vve5)*ve5+(vve3#vve6)*ve6+(vve3#vve7)*ve7)+ve4*((vve4#vve5)*ve5+(vve4#vve6)*ve6+(vve4#vve7)*ve7)+ve5*((vve5#vve6)*ve6+(vve5#vve7)*ve7)+ve6*(vve6#vve7)*ve7+am1*((vam1#vam2)*am2+(vam1#vam3)*am3+(vam1#vam4)*am4+(vam1#vam5)*am5+(vam1#vam6)*am6+(vam1#vam7)*am7)+am2*((vam2#vam3)*am3+(vam2#vam4)*am4+(vam2#vam5)*am5+(vam2#vam6)*am6+(vam2#vam7)*am7)+am3*((vam3#vam4)*am4+(vam3#vam5)*am5+(vam3#vam6)*am6+(vam3#vam7)*am7)+am4*((vam4#vam5)*am5+(vam4#vam6)*am6+(vam4#vam7)*am7)+am5*((vam5#vam6)*am6+(vam5#vam7)*am7)+am6*(vam6#vam7)*am7'">
+   <param name="A_02" value="id='z' expresi&oacute;n='az1+az2+az3+az4+az5+az6+az7+ve1+ve2+ve3+ve4+ve5+ve6+ve7+am1+am2+am3+am4+am5+am6+am7'">
+   <param name="A_03" value="id='w1' expresi&oacute;n='az1*((vaz1=vve2)*ve2+(vaz1=vve3)*ve3+(vaz1=vve4)*ve4+(vaz1=vve5)*ve5+(vaz1=vve6)*ve6+(vaz1=vve7)*ve7+(vaz1=vam2)*am2+(vaz1=vam3)*am3+(vaz1=vam4)*am4+(vaz1=vam5)*am5+(vaz1=vam6)*am6+(vaz1=vam7)*am7)+az2*((vaz2=vve1)*ve1+(vaz2=vve3)*ve3+(vaz2=vve4)*ve4+(vaz2=vve5)*ve5+(vaz2=vve6)*ve6+(vaz2=vve7)*ve7+(vaz2=vam1)*am1+(vaz2=vam3)*am3+(vaz2=vam4)*am4+(vaz2=vam5)*am5+(vaz2=vam6)*am6+(vaz2=vam7)*am7)+az3*((vaz3=vve1)*ve1+(vaz3=vve2)*ve2+(vaz3=vve4)*ve4+(vaz3=vve5)*ve5+(vaz3=vve6)*ve6+(vaz3=vve7)*ve7+(vaz3=vam1)*am1+(vaz3=vam2)*am2+(vaz3=vam4)*am4+(vaz3=vam5)*am5+(vaz3=vam6)*am6+(vaz3=vam7)*am7)+az4*((vaz4=vve1)*ve1+(vaz4=vve2)*ve2+(vaz4=vve3)*ve3+(vaz4=vve5)*ve5+(vaz4=vve6)*ve6+(vaz4=vve7)*ve7+(vaz4=vam1)*am1+(vaz4=vam2)*am2+(vaz4=vam3)*am3+(vaz4=vam5)*am5+(vaz4=vam6)*am6+(vaz4=vam7)*am7)+az5*((vaz5=vve1)*ve1+(vaz5=vve2)*ve2+(vaz5=vve3)*ve3+(vaz5=vve4)*ve4+(vaz5=vve6)*ve6+(vaz5=vve7)*ve7+(vaz5=vam1)*am1+(vaz5=vam2)*am2+(vaz5=vam3)*am3+(vaz5=vam4)*am4+(vaz5=vam6)*am6+(vaz5=vam7)*am7)+az6*((vaz6=vve1)*ve1+(vaz6=vve2)*ve2+(vaz6=vve3)*ve3+(vaz6=vve4)*ve4+(vaz6=vve5)*ve5+(vaz6=vve7)*ve7+(vaz6=vam1)*am1+(vaz6=vam2)*am2+(vaz6=vam3)*am3+(vaz6=vam4)*am4+(vaz6=vam5)*am6+(vaz6=vam7)*am7)+az7*((vaz7=vve1)*ve1+(vaz7=vve2)*ve2+(vaz7=vve3)*ve3+(vaz7=vve4)*ve4+(vaz7=vve5)*ve5+(vaz7=vve6)*ve6+(vaz7=vam1)*am1+(vaz7=vam2)*am2+(vaz7=vam3)*am3+(vaz7=vam4)*am4+(vaz7=vam5)*am6+(vaz7=vam6)*am7)'">
+   <param name="A_04" value="id='w2' expresi&oacute;n='ve1*((vve1=vam2)*am2+(vve1=vam3)*am3+(vve1=vam4)*am4+(vve1=vam5)*am5+(vve1=vam6)*am6+(vve1=vam7)*am7)+ve2*((vve2=vam1)*am1+(vve2=vam3)*am3+(vve2=vam4)*am4+(vve2=vam5)*am5+(vve2=vam6)*am6+(vve2=vam7)*am7)+ve3*((vve3=vam1)*am1+(vve3=vam2)*am2+(vve3=vam4)*am4+(vve3=vam5)*am5+(vve3=vam6)*am6+(vve3=vam7)*am7)+ve4*((vve4=vam1)*am1+(vve4=vam2)*am2+(vve4=vam3)*am3+(vve4=vam5)*am5+(vve4=vam6)*am6+(vve4=vam7)*am7)+ve5*((vve5=vam1)*am1+(vve5=vam2)*am2+(vve5=vam3)*am3+(vve5=vam4)*am4+(vve5=vam6)*am6+(vve5=vam7)*am7)+ve6*((vve6=vam1)*am1+(vve6=vam2)*am2+(vve6=vam3)*am3+(vve6=vam4)*am4+(vve6=vam5)*am5+(vve6=vam7)*am7)+ve7*((vve7=vam1)*am1+(vve7=vam2)*am2+(vve7=vam3)*am3+(vve7=vam4)*am4+(vve7=vam5)*am5+(vve7=vam6)*am6)'">
+   <param name="A_05" value="id='v1' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='v2' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='v3' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='v4' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_09" value="id='v5' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='v6' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_11" value="id='mcd1' algoritmo='s&iacute;' evaluar='siempre' inicio='mcd1=v4+1' hacer='mcd1=mcd1-1' mientras='(ent(v1/mcd1)&lt;(v1/mcd1))+(ent(v4/mcd1)&lt;(v4/mcd1))'">
+   <param name="A_12" value="id='mcd2' algoritmo='s&iacute;' evaluar='siempre' inicio='mcd2=v5+1' hacer='mcd2=mcd2-1' mientras='(ent(v2/mcd2)&lt;(v2/mcd2))+(ent(v5/mcd2)&lt;(v5/mcd2))'">
+   <param name="A_13" value="id='mcd3' algoritmo='s&iacute;' evaluar='siempre' inicio='mcd3=v6+1' hacer='mcd3=mcd3-1' mientras='(ent(v3/mcd3)&lt;(v3/mcd3))+(ent(v6/mcd3)&lt;(v6/mcd3))'">
+   <param name="A_14" value="id='as1' constante='s&iacute;' expresi&oacute;n='v1/mcd1' evaluar='siempre'">
+   <param name="A_15" value="id='as2' constante='s&iacute;' expresi&oacute;n='v2/mcd2' evaluar='siempre'">
+   <param name="A_16" value="id='as3' constante='s&iacute;' expresi&oacute;n='v3/mcd3' evaluar='siempre'">
+   <param name="A_17" value="id='bs1' constante='s&iacute;' expresi&oacute;n='v4/mcd1' evaluar='siempre'">
+   <param name="A_18" value="id='bs2' constante='s&iacute;' expresi&oacute;n='v5/mcd2' evaluar='siempre'">
+   <param name="A_19" value="id='bs3' constante='s&iacute;' expresi&oacute;n='v6/mcd3' evaluar='siempre'">
+   <param name="A_20" value="id='e1' constante='s&iacute;' expresi&oacute;n='ent(rnd*3)' evaluar='una-sola-vez'">
+   <param name="A_21" value="id='e2' constante='s&iacute;' expresi&oacute;n='ent(rnd*3)' evaluar='una-sola-vez'">
+   <param name="A_22" value="id='e3' constante='s&iacute;' expresi&oacute;n='ent(rnd*3)' evaluar='una-sola-vez'">
+   <param name="A_23" value="id='e4' constante='s&iacute;' expresi&oacute;n='ent(rnd*3)' evaluar='una-sola-vez'">
+   <param name="A_24" value="id='e5' constante='s&iacute;' expresi&oacute;n='ent(rnd*3)' evaluar='una-sola-vez'">
+   <param name="A_25" value="id='e6' constante='s&iacute;' expresi&oacute;n='ent(rnd*3)' evaluar='una-sola-vez'">
+   <param name="A_26" value="id='e7' constante='s&iacute;' expresi&oacute;n='ent(rnd*3)' evaluar='una-sola-vez'">
+   <param name="A_27" value="id='p1' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_28" value="id='p2' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_29" value="id='p3' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_30" value="id='p4' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_31" value="id='p5' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_32" value="id='p6' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_33" value="id='p7' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_34" value="id='a1' constante='s&iacute;' expresi&oacute;n='p1*(as1*(e1=0)+as2*(e1=1)+as3*(e1=2))' evaluar='siempre'">
+   <param name="A_35" value="id='a2' constante='s&iacute;' expresi&oacute;n='p2*(as1*(e2=0)+as2*(e2=1)+as3*(e2=2))' evaluar='siempre'">
+   <param name="A_36" value="id='a3' constante='s&iacute;' expresi&oacute;n='p3*(as1*(e3=0)+as2*(e3=1)+as3*(e3=2))' evaluar='siempre'">
+   <param name="A_37" value="id='a4' constante='s&iacute;' expresi&oacute;n='p4*(as1*(e4=0)+as2*(e4=1)+as3*(e4=2))' evaluar='siempre'">
+   <param name="A_38" value="id='a5' constante='s&iacute;' expresi&oacute;n='p5*(as1*(e5=0)+as2*(e5=1)+as3*(e5=2))' evaluar='siempre'">
+   <param name="A_39" value="id='a6' constante='s&iacute;' expresi&oacute;n='p6*(as1*(e6=0)+as2*(e6=1)+as3*(e6=2))' evaluar='siempre'">
+   <param name="A_40" value="id='a7' constante='s&iacute;' expresi&oacute;n='p7*(as1*(e7=0)+as2*(e7=1)+as3*(e7=2))' evaluar='siempre'">
+   <param name="A_41" value="id='b1' constante='s&iacute;' expresi&oacute;n='p1*(bs1*(e1=0)+bs2*(e1=1)+bs3*(e1=2))' evaluar='siempre'">
+   <param name="A_42" value="id='b2' constante='s&iacute;' expresi&oacute;n='p2*(bs1*(e2=0)+bs2*(e2=1)+bs3*(e2=2))' evaluar='siempre'">
+   <param name="A_43" value="id='b3' constante='s&iacute;' expresi&oacute;n='p3*(bs1*(e3=0)+bs2*(e3=1)+bs3*(e3=2))' evaluar='siempre'">
+   <param name="A_44" value="id='b4' constante='s&iacute;' expresi&oacute;n='p4*(bs1*(e4=0)+bs2*(e4=1)+bs3*(e4=2))' evaluar='siempre'">
+   <param name="A_45" value="id='b5' constante='s&iacute;' expresi&oacute;n='p5*(bs1*(e5=0)+bs2*(e5=1)+bs3*(e5=2))' evaluar='siempre'">
+   <param name="A_46" value="id='b6' constante='s&iacute;' expresi&oacute;n='p6*(bs1*(e6=0)+bs2*(e6=1)+bs3*(e6=2))' evaluar='siempre'">
+   <param name="A_47" value="id='b7' constante='s&iacute;' expresi&oacute;n='p7*(bs1*(e7=0)+bs2*(e7=1)+bs3*(e7=2))' evaluar='siempre'">
+   <param name="A_48" value="id='az1' constante='s&iacute;' expresi&oacute;n='(n1.x&gt;-3)*(n1.x&lt;-1)*(n1.y&lt;2)*(n1.y&gt;-1)' evaluar='siempre'">
+   <param name="A_49" value="id='az2' constante='s&iacute;' expresi&oacute;n='(n2.x&gt;-3)*(n2.x&lt;-1)*(n2.y&lt;2)*(n2.y&gt;-1)' evaluar='siempre'">
+   <param name="A_50" value="id='az3' constante='s&iacute;' expresi&oacute;n='(n3.x&gt;-3)*(n3.x&lt;-1)*(n3.y&lt;2)*(n3.y&gt;-1)' evaluar='siempre'">
+   <param name="A_51" value="id='az4' constante='s&iacute;' expresi&oacute;n='(n4.x&gt;-3)*(n4.x&lt;-1)*(n4.y&lt;2)*(n4.y&gt;-1)' evaluar='siempre'">
+   <param name="A_52" value="id='az5' constante='s&iacute;' expresi&oacute;n='(n5.x&gt;-3)*(n5.x&lt;-1)*(n5.y&lt;2)*(n5.y&gt;-1)' evaluar='siempre'">
+   <param name="A_53" value="id='az6' constante='s&iacute;' expresi&oacute;n='(n6.x&gt;-3)*(n6.x&lt;-1)*(n6.y&lt;2)*(n6.y&gt;-1)' evaluar='siempre'">
+   <param name="A_54" value="id='az7' constante='s&iacute;' expresi&oacute;n='(n7.x&gt;-3)*(n7.x&lt;-1)*(n7.y&lt;2)*(n7.y&gt;-1)' evaluar='siempre'">
+   <param name="A_55" value="id='vaz1' constante='s&iacute;' expresi&oacute;n='11+az1*a1/b1' evaluar='siempre'">
+   <param name="A_56" value="id='vaz2' constante='s&iacute;' expresi&oacute;n='11+az2*a2/b2' evaluar='siempre'">
+   <param name="A_57" value="id='vaz3' constante='s&iacute;' expresi&oacute;n='11+az3*a3/b3' evaluar='siempre'">
+   <param name="A_58" value="id='vaz4' constante='s&iacute;' expresi&oacute;n='11+az4*a4/b4' evaluar='siempre'">
+   <param name="A_59" value="id='vaz5' constante='s&iacute;' expresi&oacute;n='11+az5*a5/b5' evaluar='siempre'">
+   <param name="A_60" value="id='vaz6' constante='s&iacute;' expresi&oacute;n='11+az6*a6/b6' evaluar='siempre'">
+   <param name="A_61" value="id='vaz7' constante='s&iacute;' expresi&oacute;n='11+az7*a7/b7' evaluar='siempre'">
+   <param name="A_62" value="id='ve1' constante='s&iacute;' expresi&oacute;n='(n1.x&gt;-1)*(n1.x&lt;1)*(n1.y&lt;2)*(n1.y&gt;-1)' evaluar='siempre'">
+   <param name="A_63" value="id='ve2' constante='s&iacute;' expresi&oacute;n='(n2.x&gt;-1)*(n2.x&lt;1)*(n2.y&lt;2)*(n2.y&gt;-1)' evaluar='siempre'">
+   <param name="A_64" value="id='ve3' constante='s&iacute;' expresi&oacute;n='(n3.x&gt;-1)*(n3.x&lt;1)*(n3.y&lt;2)*(n3.y&gt;-1)' evaluar='siempre'">
+   <param name="A_65" value="id='ve4' constante='s&iacute;' expresi&oacute;n='(n4.x&gt;-1)*(n4.x&lt;1)*(n4.y&lt;2)*(n4.y&gt;-1)' evaluar='siempre'">
+   <param name="A_66" value="id='ve5' constante='s&iacute;' expresi&oacute;n='(n5.x&gt;-1)*(n5.x&lt;1)*(n5.y&lt;2)*(n5.y&gt;-1)' evaluar='siempre'">
+   <param name="A_67" value="id='ve6' constante='s&iacute;' expresi&oacute;n='(n6.x&gt;-1)*(n6.x&lt;1)*(n6.y&lt;2)*(n6.y&gt;-1)' evaluar='siempre'">
+   <param name="A_68" value="id='ve7' constante='s&iacute;' expresi&oacute;n='(n7.x&gt;-1)*(n7.x&lt;1)*(n7.y&lt;2)*(n7.y&gt;-1)' evaluar='siempre'">
+   <param name="A_69" value="id='vve1' constante='s&iacute;' expresi&oacute;n='11+ve1*a1/b1' evaluar='siempre'">
+   <param name="A_70" value="id='vve2' constante='s&iacute;' expresi&oacute;n='11+ve2*a2/b2' evaluar='siempre'">
+   <param name="A_71" value="id='vve3' constante='s&iacute;' expresi&oacute;n='11+ve3*a3/b3' evaluar='siempre'">
+   <param name="A_72" value="id='vve4' constante='s&iacute;' expresi&oacute;n='11+ve4*a4/b4' evaluar='siempre'">
+   <param name="A_73" value="id='vve5' constante='s&iacute;' expresi&oacute;n='11+ve5*a5/b5' evaluar='siempre'">
+   <param name="A_74" value="id='vve6' constante='s&iacute;' expresi&oacute;n='11+ve6*a6/b6' evaluar='siempre'">
+   <param name="A_75" value="id='vve7' constante='s&iacute;' expresi&oacute;n='11+ve7*a7/b7' evaluar='siempre'">
+   <param name="A_76" value="id='am1' constante='s&iacute;' expresi&oacute;n='(n1.x&gt;1)*(n1.x&lt;3)*(n1.y&lt;2)*(n1.y&gt;-1)' evaluar='siempre'">
+   <param name="A_77" value="id='am2' constante='s&iacute;' expresi&oacute;n='(n2.x&gt;1)*(n2.x&lt;3)*(n2.y&lt;2)*(n2.y&gt;-1)' evaluar='siempre'">
+   <param name="A_78" value="id='am3' constante='s&iacute;' expresi&oacute;n='(n3.x&gt;1)*(n3.x&lt;3)*(n3.y&lt;2)*(n3.y&gt;-1)' evaluar='siempre'">
+   <param name="A_79" value="id='am4' constante='s&iacute;' expresi&oacute;n='(n4.x&gt;1)*(n4.x&lt;3)*(n4.y&lt;2)*(n4.y&gt;-1)' evaluar='siempre'">
+   <param name="A_80" value="id='am5' constante='s&iacute;' expresi&oacute;n='(n5.x&gt;1)*(n5.x&lt;3)*(n5.y&lt;2)*(n5.y&gt;-1)' evaluar='siempre'">
+   <param name="A_81" value="id='am6' constante='s&iacute;' expresi&oacute;n='(n6.x&gt;1)*(n6.x&lt;3)*(n6.y&lt;2)*(n6.y&gt;-1)' evaluar='siempre'">
+   <param name="A_82" value="id='am7' constante='s&iacute;' expresi&oacute;n='(n7.x&gt;1)*(n7.x&lt;3)*(n7.y&lt;2)*(n7.y&gt;-1)' evaluar='siempre'">
+   <param name="A_83" value="id='vam1' constante='s&iacute;' expresi&oacute;n='11+am1*a1/b1' evaluar='siempre'">
+   <param name="A_84" value="id='vam2' constante='s&iacute;' expresi&oacute;n='11+am2*a2/b2' evaluar='siempre'">
+   <param name="A_85" value="id='vam3' constante='s&iacute;' expresi&oacute;n='11+am3*a3/b3' evaluar='siempre'">
+   <param name="A_86" value="id='vam4' constante='s&iacute;' expresi&oacute;n='11+am4*a4/b4' evaluar='siempre'">
+   <param name="A_87" value="id='vam5' constante='s&iacute;' expresi&oacute;n='11+am5*a5/b5' evaluar='siempre'">
+   <param name="A_88" value="id='vam6' constante='s&iacute;' expresi&oacute;n='11+am6*a6/b6' evaluar='siempre'">
+   <param name="A_89" value="id='vam7' constante='s&iacute;' expresi&oacute;n='11+am7*a7/b7' evaluar='siempre'">
+   <param name="G_01" value="espacio='E' tipo='pol&iacute;gono' fondo='s&iacute;' color='0087ff' expresi&oacute;n='(-3.02,-2)(3.02,-2)(3.02,-1)(-3.02,-1)(-3.02,-2)' relleno='0087ff' ancho='0'">
+   <param name="G_02" value="tipo='pol&iacute;gono' fondo='s&iacute;' color='004bd7' expresi&oacute;n='(-3,-1)(-1.03,-1)(-1.03,2)(-3,2)(-3,-1)' relleno='96ebff' ancho='5'">
+   <param name="G_03" value="tipo='pol&iacute;gono' fondo='s&iacute;' color='009100' expresi&oacute;n='(-0.93,-1)(0.97,-1)(0.97,2)(-0.97,2)(-0.97,-1)' relleno='96eb9b' ancho='5'">
+   <param name="G_04" value="tipo='pol&iacute;gono' fondo='s&iacute;' color='ffb900' expresi&oacute;n='(1.03,-1)(2.97,-1)(2.97,2)(1.03,2)(1.03,-1)' relleno='ffff8c' ancho='5'">
+   <param name="G_05" value="espacio='E' tipo='punto' color='blanco' expresi&oacute;n='(n1.x,n1.y)' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_06" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n1.x-0.05-0.1*(a1&gt;9),n1.y+0.05)' texto='[a1]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_07" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n1.x-0.05-0.1*(b1&gt;9),n1.y-0.3)' texto='[b1]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_08" value="espacio='E' tipo='segmento' expresi&oacute;n='(n1.x-0.3,n1.y)(n1.x+0.3,n1.y)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_09" value="espacio='E' tipo='punto' color='blanco' expresi&oacute;n='(n2.x,n2.y)' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_10" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n2.x-0.05-0.1*(a2&gt;9),n2.y+0.05)' texto='[a2]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_11" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n2.x-0.05-0.1*(b2&gt;9),n2.y-0.3)' texto='[b2]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_12" value="espacio='E' tipo='segmento' expresi&oacute;n='(n2.x-0.3,n2.y)(n2.x+0.3,n2.y)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_13" value="espacio='E' tipo='punto' color='blanco' expresi&oacute;n='(n3.x,n3.y)' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_14" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n3.x-0.05-0.1*(a3&gt;9),n3.y+0.05)' texto='[a3]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_15" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n3.x-0.05-0.1*(b3&gt;9),n3.y-0.3)' texto='[b3]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_16" value="espacio='E' tipo='segmento' expresi&oacute;n='(n3.x-0.3,n3.y)(n3.x+0.3,n3.y)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_17" value="espacio='E' tipo='punto' color='blanco' expresi&oacute;n='(n4.x,n4.y)' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_18" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n4.x-0.05-0.1*(a4&gt;9),n4.y+0.05)' texto='[a4]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_19" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n4.x-0.05-0.1*(b4&gt;9),n4.y-0.3)' texto='[b4]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_20" value="espacio='E' tipo='segmento' expresi&oacute;n='(n4.x-0.3,n4.y)(n4.x+0.3,n4.y)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_21" value="espacio='E' tipo='punto' color='blanco' expresi&oacute;n='(n5.x,n5.y)' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_22" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n5.x-0.05-0.1*(a5&gt;9),n5.y+0.05)' texto='[a5]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_23" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n5.x-0.05-0.1*(b5&gt;9),n5.y-0.3)' texto='[b5]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_24" value="espacio='E' tipo='segmento' expresi&oacute;n='(n5.x-0.3,n5.y)(n5.x+0.3,n5.y)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_25" value="espacio='E' tipo='punto' color='blanco' expresi&oacute;n='(n6.x,n6.y)' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_26" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n6.x-0.05-0.1*(a6&gt;9),n6.y+0.05)' texto='[a6]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_27" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n6.x-0.05-0.1*(b6&gt;9),n6.y-0.3)' texto='[b6]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_28" value="espacio='E' tipo='segmento' expresi&oacute;n='(n6.x-0.3,n6.y)(n6.x+0.3,n6.y)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_29" value="espacio='E' tipo='punto' color='blanco' expresi&oacute;n='(n7.x,n7.y)' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_30" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n7.x-0.05-0.1*(a7&gt;9),n7.y+0.05)' texto='[a7]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_31" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(n7.x-0.05-0.1*(b7&gt;9),n7.y-0.3)' texto='[b7]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_32" value="espacio='E' tipo='segmento' expresi&oacute;n='(n7.x-0.3,n7.y)(n7.x+0.3,n7.y)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_33" value="espacio='E' tipo='punto' color='blanco' dibujar-si='(v=0)*(z=7)*(w1+w2=0)' expresi&oacute;n='(-2.1,-1.8)' texto='CORRECTO' fuente='Helvetica,BOLD,48' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+</ajs>
+
+</body>
+</html>

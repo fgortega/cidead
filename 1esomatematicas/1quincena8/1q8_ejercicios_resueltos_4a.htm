@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Ejercicios resueltos: Bisectriz</title>
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="8ejres4" width=420 height=360
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="420x360">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="8ejres4">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='escoge' alto='38' fijo='si' despl_imagen='arr-izq' fondo='negro' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='enunciado' y='38' alto='90' fijo='si' escala='20' despl_imagen='arr-izq' fondo='f1f1f1' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='solucion' y='128' alto='235' fijo='si' escala='20' despl_imagen='arr-izq' fondo='fff7d7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='atras' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='escoge' expresi&oacute;n='(240,7,25,25)' visible='si' imagen='imagen1/anterior.png' acci&oacute;n='calcular' par&aacute;metro='p=p-1' dibujar-si='(ang#0)&amp;(p&gt;1)' pos_mensajes='centro'">
+   <param name="C_02" value="id='adelante' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='escoge' expresi&oacute;n='(275,7,25,25)' visible='si' imagen='imagen1/siguiente.png' acci&oacute;n='calcular' par&aacute;metro='p=p+1' dibujar-si='(ang#0)&amp;(p&lt;fin)' pos_mensajes='centro'">
+   <param name="C_03" value="id='Soluciones' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='escoge' expresi&oacute;n='(310,7)' visible='si' imagen='imagenes8/soluciones.jpg' acci&oacute;n='calcular' par&aacute;metro='sol=1;p=1' dibujar-si='(p=fin)&amp;(sol=0)' pos_mensajes='centro'">
+   <param name="C_04" value="id='ini' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='escoge' nombre='Inicio' expresi&oacute;n='(10,7,70,25)' visible='si' acci&oacute;n='inicio' pos_mensajes='centro'">
+   <param name="A_01" value="id='fin' algoritmo='si' evaluar='siempre' hacer='ang=1;fin=3'">
+   <param name="A_02" value="id='pi' constante='si' expresi&oacute;n='6*asen(0.5)' evaluar='una-sola-vez'">
+   <param name="G_01" value="espacio='escoge' tipo='texto' color='ff6200' dibujar-si='p&gt;0' expresi&oacute;n='[90,3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs24\b Ejercicio\par {\*\mjaformula{\expr p}} de {\*\mjaformula{\expr fin}}\fs32\par}' fuente='Arial,BOLD,12' decimales='0'">
+   <param name="G_02" value="espacio='enunciado' tipo='texto' color='ff6200' dibujar-si='p=0' expresi&oacute;n='[10,3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b Escribe y resuelve en tu cuaderno\par los siguientes ejercicios.\f2\fs24\b0\par}' fuente='Arial,BOLD,14'">
+   <param name="G_03" value="espacio='enunciado' tipo='segmento' color='grisClaro' coord_abs='si' expresi&oacute;n='(0,0)(420,0)' tama&ntilde;o='0'">
+   <param name="G_04" value="espacio='enunciado' tipo='segmento' color='grisClaro' coord_abs='si' expresi&oacute;n='(0,89)(420,89)' tama&ntilde;o='0'">
+   <param name="G_05" value="espacio='enunciado' tipo='texto' color='negro' dibujar-si='p=1' expresi&oacute;n='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;}\f1\fs28\b 1\b0 . Indica sobre la figura cu&aacute;l es la bisectriz de los \u225 ngulos\par     representados.\f3\fs24\par}' fuente='Arial,BOLD,14'">
+   <param name="G_06" value="espacio='enunciado' tipo='texto' color='negro' dibujar-si='p=2' expresi&oacute;n='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;}\f1\fs28\b 2\b0 . Traza sobre la figura la bisectriz del \u225 ngulo representado.\f3\fs24\par}' fuente='Arial,BOLD,14'">
+   <param name="G_07" value="espacio='enunciado' tipo='texto' color='negro' dibujar-si='p=3' expresi&oacute;n='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;}\f1\fs28\b 3\b0 . Traza las bisectrices de los dos \u225 ngulos consecutivos que\par     aparecen en la figura. \u191 Qu\u233  relaci\u243 n guardan entre s\u237  estas\par     dos bisectrices?\f3\fs24\par}' fuente='Arial,BOLD,14'">
+   <param name="G_08" value="espacio='solucion' tipo='texto' color='negro' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='[10,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs28 La bisectriz divide el\par \u225 ngulo en otro dos\par de igual amplitud.\par}' fuente='Arial,PLAIN,14'">
+   <param name="G_09" value="espacio='solucion' tipo='texto' color='negro' dibujar-si='(p=2)&amp;(sol=1)' expresi&oacute;n='[10,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs28 Marcamos dos puntos sobre los lados\par del \u225 ngulo, a igual distancia del v\u233 rtice,\par y desde ah\u237  trazamos dos arcos\par con el mismo radio. Uniendo el\par punto donde se\par cruzan estos dos\par arcos con el\par v\u233 rtice, obtenemos\par la bisectriz.\par}' fuente='Arial,PLAIN,14'">
+   <param name="G_10" value="espacio='solucion' tipo='texto' color='negro' dibujar-si='(p=3)&amp;(sol=1)' expresi&oacute;n='[10,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs28 Si los \u225 ngulos son suplementarios\par sus bisectrices son perpendiculares.\par}' fuente='Arial,PLAIN,14'">
+   <param name="G_11" value="espacio='solucion' tipo='arco' color='turquesa' dibujar-si='p=1' centro='(-9,-2)' radio='3' inicio='-30' fin='60' relleno='turquesa'">
+   <param name="G_12" value="espacio='solucion' tipo='pol&iacute;gono' color='rojo' dibujar-si='p=1' expresi&oacute;n='(-9+4*cos(-30*pi/180),-2+4*sen(-30*pi/180))(-9,-2)(-9+4*cos(60*pi/180),-2+4*sen(60*pi/180))' ancho='2'">
+   <param name="G_13" value="espacio='solucion' tipo='segmento' color='azul' dibujar-si='p=1' expresi&oacute;n='(-9+2*cos(195*pi/180),-2+2*sen(195*pi/180))(-9+5*cos(15*pi/180),-2+5*sen(15*pi/180))' tama&ntilde;o='0'">
+   <param name="G_14" value="espacio='solucion' tipo='segmento' color='azul' dibujar-si='p=1' expresi&oacute;n='(-9+3*cos(60*pi/180)-2*cos(-30*pi/180),-2+3*sen(60*pi/180)-2*sen(-30*pi/180))(-9+3*cos(60*pi/180)+4*cos(-30*pi/180),-2+3*sen(60*pi/180)+4*sen(-30*pi/180))' tama&ntilde;o='0'">
+   <param name="G_15" value="espacio='solucion' tipo='segmento' color='azul' dibujar-si='p=1' expresi&oacute;n='(-9+3*cos(-30*pi/180)-2*cos(60*pi/180),-2+3*sen(-30*pi/180)-2*sen(60*pi/180))(-9+3*cos(-30*pi/180)+4*cos(60*pi/180),-2+3*sen(-30*pi/180)+4*sen(60*pi/180))' tama&ntilde;o='0'">
+   <param name="G_16" value="espacio='solucion' tipo='segmento' color='009b00' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(-9+2*cos(195*pi/180),-2+2*sen(195*pi/180))(-9+5*cos(15*pi/180),-2+5*sen(15*pi/180))' tama&ntilde;o='0' ancho='2'">
+   <param name="G_17" value="espacio='solucion' tipo='arco' color='turquesa' dibujar-si='p=1' centro='(-2,1)' radio='3' inicio='270' fin='310' relleno='turquesa'">
+   <param name="G_18" value="espacio='solucion' tipo='pol&iacute;gono' color='rojo' dibujar-si='p=1' expresi&oacute;n='(-2+4*cos(270*pi/180),1+4*sen(270*pi/180))(-2,1)(-2+4*cos(310*pi/180),1+4*sen(310*pi/180))' ancho='2'">
+   <param name="G_19" value="espacio='solucion' tipo='segmento' color='azul' dibujar-si='p=1' expresi&oacute;n='(-2+2*cos(110*pi/180),1+2*sen(110*pi/180))(-2+5*cos(290*pi/180),1+5*sen(290*pi/180))' tama&ntilde;o='0'">
+   <param name="G_20" value="espacio='solucion' tipo='segmento' color='azul' dibujar-si='p=1' expresi&oacute;n='(-2+3*cos(270*pi/180)-4*cos(200*pi/180),1+3*sen(270*pi/180)-4*sen(200*pi/180))(-2+3*cos(310*pi/180)+4*cos(200*pi/180),1+3*sen(310*pi/180)+4*sen(200*pi/180))' tama&ntilde;o='0'">
+   <param name="G_21" value="espacio='solucion' tipo='segmento' color='009b00' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(-2+2*cos(110*pi/180),1+2*sen(110*pi/180))(-2+5*cos(290*pi/180),1+5*sen(290*pi/180))' tama&ntilde;o='0' ancho='2'">
+   <param name="G_22" value="espacio='solucion' tipo='arco' color='turquesa' dibujar-si='p=1' centro='(8,-1)' radio='3' inicio='70' fin='210' relleno='turquesa'">
+   <param name="G_23" value="espacio='solucion' tipo='pol&iacute;gono' color='rojo' dibujar-si='p=1' expresi&oacute;n='(8+4*cos(70*pi/180),-1+4*sen(70*pi/180))(8,-1)(8+4*cos(210*pi/180),-1+4*sen(210*pi/180))' ancho='2'">
+   <param name="G_24" value="espacio='solucion' tipo='segmento' color='azul' dibujar-si='p=1' expresi&oacute;n='(8+2*cos(320*pi/180),-1+2*sen(320*pi/180))(8+5*cos(140*pi/180),-1+5*sen(140*pi/180))' tama&ntilde;o='0'">
+   <param name="G_25" value="espacio='solucion' tipo='segmento' color='azul' dibujar-si='p=1' expresi&oacute;n='(8+4*cos(230*pi/180),-1+4*sen(230*pi/180))(8+4*cos(50*pi/180),-1+4*sen(50*pi/180))' tama&ntilde;o='0'">
+   <param name="G_26" value="espacio='solucion' tipo='segmento' color='009b00' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(8+2*cos(320*pi/180),-1+2*sen(320*pi/180))(8+5*cos(140*pi/180),-1+5*sen(140*pi/180))' tama&ntilde;o='0' ancho='2'">
+   <param name="G_27" value="espacio='solucion' tipo='texto' color='negro' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='[170,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b Bisectrices\f2\fs24\b0\par}' fuente='Arial,BOLD,14'">
+   <param name="G_28" value="espacio='solucion' tipo='flecha' color='negro' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(-1,4)(-6,-1)' ancho='2' ancho='2' punta='5' flecha='negro'">
+   <param name="G_29" value="espacio='solucion' tipo='flecha' color='negro' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(0,4)(-0.5,-2.5)' ancho='2' ancho='2' punta='5' flecha='negro'">
+   <param name="G_30" value="espacio='solucion' tipo='flecha' color='negro' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(1,4)(4,2)' ancho='2' ancho='2' punta='5' flecha='negro'">
+   <param name="G_31" value="espacio='solucion' tipo='arco' color='turquesa' dibujar-si='p=2' centro='(1,-3)' radio='4' fin='140' relleno='turquesa'">
+   <param name="G_32" value="espacio='solucion' tipo='pol&iacute;gono' color='rojo' dibujar-si='p=2' expresi&oacute;n='(1+6*cos(0*pi/180),-3+6*sen(0*pi/180))(1,-3)(1+6*cos(140*pi/180),-3+6*sen(140*pi/180))' ancho='2'">
+   <param name="G_33" value="espacio='solucion' tipo='segmento' color='azul' dibujar-si='(p=2)&amp;(sol=1)' expresi&oacute;n='(1+2*cos(250*pi/180),-3+2*sen(250*pi/180))(1+9*cos(70*pi/180),-3+9*sen(70*pi/180))' tama&ntilde;o='0' ancho='2'">
+   <param name="G_34" value="espacio='solucion' tipo='arco' color='009b00' dibujar-si='(p=2)&amp;(sol=1)' centro='(1+4*cos(0*pi/180),-3+4*sen(0*pi/180))' radio='5.5' fin='360'">
+   <param name="G_35" value="espacio='solucion' tipo='arco' color='009b00' dibujar-si='(p=2)&amp;(sol=1)' centro='(1+4*cos(140*pi/180),-3+4*sen(140*pi/180))' radio='5.5' inicio='220+60*s' fin='280+60*s' familia='s' s.intervalo='[0,2]' s.pasos='2'">
+   <param name="G_36" value="espacio='solucion' tipo='punto' color='azul' dibujar-si='(p=2)&amp;(sol=1)' expresi&oacute;n='(1+4*cos(0*pi/180),-3+4*sen(0*pi/180))' tama&ntilde;o='3'">
+   <param name="G_37" value="espacio='solucion' tipo='punto' color='azul' dibujar-si='(p=2)&amp;(sol=1)' expresi&oacute;n='(1+4*cos(140*pi/180),-3+4*sen(140*pi/180))' tama&ntilde;o='3'">
+   <param name="G_38" value="espacio='solucion' tipo='arco' color='turquesa' dibujar-si='p=3' centro='(3,-2)' radio='4' fin='140' relleno='turquesa'">
+   <param name="G_39" value="espacio='solucion' tipo='pol&iacute;gono' color='rojo' dibujar-si='p=3' expresi&oacute;n='(3+6*cos(0*pi/180),-2+6*sen(0*pi/180))(3,-2)(3+6*cos(140*pi/180),-2+6*sen(140*pi/180))' ancho='2'">
+   <param name="G_40" value="espacio='solucion' tipo='segmento' color='azul' dibujar-si='(p=3)&amp;(sol=1)' expresi&oacute;n='(3+2*cos(250*pi/180),-2+2*sen(250*pi/180))(3+9*cos(70*pi/180),-2+9*sen(70*pi/180))' tama&ntilde;o='0' ancho='2'">
+   <param name="G_41" value="espacio='solucion' tipo='arco' color='naranja' dibujar-si='p=3' centro='(3,-2)' radio='4' inicio='140' fin='180' relleno='naranja'">
+   <param name="G_42" value="espacio='solucion' tipo='pol&iacute;gono' color='rojo' dibujar-si='p=3' expresi&oacute;n='(3+6*cos(140*pi/180),-2+6*sen(140*pi/180))(3,-2)(3+6*cos(180*pi/180),-2+6*sen(180*pi/180))' ancho='2'">
+   <param name="G_43" value="espacio='solucion' tipo='segmento' color='azul' dibujar-si='(p=3)&amp;(sol=1)' expresi&oacute;n='(3+2*cos(340*pi/180),-2+2*sen(340*pi/180))(3+9*cos(160*pi/180),-2+9*sen(160*pi/180))' tama&ntilde;o='0' ancho='2'">
+</ajs>
+</body>
+</html>

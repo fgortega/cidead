@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Ejercicios resueltos, fracciones</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<p>
+  <ajs name="gr&aacute;fica en rect&aacute;ngulo" width=725 height=225
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="725x225">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="gr&aacute;fica en rect&aacute;ngulo">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E' fijo='s&iacute;' escala='65' O.x='15' O.y='-12' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='a' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='E' nombre='_._' expresi&oacute;n='(8,35,55,30)' valor='ent(rnd*10)+1' incr='1' min='0' max='300' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='tu=0'">
+   <param name="C_02" value="id='b' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='E' nombre='_._' expresi&oacute;n='(8,73,55,30)' valor='ent(rnd*10)+1' incr='1' min='1' max='100' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='tu=0' pos_mensajes='centro'">
+   <param name="C_03" value="id='n' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E' nombre='ahora t&uacute;' expresi&oacute;n='(580,187,120,25)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' acci&oacute;n='calcular' par&aacute;metro='nu=&squot; &squot;;de=&squot; &squot;;tu=1;a1=1+ent(rnd*9);b1=1+ent(rnd*10)' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='tu=0' pos_mensajes='centro'">
+   <param name="C_04" value="id='nu' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(13,35,45,30)' valor='||' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='tu=1'">
+   <param name="C_05" value="id='de' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(13,73,45,30)' valor='||' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='tu=1' pos_mensajes='centro'">
+   <param name="C_06" value="id='ej' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E' nombre='volver al ejemplo' expresi&oacute;n='(580,187,120,25)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' acci&oacute;n='calcular' par&aacute;metro='tu=0;nu=&squot; &squot;;de=&squot; &squot;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='tu=1' pos_mensajes='centro'">
+   <param name="C_07" value="id='n2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E' nombre='otra fracci&oacute;n' expresi&oacute;n='(580,150,120,25)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' acci&oacute;n='calcular' par&aacute;metro='nu=&squot; &squot;;de=&squot; &squot;;a1=1+ent(rnd*9);b1=1+ent(rnd*10)' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(tu=1)&amp;!(nu=&squot; &squot;)&amp;!(de=&squot; &squot;)' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E' tipo='segmento' color='azul' expresi&oacute;n='(-5.8,0.5)(-4.8,0.5)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_02" value="tipo='punto' color='azul' expresi&oacute;n='(-4.75,0.35)' texto='=' fuente='Helvetica,PLAIN,24' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_03" value="tipo='segmento' color='gris' dibujar-si='(b&lt;50)&amp;(tu=0)' expresi&oacute;n='(-4.5+s,0)(-4.5+s,0.1)' familia='s' s.intervalo='[0,1000/b]' s.pasos='1000' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_04" value="tipo='segmento' color='gris' expresi&oacute;n='(-4.5,0)(100,0)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_05" value="tipo='segmento' color='gris' expresi&oacute;n='(-4.5,1)(100,1)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_06" value="tipo='segmento' color='gris' expresi&oacute;n='(-4.5+c,0)(-4.5+c,1)' familia='c' c.intervalo='[0,200]' c.pasos='200' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_07" value="tipo='pol&iacute;gono' color='azul' dibujar-si='tu=0' expresi&oacute;n='(-4.5,0)(a/b-4.5,0)(a/b-4.5,1)(-4.5,1)(-4.5,0)' relleno='amarillo'">
+   <param name="G_08" value="tipo='segmento' color='azul' dibujar-si='tu=0' expresi&oacute;n='(-4.5+a,0)(-4.5+a,1)' familia='a' a.intervalo='[0,a/b]' a.pasos='a' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_09" value="tipo='segmento' color='gris' dibujar-si='(b1&lt;50)&amp;(tu=1)' expresi&oacute;n='(-4.5+s,0)(-4.5+s,0.1)' familia='s' s.intervalo='[0,1000/b1]' s.pasos='1000' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_10" value="tipo='pol&iacute;gono' color='azul' dibujar-si='tu=1' expresi&oacute;n='(-4.5,0)(a1/b1-4.5,0)(a1/b1-4.5,1)(-4.5,1)(-4.5,0)' relleno='amarillo'">
+   <param name="G_11" value="tipo='segmento' color='azul' dibujar-si='tu=1' expresi&oacute;n='(-4.5+a1,0)(-4.5+a1,1)' familia='a1' a1.intervalo='[0,a1/b1]' a1.pasos='a1' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_12" value="tipo='punto' color='gris' expresi&oacute;n='(-4.6+s,-0.2)' familia='s' s.intervalo='[0,9]' s.pasos='9' texto='[s]' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_13" value="tipo='punto' color='gris' expresi&oacute;n='(5.35,-0.2)' texto='10' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_14" value="tipo='punto' color='gris' expresi&oacute;n='(-4.5,-0.4)' texto='unidades' fuente='Helvetica,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_15" value="tipo='imagen' dibujar-si='(nu=a1)&amp;(de=b1)' expresi&oacute;n='(-4.6,-0.7)' archivo='imagen1/bien.png'">
+   <param name="G_16" value="tipo='punto' color='90cc00' dibujar-si='(a1=nu)&amp;(b1=de)' expresi&oacute;n='(-4,-1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs36 BIEN\fs48\par}' fuente='Arial,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_17" value="tipo='imagen' dibujar-si='nu*(nu#a1)+de*(de#b1)' expresi&oacute;n='(-4.5,-0.7)' archivo='imagen1/mal.png'">
+   <param name="G_18" value="tipo='punto' color='rojo' dibujar-si='nu*(a1#nu)+de*(b1#de)' expresi&oacute;n='(-4,-1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue255;\red255\green0\blue0;}\f1\fs32\cf0 F\u237 jate bien, la respuesta correcta es \cf1\fs36\par}' fuente='Arial,PLAIN,16' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_19" value="tipo='punto' color='azul' dibujar-si='nu*(a1#nu)+de*(b1#de)' expresi&oacute;n='(0.1-0.08*(a1&gt;9),-0.8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs48{\*\mjaformula{\expr a1}}\par}' fuente='Arial,PLAIN,24' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_20" value="tipo='punto' color='azul' dibujar-si='nu*(a1#nu)+de*(b1#de)' expresi&oacute;n='(0.1-0.08*(b1&gt;9),-1.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs48{\*\mjaformula{\expr b1}}\par}' fuente='Arial,PLAIN,24' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_21" value="tipo='segmento' color='azul' dibujar-si='nu*(a1#nu)+de*(b1#de)' expresi&oacute;n='(0,-0.93)(0.6,-0.93)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_22" value="tipo='punto' color='negro' dibujar-si='tu=0' expresi&oacute;n='(-4.5,-1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 Puedes variar el valor del numerador y del denominador pulsando sobre los tri\u225 ngulos rojos y azules\par Comprueba c\u243 mo cambia su representaci\u243 n gr\u225 fica.\par Cuando hayas visto unos cuantos pulsa en el bot\u243 n para hacerlo t\u250 .\f2\fs24\par}' fuente='Arial,PLAIN,14' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_23" value="tipo='texto' color='azul' dibujar-si='(tu=1)&amp;(nu=&squot; &squot;)&amp;(de=&squot; &squot;)' expresi&oacute;n='(80,152)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 Escribe la fracci\u243 n que corresponde a la representaci\u243 n gr\u225 fica, y pulsa intro.\f2\fs24\par \par}' fuente='Arial,PLAIN,14' fijo='s&iacute;'">
+</ajs>
+</p>
+</body>
+</html>

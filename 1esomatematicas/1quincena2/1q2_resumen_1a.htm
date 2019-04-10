@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>M&uacute;ltiplos y divisores</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body onload="MM_preloadImages('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes2.png','imagen1/paracont2.png','imagen1/atrasb.png','imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/paraejer3.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paracont3.png','imagen1/adelanteb.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0px; top: 0px; width: 800px; height: 528px; z-index: 1;"> 
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="1quincena2_presenta_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes.png" alt="" name="antes" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','imagen1/paracont3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paracont3.png" alt="" name="contenidos" onload="MM_nbGroup('init','group1','contenidos','imagen1/paraconte.png',1)" border="0"></a></td>
+      <td><a href="1quincena2_ejercicios_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer.png" alt="" name="ejercicios" onload="" border="0"></a></td>
+      <td><a href="1quincena2_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" onload="" border="0"></a></td>
+      <td><a href="1quincena2_tutor_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onmouseover="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" onload="" border="0"></a></td>
+      <td><a href="1quincena2_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0"></a></td>
+    </tr>
+  </table>
+<table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+  <table align="center" border="0" cellspacing="0" height="85%" width="800">
+     <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8"></td>
+      <td bgcolor="#ffffff" valign="top"> 
+        <table cellspacing="12" width="100%">
+          <tr> 
+            <td valign="top" width="50%"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong><font color="#FF6600" size="3" face="Geneva, Arial, Helvetica, sans-serif"><strong><img src="imagen1/recuerda.png" width="50" height="38" align="middle"><font size="4">Recuerda 
+              lo m&aacute;s importante</font></strong></font><font size="4" face="Geneva, Arial, Helvetica, sans-serif">&nbsp;</font></strong> 
+              </font></td>
+            <td width="50%"> 
+              <div align="right"></div>
+            </td>
+          </tr>
+          <tr> 
+            <td valign="top" colspan="2"> 
+              <table width="100%" border="0" cellpadding="4" cellspacing="2">
+                <tr> 
+                  <td width="50%" valign="top" bgcolor="#FEFCE9"> 
+                    <div align="justify"> 
+                      <font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Los 
+                        m&uacute;ltiplos de un n&uacute;mero</b> son los que resultan 
+                        de multiplicar ese n&uacute;mero por cualquier n&uacute;mero 
+                        natural.<br>
+                        </font><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><span class="textopeque">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&uacute;ltiplos 
+                        de 7={0, 7, 14, 21, 28, 35, 42, ... ...}</span></font>
+                    </div>
+                    </td>
+                  <td width="50%" valign="top" bgcolor="#DDFFF9"> 
+                    <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Los 
+                      n&uacute;meros compuestos </b>son los que tienen m&aacute;s 
+                      de 2 divisores. Se llaman as&iacute; porque se pueden poner 
+                      como producto de potencias de n&uacute;meros primos.<br>
+                      <span class="textopeque">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;N&uacute;meros 
+                      compuestos ={4, 6, 8, 9, 10, 12, 14, 15, ...}</span></font></p>
+                    </td>
+                </tr>
+                <tr> 
+                  <td valign="top" bgcolor="#FEF5D8"> 
+                    <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>La divisi&oacute;n 
+                      exacta</b> es aquella cuyo resto es 0, el dividendo es m&uacute;ltiplo 
+                      del divisor.</font><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp; <font size="2" face="Verdana, Arial, Helvetica, sans-serif"><span class="textopeque">48:6= 
+                      es divisi&oacute;n exacta; 65:9= no es divisi&oacute;n exacta.</span></font></p>
+                    </td>
+                  <td valign="top" bgcolor="#D8FEE7"> 
+                    <div align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Descomponer 
+                      factorialmente un n&uacute;mero</b> es ponerlo como producto 
+                      de potencias de n&uacute;meros primos.<br>
+                      </font><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="textopeque">63=3<sup>2</sup>&middot;7</span><br>
+                      </font></div></td>
+                </tr>
+                <tr> 
+                  <td valign="top" bgcolor="#FEE7C7">
+<div align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Los 
+                      divisores de un n&uacute;mero</b> son aquellos que lo pueden 
+                      dividir, su divisi&oacute;n es exacta.<br>
+                      <span class="textopeque">&nbsp;&nbsp;&nbsp;&nbsp;&#8226; 
+                      Todos los n&uacute;meros naturales son divisores de 0.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&#8226; El n&uacute;mero 1 tiene 
+                      un solo divisor, es el 1.</span><br>
+                      <span class="textopeque">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D(18)={1, 
+                      2, 3, 6, 9, 18} </span></font></div></td>
+                  <td valign="top" bgcolor="#C7FEC8"><div align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>El 
+                      m&iacute;nimo com&uacute;n m&uacute;ltiplo de varios n&uacute;meros</b> 
+                      es el n&uacute;mero m&aacute;s peque&ntilde;o que es m&uacute;ltiplo 
+                      de todos ellos, sin tener en cuenta el 0.<br>
+                      <span class="textopeque">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m.c.m.(12, 
+                      15, 9)= 180</span></font></div></td>
+                </tr>
+                <tr> 
+                  <td height="133" valign="top" bgcolor="#FDE2BD"> 
+                    <div align="justify">
+                     <font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b><img src="imagenes2/cribap.gif" width="118" height="120" hspace="4" border="0" align="right" usemap="#Map">Los 
+                        n&uacute;meros primos</b> son los que tienen dos divisores, 
+                        que son el 1 y el mismo n&uacute;mero.<br>
+                        <span class="textopeque">N&uacute;meros primos ={2, 3, 
+                        5, 7, 11, 13, 17, 19, 23, ... }</span></font>
+                      <p align="right"><font color="#990000" size="1" face="Verdana, Arial, Helvetica, sans-serif">Pulsa 
+                        sobre la imagen para ampliarla</font></p>
+                    </div></td>
+                  <td valign="top" bgcolor="#B7FFB9"> 
+                    <div align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>El 
+                      m&aacute;ximo com&uacute;n divisor de varios n&uacute;meros</b> 
+                      es el n&uacute;mero m&aacute;s grande posible que es divisor 
+                      de todos esos n&uacute;meros.<br>
+                      <span class="textopeque">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m.c.d.(18, 
+                      36, 81, 45)= 9</span><br>
+                      &#8226; Cuando dos n&uacute;meros no tienen en com&uacute;n 
+                      m&aacute;s divisores que el 1 se dice que son primos entre 
+                      s&iacute;. </font></div></td>
+                </tr>
+              </table>
+              
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8"> </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="2" width="8"></td>
+      <td background="imagen1/bor3.gif" height="2"></td>
+      <td background="imagen1/es3.gif" height="2" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td width="684"><div align="right"> </div></td>
+      <td width="30">
+        <div align="center"><a href="1quincena2_contenidos_4a.htm" target="_parent" onMouseOver="MM_swapImage('atras','','imagen1/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/atras.png" alt="anterior" name="atras" width="25" height="25" border="0"></a></div>
+      </td>
+      <td width="30"> 
+        <div align="center"><a href="1quincena2_ejercicios_1a.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+
+</table>
+</div>
+<map name="Map">
+  <area shape="rect" coords="9,12,107,105" href="#" onClick="MM_openBrWindow('criba.htm','primos','width=503,height=511')">
+</map>
+</body>
+</html>

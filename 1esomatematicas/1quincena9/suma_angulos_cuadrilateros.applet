@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Suma de los ángulos de un cuadrilátero</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="suma_&aacute;ngulos_cuadril&aacute;teros" width=525 height=450
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="525x450">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="suma_&aacute;ngulos_cuadril&aacute;teros">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='s&iacute;' despl_imagen='arr-izq' fondo='ffffc9' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='ns' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' nombre='_._' expresi&oacute;n='(445,420,60,25)' valor='||' incr='0' min='0' decimales='0' fijo='s&iacute;' visible='s&iacute;' imagen='./vacio.gif' acci&oacute;n='calcular' par&aacute;metro='CONT=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='CONT=0'">
+   <param name="C_02" value="id='iniciot' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='_._' expresi&oacute;n='(0,420,110,25)' fijo='s&iacute;' visible='s&iacute;' imagen='./vacio.gif' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="A_01" value="id='TC' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='4' expresi&oacute;n='TC[0]=&squot;RECT&Aacute;NGULO&squot;;TC[1]=&squot;PARALELOGRAMO&squot;;TC[2]=&squot;ROMBO&squot;;TC[3]=&squot;TRAPECIO&squot;'">
+   <param name="A_02" value="id='tipo' constante='s&iacute;' expresi&oacute;n='ent(rnd*4)' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='escala' constante='s&iacute;' expresi&oacute;n='30' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='Ox' constante='s&iacute;' expresi&oacute;n='50' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='a' constante='s&iacute;' expresi&oacute;n='sqrt((A1.x-A2.x)^2+(A1.y-A2.y)^2)' evaluar='siempre'">
+   <param name="A_06" value="id='h' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='b' constante='s&iacute;' expresi&oacute;n='(ent(rnd*10)+1)*((tipo=0)|(tipo=2))+(ent(rnd*9)+1)*(tipo=1)+(ent(rnd*5)+2)*(tipo=3)' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='e' constante='s&iacute;' expresi&oacute;n='ent(rnd*0.5*b)+1' evaluar='una-sola-vez'">
+   <param name="A_09" value="id='bt1' constante='s&iacute;' expresi&oacute;n='b+e' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='bt2' constante='s&iacute;' expresi&oacute;n='b-e' evaluar='una-sola-vez'">
+   <param name="A_11" value="id='d' constante='s&iacute;' expresi&oacute;n='(rnd*3-1.5)*(tipo=1)+ent(rnd*4-3)*(tipo=3)' evaluar='una-sola-vez'">
+   <param name="A_12" value="id='x1' constante='s&iacute;' expresi&oacute;n='(-0.5*b-d*(tipo=1))*(tipo&lt;3)-0.5*bt1*(tipo=3)' evaluar='una-sola-vez'">
+   <param name="A_13" value="id='y1' constante='s&iacute;' expresi&oacute;n='-0.5*h*(tipo!=2)' evaluar='una-sola-vez'">
+   <param name="A_14" value="id='x2' constante='s&iacute;' expresi&oacute;n='((-0.5*b+d*(tipo=1))*(tipo!=2))*(tipo&lt;3)+d*(tipo=3)' evaluar='una-sola-vez'">
+   <param name="A_15" value="id='y2' constante='s&iacute;' expresi&oacute;n='0.5*h' evaluar='una-sola-vez'">
+   <param name="A_16" value="id='x3' constante='s&iacute;' expresi&oacute;n='(0.5*b+d*(tipo=1))*(tipo&lt;3)+((d+bt2)*(tipo=3))' evaluar='una-sola-vez'">
+   <param name="A_17" value="id='y3' constante='s&iacute;' expresi&oacute;n='0.5*h*(tipo!=2)' evaluar='una-sola-vez'">
+   <param name="A_18" value="id='x4' constante='s&iacute;' expresi&oacute;n='((0.5*b-d*(tipo=1))*(tipo!=2))*(tipo&lt;3)+(0.5*bt1*(tipo=3))' evaluar='una-sola-vez'">
+   <param name="A_19" value="id='y4' constante='s&iacute;' expresi&oacute;n='-0.5*h' evaluar='una-sola-vez'">
+   <param name="A_20" value="id='Oy' constante='s&iacute;' expresi&oacute;n='-10' evaluar='una-sola-vez'">
+   <param name="A_21" value="id='angcu' constante='s&iacute;' expresi&oacute;n='ns=360' evaluar='siempre'">
+   <param name="G_01" value="tipo='texto' color='azul' expresi&oacute;n='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red128\green128\blue128;\red0\green0\blue255;}\f1\fs32\b\ul\cf0 SUMA DE LOS {\*\mjaformula\u193 NGULOS INTERIORES DE UN CUADRIL\u193 TERO}\cf1\f2\fs24\b0\ulnone\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_02" value="tipo='texto' color='azul' expresi&oacute;n='[1,420]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green153\blue0;\red0\green0\blue255;}\f1\fs32\b\cf0 otro ejemplo\cf1\f2\fs24\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_03" value="tipo='pol&iacute;gono' color='azul' expresi&oacute;n='(x1,y1)(x2,y2)(x3,y3)(x4,y4)(x1,y1)' relleno='ffd000' ancho='2'">
+   <param name="G_04" value="tipo='pol&iacute;gono' color='azul' expresi&oacute;n='(x1,y1)(x3,y3)(x4,y4)(x1,y1)' relleno='ae009500' ancho='0'">
+   <param name="G_05" value="tipo='texto' color='azul' expresi&oacute;n='[200,420]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs32\b suma de los \u225 ngulos interiores\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_06" value="tipo='texto' color='azul' expresi&oacute;n='[5,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red128\green128\blue128;\red0\green0\blue255;}\f1\fs28\b\cf0 Una diagonal del\par cuadril\u225 tero divide\par a \u233 ste en dos\par tri\u225 ngulos.\par Como la suma de\par los \u225 ngulos de\par un tri\u225 ngulo es\par de 180\u186 , puedes\par saber cu\u225 l es la\par suma de los \u225 ngulos\par de un cuadril\u225 tero\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;'">
+   <param name="G_07" value="tipo='arco' color='azul' centro='(x1,y1)' radio='0.5' inicio='(x2,y2)' fin='(x4,y4)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='rojo'">
+   <param name="G_08" value="tipo='arco' color='azul' centro='(x2,y2)' radio='0.5' inicio='(x1,y1)' fin='(x3,y3)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='rojo'">
+   <param name="G_09" value="tipo='arco' color='azul' centro='(x3,y3)' radio='0.5' inicio='(x2,y2)' fin='(x4,y4)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='rojo'">
+   <param name="G_10" value="tipo='arco' color='azul' centro='(x4,y4)' radio='0.5' inicio='(x1,y1)' fin='(x3,y3)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='rojo'">
+   <param name="G_11" value="tipo='segmento' color='009500' expresi&oacute;n='(x1,y1)(x3,y3)' fuente='Times New Roman,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_12" value="tipo='texto' color='azul' dibujar-si='angcu=1' expresi&oacute;n='[10,390]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green179\blue0;\red0\green0\blue255;}\f1\fs32\b\cf0 CORRECTO\f2\fs24\b0\cf1\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_13" value="tipo='imagen' dibujar-si='angcu=1' expresi&oacute;n='(-6.80,-5.7)' archivo='./imagenes9/bien.png'">
+   <param name="G_14" value="tipo='texto' color='azul' dibujar-si='(angcu=0)&amp;(CONT=1)' expresi&oacute;n='[10,390]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\f1\fs32\b\cf0\u161 OJO!\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_15" value="tipo='imagen' dibujar-si='(angcu=0)&amp;(CONT=1)' expresi&oacute;n='(-7.80,-5.7)' archivo='./imagenes9/mal.png'">
+</ajs>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Cóncavo - convexo</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="concavo-convexo" width=441 height=361
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="441x361">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="concavo-convexo">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=s&iacute; config=no inicio=no limpiar=no alto=0">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='s&iacute;' escala='20' O.x='-1' O.y='-1' despl_imagen='arr-izq' fondo='ffffcc' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='A.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='A.x' valor='-8' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='A.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='A.y' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='A' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(-8,0)' fijo='s&iacute;'">
+   <param name="C_04" value="id='B.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='B.x' valor='-5' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='B.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='B.y' valor='-4' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_06" value="id='B' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(-5,-4)' fijo='s&iacute;'">
+   <param name="C_07" value="id='C.x' tipo='num&eacute;rico' regi&oacute;n='exterior' nombre='C.x' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_08" value="id='C.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='C.y' valor='-4' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_09" value="id='C' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(0,-4)' fijo='s&iacute;'">
+   <param name="C_10" value="id='D.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='D.x' valor='4' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_11" value="id='D.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='D.y' valor='-1' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_12" value="id='D' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(4,-1)' fijo='s&iacute;'">
+   <param name="C_13" value="id='E.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='E.x' expresi&oacute;n='(4,0)' valor='6' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_14" value="id='E.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='E.y' valor='2' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_15" value="id='E' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(6,2)' fijo='s&iacute;'">
+   <param name="C_16" value="id='F.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='F.x' valor='-1' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_17" value="id='F.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='F.y' valor='3' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_18" value="id='F' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='rojo' expresi&oacute;n='(-1,3)' fijo='s&iacute;'">
+   <param name="A_01" value="id='cox' constante='s&iacute;' expresi&oacute;n='ent(E1.rat&oacute;n_x)' evaluar='siempre'">
+   <param name="A_02" value="id='coy' constante='s&iacute;' expresi&oacute;n='ent(E1.rat&oacute;n_y)' evaluar='siempre'">
+   <param name="A_03" value="id='mAE' constante='s&iacute;' expresi&oacute;n='(E.y-A.y)/(E.x-A.x)' evaluar='siempre'">
+   <param name="A_04" value="id='mFD' constante='s&iacute;' expresi&oacute;n='(D.y-F.y)/(D.x-F.x)' evaluar='siempre'">
+   <param name="A_05" value="id='mEC' constante='s&iacute;' expresi&oacute;n='(C.y-E.y)/(C.x-E.x)' evaluar='siempre'">
+   <param name="A_06" value="id='mDB' constante='s&iacute;' expresi&oacute;n='(D.y-B.y)/(D.x-B.x)' evaluar='siempre'">
+   <param name="A_07" value="id='mCA' constante='s&iacute;' expresi&oacute;n='(A.y-C.y)/(A.x-C.x)' evaluar='siempre'">
+   <param name="A_08" value="id='mBF' constante='s&iacute;' expresi&oacute;n='(F.y-B.y)/(F.x-B.x)' evaluar='siempre'">
+   <param name="A_09" value="id='bA' constante='s&iacute;' expresi&oacute;n='A.y-mAE*A.x' evaluar='siempre'">
+   <param name="A_10" value="id='bB' constante='s&iacute;' expresi&oacute;n='B.y-mBF*B.x' evaluar='siempre'">
+   <param name="A_11" value="id='bC' constante='s&iacute;' expresi&oacute;n='C.y-mCA*C.x' evaluar='siempre'">
+   <param name="A_12" value="id='bD' constante='s&iacute;' expresi&oacute;n='D.y-mDB*D.x' evaluar='siempre'">
+   <param name="A_13" value="id='bE' constante='s&iacute;' expresi&oacute;n='E.y-mEC*E.x' evaluar='siempre'">
+   <param name="A_14" value="id='bF' constante='s&iacute;' expresi&oacute;n='F.y-mFD*F.x' evaluar='siempre'">
+   <param name="A_15" value="id='sig1' constante='s&iacute;' expresi&oacute;n='A.y-mBF*A.x-bB' evaluar='siempre'">
+   <param name="A_16" value="id='sig2' constante='s&iacute;' expresi&oacute;n='F.y-mAE*F.x-bA' evaluar='siempre'">
+   <param name="A_17" value="id='sig3' constante='s&iacute;' expresi&oacute;n='E.y-mFD*E.x-bF' evaluar='siempre'">
+   <param name="A_18" value="id='sig4' constante='s&iacute;' expresi&oacute;n='D.y-mEC*D.x-bE' evaluar='siempre'">
+   <param name="A_19" value="id='sig5' constante='s&iacute;' expresi&oacute;n='C.y-mDB*C.x-bD' evaluar='siempre'">
+   <param name="A_20" value="id='sig6' constante='s&iacute;' expresi&oacute;n='B.y-mCA*B.x-bC' evaluar='siempre'">
+   <param name="A_21" value="id='aux' constante='s&iacute;' expresi&oacute;n='(sig1&gt;0)&amp;(sig2&gt;0)&amp;(sig3&gt;0)&amp;(sig4&lt;0)&amp;(sig5&lt;0)&amp;(sig6&lt;0)' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='pol&iacute;gono' color='azul' expresi&oacute;n='(A.x,A.y)(B.x,B.y)(C.x,C.y)(D.x,D.y)(E.x,E.y)(F.x,F.y)(A.x,A.y)' relleno='6a00ffff' ancho='3'">
+   <param name="G_02" value="espacio='E1' tipo='texto' color='azul' dibujar-si='(A.x!=F.x)|(A.y!=F.y)' expresi&oacute;n='[110,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32\b\u191 C\u211 NCAVO O CONVEXO?\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='texto' color='azul' dibujar-si='(A.x=F.x)&amp;(A.y=F.y)' expresi&oacute;n='[90,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32\b LINEA POLIGONAL CERRADA\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='texto' color='azul' dibujar-si='!(aux)' expresi&oacute;n='[5,320]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green114\blue0;\red0\green0\blue255;}\f1\fs32\b\cf0 El pol\u237 gono es C\u211 NCAVO ya que tiene un \u225 ngulo interior\par mayor de 180\u186 \cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='E1' tipo='texto' color='azul' dibujar-si='aux' expresi&oacute;n='[5,320]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green114\blue0;\red0\green0\blue255;}\f1\fs32\b\cf0 El pol\u237 gono es CONVEXO ya que sus \u225 ngulos interiores\par son  menores de 180\u186 \cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='E1' tipo='arco' color='azul' centro='(A.x,A.y)' radio='1.25' inicio='(F.x,F.y)' fin='(B.x,B.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='ffae00'">
+   <param name="G_07" value="espacio='E1' tipo='arco' color='azul' centro='(F.x,F.y)' radio='1.25' inicio='(A.x,A.y)' fin='(E.x,E.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='ffae00'">
+   <param name="G_08" value="espacio='E1' tipo='arco' color='azul' centro='(E.x,E.y)' radio='1.25' inicio='(F.x,F.y)' fin='(D.x,D.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='ffae00'">
+   <param name="G_09" value="espacio='E1' tipo='arco' color='azul' centro='(D.x,D.y)' radio='1.25' inicio='(E.x,E.y)' fin='(C.x,C.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='ffae00'">
+   <param name="G_10" value="espacio='E1' tipo='arco' color='azul' centro='(C.x,C.y)' radio='1.25' inicio='(D.x,D.y)' fin='(B.x,B.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='ffae00'">
+   <param name="G_11" value="espacio='E1' tipo='arco' color='azul' centro='(B.x,B.y)' radio='1.25' inicio='(C.x,C.y)' fin='(A.x,A.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' relleno='ffae00'">
+   <param name="G_12" value="espacio='E1' tipo='texto' color='azul' expresi&oacute;n='[90,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red128\green128\blue128;\red0\green0\blue255;}\f1\fs24\cf0 Arrastra los puntos para cambiar el pol\u237 gono\f2\fs24\cf1\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+</ajs>
+</body>
+</html>

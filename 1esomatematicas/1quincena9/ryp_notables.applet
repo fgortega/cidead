@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Clasificar rectas y puntos notables de un triángulo</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="clasificar_rectas_notables" width=525 height=450
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="525x450">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="clasificar_rectas_notables">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='s&iacute;' escala='30' O.x='50' despl_imagen='arr-izq' fondo='ffffc9' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='rectanot' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='E1' nombre='_._' expresi&oacute;n='(345,415,140,30)' decimales='0' fijo='s&iacute;' visible='no' imagen='./vacio.gif' opciones='elige opci&oacute;n [0], bisectrices [1], medianas [2], mediatrices [3], alturas [4]' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='selec=0' activo-si='selec=0'">
+   <param name="C_02" value="id='puntonot' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='E1' nombre='_._' expresi&oacute;n='(345,415,140,30)' decimales='0' fijo='s&iacute;' visible='no' imagen='./vacio.gif' opciones='elige opci&oacute;n [0], incentro [1], baricentro [2], circuncentro [3], ortocentro [4]' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='selec=1' activo-si='selec=1'">
+   <param name="C_03" value="id='inicio' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='_._' expresi&oacute;n='(0,420,115,25)' fijo='s&iacute;' visible='s&iacute;' imagen='./vacio.gif' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='seleccionar' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='selector=ent(rnd*10)+1;selec=selector%2;unidad=(selec=0)?&squot;&iquest;QU&Eacute; RECTAS NOTABLES APARECEN?&squot;:unidad;unidad=(selec=1)?&squot;&iquest;QU&Eacute; PUNTO NOTABLE APARECE?&squot;:unidad;selector2=ent(rnd*4)+1'">
+   <param name="A_02" value="id='rb' constante='s&iacute;' expresi&oacute;n='(selector2=rectanot)|(selector2=puntonot)' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='punto' color='00af00' dibujar-si='rb' expresi&oacute;n='(-9.3,4.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs80\b CORRECTO\par}' fuente='Arial,BOLD,40' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_02" value="espacio='E1' tipo='texto' color='azul' expresi&oacute;n='[1,420]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green153\blue0;\red0\green0\blue255;}\f1\fs32\b\cf0 otro ejercicio\cf1\f2\fs24\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='texto' color='azul' expresi&oacute;n='[25,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red128\green128\blue128;\red0\green0\blue255;}\cf0\f1\fs32\b\ul{\*\mjaformula{\expr unidad\decimals 0\fixed1}}\cf1\par }' fuente='SansSerif,BOLD,16' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='texto' color='azul' expresi&oacute;n='[245,420]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b respuesta\f2\fs24\par }' fuente='SansSerif,BOLD,18' fijo='s&iacute;'">
+   <param name="G_05" value="tipo='imagen' dibujar-si='selector2=1' expresi&oacute;n='(-6,3)' archivo='./imagenes9/incentro.png'">
+   <param name="G_06" value="tipo='imagen' dibujar-si='selector2=2' expresi&oacute;n='(-6,3)' archivo='./imagenes9/baricentro.png'">
+   <param name="G_07" value="tipo='imagen' dibujar-si='selector2=3' expresi&oacute;n='(-6,3)' archivo='./imagenes9/circuncentro.png'">
+   <param name="G_08" value="tipo='imagen' dibujar-si='selector2=4' expresi&oacute;n='(-6,3)' archivo='./imagenes9/ortocentro.png'">
+</ajs>
+</body>
+</html>

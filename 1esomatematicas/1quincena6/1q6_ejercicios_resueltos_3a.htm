@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Ejercicios resueltos: Tanto por ciento</title>
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<div align="center"><ajs name="significado_porcentaje_ejercicios" width=400 height=342
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="400x342">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="significado_porcentaje_ejercicios">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='fondo' alto='342' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fffac7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='enunciado' alto='110' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fff0c0' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='tabla' x='30' y='45' ancho='215' alto='52' fijo='s&iacute;' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='solucion1' x='10' y='210' ancho='380' alto='80' dibujar-si='solucion=1' fijo='s&iacute;' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='solucion' x='100' y='223' ancho='215' alto='52' dibujar-si='solucion=1' fijo='s&iacute;' despl_imagen='arr-izq' fondo='ffefbb' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_06" value="tipo='R2' id='corregir' x='74' y='120' ancho='240' alto='60' dibujar-si='tablabien=1' fijo='s&iacute;' escala='120' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='y1' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='tabla' expresi&oacute;n='(8+S[1]*75,27,(S[1]=1)?25:40,24)' fijo='no' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(V[S[1]+1]#y1)'">
+   <param name="C_02" value="id='y2' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='tabla' expresi&oacute;n='(8+S[2]*75,27,(S[2]=1)?25:40,24)' fijo='no' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(V[S[2]+1]#y2)'">
+   <param name="C_03" value="id='y3' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='tabla' expresi&oacute;n='(116,27,30,24)' valor='((S[1]=1)|(S[2]=1))?0:100' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='((S[1]=1)|(S[2]=1))&amp;(segtablabien=0)'">
+   <param name="C_04" value="id='otroejercicio2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(20,310)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/otroejercicio.png' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_05" value="id='comprobar' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(270,310)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/comprobar.png' acci&oacute;n='calcular' par&aacute;metro='solucion=1'">
+   <param name="A_01" value="id='S' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='4'">
+   <param name="A_02" value="id='V' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='4' expresi&oacute;n='V[1]=porc;V[2]=porc;V[3]=porc/100'">
+   <param name="A_03" value="id='porc' constante='s&iacute;' expresi&oacute;n='ent(rnd*89+10)' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='a6' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer=';S[1]=ent(3*rnd);S[2]=ent(3*rnd);V[1]=porc;V[2]=porc;V[3]=porc/100;;;;;;;;;;' mientras='S[1]=S[2]'">
+   <param name="A_05" value="id='p' constante='s&iacute;' expresi&oacute;n='((y1*y2)#0)?1:6' evaluar='siempre'">
+   <param name="A_06" value="id='segtablabien' constante='s&iacute;' expresi&oacute;n='((((S[2]=1)*(V[S[2]+1]=y2))|((S[1]=1)*(V[S[1]+1]=y1)))*(y3=100))?1:0' evaluar='siempre'">
+   <param name="A_07" value="id='tablabien' constante='s&iacute;' expresi&oacute;n='(V[S[2]+1]=y2)*(V[S[1]+1]=y1)*(y3=100)?1:0' evaluar='siempre'">
+   <param name="G_01" value="espacio='enunciado' tipo='texto' color='azul' expresi&oacute;n='[28,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b Completa adecuadamente la siguiente  tabla \cf1\f2\fs24\b0\par \par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='tabla' tipo='pol&iacute;gono' fondo='s&iacute;' color='azul' coord_abs='s&iacute;' expresi&oacute;n='(0,0)(214,0)(214,51)(0,51)(0,0)' ancho='2'">
+   <param name="G_03" value="espacio='tabla' tipo='segmento' color='azul' expresi&oacute;n='(-3.81,0)(3.81,0)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='tabla' tipo='segmento' color='azul' expresi&oacute;n='(-2.26,-0.56)(-2.26,0.56)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='tabla' tipo='segmento' color='azul' expresi&oacute;n='(-0.6,-0.56)(-0.6,0.56)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='tabla' tipo='segmento' color='azul' expresi&oacute;n='(0.8,-0.56)(0.8,0.56)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='tabla' tipo='segmento' color='azul' expresi&oacute;n='(2.2,-0.56)(2.2,0.56)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='tabla' tipo='texto' color='azul' expresi&oacute;n='[1,6]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b  Porcentaje\f2\fs24\b0  \f1\fs24\b   Fracci\u243 n       Decimal\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='no'">
+   <param name="G_09" value="espacio='tabla' tipo='texto' color='azul' expresi&oacute;n='[20,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b{\*\mjaformula{\expr porc\decimals 2\fixed0}} % \f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='no'">
+   <param name="G_10" value="espacio='enunciado' tipo='texto' color='azul' expresi&oacute;n='[260,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red170\green0\blue0;\red0\green0\blue255;}\f1\fs20\cf0 Pulsa INTRO despu\u233 s de \par introducir cada valor\cf1\f2\fs24\par \par}' fuente='Arial,PLAIN,10' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='corregir' tipo='texto' color='azul' dibujar-si='(tablabien=1)' expresi&oacute;n='[50,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs56\b MUY BIEN \f2\fs24\b0\par}' fuente='Arial,BOLD,28' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='corregir' tipo='imagen' dibujar-si='tablabien=1' expresi&oacute;n='(-0.9,0.1)' archivo='imagen1/bien.png'">
+   <param name="G_13" value="espacio='solucion1' tipo='texto' color='0000cc' expresi&oacute;n='[3,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b Soluci\u243 n\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='solucion' tipo='texto' color='0000cc' expresi&oacute;n='[1,6]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b Porcentaje\f2\fs24\b0   \f1\fs24\b   Fracci\u243 n       Decimal\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='no'">
+   <param name="G_15" value="espacio='solucion' tipo='pol&iacute;gono' fondo='s&iacute;' color='azul' coord_abs='s&iacute;' expresi&oacute;n='(0,0)(214,0)(214,51)(0,51)(0,0)' ancho='2'">
+   <param name="G_16" value="espacio='solucion' tipo='segmento' color='0000cc' expresi&oacute;n='(-3.81,0)(3.81,0)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_17" value="espacio='solucion' tipo='segmento' color='0000cc' expresi&oacute;n='(-2.26,-0.56)(-2.26,0.56)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_18" value="espacio='solucion' tipo='segmento' color='0000cc' expresi&oacute;n='(-0.6,-0.56)(-0.6,0.56)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_19" value="espacio='solucion' tipo='segmento' color='0000cc' expresi&oacute;n='(0.8,-0.56)(0.8,0.56)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_20" value="espacio='solucion' tipo='segmento' color='0000cc' expresi&oacute;n='(2.2,-0.56)(2.2,0.56)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_21" value="espacio='tabla' tipo='texto' color='azul' expresi&oacute;n='[80,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green255\blue0;\red0\green0\blue255;}\f1\fs24\b  {\*\mjaformula{\expr porc\decimals 2\fixed0}}/ 100   \cf0  \cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='no'">
+   <param name="G_22" value="espacio='tabla' tipo='texto' color='azul' expresi&oacute;n='[160,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}\f1\fs24\b{\*\mjaformula{\expr porc/100\decimals 3\fixed0}} \b0  \fs20  \f4\fs24\par }' fuente='SansSerif,BOLD,12' fijo='no'">
+   <param name="G_23" value="espacio='solucion' tipo='texto' color='azul' expresi&oacute;n='[20,31]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red0\green0\blue255;}\f1\fs24\b\cf0{\*\mjaformula{\expr porc\decimals 2\fixed0}}% \cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='no'">
+   <param name="G_24" value="espacio='solucion' tipo='texto' color='azul' expresi&oacute;n='[90,24]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red0\green0\blue255;}\f1\fs24\b\cf0  {\*\mjaformula{\fraction{\num{\expr porc\decimals 2\fixed0}}{\den 100}}}\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='no'">
+   <param name="G_25" value="espacio='solucion' tipo='texto' color='azul' expresi&oacute;n='[160,31]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red0\green0\blue255;}\f1\fs24\b\cf0{\*\mjaformula{\expr porc/100\decimals 3\fixed0}} \b0  \fs20  \cf1\f4\fs24\par }' fuente='SansSerif,BOLD,12' fijo='no'">
+</ajs></div>
+</body>
+</html>

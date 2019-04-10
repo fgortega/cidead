@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Ejercicios resueltos: La fracción como operador</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000"><ajs name="superficie de un paralelogramo" width=400 height=315
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="400x315">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="superficie de un paralelogramo">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E' fijo='s&iacute;' escala='30' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='n1' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E' expresi&oacute;n='(330,143,60,30)' decimales='0' fijo='no' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='n1=0'">
+   <param name="C_02" value="id='AUTO' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E' nombre='Otro ejercicio' expresi&oacute;n='(280,285,100,25)' decimales='0' fijo='no' visible='s&iacute;' fuente puntos='14' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="A_01" value="id='a' constante='s&iacute;' expresi&oacute;n='ent(rnd*10+1)' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='b' constante='s&iacute;' expresi&oacute;n='ent(rnd*9+2)' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='c' constante='s&iacute;' expresi&oacute;n='ent(rnd*200+1)*b' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='v' constante='s&iacute;' expresi&oacute;n='n1*b=c*a' evaluar='siempre'">
+   <param name="G_01" value="espacio='E' tipo='punto' color='negro' expresi&oacute;n='(-6,3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs36\u191 Cu\u225 nto son los \b{\*\mjaformula{\fraction{\num{\expr a\decimals 0\fixed1}}{\den{\expr b\decimals 0\fixed1}}}} \b0 de {\*\mjaformula{\expr c\decimals 0\fixed1}} ?\f3\fs24\par}' fuente='Arial,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_02" value="tipo='punto' color='azul' expresi&oacute;n='(-6,-0.2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs36\b{\*\mjaformula{\fraction{\num{\expr a\decimals 0\fixed1}}{\den{\expr b\decimals 0\fixed1}}}} \b0 de {\*\mjaformula{\expr c\decimals 0\fixed1}} \f3\fs24\par}' fuente='Arial,BOLD,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_03" value="tipo='punto' color='azul' expresi&oacute;n='(-1.5,-0.2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 = {\*\mjaformula{\expr c}} \u183  {\*\mjaformula{\expr a}} : {\*\mjaformula{\expr b}} \f2\fs24\par}' fuente='SansSerif,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_04" value="tipo='punto' color='azul' expresi&oacute;n='(3.5,-0.2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36 =\par}' fuente='SansSerif,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_05" value="tipo='punto' color='00a000' dibujar-si='n1*v' expresi&oacute;n='(0,-2.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs80 BIEN\f2\fs24\par}' fuente='SansSerif,PLAIN,40' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_06" value="tipo='punto' color='rojo' dibujar-si='n1*(v=0)' expresi&oacute;n='(0,-2.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs80 MAL\f2\fs24\par}' fuente='SansSerif,PLAIN,40' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_07" value="tipo='segmento' color='rojo' dibujar-si='n1*(v=0)' expresi&oacute;n='(3.6,-0.2)(3.9,0.4)' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_08" value="tipo='punto' color='azul' dibujar-si='n1*v' expresi&oacute;n='(4,-0.2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36{\*\mjaformula{\expr n1\decimals 0\fixed1}}\par}' fuente='SansSerif,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_09" value="tipo='punto' color='rojo' dibujar-si='n1*(v=0)' expresi&oacute;n='(4,-0.2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}\f1\fs36{\*\mjaformula{\expr n1\decimals 0\fixed1}}\par}' fuente='SansSerif,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_10" value="tipo='punto' color='negro' expresi&oacute;n='(-6,4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\ul Fracci\u243 n como operador:\f2\fs24\ulnone\par}' fuente='Arial,PLAIN,18' fijo='s&iacute;' tama&ntilde;o='0'">
+</ajs>
+
+</body>
+</html>

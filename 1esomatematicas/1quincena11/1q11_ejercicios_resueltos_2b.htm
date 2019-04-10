@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ejercicio resuelto: Interpreta la gráfica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center">
+<ajs name="ejercicio_interpretar_tablas" width=541 height=361
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="541x361">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="ejercicio_interpretar_tablas">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' fijo='s&iacute;' despl_imagen='arr-izq' fondo='ffffc6' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='p1' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E1' nombre='_._' expresi&oacute;n='(12,110,50,22)' valor='||' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='k=0'">
+   <param name="C_02" value="id='p2' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='E1' nombre='_._' expresi&oacute;n='(12,148,110,25)' discreto='s&iacute;' decimales='0' fijo='s&iacute;' visible='no' opciones=' [0],enero [1],febrero [2],marzo [3],abril [4],mayo [5],junio [6],julio [7],agosto [8],septiembre [9],octubre [10],noviembre [11],diciembre [12]' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='k=0'">
+   <param name="C_03" value="id='p3' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E1' nombre='_._' expresi&oacute;n='(12,206,50,22)' valor='||' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='k=0'">
+   <param name="C_04" value="id='p4' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='E1' nombre='_._' expresi&oacute;n='(12,244,110,25)' discreto='s&iacute;' decimales='0' fijo='s&iacute;' visible='no' opciones=' [0],enero [1],febrero [2],marzo [3],abril [4],mayo [5],junio [6],julio [7],agosto [8],septiembre [9],octubre [10],noviembre [11],diciembre [12]' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='(k=0)'">
+   <param name="C_05" value="id='p5' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='E1' nombre='_._' expresi&oacute;n='(90,287,50,22)' valor='||' decimales='0' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='k=k+1' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='(k=0)'">
+   <param name="C_06" value="id='solu' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='comprueba' expresi&oacute;n='(12,320,120,30)' fijo='s&iacute;' visible='no' acci&oacute;n='calcular' par&aacute;metro='k1=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='k=1' activo-si='k=1' pos_mensajes='centro'">
+   <param name="C_07" value="id='inicio' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' nombre='otro ejercicio' expresi&oacute;n='(410,320,120,30)' fijo='s&iacute;' visible='no' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='k1=1' activo-si='k1=1' pos_mensajes='centro'">
+   <param name="A_01" value="id='COTI' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='12'">
+   <param name="A_02" value="id='py(x)' expresi&oacute;n='x/20-2'">
+   <param name="A_03" value="id='mes' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='12' expresi&oacute;n='mes[0]=&squot;enero&squot;;mes[1]=&squot;febrero&squot;;mes[2]=&squot;marzo&squot;;mes[3]=&squot;abril&squot;;mes[4]=&squot;mayo&squot;;mes[5]=&squot;junio&squot;;mes[6]=&squot;julio&squot;;mes[7]=&squot;agosto&squot;;mes[8]=&squot;septiembre&squot;;mes[9]=&squot;octubre&squot;;mes[10]=&squot;noviembre&squot;;mes[11]=&squot;diciembre&squot;'">
+   <param name="A_04" value="id='error1(0)' algoritmo='s&iacute;' expresi&oacute;n='er1' algoritmo='s&iacute;' inicio='er1=0;' hacer='er1=(p1=maximo)?er1:er1+1;er1=(p2=indiceM)?er1:er1+1;er1=(p3=minimo)?er1:er1+1;er1=(p4=indicem)?er1:er1+1;er1=(p5=COTI[selecmes])?er1:er1+1'">
+   <param name="A_05" value="id='k' constante='s&iacute;' expresi&oacute;n='(p1&gt;0)&amp;(p2&gt;0)&amp;(p3&gt;0)&amp;(p4&gt;0)&amp;(p5&gt;0)' evaluar='siempre'">
+   <param name="A_06" value="id='llenarcoti' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='n=0' hacer='COTI[n]=ent(rnd*8)*10+10;n=n+1' mientras='n&lt;12'">
+   <param name="A_07" value="id='mayor' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='j=1;maximo=COTI[0];indiceM=1;minimo=COTI[0];indicem=1' hacer='indiceM=(maximo&gt;=COTI[j])?indiceM:j+1;indicem=(minimo&lt;=COTI[j])?indicem:j+1;maximo=max(maximo,COTI[j]);minimo=min(minimo,COTI[j]);j=j+1' mientras='j&lt;12'">
+   <param name="A_08" value="id='selecmes' constante='s&iacute;' expresi&oacute;n='ent(rnd*12)' evaluar='una-sola-vez'">
+   <param name="G_01" value="espacio='E1' tipo='texto' expresi&oacute;n='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs32\b La empresa EDAD S.A. cotiza en Bolsa desde hace algunos a\u241 os.\par En la siguiente gr\u225 fica se muestran las cotizaciones (en \u8364 ) de sus \par acciones a lo largo del a\u241 o 2008 (a finales de cada mes)\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='E1' tipo='texto' dibujar-si='(k1=1)&amp;(error1(0)=0)' expresi&oacute;n='[140,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green160\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b                    \u161 MUY BIEN! \par Has respondido correctamente a\par todas las preguntas\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='texto' dibujar-si='(k1=1)&amp;(error1(0)&gt;1)' expresi&oacute;n='[140,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\f1\fs40\b\cf0                    \fs32  \u161 OJO!\par Hay {\*\mjaformula{\expr er1\decimals 0\fixed1}} preguntas con respuesta\par err\u243 nea.\cf1\f3\fs24\b0\par}' fuente='Arial,BOLD,20' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='texto' dibujar-si='(k1=1)&amp;(error1(0)=1)' expresi&oacute;n='[140,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\f1\fs40\b\cf0                    \fs32  \u161 OJO!\par Hay {\*\mjaformula{\expr er1\decimals 0\fixed1}} pregunta con respuesta\par err\u243 nea.\cf1\f3\fs24\b0\par }' fuente='Arial Negrita,BOLD,20' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='E1' tipo='texto' dibujar-si='k=0' expresi&oacute;n='[120,340]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b Pulsa [intro] cuando hayas introducido tus respuestas \cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='E1' tipo='pol&iacute;gono' expresi&oacute;n='(-1,2)(-1,-2)(5,-2)' ancho='2'">
+   <param name="G_07" value="espacio='E1' tipo='segmento' color='gris' expresi&oacute;n='(-1+s*0.5,-2.2)(-1+s*0.5,2)' familia='s' s.intervalo='[1,12]' s.pasos='11' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_08" value="espacio='E1' tipo='segmento' color='gris' dibujar-si='s&gt;0' expresi&oacute;n='(-1.2,-2+s*0.5)(5,-2+s*0.5)' familia='s' s.intervalo='[0,8]' s.pasos='8' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_09" value="espacio='E1' tipo='punto' dibujar-si='s&gt;0' expresi&oacute;n='(-1.15+s*0.5,-2.5)' familia='s' s.intervalo='[0,12]' s.pasos='12' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green165\blue0;\red0\green0\blue255;}\f1\fs28\b\cf0{\*\mjaformula{\expr s\decimals 0\fixed1}}\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_10" value="espacio='E1' tipo='punto' expresi&oacute;n='(-1.7,-2.1+0.5*s)' familia='s' s.intervalo='[0,8]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Courier New;}{\colortbl\red255\green174\blue0;\red0\green0\blue255;}\f1\fs28\b\cf0{\*\mjaformula\f2\fs24\b{\expr 10*s\decimals 0\fixed1}\b0}\cf1\f3\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_11" value="espacio='E1' tipo='punto' color='rojo' expresi&oacute;n='(-0.5+s*0.5,py(COTI[s]))' familia='s' s.intervalo='[0,11]' s.pasos='11' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_12" value="espacio='E1' tipo='segmento' color='rojo' expresi&oacute;n='(-0.5+s*0.5,py(COTI[s]))(-0.5+(s+1)*0.5,py(COTI[s+1]))' familia='s' s.intervalo='[0,10]' s.pasos='10' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='1.5'">
+   <param name="G_13" value="espacio='E1' tipo='texto' expresi&oacute;n='[10,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b El mayor valor al que se ha\par cotizado una acci\u243 n ha sido:\cf1\f2\fs24\b0\par \par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='E1' tipo='texto' expresi&oacute;n='[10,117]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b                   \u8364 , y se alcanz\u243  por\par primera vez en el mes de:\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_15" value="espacio='E1' tipo='texto' expresi&oacute;n='[10,175]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b El menor valor al que se ha\par cotizado una acci\u243 n ha sido:\cf1\f2\fs24\b0\par \par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='E1' tipo='texto' expresi&oacute;n='[10,212]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b                   \u8364 , y se alcanz\u243  por\par primera vez en el mes de:\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_17" value="espacio='E1' tipo='texto' expresi&oacute;n='[10,275]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b En el mes de {\*\mjaformula{\expr [mes[selecmes]]\decimals 0\fixed1}} cada\par accion val\u237 a:                   \u8364 \cf1\f2\fs24\b0\par \par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+</ajs>
+</div>
+</body>
+</html>

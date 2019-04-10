@@ -1,0 +1,60 @@
+Aplicacion de las propiedades de las igualdades
+
+guiado='s&iacute;'
+modos='escribir'
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+x+12=5                         | Resta 12 a los dos miembros y pulsa intro
+(x+12)-12=5-12                 | Reduce los términos semejantes del primer miembro y pulsa intro
+x=5-12                         | Opera en el segundo miembro y pulsa intro
+x=-(7)                         | La solución de la ecuación es -7. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+x+8=10                         | Resta 8 a los dos miembros y pulsa intro
+(x+8)-8=10-8                   | Reduce los términos semejantes del primer miembro y pulsa intro
+x=10-8                         | Opera en el segundo miembro y pulsa intro
+x=2                            | La solución de la ecuación es 2. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la  ecuación 
+
+x+2=6                          | Resta 2 a los dos miembros y pulsa intro
+(x+2)-2=6-2                    | Reduce los términos semejantes del primer miembro y pulsa intro
+x=6-2                          | Opera en el segundo miembro y pulsa intro
+x=4                            | La solución de la ecuación es 4. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+x-5=10                         | Suma 5 a los dos miembros y pulsa intro
+(x-5)+5=10+5                   | Reduce los términos semejantes del primer miembro y pulsa intro
+x=10+5                         | Opera en el segundo miembro y pulsa intro
+x=15                           | La solución de la ecuación es 15. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+x-3=8                          | Suma 3 a los dos miembros y pulsa intro
+(x-3)+3=8+3                    | Reduce los términos semejantes del primer miembro y pulsa intro
+x=8+3                          | Opera en el segundo miembro y pulsa intro
+x=11                           | La solución de la ecuación es 11. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+4+x=5                          | Resta 4 a los dos miembros y pulsa intro
+(4+x)-4=5-4                    | Reduce los términos semejantes del primer miembro y pulsa intro
+x=5-4                          | Opera en el segundo miembro y pulsa intro
+x=1                            | La solución de la ecuación es 1. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+2=x-3                          | Suma 3 a los dos miembros y pulsa intro
+2+3=(x-3)+3                    | Opera en el primer miembro y pulsa intro
+5=(x-3)+3                      | Reduce los términos semejantes del segundo miembro y pulsa intro
+5=x                            | La solución de la ecuación es 5. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+4=x+1                          | Resta 1 a los dos miembros y pulsa intro
+4-1=(x+1)-1                    | Opera en el primer miembro y pulsa intro
+3=(x+1)-1                      | Reduce los términos semejantes del segundo miembro y pulsa intro
+3=x                            | La solución de la ecuación es 3. Pulsa >> para realizar otra serie de eercicios.

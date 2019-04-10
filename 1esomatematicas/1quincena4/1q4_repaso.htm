@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Ejercicios para repasar</title>
+<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="gayol" width=380 height=280
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="380x280">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="gayol">
+   <param name="Versi&oacute;n" value="5.101, 2013-07-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='si' escala='40' O.x='-175' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='inicio' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='_._' expresi&oacute;n='(260,257,120,23)' visible='si' imagen='imagen1/otroejemplo.png' acci&oacute;n='calcular' par&aacute;metro='a=(2+ent(7*rnd))+((ent(3*rnd)+2)*(-1)^(ent(2*rnd)))/10\nver=0\nve=0\nB1.x=0\nB1.y=-2' dibujar-si='(B1.x=0)&amp;(B1.y=-0.4)&amp;(ver=1)' pos_mensajes='centro'">
+   <param name="C_02" value="id='B1' tipo='gr&aacute;fico' color='ffff0000' color-int='azul' tama&ntilde;o='25' expresi&oacute;n='(0,-2)' dibujar-si='0'">
+   <param name="C_03" value="id='B1.x' tipo='num&eacute;rico' regi&oacute;n='exterior' nombre='B1.x' min='-0.3' max='9' visible='no' pos_mensajes='centro'">
+   <param name="C_04" value="id='B1.y' tipo='num&eacute;rico' regi&oacute;n='exterior' nombre='B1.y' valor='-2' min='-3.4' max='3.4' visible='no' pos_mensajes='centro'">
+   <param name="C_05" value="id='ver' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='ver divisiones' expresi&oacute;n='(0,257)' visible='si' acci&oacute;n='calcular' par&aacute;metro='ver=1' dibujar-si='(B1.x=0)&amp;(B1.y=-0.4)&amp;(ver=0)' pos_mensajes='centro'">
+   <param name="C_06" value="id='quitar' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='quitar divisiones' expresi&oacute;n='(0,257)' visible='si' acci&oacute;n='calcular' par&aacute;metro='ver=0' dibujar-si='(B1.x=0)&amp;(B1.y=-0.4)&amp;(ver=1)' pos_mensajes='centro'">
+   <param name="A_01" value="id='a' constante='si' expresi&oacute;n='(2+ent(7*rnd))+((ent(3*rnd)+2)*(-1)^(ent(2*rnd)))/10' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='a4' algoritmo='si' evaluar='siempre' hacer='B1.x=(B1.x^2+(B1.y+0.4)^2&lt;0.1)?0:B1.x;B1.y=(B1.x^2+(B1.y+0.4)^2&lt;0.1)?-0.4:B1.y;bx=B1.x;by=B1.y+0.4;ve=(bx=0)*(by=0);ver=(ver=1)?ve:ver'">
+   <param name="G_01" value="tipo='segmento' color='ff6600' expresi&oacute;n='(bx,by)(bx+10,by)' tama&ntilde;o='0'">
+   <param name="G_02" value="tipo='segmento' color='ff6600' expresi&oacute;n='(s+bx,by)(s+bx,by-0.3)' familia='s' s.intervalo='[0,10]' s.pasos='10' tama&ntilde;o='0'">
+   <param name="G_03" value="tipo='segmento' color='ff6600' dibujar-si='ver=1' expresi&oacute;n='(s+bx,by)(s+bx,by-0.2)' familia='s' s.intervalo='[0,10]' s.pasos='20' tama&ntilde;o='0'">
+   <param name="G_04" value="tipo='segmento' color='ff6600' dibujar-si='ver=1' expresi&oacute;n='(s+bx,by)(s+bx,by-0.1)' familia='s' s.intervalo='[0,10]' s.pasos='100' tama&ntilde;o='0'">
+   <param name="G_05" value="tipo='segmento' color='ff6600' expresi&oacute;n='(s+bx,-0.7+by)(s+bx-0.3,by-0.2)' familia='s' s.intervalo='[0,10]' s.pasos='10' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b{\*\mjaformula{\expr s\decimals 0\fixed0}}\f2\fs24\b0\par}' fuente='Arial,BOLD,12' tama&ntilde;o='0' ancho='0'">
+   <param name="G_06" value="tipo='segmento' color='negro' expresi&oacute;n='(0,0.02)(a,0.02)' tama&ntilde;o='0'">
+   <param name="G_07" value="tipo='texto' color='grisObscuro' dibujar-si='ve=0' expresi&oacute;n='[15,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 Trata de medir la longitud de este segmento.\par Para ello arrastra el cero de la regla.\f2\fs24\par}' fuente='Arial,PLAIN,14'">
+   <param name="G_08" value="tipo='texto' color='grisObscuro' dibujar-si='(B1.x=0)&amp;(B1.y=-0.4)&amp;(ver=0)' expresi&oacute;n='[15,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 La longitud de este segmento es m\u225 s de {\*\mjaformula{\expr (ent(a)=1)? &squot;1 unidad&squot;:ent(a)+&squot; unidades&squot;\decimals 2\fixed0}}\par pero menos de {\*\mjaformula{\expr ent(a)+1\decimals 2\fixed0}}. Pulsa para ver divisiones en la regla.\f2\fs24\par}' fuente='Arial,PLAIN,14'">
+   <param name="G_09" value="tipo='texto' color='grisObscuro' dibujar-si='(B1.x=0)&amp;(B1.y=-0.4)&amp;(ver=1)' expresi&oacute;n='[20,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 La longitud de este segmento es {\*\mjaformula{\expr a\decimals 2\fixed0}} unidades.\f2\fs24\par}' fuente='Arial,PLAIN,14'">
+</ajs>
+</body>
+</html>

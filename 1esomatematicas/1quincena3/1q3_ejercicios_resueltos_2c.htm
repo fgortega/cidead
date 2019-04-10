@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Ejercicios resueltos. Operaciones sencillas con par&eacute;ntesis</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="enteros_ejercicios" width=392 height=410
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar,lib/Descartes5_Sonido.jar,lib/Descartes5_Algebra.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="392x410">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="enteros_ejercicios">
+   <param name="Versi&oacute;n" value="5.1, 2013-07-13">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='fondo' y='20' alto='392' fijo='s&iacute;' escala='120' O.y='40' despl_imagen='arr-izq' fondo='fffac7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='enunciado' y='0' alto='110' fijo='s&iacute;' escala='120' O.x='-73' O.y='83' despl_imagen='arr-izq' fondo='fff0c0' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='corregir' x='74' y='150' ancho='240' alto='60' dibujar-si='(correcto2#0)*(!(resp2=res))' fijo='s&iacute;' escala='120' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='texto1' x='105' y='240' ancho='180' alto='60' dibujar-si='(comprobar&gt;0)' fijo='s&iacute;' escala='20' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='ejemplo2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(20,320,100,20)' fijo='no' visible='no' imagen='imagen1/otroejercicio.png' acci&oacute;n='calcular' par&aacute;metro='comprobar=0\n\nresp2=&squot;&squot;\ng=datos()' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='resp2#0'">
+   <param name="C_02" value="id='solucion2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(260,320,100,20)' fijo='s&iacute;' visible='no' imagen='imagen1/comprobar.png' acci&oacute;n='calcular' par&aacute;metro='comprobar=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='resp2#0'">
+   <param name="C_03" value="id='resp2' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='enunciado' expresi&oacute;n='(200,60,75,40)' valor='||' fijo='no' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='resp2#solucion' pos_mensajes='centro'">
+   <param name="A_01" value="id='datos()' algoritmo='s&iacute;' algoritmo='s&iacute;' hacer='a1=ent(2*rnd-1);a=(a1=0)?a1+1:a1;e1=ent(50*rnd-25);e=(e1=0)?e1+1:e1'">
+   <param name="A_02" value="id='INICIO' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='a1=ent(2*rnd-1);a=(a1=0)?a1+1:a1;e1=ent(50*rnd-25);e=(e1=0)?e1+1:e1'">
+   <param name="A_03" value="id='CALCULOS' algoritmo='s&iacute;' evaluar='siempre' hacer='solucion=a*e;correcto2=(solucion=resp2)?1:2'">
+   <param name="A_04" value="id='res' constante='s&iacute;' expresi&oacute;n='&squot;&squot;' evaluar='siempre'">
+   <param name="G_01" value="espacio='enunciado' tipo='texto' expresi&oacute;n='[70,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs48\u191 Cu\u225 l es el\fs40  resultado?\cf1\f3\fs24\par}' fuente='Arial,PLAIN,24' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='enunciado' tipo='texto' expresi&oacute;n='[280,65]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\f1\fs20\b\cf0 Escribe el valor \par y pulsa INTRO\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,10' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='enunciado' tipo='texto' dibujar-si='(e&gt;0)&amp;(a&gt;0)' expresi&oacute;n='[40,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs64 + (+{\*\mjaformula{\expr e}}) = \f2\fs24\par \par \par \par}' fuente='Arial,PLAIN,32' decimales='0' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='enunciado' tipo='texto' dibujar-si='(e&lt;=0)&amp;(a&gt;0)' expresi&oacute;n='[40,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;\red255\green0\blue0;}\f1\fs64 +\cf0 (\cf1{\*\mjaformula\cf2{\expr e}\cf1}\cf0 ) =\cf1   \fs40\par \par \par \par}' fuente='Arial,PLAIN,32' decimales='0' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='enunciado' tipo='texto' dibujar-si='(e&lt;=0)&amp;(a&lt;0)' expresi&oacute;n='[45,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;}\f1\fs64\cf0 -\cf1 (\cf2{\*\mjaformula\cf0{\expr e}\cf2}\cf1 ) =\cf2  \fs40\par \par \par \par}' fuente='Arial,PLAIN,32' decimales='0' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='enunciado' tipo='texto' dibujar-si='(e&gt;0)&amp;(a&lt;0)' expresi&oacute;n='[40,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red255\green0\blue0;\red0\green255\blue255;\red0\green0\blue0;\red0\green0\blue255;}\f1\fs64\cf0 -\cf1  \cf2 (\cf3 +{\*\mjaformula{\expr e}}\cf2 ) =\cf3  \fs40\par \par \par \par}' fuente='Arial,PLAIN,32' decimales='0' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='enunciado' tipo='texto' dibujar-si='(a&gt;0)&amp;(e&gt;0)' expresi&oacute;n='[198,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs64 +{\*\mjaformula\f2\fs48{\expr e}}\f3\fs24\par }' fuente='SansSerif,PLAIN,32' decimales='0' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='enunciado' tipo='texto' dibujar-si='(a&lt;0)&amp;(e&lt;0)' expresi&oacute;n='[198,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs64 +{\*\mjaformula{\expr -e}}\f2\fs24\par }' fuente='SansSerif,PLAIN,32' decimales='0' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='enunciado' tipo='texto' dibujar-si='(a&gt;0)&amp;(e&lt;0)' expresi&oacute;n='[198,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\f1\fs64\cf0{\*\mjaformula{\expr e}}\cf1\f2\fs24\par}' fuente='Arial,PLAIN,32' decimales='0' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='enunciado' tipo='texto' dibujar-si='(a&lt;0)&amp;(e&gt;0)' expresi&oacute;n='[198,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\f1\fs64{\*\mjaformula\cf0{\expr -e}\cf1}\f2\fs24\par}' fuente='Arial,PLAIN,32' decimales='0' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='fondo' tipo='texto' color='amarillo' dibujar-si='(comprobar=1)&amp;(resp#0)' expresi&oacute;n='[100,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs112 MUY BIEN\f2\fs24\par}' fuente='Arial,PLAIN,56' fijo='s&iacute;'">
+   <param name="G_12" value="tipo='texto' color='rojo' dibujar-si='(comprobar=0)&amp;(resp#0)' expresi&oacute;n='[20,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Courier New;\f1\fcharset0 Arial;}{\colortbl\red255\green255\blue0;}\f1\fs64 La respuesta no es correcta.\par Int\u233 ntalo de nuevo\cf0\f0\fs24\par}' fuente='SansSerif,PLAIN,32' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='corregir' tipo='texto' dibujar-si='(correcto2=1)' expresi&oacute;n='[50,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs56\b MUY BIEN \f2\fs24\b0\par}' fuente='Arial,BOLD,28' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='corregir' tipo='imagen' dibujar-si='(correcto2=1)' expresi&oacute;n='(-0.9,0.1)' archivo='imagen1/bien.png'">
+   <param name="G_15" value="espacio='corregir' tipo='texto' dibujar-si='correcto2=2' expresi&oacute;n='[58,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b Vuelve a intentarlo\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='corregir' tipo='imagen' dibujar-si='correcto2=2' expresi&oacute;n='(-0.8,0.1)' archivo='imagen1/mal.png'">
+   <param name="G_17" value="espacio='corregir' tipo='pol&iacute;gono' color='ff6600' expresi&oacute;n='(-1,-0.24)(-1,0.25)(0.99,0.25)(0.99,-0.24)(-1,-0.24)'">
+   <param name="G_18" value="espacio='texto1' tipo='texto' color='grisObscuro' dibujar-si='(comprobar&gt;=1)' expresi&oacute;n='[2,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b La solucion es\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='no'">
+   <param name="G_19" value="espacio='texto1' tipo='texto' color='grisObscuro' dibujar-si='(comprobar&gt;=1)*(solucion&gt;0)' expresi&oacute;n='[95,25]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b +{\*\mjaformula{\expr abs(solucion)\decimals 2\fixed0}}\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='no'">
+   <param name="G_20" value="espacio='texto1' tipo='texto' color='grisObscuro' dibujar-si='(comprobar&gt;=1)*(solucion&lt;0)' expresi&oacute;n='[95,25]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b -{\*\mjaformula{\expr abs(solucion)\decimals 2\fixed0}}\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='no'">
+   <param name="G_21" value="espacio='texto1' tipo='pol&iacute;gono' color='ff6600' expresi&oacute;n='(-4.5,-1.4)(-4.5,1.5)(4.46,1.5)(4.46,-1.46)(-4.5,-1.46)'">
+</ajs>
+</body>
+</html>

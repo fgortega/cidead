@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Ejercicios resueltos. Ordenar enteros</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="ordenar_enteros_ejercicios" width=392 height=410
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar,lib/Descartes5_Sonido.jar,lib/Descartes5_Algebra.jar"
+        MAYSCRIPT>
+   <param name="separate_jvm" value="true">
+   <param name="nombre" value="ordenar_enteros_ejercicios">
+   <param name="Versi&oacute;n" value="4.05, 2009-05-13">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='fondo' y='20' alto='392' fijo='s&iacute;' escala='120' O.y='40' despl_imagen='arr-izq' fondo='fffac7' red='no' red10='no' ejes='no' texto='no' ">
+   <param name="E_01" value="tipo='R2' id='enunciado' y='0' alto='140' fijo='s&iacute;' escala='120' O.x='-73' O.y='83' despl_imagen='arr-izq' fondo='fff0c0' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='corregir' x='74' y='220' ancho='240' alto='60' dibujar-si='(resp#0)' fijo='s&iacute;' escala='120' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='texto1' x='30' y='300' ancho='330' alto='50' dibujar-si='(comprobar&gt;0)' fijo='s&iacute;' escala='120' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='ejemplo2' espacio='fondo' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(10,350,100,20)' fijo='no' visible='no' dibujar-si='(resp#0)' imagen='imagen1/otroejercicio.png' acci&oacute;n='calcular' par&aacute;metro='comprobar=0\nresp=0\n\na=ent(50*rnd-25)\nb=ent(50*rnd-25)\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_01" value="id='solucion2' espacio='fondo' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(260,350,100,20)' fijo='s&iacute;' visible='no' dibujar-si='resp#0' imagen='imagen1/comprobar.png' acci&oacute;n='calcular' par&aacute;metro='comprobar=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='mayor_a' espacio='fondo' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(30,150,90,25)' fijo='s&iacute;' nombre='El mayor es A' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='resp=-1' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_03" value="id='mayor_b' espacio='fondo' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(145,150,90,25)' fijo='s&iacute;' nombre='El mayor es B' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='resp=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="C_04" value="id='iguales' espacio='fondo' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(260,150,90,25)' fijo='s&iacute;' nombre='Son iguales' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='resp=2' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro' tooltip.fuente='Monospaced,PLAIN,12' Explicaci&oacute;n.fuente='Monospaced,PLAIN,12'">
+   <param name="A_00" value="id='a' constante='s&iacute;' expresi&oacute;n='ent(50*rnd-25)' evaluar='una-sola-vez'">
+   <param name="A_01" value="id='b' constante='s&iacute;' expresi&oacute;n='ent(50*rnd-25)' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='correcto2' expresi&oacute;n='(((a&gt;b)&amp;(resp=-1))|((a&lt;b)&amp;(resp=1))|((a=b)&amp;(resp=2)))?1:0'">
+   <param name="G_00" value="espacio='enunciado' tipo='texto' color='turquesa' expresi&oacute;n='[85,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red0\green0\blue0;\red0\green255\blue255;}\cf0\f1\fs56\b\u191 Cu\u225 l es mayor?\cf1\f2\fs56\b0\par}' fuente='Arial,BOLD,28' fijo='s&iacute;'">
+   <param name="G_01" value="espacio='enunciado' tipo='texto' color='verde' expresi&oacute;n='[90,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue217;\red0\green255\blue0;}\cf0\f1\fs56 A\cf1\f2\fs56\par}' fuente='Arial,PLAIN,28' decimales='[d1]' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='enunciado' tipo='texto' color='verde' expresi&oacute;n='[85,95]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue217;\red0\green255\blue0;}\cf0\f1\fs64\b{\*\mjaformula{\expr [a]}}\cf1\f2\fs56\b0\par}' fuente='Arial,BOLD,32' decimales='[d1]' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='enunciado' tipo='texto' color='gris' expresi&oacute;n='[250,50]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs56 B\f2\fs56\par}' fuente='Arial,PLAIN,28' decimales='[d1]' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='enunciado' tipo='texto' color='gris' expresi&oacute;n='[250,95]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs64\b{\*\mjaformula\f2\fs56\b{\expr [b]}}\f3\fs56\b0\par}' fuente='Arial,BOLD,32' decimales='[d2]' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='fondo' tipo='texto' expresi&oacute;n='[128,130]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs20\b Pulsa la opci\u243 n correcta\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,10' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='texto1' tipo='texto' color='grisObscuro' dibujar-si='(comprobar&gt;=1)*(a&gt;b)' expresi&oacute;n='[2,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b El mayor es A {\*\mjaformula{\expr a\decimals 2\fixed0}}\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='no'">
+   <param name="G_07" value="espacio='texto1' tipo='texto' color='grisObscuro' dibujar-si='(comprobar&gt;=1)*(b&gt;a)' expresi&oacute;n='[2,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b El mayor es B {\*\mjaformula{\expr b\decimals 2\fixed0}}\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='no'">
+   <param name="G_08" value="espacio='texto1' tipo='texto' color='grisObscuro' dibujar-si='(comprobar&gt;=1)*(b=a)' expresi&oacute;n='[2,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b A y B son iguales \f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='no'">
+   <param name="G_09" value="espacio='texto1' tipo='pol&iacute;gono' color='ff6600' expresi&oacute;n='(-1.375,-0.2)(-1.375,0.21)(1.37,0.21)(1.37,-0.2)(-1.37,-0.2)'">
+   <param name="G_10" value="espacio='corregir' tipo='texto' dibujar-si='(correcto2=1)' expresi&oacute;n='[50,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs56\b MUY BIEN \f2\fs24\b0\par}' fuente='Arial,BOLD,28' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='corregir' tipo='imagen' dibujar-si='(correcto2=1)' expresi&oacute;n='(-0.9,0.1)' archivo='imagen1/bien.png'">
+   <param name="G_12" value="espacio='corregir' tipo='texto' dibujar-si='(correcto2=0)*(resp#0)' expresi&oacute;n='[58,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b Vuelve a intentarlo\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='corregir' tipo='imagen' dibujar-si='(correcto2=0)*(resp#0)' expresi&oacute;n='(-0.8,0.1)' archivo='imagen1/mal.png'">
+   <param name="G_14" value="espacio='corregir' tipo='pol&iacute;gono' color='ff6600' expresi&oacute;n='(-1,-0.24)(-1,0.25)(0.99,0.25)(0.99,-0.24)(-1,-0.24)'">
+</ajs>
+
+
+</body>
+</html>

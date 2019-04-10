@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Múltiplos y divisores</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+
+<body onload="MM_preloadImages('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes2.png','imagen1/paracont2.png','imagen1/adelanteb.png','imagen1/atrasb.png','imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/paraejer3.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paracont3.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0px; top: 0px; width: 800px; height: 528px; z-index: 1;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="1quincena2_presenta_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes.png" alt="" name="antes" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','imagen1/paracont3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paracont3.png" alt="" name="contenidos" onload="MM_nbGroup('init','group1','contenidos','imagen1/paraconte.png',1)" border="0"></a></td>
+      <td><a href="1quincena2_ejercicios_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer.png" alt="" name="ejercicios" onload="" border="0"></a></td>
+      <td><a href="1quincena2_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" onload="" border="0"></a></td>
+      <td><a href="1quincena2_tutor_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onmouseover="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" onload="" border="0"></a></td>
+      <td><a href="1quincena2_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0"></a></td>
+    </tr>
+  </table>
+<table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+  <table align="center" border="0" cellspacing="0" height="85%" width="800">
+     <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8"></td>
+      <td bgcolor="#ffffff" height="365" valign="top">
+        <table cellspacing="12" width="100%" height="370">
+          <tr>
+            <td valign="top"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong>3.
+              El m.c.m. y el m.c.d.</strong></font></td>
+            <td> <div align="right"></div></td>
+          </tr>
+          <tr>
+            <td valign="top"> <p><font color="#666666" face="Geneva, Arial, Helvetica, sans-serif" size="3"><strong>Mínimo
+                común múltiplo de varios números.</strong></font>
+              </p>
+              <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Dados
+                dos o más números podemos calcular múltiplos
+                de cada uno y observaremos como hay números que son múltiplos
+                a la vez de todos ellos.</font></p>
+              <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">De
+                estos múltiplos comunes vamos a considerar el más
+                pequeño, sin contar el 0, a ese lo llamaremos el mínimo
+                común múltiplo y lo indicaremos abreviadamente <strong>m.c.m.</strong></font></p>
+              <table width="90%" align="center" cellpadding="8" cellspacing="0" background="imagen1/clipcon.png">
+                <tr>
+                  <td><div align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;<br>
+                      El <strong>mínimo común múltiplo</strong>
+                      de varios números es el número más
+                      pequeño que es múltiplo de todos esos números,
+                      sin considerar el 0.</font> <font size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></div></td>
+                </tr>
+              </table>
+              <p align="justify"><strong><br>
+                </strong> </p>
+              <div align="justify"> </div></td>
+            <td valign="top"> <div align="right">
+                <ajs name="múltiplos" width=375 height=375 code="Descartes.class">
+				                    <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="nombre" value="múltiplos">
+   <param name="Versión" value="5.3.02">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=si limpiar=no">
+   <param name="Espacio" value="fondo=blanco red=no red10=no ejes=no texto=no eje-x=no eje-y=no">
+   <param name="C_00" value="id=m tipo=numérico valor='ent(rnd*10)+2' decimales='0' incr='1' min='0' max='200' nombre=Un número">
+   <param name="C_01" value="id=j tipo=numérico valor='ent(rnd*10)+2' decimales='0' incr='1' min='0' max='200' nombre=otro número">
+   <param name="A_00" value="id=escala expresión='55' constante=si evaluar=una-sola-vez">
+   <param name="A_01" value="id=n expresión='ent(m)' constante=si evaluar=siempre">
+   <param name="A_02" value="id=k expresión='ent(j)' constante=si evaluar=siempre">
+   <param name="A_03" value="id=cm algoritmo=si inicio='cm=n-1' hacer='cm=cm+1' mientras='(cm/k>ent(cm/k))+(cm/n>ent(cm/n))' evaluar=siempre">
+   <param name="G_00" value="tipo=punto expresión='(-3,2.8)' color=rojo texto='Mínimo común múltiplo de [n] y [j]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_01" value="tipo=punto expresión='(-3,2.3)' color=00bb00 texto='Los múltiplos del número [n] son:' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_02" value="tipo=punto expresión='(-3+t-6*ent(t/6),1.85-0.45*ent(t/6))' color=00bb00 dibujar-si='n' familia=t t.intervalo=[0,17] t.pasos=17 texto='[n*t]' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_03" value="tipo=punto expresión='(-3+t-6*ent(t/6),1.85-0.45*ent(t/6))' dibujar-si='n*t/k=ent(n*t/k)' familia=t t.intervalo=[0,17] t.pasos=17 texto='[n*t]' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_04" value="tipo=punto expresión='(-2.88+s-6*ent(s/6)+0.15*(s*n>9)+0.15*(s*n>99)+0.15*(s*n>999)+0.15*(s*n>9999)+0.15*(s*n>99999)+0.15*(s*n>999999),1.85-0.45*ent(s/6))' color=00bb00 dibujar-si='n' familia=s s.intervalo=[0,17] s.pasos=17 texto=',' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_05" value="tipo=punto expresión='(2.8,0.95)' color=00bb00 texto='...' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,20'">
+   <param name="G_06" value="tipo=punto expresión='(-3,0.3)' color=00a1ff texto='Los múltiplos del número [k] son:' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_07" value="tipo=punto expresión='(-3+s-6*ent(s/6),-0.15-0.45*ent(s/6))' color=00a1ff dibujar-si='k' familia=s s.intervalo=[0,17] s.pasos=17 texto='[k*s]' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_08" value="tipo=punto expresión='(-3+s-6*ent(s/6),-0.15-0.45*ent(s/6))' dibujar-si='k*s/n=ent(k*s/n)' familia=s s.intervalo=[0,17] s.pasos=17 texto='[k*s]' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_09" value="tipo=punto expresión='(-2.88+s-6*ent(s/6)+0.15*(s*k>9)+0.15*(s*k>99)+0.15*(s*k>999)+0.15*(s*k>9999)+0.15*(s*k>99999)+0.15*(s*k>999999),-0.15-0.45*ent(s/6))' color=00a1ff dibujar-si='n' familia=s s.intervalo=[0,17] s.pasos=17 texto=',' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_10" value="tipo=punto expresión='(2.8,-1.05)' color=00a1ff texto='...' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,20'">
+   <param name="G_11" value="tipo=punto expresión='(-3,-1.65)' dibujar-si='n' texto='Los múltiplos comunes de [n] y [k] son:' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_12" value="tipo=punto expresión='(-3+s-6*ent(s/6),-2.1-0.5*ent(s/6))' familia=s s.intervalo=[0,5] s.pasos=5 texto='[cm*s]' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_13" value="tipo=punto expresión='(-2.88+s-6*ent(s/6)+0.15*(s*cm>9)+0.15*(s*cm>99)+0.15*(s*cm>999)+0.15*(s*cm>9999)+0.15*(s*cm>99999)+0.15*(s*cm>999999),-2.1)' familia=s s.intervalo=[0,5] s.pasos=5 texto=',' decimales=0 tamaño=0 fuente='Helvetica,BOLD,14'">
+   <param name="G_14" value="tipo=punto expresión='(2.8,-2.1)' texto='...' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,20'">
+   <param name="G_15" value="tipo=punto expresión='(-3,-2.6)' color=rojo texto='Después del 0, el más pequeño de esos \nmúltiplos comunes es [cm]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_16" value="tipo=arco centro='(-2.85+t-6*ent(t/6)+0.07*(cm>99)+0.11*(cm>999),1.95-0.45*ent(t/6))' radio='0.3' inicio='0' fin='360' color=rojo dibujar-si='(n*t/k=ent(n*t/k))*(t=cm/n)' familia=t t.intervalo=[0,17] t.pasos=17">
+   <param name="G_17" value="tipo=arco centro='(-2.85+s-6*ent(s/6)+0.07*(cm>99)+0.07*(cm>999),-0.02-0.45*ent(s/6))' radio='0.3' inicio='0' fin='360' color=rojo dibujar-si='(k*s/n=ent(k*s/n))*(s=cm/k)' familia=s s.intervalo=[0,17] s.pasos=17">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.com/" target="_blank">JAVA</a>.</font>
+</ajs>
+
+
+              </div></td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8"> </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="8" width="8"></td>
+      <td background="imagen1/bor3.gif" height="8"></td>
+      <td background="imagen1/es3.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td>
+<div align="right"> </div></td>
+      <td width="30">
+        <div align="center"><a href="1quincena2_contenidos_2c.htm" target="_parent" onMouseOver="MM_swapImage('atras','','imagen1/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/atras.png" alt="anterior" name="atras" width="25" height="25" border="0"></a></div>
+      </td>
+      <td width="30">
+        <div align="center"><a href="1quincena2_contenidos_3b.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>

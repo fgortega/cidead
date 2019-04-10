@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ejercicio resuelto: Coordenadas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='http://arquimedes.matem.unam.mx/Descartes5/lib/descartes-min.js'></script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center">
+  <ajs name="ejercicio1b" width=540 height=430
+        code="Descartes.class"
+        codebase="http://arquimedes.matem.unam.mx/Descartes5/"
+        archive="lib/Descartes5.jar,lib/Descartes5_Sonido.jar,lib/Descartes5_Algebra.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="540x430">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="ejercicio1b">
+   <param name="Versi&oacute;n" value="5.202, 2013-10-22">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='text' fijo='s&iacute;' escala='10' despl_imagen='arr-izq' fondo='fff0c7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='graf' x='200' y='70' ancho='321' alto='321' fijo='s&iacute;' escala='16' despl_imagen='arr-izq' fondo='blanco' red='grisClaro' red10='no' ejes='gris' texto='no' eje-x='X' eje-y='Y' sensible_a_los_movimientos_del_rat&oacute;n='s&iacute;'">
+   <param name="C_01" value="id='comprobar tabla' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='text' nombre='datos introducidos' expresi&oacute;n='(30,370,100,20)' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='ct=1' activo-si='(x1#0)|(x2#0)|(x3#0)|(x4#0)|(x5#0)|(x6#0)|(x7#0)|(x8#0)'">
+   <param name="C_02" value="id='iniciar' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='text' nombre='iniciar' expresi&oacute;n='(360,395,70,20)' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='inicio' pos_mensajes='centro'">
+   <param name="C_03" value="id='comprobar' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='text' nombre='comprobar' expresi&oacute;n='(450,395,70,20)' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='c=1;lim=0' activo-si='ct=1' pos_mensajes='centro'">
+   <param name="C_04" value="id='x1' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(40,130,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_05" value="id='x2' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(40,150,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_06" value="id='x3' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(40,170,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_07" value="id='x4' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(40,190,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_08" value="id='x5' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(40,210,40,20)' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_09" value="id='x6' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(40,230,40,20)' incr='1' min='-9' max='9' decimales='1' fijo='no' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_10" value="id='x7' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(40,250,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_11" value="id='x8' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(40,270,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_12" value="id='y1' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(80,130,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_13" value="id='y2' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(80,150,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_14" value="id='y3' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(80,170,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_15" value="id='y4' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(80,190,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_16" value="id='y5' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(80,210,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_17" value="id='y6' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(80,230,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_18" value="id='y7' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(80,250,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_19" value="id='y8' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(80,270,40,20)' incr='1' min='-9' max='9' decimales='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="A_01" value="id='VL' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='8' expresi&oacute;n='VL[0]=&squot;A&squot;;VL[1]=&squot;B&squot;;VL[2]=&squot;C&squot;;VL[3]=&squot;D&squot;;VL[4]=&squot;E&squot;;VL[5]=&squot;F&squot;;VL[6]=&squot;G&squot;;VL[7]=&squot;H&squot;'">
+   <param name="A_02" value="id='VX' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='8'">
+   <param name="A_03" value="id='VY' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='8'">
+   <param name="A_04" value="id='VCX' vector='s&iacute;' evaluar='siempre' tama&ntilde;o='8' expresi&oacute;n='VCX[0]=x1;VCX[1]=x2;VCX[2]=x3;VCX[3]=x4;VCX[4]=x5;VCX[5]=x6;VCX[6]=x7;VCX[7]=x8'">
+   <param name="A_05" value="id='VCY' vector='s&iacute;' evaluar='siempre' tama&ntilde;o='8' expresi&oacute;n='VCY[0]=y1;VCY[1]=y2;VCY[2]=y3;VCY[3]=y4;VCY[4]=y5;VCY[5]=y6;VCY[6]=y7;VCY[7]=y8'">
+   <param name="A_06" value="id='llenar' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='n=0' hacer='VX[n]=2*ent(9*rnd)-9;VY[n]=2*ent(9*rnd)-9;VCX[n]=0;VCY[n]=0;n=n+1;' mientras='!(n&gt;7)'">
+   <param name="G_01" value="espacio='text' tipo='pol&iacute;gono' color='aa0000' coord_abs='s&iacute;' expresi&oacute;n='(0,0)(539,0)(539,55)(0,55)(0,0)' relleno='blanco'">
+   <param name="G_02" value="espacio='text' tipo='texto' color='azul' expresi&oacute;n='[10,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24 En cada caso anota las coordenadas de los puntos representados. Luego pulsa la tecla\par \b intro\b0  y despu\u233 s el bot\u243 n\b  datos introducidos\b0  Para comprobar tus respuestas pulsa sobre\par el bot\u243 n \b comprobar.\b0  Si deseas hacer un nuevo ejercicio pulsa el bot\u243 n\b  iniciar\b0 .\cf1  \f3\fs24\par}' fuente='SansSerif,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='text' tipo='pol&iacute;gono' color='grisClaro' coord_abs='s&iacute;' expresi&oacute;n='(40,110+20*s)(40,130+20*s)(80,130+20*s)(80,110+20*s)(40,110+20*s)' familia='s' s.intervalo='[0,7]' s.pasos='8' relleno='blanco'">
+   <param name="G_04" value="espacio='text' tipo='pol&iacute;gono' color='grisClaro' coord_abs='s&iacute;' expresi&oacute;n='(80,110+20*s)(80,130+20*s)(120,130+20*s)(120,110+20*s)(80,110+20*s)' familia='s' s.intervalo='[0,7]' s.pasos='8' relleno='blanco'">
+   <param name="G_05" value="espacio='text' tipo='texto' color='azul' expresi&oacute;n='[50,112]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs28\b\cf0 x \cf1       \cf0  y\cf1\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='text' tipo='texto' color='azul' expresi&oacute;n='[10,300]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\f1\fs20\b\cf0 Introduce los valores de x \par e y para cada uno de los \par puntos y luego pulsa intro.\par \cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,10' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='text' tipo='texto' color='azul' dibujar-si='(c=1)&amp;((VCX[s]#VX[s])|(VCY[s]#VY[s]))' expresi&oacute;n='[120,132+20*s]' familia='s' s.intervalo='[0,7]' s.pasos='7' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red170\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b ({\*\mjaformula{\expr VX[s]\decimals 0\fixed1},{\expr VY[s]\decimals 0\fixed1})}\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' decimales='0' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='text' tipo='texto' color='azul' dibujar-si='(c=1)&amp;((VX[s]=VCX[s])&amp;(VY[s]=VCY[s]))' expresi&oacute;n='[120,132+20*s]' familia='s' s.intervalo='[0,7]' s.pasos='7' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red128\green128\blue128;\red0\green0\blue255;}\f1\fs24\cf0{\*\mjaformula ({\expr VX[s]\decimals 0\fixed1}},{\*\mjaformula{\expr VY[s]\decimals 0\fixed1})}\cf1\f2\fs24\par }' fuente='SansSerif,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='text' tipo='texto' color='azul' expresi&oacute;n='[15,132+20*s]' familia='s' s.intervalo='[0,7]' s.pasos='7' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green136\blue0;\red0\green0\blue255;}\f1\fs24\b\cf0{\*\mjaformula{\expr VL[s]\decimals 0\fixed1}}\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='graf' tipo='punto' color='ff7700' expresi&oacute;n='(VX[s],VY[s])' familia='s' s.intervalo='[0,7]' s.pasos='7' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b{\*\mjaformula{\expr VL[s]\decimals 0\fixed1}}\f2\fs24\b0\par }' fuente='SansSerif,BOLD,14' decimales='0' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_11" value="espacio='graf' tipo='punto' color='gris' expresi&oacute;n='(s-0.2,0.3)' familia='s' s.intervalo='[1,9]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs20\b{\*\mjaformula{\expr s\decimals 0\fixed1}}\f2\fs24\b0\par }' fuente='SansSerif,BOLD,10' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_12" value="espacio='graf' tipo='punto' color='gris' expresi&oacute;n='(s-0.3,0.3)' familia='s' s.intervalo='[-1,-9]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs20\b{\*\mjaformula{\expr s\decimals 0\fixed1}}\f2\fs24\b0\par }' fuente='SansSerif,BOLD,10' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_13" value="espacio='graf' tipo='punto' color='gris' expresi&oacute;n='(0.3,s)' familia='s' s.intervalo='[-1,-9]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs16\b{\*\mjaformula\f2\fs22\b{\expr s\decimals 0\fixed1}}\f3\fs24\b0\par }' fuente='SansSerif,BOLD,8' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_14" value="espacio='graf' tipo='punto' color='gris' expresi&oacute;n='(0.3,s)' familia='s' s.intervalo='[1,9]' s.pasos='8' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs16\b{\*\mjaformula\f2\fs22\b{\expr s\decimals 0\fixed1}}\f3\fs24\b0\par }' fuente='SansSerif,BOLD,8' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+</ajs>
+</div>
+</body>
+</html>

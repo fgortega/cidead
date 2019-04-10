@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Gráficas de proporcionalidad directa</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center">
+<ajs name="complementos_funcion_lineal" width=600 height=500
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="600x500">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="complementos_funcion_lineal">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' y='100' ancho='600' alto='350' fijo='s&iacute;' escala='18' despl_imagen='arr-izq' fondo='ffffc6' red='grisClaro' red10='no' ejes='gris' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' ancho='600' alto='100' fijo='s&iacute;' despl_imagen='arr-izq' fondo='ffffc6' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E3' y='450' ancho='600' alto='50' despl_imagen='arr-izq' fondo='ffffc6' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='p1' tipo='num&eacute;rico' regi&oacute;n='interior' espacio='E3' nombre='_._' expresi&oacute;n='(55,13,15,25)' valor='1' incr='0.25' min='-9' max='9' discreto='s&iacute;' fijo='s&iacute;' visible='no' imagen='vacio.gif' acci&oacute;n='calcular' par&aacute;metro='p1=0?0.25:p1' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='inicio' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E3' nombre='iniciar' expresi&oacute;n='(530,20,60,30)' fijo='s&iacute;' visible='no' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='A' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='ffae00' expresi&oacute;n='(0.25,0.25*p1)' constricci&oacute;n='y=p1*x'">
+   <param name="C_04" value="id='A.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='A.x' valor='0.25' incr='0.25' min='-16' max='16' discreto='s&iacute;' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="G_01" value="espacio='E2' tipo='texto' color='azul' expresi&oacute;n='[10,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\f1\fs24\b Cuando se establece una correspondencia entre dos conjuntos, de manera que a cada elemento del\par primero se asocia un \u250 nico elemento del segundo, decimos que esa correspondencia es una \cf0 funci\u243 n\cf1 .\par Una \cf0 funci\u243 n\cf1  puede venir descrita por: una expresi\u243 n verbal, una tabla, una gr\u225 fica o una ecuaci\u243 n, \par algo que hemos visto,  de alguna manera, en apartados anteriores. Volvamos a  las \cf0 funciones lineales\cf1\par (descritas por ecuaciones del tipo \cf0 y = m*x\cf1 ). Las magnitudes entre las que se puede definir una \cf0 funci\u243 n\par lineal \cf1 son  \cf0 magnitudes directamente proporcionales\cf1\f2\fs24\b0  \f1\fs24\b donde \cf0 m \cf1 es la \cf0 constante de proporcionalidad\cf1 .\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='E3' tipo='texto' color='azul' expresi&oacute;n='[30,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b y=       {\*\mjaformula{\expr p1\decimals 2\fixed1}} \u183  x \cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='ecuaci&oacute;n' color='900000' expresi&oacute;n='y=p1*x' ancho='2'">
+   <param name="G_04" value="espacio='E1' tipo='segmento' color='azul' expresi&oacute;n='(A.x,0)(A.x,p1*A.x)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_05" value="espacio='E1' tipo='segmento' color='009d00' expresi&oacute;n='(0,p1*A.x)(A.x,p1*A.x)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_06" value="espacio='E1' tipo='ecuaci&oacute;n' color='gris' expresi&oacute;n='y=0' ancho='2'">
+   <param name="G_07" value="espacio='E1' tipo='ecuaci&oacute;n' color='gris' expresi&oacute;n='x=0' ancho='2'">
+   <param name="G_08" value="espacio='E3' tipo='texto' color='azul' expresi&oacute;n='[80,3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs20\b mueve el punto A sobre la recta y modifica' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='E3' tipo='texto' color='azul' dibujar-si='A.x#0' expresi&oacute;n='[180,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b{\*\mjaformula{\fraction{\num y}{\den x}} ={\fraction{\num{\expr A.y\decimals 2\fixed0}}{\den{\expr A.x\decimals 2\fixed0}}} ={\expr A.y/A.x\decimals 2\fixed0} = m}\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='E3' tipo='texto' color='azul' dibujar-si='A.x=0' expresi&oacute;n='[180,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b No tiene sentido dividir por cero\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='E1' tipo='punto' expresi&oacute;n='(A.x,A.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs30\b\cf0 A\f2\fs30\b0\cf1}' fuente='SansSerif,BOLD,15' fijo='s&iacute;' tama&ntilde;o='4'">
+</ajs>
+</div>
+</body>
+</html>

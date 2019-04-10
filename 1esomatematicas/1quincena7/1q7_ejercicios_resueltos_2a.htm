@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ejercicios resueltos. Monomios</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="Multiplicaciones" width=362 height=362
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="362x362">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="Multiplicaciones">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='texto' y='0' alto='80' fijo='s&iacute;' despl_imagen='arr-izq' fondo='f1f1f1' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='controles' y='337' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fafafa' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='p1' y='80' alto='257' fijo='s&iacute;' escala='20' O.x='-10' O.y='10' despl_imagen='arr-izq' fondo='fff7d7' red='grisClaro' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='Soluci&oacute;n' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='p1' nombre='Soluci&oacute;n' expresi&oacute;n='(0,234,82,22)' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='soluc=1' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='Inicio' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='p1' nombre='Otro ejercicio' expresi&oacute;n='(280,234,82,22)' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='Grado' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='p1' expresi&oacute;n='(238,75,40,30)' min='-50' max='100' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='Coeficiente' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='p1' expresi&oacute;n='(238,16,40,30)' min='-50' max='100' decimales='0' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='soluc=0' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='visto' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='10'">
+   <param name="A_02" value="id='p' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='invisto' algoritmo='s&iacute;' evaluar='siempre' inicio='i=0' hacer='visto[i]=(p=i+1)?1:visto[i];i=i+1' mientras='i&lt;10'">
+   <param name="A_04" value="id='vacio' constante='s&iacute;' expresi&oacute;n='&squot;&squot;' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='monomios' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='absolutoa=1+(ent(rnd*10));signoa=1+ent(rnd*2);coefa=(signoa=1)?absolutoa:(-1*absolutoa);m=1+ent(rnd*9);;'">
+   <param name="G_01" value="espacio='texto' tipo='texto' color='azul' expresi&oacute;n='[7,9]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs28\cf0 Halla  el  coeficiente y el grado de los siguientes mono-\par mios pulsando cada vez intro.\cf1\f2\fs24\par}' fuente='Arial,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='texto' tipo='texto' color='azul' expresi&oacute;n='[6,43]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red153\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs28 - Si el ejercicio est\u225  bien resuelto aparecer\u225  la palabra\par   \cf1\b CORRECTO\b0\cf0 .\cf2\f3\fs24\par \par \par }' fuente='SansSerif,PLAIN,14' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='p1' tipo='texto' color='azul' expresi&oacute;n='[60,43]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs40\b{\*\mjaformula{\expr coefa=1?&squot; &squot;:(coefa=-1?&squot;-&squot;:coefa)\decimals 0\fixed0}{\expr &squot;x&squot;\decimals 0\fixed0}{\supix{\expr (m=1)?vacio:m\decimals 0\fixed0}}}\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,20' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='p1' tipo='imagen' dibujar-si='(coefa=Coeficiente)&amp;(m=Grado)' expresi&oacute;n='(-7,-1.9)' archivo='imagen1/bien.png'">
+   <param name="G_05" value="espacio='p1' tipo='texto' color='azul' dibujar-si='(coefa=Coeficiente)&amp;(m=Grado)' expresi&oacute;n='[62,184]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red153\green0\blue0;\red0\green0\blue255;}\f1\fs32\b\cf0 CORRECTO\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,16' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='p1' tipo='texto' color='azul' dibujar-si='(p=1)&amp;(soluc=1)' expresi&oacute;n='[5,133]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue0;\red153\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs28\b El coeficiente de {\*\mjaformula{\expr coefa=1?&squot; &squot;:(coefa=-1?&squot;-&squot;:coefa)\decimals 0\fixed1}{\expr &squot;x&squot;\decimals 2\fixed1}{\supix{\expr m=1?&squot;&squot;:m\decimals 0\fixed1}}}es\fs40{\*\mjaformula\cf1{\expr coefa\decimals 0\fixed1}\cf0}\fs28  y el grado es\cf1\fs40{\*\mjaformula{\expr m\decimals 0\fixed1}}\cf2\fs28\par }' fuente='SansSerif,BOLD,14' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='texto' tipo='pol&iacute;gono' fondo='s&iacute;' color='grisClaro' expresi&oacute;n='(-3.75,-2.55)(3.75,-2.55)(3.75,0.79)(-3.75,0.79)(-3.75,-2.55)'">
+   <param name="G_08" value="espacio='p1' tipo='pol&iacute;gono' fondo='s&iacute;' color='grisClaro' expresi&oacute;n='(-8.5,-5.8)(9.5,-5.8)(9.5,6.9)(-8.5,6.9)(-8.5,-6)'">
+   <param name="G_09" value="espacio='p1' tipo='flecha' color='990000' expresi&oacute;n='(-4,5.5)(3.2,5.5)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='0' ancho='0' punta='2' flecha='negro'">
+   <param name="G_10" value="espacio='p1' tipo='segmento' color='990000' expresi&oacute;n='(-4,5.5)(-4,4.7)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_11" value="espacio='p1' tipo='segmento' color='990000' expresi&oacute;n='(-4,2.5)(-4,3.4)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_12" value="espacio='p1' tipo='flecha' color='990000' expresi&oacute;n='(-4,2.5)(3.2,2.5)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' ancho='0' ancho='0' punta='2' flecha='negro'">
+   <param name="G_13" value="espacio='p1' tipo='texto' color='azul' expresi&oacute;n='[130,12]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red153\green0\blue0;\red0\green0\blue255;}\f1\fs24\b\cf0 Coeficiente\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_14" value="espacio='p1' tipo='texto' color='azul' expresi&oacute;n='[140,91]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red153\green0\blue0;\red0\green0\blue255;}\f1\fs24\b\cf0 Grado\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+</ajs>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</BODY></HTML>

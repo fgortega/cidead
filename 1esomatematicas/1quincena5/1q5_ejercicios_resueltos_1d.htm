@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Ejercicios resueltos: Ordena</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<ajs name="ordena" width=400 height=225
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="400x225">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="ordena">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E' fijo='si' escala='100' despl_imagen='arr-izq' fondo='ffd79a' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='n1' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='31' expresi&oacute;n='[-1.5,-0.5]' fuente='Monospaced,PLAIN,12' dibujar-si='0'">
+   <param name="C_02" value="id='n2' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='31' expresi&oacute;n='[-0.5,-0.5]' dibujar-si='0'">
+   <param name="C_03" value="id='n3' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='31' expresi&oacute;n='[0.5,-0.5]' dibujar-si='0'">
+   <param name="C_04" value="id='n4' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='31' expresi&oacute;n='[1.5,-0.5]' dibujar-si='0'">
+   <param name="C_05" value="id='in' tipo='num&eacute;rico' interfaz='bot&oacute;n' nombre='otras fracciones' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='inicio'">
+   <param name="A_01" value="id='a1' constante='si' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='a2' constante='si' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='a3' constante='si' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='a4' constante='si' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='b1' constante='si' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='b2' algoritmo='si' evaluar='una-sola-vez' inicio='b2=1+ent(rnd*10)' hacer='b2=1+ent(rnd*10)' mientras='a1/b1=a2/b2'">
+   <param name="A_07" value="id='b3' algoritmo='si' evaluar='una-sola-vez' inicio='b3=1+ent(rnd*10)' hacer='b3=1+ent(rnd*10)' mientras='(a1/b1=a3/b3)+(a2/b2=a3/b3)'">
+   <param name="A_08" value="id='b4' algoritmo='si' evaluar='una-sola-vez' inicio='b4=1+ent(rnd*10)' hacer='b4=1+ent(rnd*10)' mientras='(a1/b1=a4/b4)+(a2/b2=a4/b4)+(a3/b3=a4/b4)'">
+   <param name="A_09" value="id='p1' constante='si' expresi&oacute;n='a1/b1' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='p2' constante='si' expresi&oacute;n='a2/b2' evaluar='siempre'">
+   <param name="A_11" value="id='p3' constante='si' expresi&oacute;n='a3/b3' evaluar='siempre'">
+   <param name="A_12" value="id='p4' constante='si' expresi&oacute;n='a4/b4' evaluar='siempre'">
+   <param name="A_13" value="id='v1' expresi&oacute;n='p1*(abs(n1.x+1.5)&lt;0.3)*(abs(n1.y-0.5)&lt;0.3)+p2*(abs(n2.x+1.5)&lt;0.3)*(abs(n2.y-0.5)&lt;0.3)+p3*(abs(n3.x+1.5)&lt;0.3)*(abs(n3.y-0.5)&lt;0.3)+p4*(abs(n4.x+1.5)&lt;0.3)*(abs(n4.y-0.5)&lt;0.3)'">
+   <param name="A_14" value="id='v2' expresi&oacute;n='p1*(abs(n1.x+0.5)&lt;0.3)*(abs(n1.y-0.5)&lt;0.3)+p2*(abs(n2.x+0.5)&lt;0.3)*(abs(n2.y-0.5)&lt;0.3)+p3*(abs(n3.x+0.5)&lt;0.3)*(abs(n3.y-0.5)&lt;0.3)+p4*(abs(n4.x+0.5)&lt;0.3)*(abs(n4.y-0.5)&lt;0.3)'">
+   <param name="A_15" value="id='v3' expresi&oacute;n='p1*(abs(n1.x-0.5)&lt;0.3)*(abs(n1.y-0.5)&lt;0.3)+p2*(abs(n2.x-0.5)&lt;0.3)*(abs(n2.y-0.5)&lt;0.3)+p3*(abs(n3.x-0.5)&lt;0.3)*(abs(n3.y-0.5)&lt;0.3)+p4*(abs(n4.x-0.5)&lt;0.3)*(abs(n4.y-0.5)&lt;0.3)'">
+   <param name="A_16" value="id='v4' expresi&oacute;n='p1*(abs(n1.x-1.5)&lt;0.3)*(abs(n1.y-0.5)&lt;0.3)+p2*(abs(n2.x-1.5)&lt;0.3)*(abs(n2.y-0.5)&lt;0.3)+p3*(abs(n3.x-1.5)&lt;0.3)*(abs(n3.y-0.5)&lt;0.3)+p4*(abs(n4.x-1.5)&lt;0.3)*(abs(n4.y-0.5)&lt;0.3)'">
+   <param name="A_17" value="id='v' expresi&oacute;n='((v1&lt;v2)+(v1=v2))*((v2&lt;v3)+(v2=v3))*((v3&lt;v4)+(v3=v4))*(v1&gt;0)*(v2&gt;0)*(v3&gt;0)*(v4&gt;0)'">
+   <param name="G_01" value="tipo='pol&iacute;gono' color='0000cd' expresi&oacute;n='(-2,-1.1)(2,-1.1)(2,0)(-2,0)(-2,-1.1)' relleno='ffaa91' ancho='0'">
+   <param name="G_02" value="tipo='punto' fondo='si' color='negro' expresi&oacute;n='(-1.13,0.35)' texto='&lt;' fuente='Helvetica,PLAIN,40' decimales='0' tama&ntilde;o='0'">
+   <param name="G_03" value="tipo='punto' fondo='si' color='negro' expresi&oacute;n='(-0.13,0.35)' texto='&lt;' fuente='Helvetica,PLAIN,40' decimales='0' tama&ntilde;o='0'">
+   <param name="G_04" value="tipo='punto' fondo='si' color='negro' expresi&oacute;n='(0.87,0.35)' texto='&lt;' fuente='Helvetica,PLAIN,40' decimales='0' tama&ntilde;o='0'">
+   <param name="G_05" value="tipo='punto' fondo='si' color='ffebb4' expresi&oacute;n='(-1.5,0.5)' tama&ntilde;o='30'">
+   <param name="G_06" value="tipo='punto' fondo='si' color='ffebb4' expresi&oacute;n='(-0.5,0.5)' tama&ntilde;o='30'">
+   <param name="G_07" value="tipo='punto' fondo='si' color='ffebb4' expresi&oacute;n='(0.5,0.5)' tama&ntilde;o='30'">
+   <param name="G_08" value="tipo='punto' fondo='si' color='ffebb4' expresi&oacute;n='(1.5,0.5)' tama&ntilde;o='30'">
+   <param name="G_09" value="tipo='punto' color='blanco' expresi&oacute;n='(n1.x,n1.y)' decimales='0' tama&ntilde;o='28'">
+   <param name="G_10" value="tipo='punto' color='negro' expresi&oacute;n='(n1.x-0.05-0.05*(a1&gt;9),n1.y+0.05)' texto='[a1]' fuente='Helvetica,PLAIN,20' decimales='0' tama&ntilde;o='0'">
+   <param name="G_11" value="tipo='punto' color='negro' expresi&oacute;n='(n1.x-0.05-0.05*(b1&gt;9),n1.y-0.22)' texto='[b1]' fuente='Helvetica,PLAIN,20' decimales='0' tama&ntilde;o='0'">
+   <param name="G_12" value="tipo='segmento' color='azul' expresi&oacute;n='(n1.x-0.2,n1.y)(n1.x+0.2,n1.y)' tama&ntilde;o='0' ancho='2'">
+   <param name="G_13" value="tipo='punto' color='blanco' expresi&oacute;n='(n2.x,n2.y)' decimales='0' tama&ntilde;o='28'">
+   <param name="G_14" value="tipo='punto' color='negro' expresi&oacute;n='(n2.x-0.05-0.05*(a2&gt;9),n2.y+0.05)' texto='[a2]' fuente='Helvetica,PLAIN,20' decimales='0' tama&ntilde;o='0'">
+   <param name="G_15" value="tipo='punto' color='negro' expresi&oacute;n='(n2.x-0.05-0.05*(b2&gt;9),n2.y-0.22)' texto='[b2]' fuente='Helvetica,PLAIN,20' decimales='0' tama&ntilde;o='0'">
+   <param name="G_16" value="tipo='segmento' color='azul' expresi&oacute;n='(n2.x-0.2,n2.y)(n2.x+0.2,n2.y)' tama&ntilde;o='0' ancho='2'">
+   <param name="G_17" value="tipo='punto' color='blanco' expresi&oacute;n='(n3.x,n3.y)' decimales='0' tama&ntilde;o='28'">
+   <param name="G_18" value="tipo='punto' color='negro' expresi&oacute;n='(n3.x-0.05-0.05*(a3&gt;9),n3.y+0.05)' texto='[a3]' fuente='Helvetica,PLAIN,20' decimales='0' tama&ntilde;o='0'">
+   <param name="G_19" value="tipo='punto' color='negro' expresi&oacute;n='(n3.x-0.05-0.05*(b3&gt;9),n3.y-0.22)' texto='[b3]' fuente='Helvetica,PLAIN,20' decimales='0' tama&ntilde;o='0'">
+   <param name="G_20" value="tipo='segmento' color='azul' expresi&oacute;n='(n3.x-0.2,n3.y)(n3.x+0.2,n3.y)' tama&ntilde;o='0' ancho='2'">
+   <param name="G_21" value="tipo='punto' color='blanco' expresi&oacute;n='(n4.x,n4.y)' decimales='0' tama&ntilde;o='28'">
+   <param name="G_22" value="tipo='punto' color='negro' expresi&oacute;n='(n4.x-0.05-0.05*(a4&gt;9),n4.y+0.05)' texto='[a4]' fuente='Helvetica,PLAIN,20' decimales='0' tama&ntilde;o='0'">
+   <param name="G_23" value="tipo='punto' color='negro' expresi&oacute;n='(n4.x-0.05-0.05*(b4&gt;9),n4.y-0.22)' texto='[b4]' fuente='Helvetica,PLAIN,20' decimales='0' tama&ntilde;o='0'">
+   <param name="G_24" value="tipo='segmento' color='azul' expresi&oacute;n='(n4.x-0.2,n4.y)(n4.x+0.2,n4.y)' tama&ntilde;o='0' ancho='2'">
+   <param name="G_25" value="tipo='punto' color='blanco' dibujar-si='v' expresi&oacute;n='(-1.65,-0.7)' texto='CORRECTO' fuente='Helvetica,PLAIN,56' decimales='0' tama&ntilde;o='0'">
+</ajs>
+</body>
+</html>

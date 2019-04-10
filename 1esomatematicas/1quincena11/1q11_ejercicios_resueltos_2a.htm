@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ejercicio resuelto: Interpreta la gráfica</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center"><ajs name="graficas_cartesianas2" width=441 height=450
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="441x450">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="graficas_cartesianas2">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=s&iacute; config=no inicio=no limpiar=no alto=0">
+   <param name="E_01" value="tipo='R2' id='E1' alto='351' fijo='s&iacute;' escala='20' O.x='-1' O.y='-1' despl_imagen='arr-izq' fondo='ffffab' red='grisClaro' red10='no' ejes='no' texto='no' sensible_a_los_movimientos_del_rat&oacute;n='s&iacute;'">
+   <param name="E_02" value="tipo='R2' id='E2' y='351' alto='99' despl_imagen='arr-izq' fondo='ffffab' red='no' red10='no' ejes='no' texto='no'">
+   <param name="A_01" value="id='cox' constante='s&iacute;' expresi&oacute;n='ent(E1.mouse_x)' evaluar='siempre'">
+   <param name="A_02" value="id='coy' constante='s&iacute;' expresi&oacute;n='ent(E1.mouse_y)' evaluar='siempre'">
+   <param name="G_01" value="espacio='E1' tipo='segmento' color='azul' expresi&oacute;n='(-10,-7)(10,-7)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='3'">
+   <param name="G_02" value="espacio='E1' tipo='segmento' color='azul' expresi&oacute;n='(-10,-7)(-10,7)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='3'">
+   <param name="G_03" value="espacio='E1' tipo='texto' color='azul' expresi&oacute;n='[5,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b Precio\f2\fs24\b0\par }' fuente='SansSerif,BOLD,14' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='E1' tipo='texto' color='azul' expresi&oacute;n='[370,330]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b Duraci\u243 n\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='E1' tipo='punto' color='4041b8' expresi&oacute;n='(0,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b llamada 1\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_06" value="espacio='E1' tipo='punto' color='4041b8' expresi&oacute;n='(-8,-6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b llamada 2\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_07" value="espacio='E1' tipo='punto' color='4041b8' expresi&oacute;n='(-7,5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b llamada 3\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_08" value="espacio='E1' tipo='punto' color='4041b8' expresi&oacute;n='(6,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b llamada 4\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_09" value="espacio='E1' tipo='punto' color='4041b8' expresi&oacute;n='(-5,3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b llamada 5\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_10" value="espacio='E1' tipo='punto' color='4041b8' expresi&oacute;n='(4,4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b llamada 6\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_11" value="espacio='E1' tipo='punto' color='4041b8' expresi&oacute;n='(4,-3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b llamada 9 \f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_12" value="espacio='E1' tipo='punto' color='4041b8' expresi&oacute;n='(-3,-4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b llamada 7 \f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_13" value="espacio='E1' tipo='punto' color='4041b8' expresi&oacute;n='(7,-6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b llamada 8\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_14" value="espacio='E1' tipo='punto' color='4041b8' expresi&oacute;n='(-7,-1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b llamada 10\f2\fs24\b0\par}' fuente='SansSerif,BOLD,14' fijo='s&iacute;' tama&ntilde;o='4'">
+   <param name="G_15" value="espacio='E1' tipo='segmento' color='rojo' dibujar-si='(((cox=-7)&amp;(coy=5))|((cox=4)&amp;(coy=4))|((cox=-5)&amp;(coy=3))|((cox=0)&amp;(coy=0))|((cox=6)&amp;(coy=0))|((cox=-7)&amp;(coy=-1))|((cox=4)&amp;(coy=-3))|((cox=-3)&amp;(coy=-4))|((cox=-8)&amp;(coy=-6))|((cox=7)&amp;(coy=-6)))' expresi&oacute;n='(cox,-7)(cox,coy)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_16" value="espacio='E1' tipo='segmento' color='rojo' dibujar-si='(((cox=-7)&amp;(coy=5))|((cox=4)&amp;(coy=4))|((cox=-5)&amp;(coy=3))|((cox=0)&amp;(coy=0))|((cox=6)&amp;(coy=0))|((cox=-7)&amp;(coy=-1))|((cox=4)&amp;(coy=-3))|((cox=-3)&amp;(coy=-4))|((cox=-8)&amp;(coy=-6))|((cox=7)&amp;(coy=-6)))' expresi&oacute;n='(-10,coy)(cox,coy)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_17" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(cox=-7)&amp;(coy=5)' expresi&oacute;n='[90,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b La llamada 3 es la m\u225 s cara y ha durado\par tanto como la llamada 10 \f2\fs24\b0\par}' fuente='SansSerif,BOLD,18' fijo='s&iacute;'">
+   <param name="G_18" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(cox=0)&amp;(coy=0)' expresi&oacute;n='[90,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b La llamada 1 tiene un precio y una \par duraci\u243 n intermedios \f2\fs24\b0\par}' fuente='SansSerif,BOLD,18' fijo='s&iacute;'">
+   <param name="G_19" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(cox=7)&amp;(coy=-6)' expresi&oacute;n='[90,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b La llamada 8 es la de mayor duraci\u243 n\par  y ,junto con la 2, la m\u225 s barata\f2\fs24\b0\par}' fuente='SansSerif,BOLD,18' fijo='s&iacute;'">
+   <param name="G_20" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(cox=-8)&amp;(coy=-6)' expresi&oacute;n='[90,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b La llamada 2 es la de menor \par duraci\u243 n y una de las m\u225 s baratas\f2\fs24\b0\par}' fuente='SansSerif,BOLD,18' fijo='s&iacute;'">
+   <param name="G_21" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(cox=-7)&amp;(coy=-1)' expresi&oacute;n='[90,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b La llamada 10  es m\u225 s barata que\par la 3, aunque ha durado lo mismo\f2\fs24\b0\par}' fuente='SansSerif,BOLD,18' fijo='s&iacute;'">
+   <param name="G_22" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(cox=4)&amp;(coy=4)' expresi&oacute;n='[90,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b La llamada 6  ha durado lo mismo\par que la 9, pero ha costado m\u225 s\f2\fs24\b0\par}' fuente='SansSerif,BOLD,18' fijo='s&iacute;'">
+   <param name="G_23" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(cox=4)&amp;(coy=-3)' expresi&oacute;n='[90,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b La llamada 9  es m\u225 s barata que la\par 6, aun que ha durado lo mismo\f2\fs24\b0\par}' fuente='SansSerif,BOLD,18' fijo='s&iacute;'">
+   <param name="G_24" value="espacio='E1' tipo='texto' color='rojo' dibujar-si='(cox=6)&amp;(coy=0)' expresi&oacute;n='[90,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36\b La llamada 4  ha costado lo mismo\par que la 1, pero ha durado m\u225 s\f2\fs24\b0\par}' fuente='SansSerif,BOLD,18' fijo='s&iacute;'">
+   <param name="G_25" value="espacio='E2' tipo='texto' color='azul' expresi&oacute;n='[3,3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green144\blue0;\red0\green0\blue255;}\f1\fs28\b\cf0 Otro ejemplo de gr\u225 fica cartesiana:\cf1\fs24\par  En la siguiente escena aparece otro ejemplo de gr\u225 fica cartesiana. Igual \par que en el anterior situando el cursor del rat\u243 n entre un punto y su nombre\par puede aparecer informaci\u243 n relevante. En este caso se representan el\par precio y duraci\u243 n de las llamadas efectuadas por diez personas desde un \par locutorio telef\u243 nico. \f3\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;'">
+</ajs>
+</div>
+</body>
+</html>

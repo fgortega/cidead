@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Ejercicios resueltos. Variable, población y muestra</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="ejercicios variable" width=500 height=310
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="500x310">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="ejercicios variable">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='fondo' y='30' alto='342' fijo='s&iacute;' escala='120' O.y='40' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='escoge' alto='30' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fff7d7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='texto' x='257' y='30' alto='342' dibujar-si='sol=1' fijo='s&iacute;' escala='120' O.y='40' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='adelante' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='escoge' expresi&oacute;n='(400,2,25,25)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/siguiente.png' acci&oacute;n='calcular' par&aacute;metro='p=p+1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(ang#0)&amp;(p&lt;fin)'">
+   <param name="C_02" value="id='atras' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='escoge' expresi&oacute;n='(370,2,25,25)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/anterior.png' acci&oacute;n='calcular' par&aacute;metro='p=p-1' dibujar-si='(ang#0)&amp;(p&gt;0)' pos_mensajes='centro'">
+   <param name="C_03" value="id='Soluciones' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='escoge' expresi&oacute;n='(400,0)' fijo='s&iacute;' visible='s&iacute;' imagen='vacio.gif' acci&oacute;n='calcular' par&aacute;metro='sol=1;p=0' dibujar-si='(p=3)&amp;(sol=0)' pos_mensajes='centro'">
+   <param name="A_01" value="id='fin' algoritmo='s&iacute;' evaluar='siempre' hacer='ang=1;fin=3'">
+   <param name="G_01" value="espacio='escoge' tipo='texto' color='grisObscuro' expresi&oacute;n='[0,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Escribe en el cuaderno la variable y poblaci\u243 n de cada gr\u225 fico\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='fondo' tipo='imagen' dibujar-si='p=0' coord_abs='s&iacute;' expresi&oacute;n='(0,0)' archivo='imagenes12/barras.PNG'">
+   <param name="G_03" value="espacio='fondo' tipo='imagen' dibujar-si='p=1' coord_abs='s&iacute;' expresi&oacute;n='(0,25)' archivo='imagenes12/linea.PNG'">
+   <param name="G_04" value="espacio='fondo' tipo='imagen' dibujar-si='p=2' coord_abs='s&iacute;' expresi&oacute;n='(0,0)' archivo='imagenes12/mapa.PNG'">
+   <param name="G_05" value="espacio='fondo' tipo='imagen' dibujar-si='p=3' coord_abs='s&iacute;' expresi&oacute;n='(0,25)' archivo='imagenes12/sectores.PNG'">
+   <param name="G_06" value="espacio='fondo' tipo='texto' color='azul' dibujar-si='p=3' expresi&oacute;n='[160,250]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Gr\u225 ficos INE\f2\fs24\par }' fuente='SansSerif,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='fondo' tipo='texto' color='negro' dibujar-si='p=1' expresi&oacute;n='[10,250]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 A\u241 o\f2\fs24\par }' fuente='SansSerif,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='fondo' tipo='texto' color='grisObscuro' expresi&oacute;n='[254,70]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs40\u191 Cu\u225 les son la poblaci\u243 n\par y  la  variable estudiadas\par en este gr\u225 fico?\fs24\par \par Escribe la respuesta en tu cuaderno.\f3\fs24\par }' fuente='SansSerif,PLAIN,20' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='escoge' tipo='texto' color='ff9900' dibujar-si='(p=3)&amp;(sol=0)' expresi&oacute;n='[400,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b Soluciones\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='texto' tipo='texto' color='grisObscuro' dibujar-si='p=0' expresi&oacute;n='[4,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs28\b La poblaci\u243 n\b0  son los varones \par y mujeres de 25 a 64 a\u241 os, se \par supone  que  Espa\u241 oles  pues\par pues el gr\u225 fico es del INE. Las  \par columnas naranja estudian la  \par poblaci\u243 n   de  varones  y  las \par granate, la de mujeres.\par \par \b La variable\b0  es la experiencia \par con el ordenador. \f3\fs24\par }' fuente='SansSerif,BOLD,14' fijo='s&iacute;'">
+   <param name="G_11" value="espacio='texto' tipo='texto' color='grisObscuro' dibujar-si='p=1' expresi&oacute;n='[4,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs28\b La poblaci\u243 n\b0  son los libros o\par revistas editados (en Espa\u241 a) \par desde 1996 al 2007.\par \par \b La variable\b0  es el a\u241 o de \par edici\u243 n. \f3\fs24\par }' fuente='SansSerif,BOLD,14' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='texto' tipo='texto' color='grisObscuro' dibujar-si='p=2' expresi&oacute;n='[4,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs28\b La poblaci\u243 n \b0 est\u225  formada por \par los espa\u241 oles\par \par Aqu\u237   tenemos \b dos\b0  \b variables\b0 , la \par comunidad   aut\u243 noma de cada \par espa\u241 ol y dentro de cada una se \par ha preguntado si se leen libros. \par \par Se podr\u237 a decir que la poblaci\u243 n \par se ha distribuido por autonom\u237 as \par y  en cada autonom\u237 a se estudi\u243  \par la variable\par }' fuente='SansSerif,BOLD,14' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='texto' tipo='texto' color='grisObscuro' dibujar-si='p=3' expresi&oacute;n='[4,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs28\b La poblaci\u243 n\b0  son los \par espa\u241 oles.\par \par \b La   variable \b0   es  el  tiempo \par transcurrido desde su \u250 ltima \par visita a alg\u250 n museo.\f3\fs24\par }' fuente='SansSerif,BOLD,14' fijo='s&iacute;'">
+</ajs>
+</body>
+</html>

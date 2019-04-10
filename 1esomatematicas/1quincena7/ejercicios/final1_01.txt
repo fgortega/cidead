@@ -1,0 +1,36 @@
+RESOLUCIÓN DE ECUACIONES
+
+guiado='no'
+modos='clic o arrastre'
+
+variable nombre=A rango=[1,15]
+variable nombre=B rango=[2,15]
+variable nombre=C rango=[2,9]
+
+Resuelve la siguiente ecuación
+
+([A+1])*x=C+(A*x)              | 
+(([A+1])*x)-(A*x)=C            | 
+x=C                            | 
+
+Resuelve la siguiente ecuación
+
+([C-1])*x=([B*C])-x            | 
+(([C-1])*x)+x=[B*C]            | 
+C*x=B*C                        | 
+x=([B*C])/C                    | 
+x=[B]                          | 
+
+Resuelve la siguiente ecuación
+
+(([A+B])*x)-1=B*x              | 
+(([A+B])*x)-(B*x)=1            | 
+([A])*x=1                      | 
+x=1/A                          | 
+
+Resuelve la siguiente ecuación
+
+A-(C*x)=([B-C])*x              | 
+A=(([B-C])*x)+(C*x)            | 
+A=B*x                          | 
+A/B=x                          | 

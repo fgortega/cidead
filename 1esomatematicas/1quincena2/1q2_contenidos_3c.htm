@@ -1,0 +1,501 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Múltiplos y divisores</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+
+<body onload="MM_preloadImages('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes2.png','imagen1/paracont2.png','imagen1/adelanteb.png','imagen1/atrasb.png','imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/paraejer3.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paracont3.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0px; top: 0px; width: 800px; height: 528px; z-index: 1;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="1quincena2_presenta_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes.png" alt="" name="antes" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','imagen1/paracont3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paracont3.png" alt="" name="contenidos" onload="MM_nbGroup('init','group1','contenidos','imagen1/paraconte.png',1)" border="0"></a></td>
+      <td><a href="1quincena2_ejercicios_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer.png" alt="" name="ejercicios" onload="" border="0"></a></td>
+      <td><a href="1quincena2_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" onload="" border="0"></a></td>
+      <td><a href="1quincena2_tutor_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onmouseover="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" onload="" border="0"></a></td>
+      <td><a href="1quincena2_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0"></a></td>
+    </tr>
+  </table>
+<table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="85%" width="800">
+     <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8" height="422"></td>
+      <td bgcolor="#ffffff" height="422" valign="top">
+        <table cellspacing="12" width="100%" height="284">
+          <tr>
+            <td valign="top"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong>3.
+              M.c.m. y m.c.d.</strong></font></td>
+            <td> <div align="right"></div></td>
+          </tr>
+          <tr>
+            <td valign="top"> <p><font color="#666666" face="Geneva, Arial, Helvetica, sans-serif" size="3"><strong>Máximo
+                común divisor de varios números.</strong></font></p>
+              <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Dados
+                dos o más números podemos calcular los divisores
+                de cada uno y observar si hay algunos que sean divisores a la
+                vez de todos ellos.</font></p>
+              <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">De
+                estos divisores comunes vamos a considerar el más grande,
+                a ese lo llamaremos el máximo común divisor y lo
+                indicaremos abreviadamente <strong>m.c.d.</strong></font></p>
+              <div align="justify">
+                <table width="90%" align="center" cellpadding="8" cellspacing="0" background="imagen1/clipcon.png">
+                  <tr>
+                    <td height="84" valign="bottom"> <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;<br>
+                        El <strong>máximo común divisor</strong>
+                        de varios números es el número más
+                        grande que es divisor de todos esos números.</font></p></td>
+                  </tr>
+                </table>
+              </div>
+              <div align="justify">
+                <p><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Cuando
+                  resulta que el único divisor común de dos números
+                  es el 1, se dicen <strong>primos entre si</strong>.<br>
+                  <br>
+                  </font><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><span class="textopeque">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Por
+                  ejemplo 14 y 15, <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•
+                  divisores de 14: <strong>1</strong>, 2, 7, 14<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•
+                  divisores de 15: <strong>1</strong>, 3, 5, 15</span></font></p>
+                </div></td>
+            <td valign="top"> <div align="right">
+                <ajs name="divisores" width=375 height=375 code="Descartes.class">
+                    <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="nombre" value="divisores">
+   <param name="Versión" value="5.3.02">
+   <param name="Idioma" value="español">
+   <param name="Botones" value="créditos=no config=no inicio=si limpiar=no">
+   <param name="Espacio" value="fondo=blanco red=no red10=no ejes=no texto=no eje-x=no eje-y=no">
+   <param name="C_00" value="id=m tipo=numérico valor='ent(rnd*100)+1' decimales='0' incr='1' min='0' max='5000' nombre=un número">
+   <param name="C_01" value="id=k tipo=numérico valor='ent(rnd*100)+1' decimales='0' incr='1' min='0' max='5000' nombre=otro número">
+   <param name="A_00" value="id=Oy expresión='15' constante=si evaluar=una-sola-vez">
+   <param name="A_01" value="id=escala expresión='44' constante=si evaluar=una-sola-vez">
+   <param name="A_02" value="id=n expresión='ent(m)' constante=si evaluar=siempre">
+   <param name="A_03" value="id=j expresión='ent(k)' constante=si evaluar=siempre">
+   <param name="A_04" value="id=a1 algoritmo=si inicio='a1=0' hacer='a1=a1+1' mientras='(n/a1>ent(n/a1))*(a1<n)' evaluar=siempre">
+   <param name="A_05" value="id=a2 algoritmo=si inicio='a2=a1' hacer='a2=a2+1' mientras='(n/a2>ent(n/a2))*(a2<n)' evaluar=siempre">
+   <param name="A_06" value="id=a3 algoritmo=si inicio='a3=a2' hacer='a3=a3+1' mientras='(n/a3>ent(n/a3))*(a3<n)' evaluar=siempre">
+   <param name="A_07" value="id=a4 algoritmo=si inicio='a4=a3' hacer='a4=a4+1' mientras='(n/a4>ent(n/a4))*(a4<n)' evaluar=siempre">
+   <param name="A_08" value="id=a5 algoritmo=si inicio='a5=a4' hacer='a5=a5+1' mientras='(n/a5>ent(n/a5))*(a5<n)' evaluar=siempre">
+   <param name="A_09" value="id=a6 algoritmo=si inicio='a6=a5' hacer='a6=a6+1' mientras='(n/a6>ent(n/a6))*(a6<n)' evaluar=siempre">
+   <param name="A_10" value="id=a7 algoritmo=si inicio='a7=a6' hacer='a7=a7+1' mientras='(n/a7>ent(n/a7))*(a7<n)' evaluar=siempre">
+   <param name="A_11" value="id=a8 algoritmo=si inicio='a8=a7' hacer='a8=a8+1' mientras='(n/a8>ent(n/a8))*(a8<n)' evaluar=siempre">
+   <param name="A_12" value="id=a9 algoritmo=si inicio='a9=a8' hacer='a9=a9+1' mientras='(n/a9>ent(n/a9))*(a9<n)' evaluar=siempre">
+   <param name="A_13" value="id=a10 algoritmo=si inicio='a10=a9' hacer='a10=a10+1' mientras='(n/a10>ent(n/a10))*(a10<n)' evaluar=siempre">
+   <param name="A_14" value="id=a11 algoritmo=si inicio='a11=a10' hacer='a11=a11+1' mientras='(n/a11>ent(n/a11))*(a11<n)' evaluar=siempre">
+   <param name="A_15" value="id=a12 algoritmo=si inicio='a12=a11' hacer='a12=a12+1' mientras='(n/a12>ent(n/a12))*(a12<n)' evaluar=siempre">
+   <param name="A_16" value="id=a13 algoritmo=si inicio='a13=a12' hacer='a13=a13+1' mientras='(n/a13>ent(n/a13))*(a13<n)' evaluar=siempre">
+   <param name="A_17" value="id=a14 algoritmo=si inicio='a14=a13' hacer='a14=a14+1' mientras='(n/a14>ent(n/a14))*(a14<n)' evaluar=siempre">
+   <param name="A_18" value="id=a15 algoritmo=si inicio='a15=a14' hacer='a15=a15+1' mientras='(n/a15>ent(n/a15))*(a15<n)' evaluar=siempre">
+   <param name="A_19" value="id=a16 algoritmo=si inicio='a16=a15' hacer='a16=a16+1' mientras='(n/a16>ent(n/a16))*(a16<n)' evaluar=siempre">
+   <param name="A_20" value="id=a17 algoritmo=si inicio='a17=a16' hacer='a17=a17+1' mientras='(n/a17>ent(n/a17))*(a17<n)' evaluar=siempre">
+   <param name="A_21" value="id=a18 algoritmo=si inicio='a18=a17' hacer='a18=a18+1' mientras='(n/a18>ent(n/a18))*(a18<n)' evaluar=siempre">
+   <param name="A_22" value="id=a19 algoritmo=si inicio='a19=a18' hacer='a19=a19+1' mientras='(n/a19>ent(n/a19))*(a19<n)' evaluar=siempre">
+   <param name="A_23" value="id=a20 algoritmo=si inicio='a20=a19' hacer='a20=a20+1' mientras='(n/a20>ent(n/a20))*(a20<n)' evaluar=siempre">
+   <param name="A_24" value="id=a21 algoritmo=si inicio='a21=a20' hacer='a21=a21+1' mientras='(n/a21>ent(n/a21))*(a21<n)' evaluar=siempre">
+   <param name="A_25" value="id=a22 algoritmo=si inicio='a22=a21' hacer='a22=a22+1' mientras='(n/a22>ent(n/a22))*(a22<n)' evaluar=siempre">
+   <param name="A_26" value="id=a23 algoritmo=si inicio='a23=a22' hacer='a23=a23+1' mientras='(n/a23>ent(n/a23))*(a23<n)' evaluar=siempre">
+   <param name="A_27" value="id=a24 algoritmo=si inicio='a24=a23' hacer='a24=a24+1' mientras='(n/a24>ent(n/a24))*(a24<n)' evaluar=siempre">
+   <param name="A_28" value="id=a25 algoritmo=si inicio='a25=a24' hacer='a25=a25+1' mientras='(n/a25>ent(n/a25))*(a25<n)' evaluar=siempre">
+   <param name="A_29" value="id=a26 algoritmo=si inicio='a26=a25' hacer='a26=a26+1' mientras='(n/a26>ent(n/a26))*(a26<n)' evaluar=siempre">
+   <param name="A_30" value="id=a27 algoritmo=si inicio='a27=a26' hacer='a27=a27+1' mientras='(n/a27>ent(n/a27))*(a27<n)' evaluar=siempre">
+   <param name="A_31" value="id=a28 algoritmo=si inicio='a28=a27' hacer='a28=a28+1' mientras='(n/a28>ent(n/a28))*(a28<n)' evaluar=siempre">
+   <param name="A_32" value="id=a29 algoritmo=si inicio='a29=a28' hacer='a29=a29+1' mientras='(n/a29>ent(n/a29))*(a29<n)' evaluar=siempre">
+   <param name="A_33" value="id=a30 algoritmo=si inicio='a30=a29' hacer='a30=a30+1' mientras='(n/a30>ent(n/a30))*(a30<n)' evaluar=siempre">
+   <param name="A_34" value="id=a31 algoritmo=si inicio='a31=a30' hacer='a31=a31+1' mientras='(n/a31>ent(n/a31))*(a31<n)' evaluar=siempre">
+   <param name="A_35" value="id=a32 algoritmo=si inicio='a32=a31' hacer='a32=a32+1' mientras='(n/a32>ent(n/a32))*(a32<n)' evaluar=siempre">
+   <param name="A_36" value="id=a33 algoritmo=si inicio='a33=a32' hacer='a33=a33+1' mientras='(n/a33>ent(n/a33))*(a33<n)' evaluar=siempre">
+   <param name="A_37" value="id=a34 algoritmo=si inicio='a34=a33' hacer='a34=a34+1' mientras='(n/a34>ent(n/a34))*(a34<n)' evaluar=siempre">
+   <param name="A_38" value="id=a35 algoritmo=si inicio='a35=a34' hacer='a35=a35+1' mientras='(n/a35>ent(n/a35))*(a35<n)' evaluar=siempre">
+   <param name="A_39" value="id=a36 algoritmo=si inicio='a36=a35' hacer='a36=a36+1' mientras='(n/a36>ent(n/a36))*(a36<n)' evaluar=siempre">
+   <param name="A_40" value="id=a37 algoritmo=si inicio='a37=a36' hacer='a37=a37+1' mientras='(n/a37>ent(n/a37))*(a37<n)' evaluar=siempre">
+   <param name="A_41" value="id=a38 algoritmo=si inicio='a38=a37' hacer='a38=a38+1' mientras='(n/a38>ent(n/a38))*(a38<n)' evaluar=siempre">
+   <param name="A_42" value="id=a39 algoritmo=si inicio='a39=a38' hacer='a39=a39+1' mientras='(n/a39>ent(n/a39))*(a39<n)' evaluar=siempre">
+   <param name="A_43" value="id=a40 algoritmo=si inicio='a40=a39' hacer='a40=a40+1' mientras='(n/a40>ent(n/a40))*(a40<n)' evaluar=siempre">
+   <param name="A_44" value="id=a41 algoritmo=si inicio='a41=a40' hacer='a41=a41+1' mientras='(n/a41>ent(n/a41))*(a41<n)' evaluar=siempre">
+   <param name="A_45" value="id=a42 algoritmo=si inicio='a42=a41' hacer='a42=a42+1' mientras='(n/a42>ent(n/a42))*(a42<n)' evaluar=siempre">
+   <param name="A_46" value="id=a43 algoritmo=si inicio='a43=a42' hacer='a43=a43+1' mientras='(n/a43>ent(n/a43))*(a43<n)' evaluar=siempre">
+   <param name="A_47" value="id=a44 algoritmo=si inicio='a44=a43' hacer='a44=a44+1' mientras='(n/a44>ent(n/a44))*(a44<n)' evaluar=siempre">
+   <param name="A_48" value="id=a45 algoritmo=si inicio='a45=a44' hacer='a45=a45+1' mientras='(n/a45>ent(n/a45))*(a45<n)' evaluar=siempre">
+   <param name="A_49" value="id=a46 algoritmo=si inicio='a46=a45' hacer='a46=a46+1' mientras='(n/a46>ent(n/a46))*(a46<n)' evaluar=siempre">
+   <param name="A_50" value="id=a47 algoritmo=si inicio='a47=a46' hacer='a47=a47+1' mientras='(n/a47>ent(n/a47))*(a47<n)' evaluar=siempre">
+   <param name="A_51" value="id=a48 algoritmo=si inicio='a48=a47' hacer='a48=a48+1' mientras='(n/a48>ent(n/a48))*(a48<n)' evaluar=siempre">
+   <param name="A_52" value="id=b1 algoritmo=si inicio='b1=0' hacer='b1=b1+1' mientras='(j/b1>ent(j/b1))*(b1<j)' evaluar=siempre">
+   <param name="A_53" value="id=b2 algoritmo=si inicio='b2=b1' hacer='b2=b2+1' mientras='(j/b2>ent(j/b2))*(b2<j)' evaluar=siempre">
+   <param name="A_54" value="id=b3 algoritmo=si inicio='b3=b2' hacer='b3=b3+1' mientras='(j/b3>ent(j/b3))*(b3<j)' evaluar=siempre">
+   <param name="A_55" value="id=b4 algoritmo=si inicio='b4=b3' hacer='b4=b4+1' mientras='(j/b4>ent(j/b4))*(b4<j)' evaluar=siempre">
+   <param name="A_56" value="id=b5 algoritmo=si inicio='b5=b4' hacer='b5=b5+1' mientras='(j/b5>ent(j/b5))*(b5<j)' evaluar=siempre">
+   <param name="A_57" value="id=b6 algoritmo=si inicio='b6=b5' hacer='b6=b6+1' mientras='(j/b6>ent(j/b6))*(b6<j)' evaluar=siempre">
+   <param name="A_58" value="id=b7 algoritmo=si inicio='b7=b6' hacer='b7=b7+1' mientras='(j/b7>ent(j/b7))*(b7<j)' evaluar=siempre">
+   <param name="A_59" value="id=b8 algoritmo=si inicio='b8=b7' hacer='b8=b8+1' mientras='(j/b8>ent(j/b8))*(b8<j)' evaluar=siempre">
+   <param name="A_60" value="id=b9 algoritmo=si inicio='b9=b8' hacer='b9=b9+1' mientras='(j/b9>ent(j/b9))*(b9<j)' evaluar=siempre">
+   <param name="A_61" value="id=b10 algoritmo=si inicio='b10=b9' hacer='b10=b10+1' mientras='(j/b10>ent(j/b10))*(b10<j)' evaluar=siempre">
+   <param name="A_62" value="id=b11 algoritmo=si inicio='b11=b10' hacer='b11=b11+1' mientras='(j/b11>ent(j/b11))*(b11<j)' evaluar=siempre">
+   <param name="A_63" value="id=b12 algoritmo=si inicio='b12=b11' hacer='b12=b12+1' mientras='(j/b12>ent(j/b12))*(b12<j)' evaluar=siempre">
+   <param name="A_64" value="id=b13 algoritmo=si inicio='b13=b12' hacer='b13=b13+1' mientras='(j/b13>ent(j/b13))*(b13<j)' evaluar=siempre">
+   <param name="A_65" value="id=b14 algoritmo=si inicio='b14=b13' hacer='b14=b14+1' mientras='(j/b14>ent(j/b14))*(b14<j)' evaluar=siempre">
+   <param name="A_66" value="id=b15 algoritmo=si inicio='b15=b14' hacer='b15=b15+1' mientras='(j/b15>ent(j/b15))*(b15<j)' evaluar=siempre">
+   <param name="A_67" value="id=b16 algoritmo=si inicio='b16=b15' hacer='b16=b16+1' mientras='(j/b16>ent(j/b16))*(b16<j)' evaluar=siempre">
+   <param name="A_68" value="id=b17 algoritmo=si inicio='b17=b16' hacer='b17=b17+1' mientras='(j/b17>ent(j/b17))*(b17<j)' evaluar=siempre">
+   <param name="A_69" value="id=b18 algoritmo=si inicio='b18=b17' hacer='b18=b18+1' mientras='(j/b18>ent(j/b18))*(b18<j)' evaluar=siempre">
+   <param name="A_70" value="id=b19 algoritmo=si inicio='b19=b18' hacer='b19=b19+1' mientras='(j/b19>ent(j/b19))*(b19<j)' evaluar=siempre">
+   <param name="A_71" value="id=b20 algoritmo=si inicio='b20=b19' hacer='b20=b20+1' mientras='(j/b20>ent(j/b20))*(b20<j)' evaluar=siempre">
+   <param name="A_72" value="id=b21 algoritmo=si inicio='b21=b20' hacer='b21=b21+1' mientras='(j/b21>ent(j/b21))*(b21<j)' evaluar=siempre">
+   <param name="A_73" value="id=b22 algoritmo=si inicio='b22=b21' hacer='b22=b22+1' mientras='(j/b22>ent(j/b22))*(b22<j)' evaluar=siempre">
+   <param name="A_74" value="id=b23 algoritmo=si inicio='b23=b22' hacer='b23=b23+1' mientras='(j/b23>ent(j/b23))*(b23<j)' evaluar=siempre">
+   <param name="A_75" value="id=b24 algoritmo=si inicio='b24=b23' hacer='b24=b24+1' mientras='(j/b24>ent(j/b24))*(b24<j)' evaluar=siempre">
+   <param name="A_76" value="id=b25 algoritmo=si inicio='b25=b24' hacer='b25=b25+1' mientras='(j/b25>ent(j/b25))*(b25<j)' evaluar=siempre">
+   <param name="A_77" value="id=b26 algoritmo=si inicio='b26=b25' hacer='b26=b26+1' mientras='(j/b26>ent(j/b26))*(b26<j)' evaluar=siempre">
+   <param name="A_78" value="id=b27 algoritmo=si inicio='b27=b26' hacer='b27=b27+1' mientras='(j/b27>ent(j/b27))*(b27<j)' evaluar=siempre">
+   <param name="A_79" value="id=b28 algoritmo=si inicio='b28=b27' hacer='b28=b28+1' mientras='(j/b28>ent(j/b28))*(b28<j)' evaluar=siempre">
+   <param name="A_80" value="id=b29 algoritmo=si inicio='b29=b28' hacer='b29=b29+1' mientras='(j/b29>ent(j/b29))*(b29<j)' evaluar=siempre">
+   <param name="A_81" value="id=b30 algoritmo=si inicio='b30=b29' hacer='b30=b30+1' mientras='(j/b30>ent(j/b30))*(b30<j)' evaluar=siempre">
+   <param name="A_82" value="id=b31 algoritmo=si inicio='b31=b30' hacer='b31=b31+1' mientras='(j/b31>ent(j/b31))*(b31<j)' evaluar=siempre">
+   <param name="A_83" value="id=b32 algoritmo=si inicio='b32=b31' hacer='b32=b32+1' mientras='(j/b32>ent(j/b32))*(b32<j)' evaluar=siempre">
+   <param name="A_84" value="id=b33 algoritmo=si inicio='b33=b32' hacer='b33=b33+1' mientras='(j/b33>ent(j/b33))*(b33<j)' evaluar=siempre">
+   <param name="A_85" value="id=b34 algoritmo=si inicio='b34=b33' hacer='b34=b34+1' mientras='(j/b34>ent(j/b34))*(b34<j)' evaluar=siempre">
+   <param name="A_86" value="id=b35 algoritmo=si inicio='b35=b34' hacer='b35=b35+1' mientras='(j/b35>ent(j/b35))*(b35<j)' evaluar=siempre">
+   <param name="A_87" value="id=b36 algoritmo=si inicio='b36=b35' hacer='b36=b36+1' mientras='(j/b36>ent(j/b36))*(b36<j)' evaluar=siempre">
+   <param name="A_88" value="id=b37 algoritmo=si inicio='b37=b36' hacer='b37=b37+1' mientras='(j/b37>ent(j/b37))*(b37<j)' evaluar=siempre">
+   <param name="A_89" value="id=b38 algoritmo=si inicio='b38=b37' hacer='b38=b38+1' mientras='(j/b38>ent(n/b38))*(b38<j)' evaluar=siempre">
+   <param name="A_90" value="id=b39 algoritmo=si inicio='b39=b38' hacer='b39=b39+1' mientras='(j/b39>ent(j/b39))*(b39<j)' evaluar=siempre">
+   <param name="A_91" value="id=b40 algoritmo=si inicio='b40=b39' hacer='b40=b40+1' mientras='(j/b40>ent(j/b40))*(b40<j)' evaluar=siempre">
+   <param name="A_92" value="id=b41 algoritmo=si inicio='b41=b40' hacer='b41=b41+1' mientras='(j/b41>ent(j/b41))*(b41<j)' evaluar=siempre">
+   <param name="A_93" value="id=b42 algoritmo=si inicio='b42=b41' hacer='b42=b42+1' mientras='(j/b42>ent(j/b42))*(b42<j)' evaluar=siempre">
+   <param name="A_94" value="id=b43 algoritmo=si inicio='b43=b42' hacer='b43=b43+1' mientras='(j/b43>ent(j/b43))*(b43<j)' evaluar=siempre">
+   <param name="A_95" value="id=b44 algoritmo=si inicio='b44=b43' hacer='b44=b44+1' mientras='(j/b44>ent(j/b44))*(b44<j)' evaluar=siempre">
+   <param name="A_96" value="id=b45 algoritmo=si inicio='b45=b44' hacer='b45=b45+1' mientras='(j/b45>ent(j/b45))*(b45<j)' evaluar=siempre">
+   <param name="A_97" value="id=b46 algoritmo=si inicio='b46=b45' hacer='b46=b46+1' mientras='(j/b46>ent(j/b46))*(b46<j)' evaluar=siempre">
+   <param name="A_98" value="id=b47 algoritmo=si inicio='b47=b46' hacer='b47=b47+1' mientras='(j/b47>ent(j/b47))*(b47<j)' evaluar=siempre">
+   <param name="A_99" value="id=b48 algoritmo=si inicio='b48=b47' hacer='b48=b48+1' mientras='(j/b48>ent(j/b48))*(b48<j)' evaluar=siempre">
+   <param name="A_100" value="id=cd algoritmo=si inicio='cd=n+1' hacer='cd=cd-1' mientras='(n/cd>ent(n/cd))+(j/cd>ent(j/cd))' evaluar=siempre">
+   <param name="G_00" value="tipo=punto expresión='(-4,3.9)' color=rojo texto='Máximo común divisor de  [n]  y  [j]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_01" value="tipo=punto expresión='(-4,3)' texto='Los divisores del número [n] son:' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_02" value="tipo=punto expresión='(-4,2.5)' color=gris dibujar-si='(a1<=n)' texto='[a1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_03" value="tipo=punto expresión='(-3,2.5)' color=gris dibujar-si='(a2<=n)' texto='[a2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_04" value="tipo=punto expresión='(-2,2.5)' color=gris dibujar-si='(a3<=n)' texto='[a3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_05" value="tipo=punto expresión='(-1,2.5)' color=gris dibujar-si='(a4<=n)' texto='[a4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_06" value="tipo=punto expresión='(0,2.5)' color=gris dibujar-si='(a5<=n)' texto='[a5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_07" value="tipo=punto expresión='(1,2.5)' color=gris dibujar-si='(a6<=n)' texto='[a6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_08" value="tipo=punto expresión='(2,2.5)' color=gris dibujar-si='(a7<=n)' texto='[a7]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_09" value="tipo=punto expresión='(3,2.5)' color=gris dibujar-si='(a8<=n)' texto='[a8]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_10" value="tipo=punto expresión='(-4,2)' color=gris dibujar-si='(a9<=n)' texto='[a9]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_11" value="tipo=punto expresión='(-3,2)' color=gris dibujar-si='(a10<=n)' texto='[a10]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_12" value="tipo=punto expresión='(-2,2)' color=gris dibujar-si='(a11<=n)' texto='[a11]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_13" value="tipo=punto expresión='(-1,2)' color=gris dibujar-si='(a12<=n)' texto='[a12]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_14" value="tipo=punto expresión='(-0,2)' color=gris dibujar-si='(a13<=n)' texto='[a13]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_15" value="tipo=punto expresión='(1,2)' color=gris dibujar-si='(a14<=n)' texto='[a14]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_16" value="tipo=punto expresión='(2,2)' color=gris dibujar-si='(a15<=n)' texto='[a15]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_17" value="tipo=punto expresión='(3,2)' color=gris dibujar-si='(a16<=n)' texto='[a16]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_18" value="tipo=punto expresión='(-4,1.5)' color=gris dibujar-si='(a17<=n)' texto='[a17]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_19" value="tipo=punto expresión='(-3,1.5)' color=gris dibujar-si='(a18<=n)' texto='[a18]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_20" value="tipo=punto expresión='(-2,1.5)' color=gris dibujar-si='(a19<=n)' texto='[a19]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_21" value="tipo=punto expresión='(-1,1.5)' color=gris dibujar-si='(a20<=n)' texto='[a20]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_22" value="tipo=punto expresión='(0,1.5)' color=gris dibujar-si='(a21<=n)' texto='[a21]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_23" value="tipo=punto expresión='(1,1.5)' color=gris dibujar-si='(a22<=n)' texto='[a22]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_24" value="tipo=punto expresión='(2,1.5)' color=gris dibujar-si='(a23<=n)' texto='[a23]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_25" value="tipo=punto expresión='(3,1.5)' color=gris dibujar-si='(a24<=n)' texto='[a24]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_26" value="tipo=punto expresión='(-4,1)' color=gris dibujar-si='(a25<=n)' texto='[a25]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_27" value="tipo=punto expresión='(-3,1)' color=gris dibujar-si='(a26<=n)' texto='[a26]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_28" value="tipo=punto expresión='(-2,1)' color=gris dibujar-si='(a27<=n)' texto='[a27]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_29" value="tipo=punto expresión='(-1,1)' color=gris dibujar-si='(a28<=n)' texto='[a28]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_30" value="tipo=punto expresión='(0,1)' color=gris dibujar-si='(a29<=n)' texto='[a29]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_31" value="tipo=punto expresión='(1,1)' color=gris dibujar-si='(a30<=n)' texto='[a30]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_32" value="tipo=punto expresión='(2,1)' color=gris dibujar-si='(a31<=n)' texto='[a31]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_33" value="tipo=punto expresión='(3,1)' color=gris dibujar-si='(a32<=n)' texto='[a32]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_34" value="tipo=punto expresión='(-4,0.5)' color=gris dibujar-si='(a33<=n)' texto='[a33]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_35" value="tipo=punto expresión='(-3,0.5)' color=gris dibujar-si='(a34<=n)' texto='[a34]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_36" value="tipo=punto expresión='(-2,0.5)' color=gris dibujar-si='(a35<=n)' texto='[a35]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_37" value="tipo=punto expresión='(-1,0.5)' color=gris dibujar-si='(a36<=n)' texto='[a36]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_38" value="tipo=punto expresión='(0,0.5)' color=gris dibujar-si='(a37<=n)' texto='[a37]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_39" value="tipo=punto expresión='(1,0.5)' color=gris dibujar-si='(a38<=n)' texto='[a38]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_40" value="tipo=punto expresión='(2,0.5)' color=gris dibujar-si='(a39<=n)' texto='[a39]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_41" value="tipo=punto expresión='(3,0.5)' color=gris dibujar-si='(a40<=n)' texto='[a40]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_42" value="tipo=punto expresión='(-4,0)' color=gris dibujar-si='(a41<=n)' texto='[a41]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_43" value="tipo=punto expresión='(-3,0)' color=gris dibujar-si='(a42<=n)' texto='[a42]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_44" value="tipo=punto expresión='(-2,0)' color=gris dibujar-si='(a43<=n)' texto='[a43]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_45" value="tipo=punto expresión='(-1,0)' color=gris dibujar-si='(a44<=n)' texto='[a44]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_46" value="tipo=punto expresión='(0,0)' color=gris dibujar-si='(a45<=n)' texto='[a45]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_47" value="tipo=punto expresión='(1,0)' color=gris dibujar-si='(a46<=n)' texto='[a46]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_48" value="tipo=punto expresión='(2,0)' color=gris dibujar-si='(a47<=n)' texto='[a47]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_49" value="tipo=punto expresión='(3,0)' color=gris dibujar-si='(a48<=n)' texto='[a48]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_50" value="tipo=punto expresión='(-4,-0.5)' color=gris dibujar-si='b1<=j' texto='[b1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_51" value="tipo=punto expresión='(-3,-0.5)' color=gris dibujar-si='b2<=j' texto='[b2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_52" value="tipo=punto expresión='(-2,-0.5)' color=gris dibujar-si='b3<=j' texto='[b3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_53" value="tipo=punto expresión='(-1,-0.5)' color=gris dibujar-si='b4<=j' texto='[b4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_54" value="tipo=punto expresión='(0,-0.5)' color=gris dibujar-si='b5<=j' texto='[b5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_55" value="tipo=punto expresión='(1,-0.5)' color=gris dibujar-si='b6<=j' texto='[b6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_56" value="tipo=punto expresión='(2,-0.5)' color=gris dibujar-si='b7<=j' texto='[b7]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_57" value="tipo=punto expresión='(3,-0.5)' color=gris dibujar-si='b8<=j' texto='[b8]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_58" value="tipo=punto expresión='(-4,-1)' color=gris dibujar-si='b9<=j' texto='[b9]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_59" value="tipo=punto expresión='(-3,-1)' color=gris dibujar-si='b10<=j' texto='[b10]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_60" value="tipo=punto expresión='(-2,-1)' color=gris dibujar-si='b11<=j' texto='[b11]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_61" value="tipo=punto expresión='(-1,-1)' color=gris dibujar-si='b12<=j' texto='[b12]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_62" value="tipo=punto expresión='(0,-1)' color=gris dibujar-si='b13<=j' texto='[b13]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_63" value="tipo=punto expresión='(1,-1)' color=gris dibujar-si='b14<=j' texto='[b14]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_64" value="tipo=punto expresión='(2,-1)' color=gris dibujar-si='b15<=j' texto='[b15]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_65" value="tipo=punto expresión='(3,-1)' color=gris dibujar-si='b16<=j' texto='[b16]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_66" value="tipo=punto expresión='(-4,-1.5)' color=gris dibujar-si='b17<=j' texto='[b17]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_67" value="tipo=punto expresión='(-3,-1.5)' color=gris dibujar-si='b18<=j' texto='[b18]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_68" value="tipo=punto expresión='(-2,-1.5)' color=gris dibujar-si='b19<=j' texto='[b19]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_69" value="tipo=punto expresión='(-1,-1.5)' color=gris dibujar-si='b20<=j' texto='[b20]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_70" value="tipo=punto expresión='(0,-1.5)' color=gris dibujar-si='b21<=j' texto='[b21]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_71" value="tipo=punto expresión='(1,-1.5)' color=gris dibujar-si='b22<=j' texto='[b22]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_72" value="tipo=punto expresión='(2,-1.5)' color=gris dibujar-si='b23<=j' texto='[b23]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_73" value="tipo=punto expresión='(3,-1.5)' color=gris dibujar-si='b24<=j' texto='[b24]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_74" value="tipo=punto expresión='(-4,-2)' color=gris dibujar-si='b25<=j' texto='[b25]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_75" value="tipo=punto expresión='(-3,-2)' color=gris dibujar-si='b26<=j' texto='[b26]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_76" value="tipo=punto expresión='(-2,-2)' color=gris dibujar-si='b27<=j' texto='[b27]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_77" value="tipo=punto expresión='(-1,-2)' color=gris dibujar-si='b28<=j' texto='[b28]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_78" value="tipo=punto expresión='(0,-2)' color=gris dibujar-si='b29<=j' texto='[b29]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_79" value="tipo=punto expresión='(1,-2)' color=gris dibujar-si='b30<=j' texto='[b30]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_80" value="tipo=punto expresión='(2,-2)' color=gris dibujar-si='b31<=j' texto='[b31]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_81" value="tipo=punto expresión='(3,-2)' color=gris dibujar-si='b32<=j' texto='[b32]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_82" value="tipo=punto expresión='(-4,-2.5)' color=gris dibujar-si='b33<=j' texto='[b33]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_83" value="tipo=punto expresión='(-3,-2.5)' color=gris dibujar-si='b34<=j' texto='[b34]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_84" value="tipo=punto expresión='(-2,-2.5)' color=gris dibujar-si='b35<=j' texto='[b35]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_85" value="tipo=punto expresión='(-1,-2.5)' color=gris dibujar-si='b36<=j' texto='[b36]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_86" value="tipo=punto expresión='(0,-2.5)' color=gris dibujar-si='b37<=j' texto='[b37]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_87" value="tipo=punto expresión='(1,-2.5)' color=gris dibujar-si='b38<=j' texto='[b38]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_88" value="tipo=punto expresión='(2,-2.5)' color=gris dibujar-si='b39<=j' texto='[b39]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_89" value="tipo=punto expresión='(3,-2.5)' color=gris dibujar-si='b40<=j' texto='[b40]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_90" value="tipo=punto expresión='(-4,-3)' color=gris dibujar-si='b41<=j' texto='[b41]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_91" value="tipo=punto expresión='(-3,-3)' color=gris dibujar-si='b42<=j' texto='[b42]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_92" value="tipo=punto expresión='(-2,-3)' color=gris dibujar-si='b43<=j' texto='[b43]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_93" value="tipo=punto expresión='(-1,-3)' color=gris dibujar-si='b44<=j' texto='[b44]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_94" value="tipo=punto expresión='(0,-3)' color=gris dibujar-si='b45<=j' texto='[b45]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_95" value="tipo=punto expresión='(1,-3)' color=gris dibujar-si='b46<=j' texto='[b46]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_96" value="tipo=punto expresión='(2,-3)' color=gris dibujar-si='b47<=j' texto='[b47]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_97" value="tipo=punto expresión='(3,-3)' color=gris dibujar-si='b48<=j' texto='[b48]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_98" value="tipo=punto expresión='(-4,2.5)' color=rojo dibujar-si='(a1<=n)*(a1=cd)' texto='[a1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_99" value="tipo=punto expresión='(-3,2.5)' color=rojo dibujar-si='(a2<=n)*(a2=cd)' texto='[a2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_100" value="tipo=punto expresión='(-2,2.5)' color=rojo dibujar-si='(a3<=n)*(a3=cd)' texto='[a3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_101" value="tipo=punto expresión='(-1,2.5)' color=rojo dibujar-si='(a4<=n)*(a4=cd)' texto='[a4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_102" value="tipo=punto expresión='(0,2.5)' color=rojo dibujar-si='(a5<=n)*(a5=cd)' texto='[a5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_103" value="tipo=punto expresión='(1,2.5)' color=rojo dibujar-si='(a6<=n)*(a6=cd)' texto='[a6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_104" value="tipo=punto expresión='(2,2.5)' color=rojo dibujar-si='(a7<=n)*(a7=cd)' texto='[a7]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_105" value="tipo=punto expresión='(3,2.5)' color=rojo dibujar-si='(a8<=n)*(a8=cd)' texto='[a8]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_106" value="tipo=punto expresión='(-4,2)' color=rojo dibujar-si='(a9<=n)*(a9=cd)' texto='[a9]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_107" value="tipo=punto expresión='(-3,2)' color=rojo dibujar-si='(a10<=n)*(a10=cd)' texto='[a10]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_108" value="tipo=punto expresión='(-2,2)' color=rojo dibujar-si='(a11<=n)*(a11=cd)' texto='[a11]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_109" value="tipo=punto expresión='(-1,2)' color=rojo dibujar-si='(a12<=n)*(a12=cd)' texto='[a12]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_110" value="tipo=punto expresión='(-0,2)' color=rojo dibujar-si='(a13<=n)*(a13=cd)' texto='[a13]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_111" value="tipo=punto expresión='(1,2)' color=rojo dibujar-si='(a14<=n)*(a14=cd)' texto='[a14]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_112" value="tipo=punto expresión='(2,2)' color=rojo dibujar-si='(a15<=n)*(a15=cd)' texto='[a15]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_113" value="tipo=punto expresión='(3,2)' color=rojo dibujar-si='(a16<=n)*(a16=cd)' texto='[a16]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_114" value="tipo=punto expresión='(-4,1.5)' color=rojo dibujar-si='(a17<=n)*(a17=cd)' texto='[a17]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_115" value="tipo=punto expresión='(-3,1.5)' color=rojo dibujar-si='(a18<=n)*(a18=cd)' texto='[a18]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_116" value="tipo=punto expresión='(-2,1.5)' color=rojo dibujar-si='(a19<=n)*(a19=cd)' texto='[a19]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_117" value="tipo=punto expresión='(-1,1.5)' color=rojo dibujar-si='(a20<=n)*(a20=cd)' texto='[a20]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_118" value="tipo=punto expresión='(0,1.5)' color=rojo dibujar-si='(a21<=n)*(a21=cd)' texto='[a21]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_119" value="tipo=punto expresión='(1,1.5)' color=rojo dibujar-si='(a22<=n)*(a22=cd)' texto='[a22]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_120" value="tipo=punto expresión='(2,1.5)' color=rojo dibujar-si='(a23<=n)*(a23=cd)' texto='[a23]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_121" value="tipo=punto expresión='(3,1.5)' color=rojo dibujar-si='(a24<=n)*(a24=cd)' texto='[a24]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_122" value="tipo=punto expresión='(-4,1)' color=rojo dibujar-si='(a25<=n)*(a25=cd)' texto='[a25]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_123" value="tipo=punto expresión='(-3,1)' color=rojo dibujar-si='(a26<=n)*(a26=cd)' texto='[a26]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_124" value="tipo=punto expresión='(-2,1)' color=rojo dibujar-si='(a27<=n)*(a27=cd)' texto='[a27]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_125" value="tipo=punto expresión='(-1,1)' color=rojo dibujar-si='(a28<=n)*(a28=cd)' texto='[a28]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_126" value="tipo=punto expresión='(0,1)' color=rojo dibujar-si='(a29<=n)*(a29=cd)' texto='[a29]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_127" value="tipo=punto expresión='(1,1)' color=rojo dibujar-si='(a30<=n)*(a30=cd)' texto='[a30]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_128" value="tipo=punto expresión='(2,1)' color=rojo dibujar-si='(a31<=n)*(a31=cd)' texto='[a31]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_129" value="tipo=punto expresión='(3,1)' color=rojo dibujar-si='(a32<=n)*(a32=cd)' texto='[a32]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_130" value="tipo=punto expresión='(-4,0.5)' color=rojo dibujar-si='(a33<=n)*(a33=cd)' texto='[a33]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_131" value="tipo=punto expresión='(-3,0.5)' color=rojo dibujar-si='(a34<=n)*(a34=cd)' texto='[a34]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_132" value="tipo=punto expresión='(-2,0.5)' color=rojo dibujar-si='(a35<=n)*(a35=cd)' texto='[a35]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_133" value="tipo=punto expresión='(-1,0.5)' color=rojo dibujar-si='(a36<=n)*(a36=cd)' texto='[a36]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_134" value="tipo=punto expresión='(0,0.5)' color=rojo dibujar-si='(a37<=n)*(a37=cd)' texto='[a37]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_135" value="tipo=punto expresión='(1,0.5)' color=rojo dibujar-si='(a38<=n)*(a38=cd)' texto='[a38]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_136" value="tipo=punto expresión='(2,0.5)' color=rojo dibujar-si='(a39<=n)*(a39=cd)' texto='[a39]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_137" value="tipo=punto expresión='(3,0.5)' color=rojo dibujar-si='(a40<=n)*(a40=cd)' texto='[a40]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_138" value="tipo=punto expresión='(-4,0)' color=rojo dibujar-si='(a41<=n)*(a41=cd)' texto='[a41]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_139" value="tipo=punto expresión='(-3,0)' color=rojo dibujar-si='(a42<=n)*(a42=cd)' texto='[a42]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_140" value="tipo=punto expresión='(-2,0)' color=rojo dibujar-si='(a43<=n)*(a43=cd)' texto='[a43]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_141" value="tipo=punto expresión='(-1,0)' color=rojo dibujar-si='(a44<=n)*(a44=cd)' texto='[a44]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_142" value="tipo=punto expresión='(0,0)' color=rojo dibujar-si='(a45<=n)*(a45=cd)' texto='[a45]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_143" value="tipo=punto expresión='(1,0)' color=rojo dibujar-si='(a46<=n)*(a46=cd)' texto='[a46]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_144" value="tipo=punto expresión='(2,0)' color=rojo dibujar-si='(a47<=n)*(a47=cd)' texto='[a47]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_145" value="tipo=punto expresión='(3,0)' color=rojo dibujar-si='(a48<=n)*(a48=cd)' texto='[a48]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_146" value="tipo=punto expresión='(-4,-0.5)' color=rojo dibujar-si='(b1<=j)*(b1=cd)' texto='[b1]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_147" value="tipo=punto expresión='(-3,-0.5)' color=rojo dibujar-si='(b2<=j)*(b2=cd)' texto='[b2]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_148" value="tipo=punto expresión='(-2,-0.5)' color=rojo dibujar-si='(b3<=j)*(b3=cd)' texto='[b3]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_149" value="tipo=punto expresión='(-1,-0.5)' color=rojo dibujar-si='(b4<=j)*(b4=cd)' texto='[b4]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_150" value="tipo=punto expresión='(0,-0.5)' color=rojo dibujar-si='(b5<=j)*(b5=cd)' texto='[b5]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_151" value="tipo=punto expresión='(1,-0.5)' color=rojo dibujar-si='(b6<=j)*(b6=cd)' texto='[b6]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_152" value="tipo=punto expresión='(2,-0.5)' color=rojo dibujar-si='(b7<=j)*(b7=cd)' texto='[b7]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_153" value="tipo=punto expresión='(3,-0.5)' color=rojo dibujar-si='(b8<=j)*(b8=cd)' texto='[b8]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_154" value="tipo=punto expresión='(-4,-1)' color=rojo dibujar-si='(b9<=j)*(b9=cd)' texto='[b9]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_155" value="tipo=punto expresión='(-3,-1)' color=rojo dibujar-si='(b10<=j)*(b10=cd)' texto='[b10]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_156" value="tipo=punto expresión='(-2,-1)' color=rojo dibujar-si='(b11<=j)*(b11=cd)' texto='[b11]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_157" value="tipo=punto expresión='(-1,-1)' color=rojo dibujar-si='(b12<=j)*(b12=cd)' texto='[b12]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_158" value="tipo=punto expresión='(0,-1)' color=rojo dibujar-si='(b13<=j)*(b13=cd)' texto='[b13]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_159" value="tipo=punto expresión='(1,-1)' color=rojo dibujar-si='(b14<=j)*(b14=cd)' texto='[b14]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_160" value="tipo=punto expresión='(2,-1)' color=rojo dibujar-si='(b15<=j)*(b15=cd)' texto='[b15]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_161" value="tipo=punto expresión='(3,-1)' color=rojo dibujar-si='(b16<=j)*(b16=cd)' texto='[b16]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_162" value="tipo=punto expresión='(-4,-1.5)' color=rojo dibujar-si='(b17<=j)*(b17=cd)' texto='[b17]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_163" value="tipo=punto expresión='(-3,-1.5)' color=rojo dibujar-si='(b18<=j)*(b18=cd)' texto='[b18]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_164" value="tipo=punto expresión='(-2,-1.5)' color=rojo dibujar-si='(b19<=j)*(b19=cd)' texto='[b19]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_165" value="tipo=punto expresión='(-1,-1.5)' color=rojo dibujar-si='(b20<=j)*(b20=cd)' texto='[b20]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_166" value="tipo=punto expresión='(0,-1.5)' color=rojo dibujar-si='(b21<=j)*(b21=cd)' texto='[b21]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_167" value="tipo=punto expresión='(1,-1.5)' color=rojo dibujar-si='(b22<=j)*(b22=cd)' texto='[b22]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_168" value="tipo=punto expresión='(2,-1.5)' color=rojo dibujar-si='(b23<=j)*(b23=cd)' texto='[b23]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_169" value="tipo=punto expresión='(3,-1.5)' color=rojo dibujar-si='(b24<=j)*(b24=cd)' texto='[b24]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_170" value="tipo=punto expresión='(-4,-2)' color=rojo dibujar-si='(b25<=j)*(b25=cd)' texto='[b25]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_171" value="tipo=punto expresión='(-3,-2)' color=rojo dibujar-si='(b26<=j)*(b26=cd)' texto='[b26]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_172" value="tipo=punto expresión='(-2,-2)' color=rojo dibujar-si='(b27<=j)*(b27=cd)' texto='[b27]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_173" value="tipo=punto expresión='(-1,-2)' color=rojo dibujar-si='(b28<=j)*(b28=cd)' texto='[b28]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_174" value="tipo=punto expresión='(0,-2)' color=rojo dibujar-si='(b29<=j)*(b29=cd)' texto='[b29]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_175" value="tipo=punto expresión='(1,-2)' color=rojo dibujar-si='(b30<=j)*(b30=cd)' texto='[b30]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_176" value="tipo=punto expresión='(2,-2)' color=rojo dibujar-si='(b31<=j)*(b31=cd)' texto='[b31]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_177" value="tipo=punto expresión='(3,-2)' color=rojo dibujar-si='(b32<=j)*(b32=cd)' texto='[b32]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_178" value="tipo=punto expresión='(-4,-2.5)' color=rojo dibujar-si='(b33<=j)*(b33=cd)' texto='[b33]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_179" value="tipo=punto expresión='(-3,-2.5)' color=rojo dibujar-si='(b34<=j)*(b34=cd)' texto='[b34]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_180" value="tipo=punto expresión='(-2,-2.5)' color=rojo dibujar-si='(b35<=j)*(b35=cd)' texto='[b35]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_181" value="tipo=punto expresión='(-1,-2.5)' color=rojo dibujar-si='(b36<=j)*(b36=cd)' texto='[b36]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_182" value="tipo=punto expresión='(0,-2.5)' color=rojo dibujar-si='(b37<=j)*(b37=cd)' texto='[b37]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_183" value="tipo=punto expresión='(1,-2.5)' color=rojo dibujar-si='(b38<=j)*(b38=cd)' texto='[b38]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_184" value="tipo=punto expresión='(2,-2.5)' color=rojo dibujar-si='(b39<=j)*(b39=cd)' texto='[b39]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_185" value="tipo=punto expresión='(3,-2.5)' color=rojo dibujar-si='(b40<=j)*(b40=cd)' texto='[b40]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_186" value="tipo=punto expresión='(-4,-3)' color=rojo dibujar-si='(b41<=j)*(b41=cd)' texto='[b41]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_187" value="tipo=punto expresión='(-3,-3)' color=rojo dibujar-si='(b42<=j)*(b42=cd)' texto='[b42]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_188" value="tipo=punto expresión='(-2,-3)' color=rojo dibujar-si='(b43<=j)*(b43=cd)' texto='[b43]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_189" value="tipo=punto expresión='(-1,-3)' color=rojo dibujar-si='(b44<=j)*(b44=cd)' texto='[b44]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_190" value="tipo=punto expresión='(0,-3)' color=rojo dibujar-si='(b45<=j)*(b45=cd)' texto='[b45]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_191" value="tipo=punto expresión='(1,-3)' color=rojo dibujar-si='(b46<=j)*(b46=cd)' texto='[b46]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_192" value="tipo=punto expresión='(2,-3)' color=rojo dibujar-si='(b47<=j)*(b47=cd)' texto='[b47]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_193" value="tipo=punto expresión='(3,-3)' color=rojo dibujar-si='(b48<=j)*(b48=cd)' texto='[b48]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_194" value="tipo=punto expresión='(-4,0)' texto='Los divisores del número [j] son:' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_195" value="tipo=punto expresión='(-4,-3.5)' texto='de  [n]  y  [j]  es:' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_196" value="tipo=punto expresión='(0.1,-3.5)' color=rojo texto='[cd]' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+   <param name="G_197" value="tipo=punto expresión='(-4,-3)' texto='El número mayor que es divisor común' decimales=0 tamaño=0 fuente='Helvetica,PLAIN,18'">
+<font face="Arial" size="3">Esta unidad interactiva requiere la m&aacute;quina virtual de Java <a href="http://java.com/" target="_blank">JAVA</a>.</font>
+</ajs>
+
+
+
+              </div></td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8" height="422">
+      </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="2" width="8"></td>
+      <td background="imagen1/bor3.gif" height="2"></td>
+      <td background="imagen1/es3.gif" height="2" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td width="684"><div align="right"> </div></td>
+      <td width="30">
+        <div align="center"><a href="1quincena2_contenidos_3b.htm" target="_parent" onMouseOver="MM_swapImage('atras','','imagen1/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/atras.png" alt="anterior" name="atras" width="25" height="25" border="0"></a></div>
+      </td>
+      <td width="30">
+        <div align="center"><a href="1quincena2_contenidos_3d.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+<title>Ejercicio resuelto: Porcentaje de una cantidad</title>
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body>
+
+<div align="center"><ajs name="tanto_por_ciento_ejercicios" width=392 height=460
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="392x460">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="tanto_por_ciento_ejercicios">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='fond' y='20' alto='440' fijo='s&iacute;' escala='120' O.y='40' despl_imagen='arr-izq' fondo='fffac7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='enunciado' y='0' alto='90' fijo='s&iacute;' escala='120' O.x='-73' O.y='83' despl_imagen='arr-izq' fondo='fff0c0' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='corregir' x='74' y='140' ancho='240' alto='60' dibujar-si='(correcto2#0)*(resp2#0)' fijo='s&iacute;' escala='120' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='texto1' x='8' y='210' ancho='370' alto='215' dibujar-si='(p&gt;0)' fijo='s&iacute;' escala='120' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='resp2' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(180,80,50,30)' fijo='no' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='ejemplo2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(10,415,100,20)' fijo='no' visible='no' imagen='imagen1/otroejercicio.png' acci&oacute;n='calcular' par&aacute;metro='p=0\n\nk=ent(3*rnd+1)\nresp2=0\na=ent(99*rnd+1)\nb=10*ent(99*rnd+1)\nx2=a*b/100\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(resp2#0)' pos_mensajes='centro'">
+   <param name="C_03" value="id='solucion2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(280,415,100,20)' fijo='no' visible='no' imagen='imagen1/comprobar.png' acci&oacute;n='calcular' par&aacute;metro='p=6' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='resp2#0' pos_mensajes='centro'">
+   <param name="A_01" value="id='k' constante='s&iacute;' expresi&oacute;n='ent(3*rnd+1)' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='a' constante='s&iacute;' expresi&oacute;n='ent(99*rnd+1)' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='b' constante='s&iacute;' expresi&oacute;n='10*ent(99*rnd+1)' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='x2' constante='s&iacute;' expresi&oacute;n='a*b/100' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='correcto2' constante='s&iacute;' expresi&oacute;n='(resp2=x2)?1:2' evaluar='siempre'">
+   <param name="G_01" value="espacio='enunciado' tipo='texto' color='grisObscuro' expresi&oacute;n='[5,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b Calcula  el{\*\mjaformula{\expr a\decimals 2\fixed0}}% de{\*\mjaformula{\expr b\decimals 2\fixed0}}\par \par Utiliza el m\u233 todo{\*\mjaformula{\expr k\decimals 2\fixed0}}\par \par  \f2\fs24\b0\par                \par }' fuente='SansSerif,BOLD,14' fijo='no'">
+   <param name="G_02" value="espacio='fondo' tipo='texto' color='azul' expresi&oacute;n='[40,85]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red0\green0\blue255;}\f1\fs36\b\cf0 La soluci\u243 n es:\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,18' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='fondo' tipo='texto' color='azul' expresi&oacute;n='[240,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\f1\fs20\b\cf0 Escribe el valor \par y pulsa INTRO\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,10' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='texto1' tipo='pol&iacute;gono' color='ff6600' expresi&oacute;n='(-1.54,-0.88)(-1.54,0.9)(1.53,0.9)(1.53,-0.88)(-1.54,-0.88)'">
+   <param name="G_05" value="espacio='corregir' tipo='texto' color='azul' dibujar-si='(correcto2=1)' expresi&oacute;n='[50,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs56\b MUY BIEN \f2\fs24\b0\par }' fuente='SansSerif,BOLD,28' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='corregir' tipo='imagen' dibujar-si='(correcto2=1)' expresi&oacute;n='(-0.9,0.1)' archivo='imagen1/bien.png'">
+   <param name="G_07" value="espacio='corregir' tipo='texto' color='azul' dibujar-si='(correcto2=2)*(resp2#0)' expresi&oacute;n='[58,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b Vuelve a intentarlo\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='corregir' tipo='imagen' dibujar-si='(correcto2=2)*(resp2#0)' expresi&oacute;n='(-0.8,0.1)' archivo='imagen1/mal.png'">
+   <param name="G_09" value="espacio='corregir' tipo='pol&iacute;gono' color='ff6600' expresi&oacute;n='(-1,-0.24)(-1,0.25)(0.99,0.25)(0.99,-0.24)(-1,-0.24)'">
+   <param name="G_10" value="espacio='texto1' tipo='texto' color='grisObscuro' dibujar-si='(p=6)*(k=1)' expresi&oacute;n='[10,12]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Arial;\f6\fcharset0 Courier New;\f7\fcharset0 Arial;}\f1\fs24\b Llamamos x a la cantidad desconocida\b0\par \par Escribimos una regla de tres\b\par                            \ul porcentaje \ulnone                \ul cantidad\fs20\ulnone\par si se pidiera\fs24  \fs20\b0 el \fs24\b  100%   \f6\fs24   ------&amp;gt; \f1\fs24{\*\mjaformula{\expr b\decimals 2\fixed0}}  \fs20 (la respuesta es el total)\par como se  pide \b0 el \fs24\b{\*\mjaformula{\expr a\decimals 2\fixed0}}%   \f6\fs24   ------&amp;gt;  \f1\fs24   x       \fs20 (es la cantidad)\fs24\b0\par \par Formamos la proporci\u243 n:\b        \fs26{\*\mjaformula{\fraction{\num 100}{\den{\expr a\decimals 2\fixed0}}}}\fs24 =\fs26{\*\mjaformula{\fraction{\num{\expr b\decimals 2\fixed0}}{\den x}}}\fs24\b0\par \par Resolvemos:\b     100x = {\*\mjaformula{\expr a\decimals 2\fixed0}}\u183 {\*\mjaformula{\expr b\decimals 2\fixed0}}          \u8658      100x ={\*\mjaformula{\expr a*b\decimals 2\fixed0}}\par                               x =\fs26{\*\mjaformula{\fraction{\num{\expr a*b\decimals 2\fixed0}}{\den 100}}}\fs24 ={\*\mjaformula{\expr a*b/100\decimals 2\fixed0}}\par \par \par \par \par \par \par }' fuente='SansSerif,BOLD,12' fijo='no'">
+   <param name="G_11" value="espacio='texto1' tipo='texto' color='grisObscuro' dibujar-si='(k=2)*(p=6)' expresi&oacute;n='[10,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;}\f1\fs24 Escribimos en forma de fracci\u243 n\b      \fs26{\*\mjaformula{\fraction{\num{\expr a\decimals 2\fixed0}}{\den 100}}}\fs24 de{\*\mjaformula{\expr b\decimals 2\fixed0}}\b0\par Convertimos  \b\i de\b0\i0  en una multiplicaci\u243 n   \b   {\*\mjaformula{\fraction{\num{\expr a\decimals 2\fixed0}}{\den 100}}}\u183 {\*\mjaformula{\expr b\decimals 2\fixed0}}\b0\par Operamos \b   \fs26{\*\mjaformula{\fraction{\num{\expr a\decimals 2\fixed0}\u183 {\expr b\decimals 2\fixed0}}{\den 100}}}\fs24 =\fs26{\*\mjaformula{\fraction{\num{\expr a*b\decimals 2\fixed0}}{\den 100}}}\fs24 ={\*\mjaformula\f2\fs24\b{\expr a*b/100\decimals 2\fixed0}\b0}\b0\par }' fuente='SansSerif,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='texto1' tipo='texto' color='grisObscuro' dibujar-si='(k=3)*(p=6)' expresi&oacute;n='[10,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;}\f1\fs24 Escribimos en forma de fracci\u243 n\b      \fs26{\*\mjaformula{\fraction{\num{\expr a\decimals 2\fixed0}}{\den 100}}}\fs24 de{\*\mjaformula{\expr b\decimals 2\fixed0}}\b0\par Pasamos a forma decimal \b         {\*\mjaformula{\expr a/100\decimals 2\fixed0}}de{\*\mjaformula{\expr b\decimals 2\fixed0}}\b0\par Convertimos \b\i de\b0\i0  en una multiplicaci\u243 n \b   {\*\mjaformula{\expr a/100\decimals 2\fixed0}}\u183 {\*\mjaformula{\expr b\decimals 2\fixed0}}\b0\par Operamos \b  {\*\mjaformula{\expr a/100*b\decimals 2\fixed1}} \b0\par }' fuente='SansSerif,PLAIN,12' fijo='s&iacute;'">
+</ajs>
+</body>
+</html>

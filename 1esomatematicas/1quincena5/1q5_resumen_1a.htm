@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Fracciones</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+
+</script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+
+<body onload="MM_preloadImages('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes2.png','imagen1/paracont2.png','imagen1/adelanteb.png','imagen1/atrasb.png','imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/paraejer3.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paracont3.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0px; top: 0px; width: 800px; height: 528px; z-index: 1;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="1quincena5_presenta_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes.png" alt="" name="antes" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','imagen1/paracont3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paracont3.png" alt="" name="contenidos" onload="MM_nbGroup('init','group1','contenidos','imagen1/paraconte.png',1)" border="0"></a></td>
+      <td><a href="1quincena5_ejercicios_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer.png" alt="" name="ejercicios" onload="" border="0"></a></td>
+      <td><a href="1quincena5_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" onload="" border="0"></a></td>
+      <td><a href="1quincena5_tutor_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onmouseover="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" onload="" border="0"></a></td>
+      <td><a href="1quincena5_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0"></a></td>
+    </tr>
+  </table>
+<table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+  <table align="center" border="0" cellspacing="0" height="85%" width="800">
+    <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8"></td>
+      <td bgcolor="#ffffff" valign="top">
+        <table cellspacing="10" width="100%">
+          <tr>
+            <td valign="top"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong><img src="imagen1/recuerda.png" width="50" height="38" align="left">Recuerda
+              lo más importante</strong></font>
+              <div align="right"></div>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top"> <div align="center">
+                <ajs name="autoevaluacion10" width=740 height=370
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="740x370">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="autoevaluacion10">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='s&iacute;' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="A_01" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.1416' evaluar='una-sola-vez'">
+   <param name="G_01" value="tipo='pol&iacute;gono' fondo='s&iacute;' color='ffefce' expresi&oacute;n='(-7.9,3.9)(-2.6,3.9)(-2.6,-3.9)(-7.9,-3.9)(-7.9,3.9)' relleno='ffefce'">
+   <param name="G_02" value="tipo='pol&iacute;gono' fondo='s&iacute;' color='ffffd9' expresi&oacute;n='(-2.55,3.9)(-2.55,-3.9)(2.65,-3.9)(2.65,3.9)(-2.55,3.9)' relleno='ffffd1'">
+   <param name="G_03" value="tipo='pol&iacute;gono' fondo='s&iacute;' color='ffffd9' expresi&oacute;n='(7.8,3.9)(7.6,-3.9)(2.7,-3.9)(2.7,3.9)(7.8,3.9)' relleno='e7ffb8'">
+   <param name="G_04" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(-7.7,3.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs24\b Las fracciones \b0 expresan cantidades referi- \par das a cosas partidas en partes iguales. \par                                            son  {\*\mjaformula{\fraction{\num 3}{\den 4}}}\par}' fuente='SansSerif,BOLD,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_05" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(-7.7,1.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24\b El numerador \b0 indica las partes que tenemos.\par \b El denominador \b0 indica las partes en que \par dividimos a la unidad.\f3\fs24\par}' fuente='SansSerif,BOLD,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_06" value="tipo='arco' fondo='s&iacute;' centro='(-6,2.5)' radio='0.4' fin='270' fijo='s&iacute;' relleno='amarillo'">
+   <param name="G_07" value="tipo='segmento' fondo='s&iacute;' expresi&oacute;n='(-6,2.1)(-6,2.9)' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_08" value="tipo='segmento' fondo='s&iacute;' expresi&oacute;n='(-6.4,2.5)(-5.6,2.5)' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_09" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(-7.7,0.4)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24 Una \b fracci\u243 n representa un valor\b0 , es el \par resultado de  la divisi\u243 n del numerador \par entre el denominador.\par {\*\mjaformula{\fraction{\num 3}{\den 4}} = 3 : 4 = 0.75}\par Para pasar \b de fracci\u243 n a n\u250 mero decimal\b0\par se hace la divisi\u243 n.\f3\fs24\par \par \par}' fuente='Arial,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_10" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(-7.7,-2.2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24 Para pasar \b de n\u250 mero decimal a fracci\u243 n\b0\par ponemos de numerador el n\u250 mero sin la \par coma y de denominador el 1 con tantos 0 \par como cifras decimales tuviera el n\u250 mero.\par {\*\mjaformula 0.035 ={\fraction{\num 35}{\den 1000}}}\f3\fs24\par \par}' fuente='SansSerif,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_11" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(-2.45,3.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red0\green0\blue0;}\f1\fs24\b Fracciones equivalentes \b0 son las que \par expresan un mismo valor. \par Llamamos \b fracci\u243 n irreducible \b0 a la m\u225 s \par simple de todas las equivalentes. \par {\*\mjaformula{\fraction{\num 21}{\den 12}} = {\fraction{\num 70}{\den 40}} ={\fraction{\num 28}{\den 16}} =\cf0{\fraction{\num\cf0 7\cf1}{\den\cf0 4\cf1}}\cf1  ={\fraction{\num 14}{\den 8}} = ... ...}\b   \f3\fs24\b0\par}' fuente='SansSerif,BOLD,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_12" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(-2.45,1.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24\b N\u250 mero racional \b0 es todo valor que puede \par ser expresado mediante una fracci\u243 n. \par Todas las fracciones equivalentes entre \par s\u237   son el mismo n\u250 mero racional.\f3\fs24\par}' fuente='SansSerif,BOLD,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_13" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(-2.45,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24 Para \b simplificar una fracci\u243 n \b0 se divide su \par numerador y su denominador por el mismo \par n\u250 mero.\f3\fs24\par \f1\fs24{\*\mjaformula{\fraction{\num 84}{\den 18}} = {\fraction{\num 84 : 6}{\den 18 : 6}} = {\fraction{\num 14}{\den 3}}}\f3\fs24                    \par}' fuente='SansSerif,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_14" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(-2.45,-1.7)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24 Para \b sumar y restar\b0  fracciones deben tener \par el \b mismo denominador.\f3\fs24\b0\par}' fuente='SansSerif,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_15" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(-2.45,-2.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24 Para \b pasar a com\u250 n denominador \b0 se busca \par el m\u237 nimo com\u250 n m\u250 ltiplo de los denomina-\par dores y se pone de denominador de todas.\par {\*\mjaformula\f3\fs24{\fraction{\num 5}{\den 4}} -{\fraction{\num 1}{\den 6}} ={\fraction{\num}{\den 12}} - {\fraction{\num}{\den 12}}}         m.c.m(4 , 6) = 12\f3\fs24\par}' fuente='SansSerif,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_16" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(2.8,3.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Cada numerador se halla dividiendo el \par m.c.m. por el denominador de su fracci\u243 n \par y multiplic\u225 ndolo por el numerador.\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_17" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(2.8,2.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24{\*\mjaformula 12 : 4 = 3}              {\*\mjaformula 12 : 6 = 2}             \par {\*\mjaformula 3 \u183  5 = 15}             {\*\mjaformula 2 \u183  1 = 2}\f2\fs24\par}' fuente='SansSerif,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_18" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(2.8,1.5)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Finalmente se suman o restan los\par numeradores y se pone el mismo \par denominador.\par {\*\mjaformula{\fraction{\num 5}{\den 4}} -{\fraction{\num 1}{\den 6}} ={\fraction{\num 15}{\den 12}} -{\fraction{\num 2}{\den 12}} ={\fraction{\num 13}{\den 12}}}\f2\fs24\par \par}' fuente='SansSerif,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_19" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(2.8,-0.3)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;\f4\fcharset0 Arial;}\f1\fs24 La \b multiplicaci\u243 n \b0 de fracciones se hace \par directamente.\par {\*\mjaformula\f3\fs24{\fraction{\num 9}{\den 7}}\f1\fs24  \u183 {\fraction{\num 3}{\den 8}} ={\fraction{\num 27\f4\fs22}{\den 56}}\f3\fs24}\f3\fs24\par}' fuente='SansSerif,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_20" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(2.8,-1.7)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24 La \b fracci\u243 n inversa\b0  de {\*\mjaformula{\matrix\rows 1\columns 1{\element{\fraction{\num 7}{\den 2}}}} es ={\fraction{\num 2}{\den 7}}}\f3\fs24\par}' fuente='SansSerif,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_21" value="tipo='punto' fondo='s&iacute;' color='negro' expresi&oacute;n='(2.8,-2.8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24 Para \b dividir \b0 una fracci\u243 n por otra se la  \par multiplica por la inversa.\par {\*\mjaformula{\fraction{\num 3}{\den 4}} : {\fraction{\num 2}{\den 5}}  = {\fraction{\num 3}{\den 4}} \u183  {\fraction{\num 5}{\den 2}}  = {\fraction{\num 15}{\den 8}}}\f3\fs24\par}' fuente='SansSerif,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+</ajs>
+              </div></td>
+          </tr>
+        </table>
+
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8"> </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="8" width="8"></td>
+      <td background="imagen1/bor3.gif" height="8"></td>
+      <td background="imagen1/es3.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td width="684"><div align="right"> </div></td>
+      <td width="30">
+        <div align="center"><a href="1quincena5_contenidos_4a.htm" target="_parent" onMouseOver="MM_swapImage('atras','','imagen1/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/atras.png" alt="anterior" name="atras" width="25" height="25" border="0"></a></div>
+      </td>
+      <td width="30">
+        <div align="center"><a href="1quincena5_ejercicios_1a.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>M&uacute;ltiplos y divisores</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+
+
+	<script type='text/javascript' src='./lib/descartes-min.js'></script>
+</head>
+
+
+<body onload="MM_preloadImages('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes.png','imagen1/paraantes2.png','imagen1/paracont3.png','imagen1/paracont2.png','imagen1/paraimprimir2.png','imagen1/adelanteb.png','imagen1/paraejer3.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paraantes3.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0px; top: 0px; width: 800px; height: 528px; z-index: 1;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="javascript:;" target="_top" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','imagen1/paraantes3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes3.png" alt="" name="antes" onload="MM_nbGroup('init','group1','antes','imagen1/paraantes.png',1)" border="0"></a></td>
+      <td><a href="1quincena2_contenidos_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paraconte.png" alt="" name="contenidos" onload="" border="0"></a></td>
+      <td><a href="1quincena2_ejercicios_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer.png" alt="" name="ejercicios" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="1quincena2_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="1quincena2_tutor_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onmouseover="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="1quincena2_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0"></a></td>
+    </tr>
+  </table>
+<table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+  <table align="center" border="0" cellspacing="0" height="85%" width="800">
+    <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8"></td>
+      <td bgcolor="#ffffff" valign="top">
+        <table cellspacing="10" width="100%">
+          <tr>
+            <td width="44%" valign="middle"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong>Objetivos<br>
+              </strong></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+              En esta quincena aprender&aacute;s a:</font> </td>
+            <td> 
+            </td>
+            <td width="42">
+<div align="right"><a href="1quincena2.pdf" target="_blank" onMouseOver="MM_swapImage('imprimir','','imagen1/paraimprimir2.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/paraimprimir.png" alt="Imprimir" name="imprimir" width="40" height="40" border="0"></a></div></td>
+          </tr>
+          <tr>
+            <td valign="top"> <ul>
+                <li>
+                  <div align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Saber
+                    si un n&uacute;mero es m&uacute;ltiplo de otro.</font></div>
+                </li>
+                <li>
+                  <div align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Hallar
+                    todos los divisores de un n&uacute;mero.</font></div>
+                </li>
+                <li>
+                  <div align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Reconocer
+                    los n&uacute;meros primos.</font></div>
+                </li>
+                <li>
+                  <div align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Descomponer
+                    un n&uacute;mero en sus factores primos.</font></div>
+                </li>
+                <li>
+                  <div align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Hallar
+                    el m&iacute;nimo com&uacute;n m&uacute;ltiplo de varios n&uacute;meros.</font></div>
+                </li>
+                <li>
+                  <div align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Hallar
+                    el m&aacute;ximo com&uacute;n divisor de varios n&uacute;meros.</font></div>
+                </li>
+                <li>
+                  <div align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Resolver
+                    problemas sencillos aplicando estos conocimientos.</font>
+                  </div>
+                </li>
+              </ul>
+			  </td>
+            <td colspan="2" rowspan="2" align="left" valign="bottom"> <div align="center">
+                <ajs name="primos y compuestos" width=420 height=360
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="420x360">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="primos y compuestos">
+   <param name="Versi&oacute;n" value="5.101, 2013-07-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E' fijo='si' escala='20' O.x='-10' despl_imagen='arr-izq' fondo='f7f7f0' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='n1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E' nombre='inicio' expresi&oacute;n='(0,330,60,30)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='n2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='parar / animar' expresi&oacute;n='(325,330,95,30)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' acci&oacute;n='animar' pos_mensajes='centro'">
+   <param name="A_01" value="id='pi' constante='s&iacute;' expresi&oacute;n='3.1416' evaluar='una-sola-vez'">
+   <param name="G_01" value="tipo='punto' color='negro' dibujar-si='s-t+(s=0)*10' expresi&oacute;n='(-0.2*(s&gt;9),s-t)' familia='s' s.intervalo='[0,100]' s.pasos='100' texto='[s]' fuente='SansSerif,BOLD,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_02" value="tipo='punto' color='007d00' dibujar-si='(-s+t)*((s=2)+(s=3)+(s=5)+(s=7)+(s=11)+(s=13)+(s=17)+(s=19)+(s=23)+(s=29)+(s=31)+(s=37)+(s=41)+(s=43)+(s=47)+(s=53)+(s=59)+(s=61)+(s=67)+(s=71)+(s=73)+(s=79)+(s=83)+(s=89)+(s=97))' expresi&oacute;n='(-0.2*(s&gt;9)+0.16*s*cos(2*pi*t/s)-0.16*s,-0.16*s*sen(2*pi*t/s))' familia='s' s.intervalo='[0,100]' s.pasos='100' texto='[s]' fuente='SansSerif,BOLD,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_03" value="tipo='punto' color='900000' dibujar-si='(s#0)*(-s+t)*(s#2)*(s#3)*(s#5)*(s#7)*(s#11)*(s#13)*(s#17)*(s#19)*(s#23)*(s#29)*(s#31)*(s#37)*(s#41)*(s#43)*(s#47)*(s#53)*(s#59)*(s#61)*(s#67)*(s#71)*(s#73)*(s#79)*(s#83)*(s#89)*(s#97)' expresi&oacute;n='(-0.2*(s&gt;9)-0.16*s*cos(2*pi*t/s)+0.16*s,-0.16*s*sen(2*pi*t/s))' familia='s' s.intervalo='[0,100]' s.pasos='100' texto='[s]' fuente='SansSerif,BOLD,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_04" value="tipo='punto' color='azul' dibujar-si='(s=1)*(-s+t)*(s#2)*(s#3)*(s#5)*(s#7)*(s#11)*(s#13)*(s#17)*(s#19)*(s#23)*(s#29)*(s#31)*(s#37)*(s#41)*(s#43)*(s#47)*(s#53)*(s#59)*(s#61)*(s#67)*(s#71)*(s#73)*(s#79)*(s#83)*(s#89)*(s#97)' expresi&oacute;n='(-0.2*(s&gt;9)-0.16*s*cos(2*pi*t/s)+0.16*s,-0.16*s*sen(2*pi*t/s))' familia='s' s.intervalo='[0,100]' s.pasos='100' texto='[s]' fuente='SansSerif,BOLD,15' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="Animaci&oacute;n" value="controles='no' auto='s&iacute;' repetir='s&iacute;' inicio='t=-7' hacer='t=t+0.1' mientras='t&lt;100'">
+</ajs>
+              </div></td>
+          </tr>
+          <tr>
+            <td valign="bottom">
+			<table bgcolor="#eeeedd" border="0" bordercolor="#999966" cellpadding="6" cellspacing="0" width="100%">
+                <tr>
+                  <td valign="middle" bordercolor="#FFfada" bgcolor="#ffffdd" class="recuadro">
+                    <div align="justify">
+                      <p align="right"><strong><font color="#666666" size="3" face="Geneva, Arial, Helvetica, sans-serif">Investiga</font></strong><font face="Verdana, Arial, Helvetica, sans-serif" class="textopeque"><br>
+                        &iquest;Qu&eacute; normas sigue este baile de n&uacute;meros?</font></p>
+                      <p><font color="#666666" size="3" face="Arial, Helvetica, sans-serif"><strong>Recuerda</strong></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        &nbsp; </font><font face="Geneva, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif">Es
+                        fundamental que tengas buen dominio del c&aacute;lculo
+                        mental de multiplicaciones y divisiones. Si no es as&iacute;
+                        repasa la tabla de multiplicar y no utilices la calculadora
+                        m&aacute;s que en cuentas grandes.</font></font></p>
+                    </div>
+					</td>
+                </tr>
+              </table>
+			  </td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8"> </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="8" width="8"></td>
+      <td background="imagen1/bor3.gif" height="8"></td>
+      <td background="imagen1/es3.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td width="684" valign="top">
+        <div align="left"><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Autor:
+          <em>Eduardo Barbero Corral</em></font></div></td>
+      <td width="30"><div align="center">&nbsp;</div></td>
+      <td width="30">
+        <div align="center"><a href="1quincena2_contenidos_1a.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>

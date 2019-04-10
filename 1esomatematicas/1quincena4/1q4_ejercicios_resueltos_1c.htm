@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Ejercicios resueltos: Representar</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body><ajs name="busca_decim" width=400 height=360
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar,lib/Descartes5_Sonido.jar,lib/Descartes5_Algebra.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="400x360">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="busca_decim">
+   <param name="Versi&oacute;n" value="5.202, 2013-10-22">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='s&iacute;' O.y='-15' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='negro' texto='no' n&uacute;meros='s&iacute;' eje-y='no'">
+   <param name="C_01" value="id='escala' tipo='num&eacute;rico' regi&oacute;n='exterior' nombre='zoom' valor='10' incr='0' min='1' max='1000000' decimales='(escala&lt;0.01)+(escala&lt;0.1)+(escala&lt;1)+(escala&lt;10)+(escala&lt;100)+(escala&lt;1000)+(escala&lt;10000)+(escala&lt;100000)' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='Ox' tipo='num&eacute;rico' regi&oacute;n='exterior' incr='0' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_03" value="id='p' tipo='gr&aacute;fico' color='ff0000ff' color-int='ffff0000' tama&ntilde;o='1' expresi&oacute;n='(3,0)' constricci&oacute;n='y=-20/escala' fijo='s&iacute;'">
+   <param name="C_04" value="id='p.x' tipo='num&eacute;rico' regi&oacute;n='escenario' nombre='p.x' expresi&oacute;n='(0,0,0,0)' valor='100*rnd-50' incr='0.001' min='-50' max='50' decimales='5' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='n9' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='_._' expresi&oacute;n='(350,20,25,25)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/masmas.png' acci&oacute;n='calcular' par&aacute;metro='estado=estado+1; k=1; sg=1; fi=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(fi=0)&amp;(estado&lt;dec)' pos_mensajes='centro'">
+   <param name="C_06" value="id='n10' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='_._' expresi&oacute;n='(325,20,25,25)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/menos.png' acci&oacute;n='calcular' par&aacute;metro='estado=(estado&lt;0)?0:estado-1; k=1; sg=-1; fi=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(fi=0)&amp;(estado&gt;0)' pos_mensajes='centro'">
+   <param name="C_07" value="id='inicio' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='inicio' expresi&oacute;n='(250,300,75,25)' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='inicio' dibujar-si='bien=1' pos_mensajes='centro'">
+   <param name="C_08" value="id='n11' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' nombre='_._' expresi&oacute;n='(175,190,75,25)' decimales='5' fijo='no' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='bien=(n11=p.x)?1:2' dibujar-si='(fi=0)&amp;(estado=dec)' pos_mensajes='centro'">
+   <param name="A_01" value="id='p.y' constante='s&iacute;' expresi&oacute;n='20/escala' evaluar='siempre'">
+   <param name="A_02" value="id='Ox' constante='s&iacute;' expresi&oacute;n='-p.x*escala' evaluar='siempre'">
+   <param name="A_03" value="id='e4' evento='s&iacute;' condici&oacute;n='k=1' acci&oacute;n='animar' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_04" value="id='dec' constante='s&iacute;' expresi&oacute;n='5-(ent(10^5*(p.x-ent(p.x)))%10=0)-(ent(10^5*(p.x-ent(p.x)))%100=0)-(ent(10^5*(p.x-ent(p.x)))%1000=0)-(ent(10^5*(p.x-ent(p.x)))%10000=0)-(ent(10^5*(p.x-ent(p.x)))%100000=0)' evaluar='siempre'">
+   <param name="A_05" value="id='px' constante='s&iacute;' expresi&oacute;n='ent(p.x*10^(dec-1))/10^(dec-1)' evaluar='siempre'">
+   <param name="G_01" value="tipo='pol&iacute;gono' color='fffada' expresi&oacute;n='(-10/escala,-30/escala)(100/escala,-30/escala)(100/escala,-5*escala)(-10/escala,-5*escala)(-10/escala,-30/escala)' relleno='fffada'">
+   <param name="G_02" value="tipo='pol&iacute;gono' color='fffada' expresi&oacute;n='(-10/escala,30/escala)(50/escala,30/escala)(50/escala,2*escala)(-10/escala,2*escala)(-10/escala,30/escala)' relleno='fffada'">
+   <param name="G_03" value="tipo='pol&iacute;gono' color='ff6600' expresi&oacute;n='(p.x,0)(p.x-10/escala,-20/escala)(p.x+10/escala,-20/escala)(p.x,0)' relleno='amarillo'">
+   <param name="G_04" value="tipo='texto' color='gris' expresi&oacute;n='[20,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 El bot\u243 n + es para ampliar y el \u8722  para reducir. \par Debes llegar ampliando hasta el final.\f2\fs24\par}' fuente='Arial,PLAIN,12' decimales='5' fijo='no'">
+   <param name="G_05" value="tipo='punto' color='ff6600' dibujar-si='estado&gt;0' expresi&oacute;n='(s,0)' rastro='gris' familia='s' s.intervalo='[ent(p.x),ent(p.x)+1]' s.pasos='10' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_06" value="tipo='punto' color='ff6600' dibujar-si='estado&gt;1' expresi&oacute;n='(s,0)' rastro='gris' familia='s' s.intervalo='[ent(p.x*10)/10,ent(p.x*10)/10+0.1]' s.pasos='10' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_07" value="tipo='punto' color='ff6600' dibujar-si='estado&gt;2' expresi&oacute;n='(s,0)' rastro='gris' familia='s' s.intervalo='[ent(p.x*100)/100,ent(p.x*100)/100+0.01]' s.pasos='10' fijo='s&iacute;'">
+   <param name="G_08" value="tipo='punto' color='ff6600' dibujar-si='estado&gt;3' expresi&oacute;n='(s,0)' rastro='gris' familia='s' s.intervalo='[ent(p.x*1000)/1000,ent(p.x*1000)/1000+0.001]' s.pasos='10' fijo='s&iacute;'">
+   <param name="G_09" value="tipo='punto' color='ff6600' dibujar-si='estado&gt;4' expresi&oacute;n='(s,0)' rastro='gris' familia='s' s.intervalo='[ent(p.x*10000)/10000,ent(p.x*10000)/10000+0.0001]' s.pasos='10' fijo='s&iacute;'">
+   <param name="G_10" value="tipo='punto' color='negro' expresi&oacute;n='(0,0)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='3'">
+   <param name="G_11" value="tipo='punto' color='00bb00' dibujar-si='0' expresi&oacute;n='(p.x,0)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_12" value="tipo='segmento' color='00bb00' expresi&oacute;n='(p.x,0)(p.x,30/escala)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Aqu\u237 \f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='1'">
+   <param name="G_13" value="tipo='texto' color='grisObscuro' dibujar-si='(fi=0)&amp;(estado=dec)&amp;(bien=2)' expresi&oacute;n='[10,270]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs40 El n\u250 mero que buscamos\par est\u225  entre {\*\mjaformula{\expr (p.x&gt;0)?px:px\decimals estado-1\fixed1}} y {\*\mjaformula{\expr (p.x&gt;0)?px+10^(-estado+1):px+10^(-estado+1)\decimals estado-1\fixed1}}\f2\fs24\par }' fuente='SansSerif,PLAIN,20' fijo='s&iacute;'">
+   <param name="G_14" value="tipo='texto' color='00bb00' dibujar-si='(fi=0)&amp;(estado=dec)' expresi&oacute;n='[50,195]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Escribe el n\u250 mero\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="controles='no' auto='no' inicio='a=escala; k=0; fi=1' hacer='escala=(sg&gt;0)?escala*(1.1):escala*0.9;escala=(sg&gt;0)?((escala&gt;10*a)?10*a:escala):((escala&lt;0.1*a)?0.1*a:escala);fi=((sg&gt;0)&amp;(escala&lt;a*10)&amp;(escala&lt;1000000))|((sg&lt;0)&amp;(escala&gt;a*0.1)&amp;(escala&gt;100));' mientras='((sg&gt;0)&amp;(escala&lt;a*10)&amp;(escala&lt;1000000))|((sg&lt;0)&amp;(escala&gt;a*0.1)&amp;(escala&gt;10))'">
+</ajs>
+</body>
+</html>

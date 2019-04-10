@@ -1,0 +1,135 @@
+<html>
+
+
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+
+<meta name="ProgId" content="FrontPage.Editor.Document">
+
+<title>Pisando enteros</title>
+
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+
+
+<body>
+
+<h1 align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Pisando enteros</h1>
+
+<table border="2">
+  <tr>
+    <td width="100%">
+      <blockquote>
+        Has de cruzar el cuadrado, cada color representa un
+
+        número entero,&nbsp;<br>
+ cuando pisas una baldosa sumas el entero correspondiente
+
+        (<font color="#0000FF"><b>TOTAL</b></font>).<p>Se trata de salir del cuadrado sin superar
+
+        el <b><font color="#FF0000">valor esperado</font></b>.&nbsp;<br>
+
+        Si en tu trayectoria superas los más <b><font color="#0000FF"> pasos&nbsp;
+
+        necesarios</font></b> para salir serás
+
+        penalizado con <B>-</B>1.
+      </blockquote>
+      <p>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="100%">
+
+      <p align="center"><ajs name="graf3D" width=600 height=440
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar,lib/Descartes5_Sonido.jar,lib/Descartes5_Algebra.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="600x440">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="graf3D">
+   <param name="Versi&oacute;n" value="5.202, 2013-10-22">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E2' fijo='s&iacute;' escala='20' O.x='-280' O.y='190' despl_imagen='arr-izq' fondo='95ffae' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='N' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E2' nombre='N' expresi&oacute;n='(490,20,40,20)' decimales='0' fijo='no' visible='no' acci&oacute;n='calcular' par&aacute;metro='y_punto=y_punto+1\nn_paso=(y_punto&gt;19)?n_paso:n_paso+1'">
+   <param name="C_02" value="id='S' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E2' nombre='S' expresi&oacute;n='(490,70,40,20)' decimales='0' fijo='no' visible='no' acci&oacute;n='calcular' par&aacute;metro='y_punto=y_punto-1\nn_paso=n_paso+1' pos_mensajes='centro'">
+   <param name="C_03" value="id='E' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E2' nombre='E' expresi&oacute;n='(510,45,40,20)' decimales='0' fijo='no' visible='no' acci&oacute;n='calcular' par&aacute;metro='x_punto=x_punto+1\nn_paso=n_paso+1' pos_mensajes='centro'">
+   <param name="C_04" value="id='O' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E2' nombre='O' expresi&oacute;n='(465,45,40,20)' decimales='0' fijo='no' visible='no' acci&oacute;n='calcular' par&aacute;metro='x_punto=x_punto-1\nn_paso=n_paso+1' pos_mensajes='centro'">
+   <param name="C_05" value="id='inicio' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E2' nombre='Inicio' expresi&oacute;n='(538,418,60,20)' fijo='no' visible='no' acci&oacute;n='inicio' pos_mensajes='centro'">
+   <param name="C_06" value="id='ayuda' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E2' nombre='Ayuda' expresi&oacute;n='(475,418,60,20)' fijo='no' visible='no' acci&oacute;n='mensaje' par&aacute;metro='Por cada paso que des de m&aacute;s sobre los necesarios ser&aacute;s penalizado con -1.' pos_mensajes='centro'">
+   <param name="A_01" value="id='R' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='400'">
+   <param name="A_02" value="id='G' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='400'">
+   <param name="A_03" value="id='B' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='400'">
+   <param name="A_04" value="id='punt(x,y)' algoritmo='s&iacute;' expresi&oacute;n='a' algoritmo='s&iacute;' inicio='k=0;a=(n_paso=0)?0:a' hacer='pos=20*ent(y)+ent(x);a=-2*R[pos]+3*G[pos]-B[pos]'">
+   <param name="A_05" value="id='camino' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='400'">
+   <param name="A_06" value="id='color' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='k=0;T_R=0;T_G=0;T_B=0' hacer='R[k]=ent(2*rnd);G[k]=(R[k]=0)?ent(2*rnd):0;B[k]=(R[k]+G[k]=0)?1:0;T_R=T_R+R[k];T_G=T_G+G[k];T_B=T_B+B[k];k=k+1' mientras='k&lt;400'">
+   <param name="A_07" value="id='salida' constante='s&iacute;' expresi&oacute;n='ent(rnd*20)' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='meta' constante='s&iacute;' expresi&oacute;n='ent(rnd*20)' evaluar='una-sola-vez'">
+   <param name="A_09" value="id='x_punto' constante='s&iacute;' expresi&oacute;n='salida+.5' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='y_punto' constante='s&iacute;' expresi&oacute;n='0.5' evaluar='una-sola-vez'">
+   <param name="A_11" value="id='n_paso' constante='s&iacute;' expresi&oacute;n='0' evaluar='una-sola-vez'">
+   <param name="A_12" value="id='aviso_O' evento='s&iacute;' condici&oacute;n='x_punto&lt;0' acci&oacute;n='calcular' par&aacute;metro='x_punto=x_punto+1;n_paso=n_paso-1' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_13" value="id='aviso_E' evento='s&iacute;' condici&oacute;n='x_punto&gt;20' acci&oacute;n='calcular' par&aacute;metro='x_punto=x_punto-1' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_14" value="id='aviso_S' evento='s&iacute;' condici&oacute;n='y_punto&lt;0' acci&oacute;n='calcular' par&aacute;metro='y_punto=y_punto+1' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_15" value="id='aviso_N' evento='s&iacute;' condici&oacute;n='(y_punto&gt;20)&amp;(ent(x_punto)#meta)' acci&oacute;n='calcular' par&aacute;metro='y_punto=y_punto-1' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_16" value="id='aviso_FIN' evento='s&iacute;' condici&oacute;n='(y_punto&gt;20)&amp;(ent(x_punto)=meta)' par&aacute;metro='Has llegado al final.' ejecuci&oacute;n='alternar' pos_mensajes='centro'">
+   <param name="A_17" value="id='min_pasos' constante='s&iacute;' expresi&oacute;n='19+abs(meta-salida)' evaluar='una-sola-vez'">
+   <param name="A_18" value="id='camino_0' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='k=0' hacer='camino[k]=0;k=k+1' mientras='k&lt;400'">
+   <param name="A_19" value="id='pos' constante='s&iacute;' expresi&oacute;n='20*ent(y_punto)+ent(x_punto)' evaluar='siempre'">
+   <param name="A_20" value="id='suma' algoritmo='s&iacute;' evaluar='siempre' inicio='k=0;camino[pos]=1;suma=0' hacer='suma=suma+camino[k]*(-2*R[k]+3*G[k]-B[k]);k=k+1' mientras='k&lt;400'">
+   <param name="A_21" value="id='esp' constante='s&iacute;' expresi&oacute;n='min_pasos*(-2*T_R+3*T_G-T_B)/400' evaluar='siempre'">
+   <param name="A_22" value="id='evol' constante='s&iacute;' expresi&oacute;n='n_paso*(-2*T_R+3*T_G-T_B)/400' evaluar='siempre'">
+   <param name="A_23" value="id='penal' constante='s&iacute;' expresi&oacute;n='(min_pasos-n_paso&gt;0)?0:min_pasos-n_paso' evaluar='siempre'">
+   <param name="G_01" value="espacio='E2' tipo='pol&iacute;gono' fondo='s&iacute;' color='blanco' expresi&oacute;n='(s%20,ent(s/20))(s%20+1,ent(s/20))(s%20+1,ent(s/20)+1)(s%20,ent(s/20)+1)(s%20,ent(s/20))' familia='s' s.intervalo='[0,399]' s.pasos='399' relleno='(R[s],G[s],B[s],00)'">
+   <param name="G_02" value="espacio='E2' tipo='pol&iacute;gono' fondo='s&iacute;' color='azul' expresi&oacute;n='(21,0)(21,1)(22,1)(22,0)(21,0)' relleno='rojo'">
+   <param name="G_03" value="espacio='E2' tipo='pol&iacute;gono' fondo='s&iacute;' color='azul' expresi&oacute;n='(21,1)(21,2)(22,2)(22,1)(21,1)' relleno='azul'">
+   <param name="G_04" value="espacio='E2' tipo='pol&iacute;gono' fondo='s&iacute;' color='azul' expresi&oacute;n='(21,2)(21,3)(22,3)(22,2)(21,2)' relleno='verde'">
+   <param name="G_05" value="espacio='E2' tipo='texto' fondo='s&iacute;' color='azul' expresi&oacute;n='[460,350]' texto='=+3' fuente='SantSerif,BOLD,16' decimales='0' fijo='no'">
+   <param name="G_06" value="espacio='E2' tipo='texto' fondo='s&iacute;' color='azul' expresi&oacute;n='[460,390]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red248\green0\blue0;\red0\green0\blue248;}\f0\fs32\b\cf0 =-2\cf1\par}' fuente='SantSerif,BOLD,16' decimales='0' fijo='no'">
+   <param name="G_07" value="espacio='E2' tipo='texto' fondo='s&iacute;' color='azul' expresi&oacute;n='[460,370]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;}{\colortbl\red248\green0\blue0;\red0\green0\blue248;}\f0\fs32\b\cf0 =-1\cf1\par}' fuente='SantSerif,BOLD,16' decimales='0' fijo='no'">
+   <param name="G_08" value="espacio='E2' tipo='flecha' color='negro' expresi&oacute;n='(salida+.5,-1)(salida+.5,0)' fijo='s&iacute;' ancho='3' ancho='3' flecha='negro'">
+   <param name="G_09" value="espacio='E2' tipo='punto' color='negro' expresi&oacute;n='(x_punto,y_punto)' rastro='95ffae' fijo='s&iacute;' tama&ntilde;o='5'">
+   <param name="G_10" value="espacio='E2' tipo='segmento' fondo='s&iacute;' color='negro' expresi&oacute;n='(-0.075,0)(-0.075,20)' fijo='s&iacute;' tama&ntilde;o='0' ancho='4'">
+   <param name="G_11" value="espacio='E2' tipo='segmento' fondo='s&iacute;' color='negro' expresi&oacute;n='(20.075,0)(20.075,20)' fijo='s&iacute;' tama&ntilde;o='0' ancho='4'">
+   <param name="G_12" value="espacio='E2' tipo='segmento' fondo='s&iacute;' color='negro' expresi&oacute;n='(0,-0.075)(salida,-.075)' fijo='s&iacute;' tama&ntilde;o='0' ancho='4'">
+   <param name="G_13" value="espacio='E2' tipo='segmento' fondo='s&iacute;' color='negro' expresi&oacute;n='(salida+1,-0.075)(20,-.075)' fijo='s&iacute;' tama&ntilde;o='0' ancho='4'">
+   <param name="G_14" value="espacio='E2' tipo='segmento' fondo='s&iacute;' color='negro' expresi&oacute;n='(0,20.075)(meta,20.075)' fijo='s&iacute;' tama&ntilde;o='0' ancho='4'">
+   <param name="G_15" value="espacio='E2' tipo='segmento' fondo='s&iacute;' color='negro' expresi&oacute;n='(meta+1,20.075)(20,20.075)' fijo='s&iacute;' tama&ntilde;o='0' ancho='4'">
+   <param name="G_16" value="espacio='E2' tipo='texto' color='azul' expresi&oacute;n='[430,140]' texto='Pasos dados=[n_paso]' fuente='Monospaced,BOLD,14' decimales='0' fijo='no'">
+   <param name="G_17" value="espacio='E2' tipo='texto' color='azul' expresi&oacute;n='[430,120]' texto='Pasos necesarios=[min_pasos]' fuente='Monospaced,BOLD,14' decimales='0' fijo='no'">
+   <param name="G_18" value="espacio='E2' tipo='texto' fondo='s&iacute;' color='azul' expresi&oacute;n='[520,350]' texto='TOTAL' fuente='Monospaced,BOLD,20' fijo='no'">
+   <param name="G_19" value="espacio='E2' tipo='texto' color='00c900' dibujar-si='suma&gt;=0' expresi&oacute;n='[530,375]' texto='[suma+penal]' fuente='Monospaced,BOLD,22' fijo='no'">
+   <param name="G_20" value="espacio='E2' tipo='texto' color='rojo' dibujar-si='suma&lt;0' expresi&oacute;n='[520,375]' texto='[suma+penal]' fuente='Monospaced,BOLD,22' fijo='no'">
+   <param name="G_21" value="espacio='E2' tipo='pol&iacute;gono' color='azul' expresi&oacute;n='(21.95,15.80)(26.95,15.80)(26.95,19.8)(21.95,19.8)(21.95,15.8)' relleno='57ffae' ancho='4'">
+   <param name="G_22" value="espacio='E2' tipo='texto' color='rojo' dibujar-si='ent(esp)&lt;0' expresi&oacute;n='[430,160]' texto='Valor esperado=[ent(esp)]' fuente='Monospaced,BOLD,14' fijo='no'">
+   <param name="G_23" value="espacio='E2' tipo='texto' color='00d900' dibujar-si='ent(esp)&gt;=0' expresi&oacute;n='[430,160]' texto='Valor esperado=[ent(esp)]' fuente='Monospaced,BOLD,14' fijo='no'">
+   <param name="G_24" value="espacio='E2' tipo='texto' color='00ab00' dibujar-si='penal=0' expresi&oacute;n='[430,180]' texto='Penalizaci&oacute;n=[penal]' fuente='Monospaced,BOLD,14' fijo='no'">
+   <param name="G_25" value="espacio='E2' tipo='texto' color='rojo' dibujar-si='penal&lt;0' expresi&oacute;n='[430,180]' texto='Penalizaci&oacute;n=[penal]' fuente='Monospaced,BOLD,14' fijo='no'">
+</ajs>
+
+      </p>
+
+    </td>
+  </tr>
+</table>
+
+<hr align="left" width="20%">
+
+<p style="margin-top: 0">Javier Abia Llera</p>
+
+</body>
+
+
+
+</html>

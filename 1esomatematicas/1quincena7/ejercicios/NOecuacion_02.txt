@@ -1,0 +1,34 @@
+Resolución de ecuaciones
+
+variable nombre=A rango=[2,15]
+
+Resuelve la siguiente ecuación
+
+2*x=10                         | Pasa el factor 2 al segundo miembro dividiendo.
+x=10/2                         | Efectúa la división del segundo miembro.
+x=5                            | La solución de la ecuación es x=5. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+5*x=15                         | Pasa el factor 5 al segundo miembro dividiendo.
+x=15/5                         | Efectúa la división del segundo miembro.
+x=3                            | La solución de la ecuación es x=3. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+4*x=0                          | Pasa el factor 4 al segundo miembro dividiendo.
+x=0/4                          | Efectúa la división del segundo miembro.
+x=0                            | La solución de la ecuación es x=0. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+21=7*x                         | Pasa el factor 7 al primer miembro dividiendo.
+21/7=x                         | Simplifica la fracción.
+3=x                            | La solución de la ecuación es x = 3. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+-(27)=(-(3))*x                 | Pasa el factor -3 al primer miembro dividiendo.
+(-(27))/(-(3))=x               | Escribe la fracción equivalente positiva.
+27/3=x                         | Simplifica la fracción.
+9=x                            | La solución de la ecuación es x = 9. Pulsa >> para empezar otra serie de ejercicios.

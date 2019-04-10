@@ -1,0 +1,33 @@
+RESOLUCIÓN DE ECUACIONES
+
+guiado='no'
+modos='clic o arrastre'
+
+variable nombre=A rango=[1,15]
+variable nombre=B rango=[2,15]
+variable nombre=C rango=[2,9]
+variable nombre=D rango=[2,8]
+variable nombre=E rango=[2,10]
+
+Resuelve la siguiente ecuación
+
+x-A=0                          | 
+x=0+A                          | 
+x=[0+A]                        | 
+
+Resuelve la siguiente ecuación
+
+x-A=B                          | 
+x=B+A                          | 
+x=[B+A]                        | 
+
+Resuelve la siguiente ecuación
+
+x*B=[B*C]                      | 
+x=C                            | 
+
+Resuelve la siguiente ecuación
+
+C=A*x                          | 
+C/A=x                          | 
+[C/A]=x                        | 

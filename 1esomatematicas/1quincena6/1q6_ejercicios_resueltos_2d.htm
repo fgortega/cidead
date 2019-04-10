@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+<title>Ejercicios resueltos: Regla de tres</title>
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body>
+
+<div align="center"><ajs name="regla_tres_directa_ejercicios" width=392 height=470
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="392x470">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="regla_tres_directa_ejercicios">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='fondo' y='20' alto='450' fijo='s&iacute;' escala='120' O.y='40' despl_imagen='arr-izq' fondo='fffac7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='enunciado' y='0' alto='85' fijo='s&iacute;' escala='120' O.x='-73' O.y='83' despl_imagen='arr-izq' fondo='fff0c0' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='texto1' x='8' y='210' ancho='370' alto='220' dibujar-si='(p&gt;0)' fijo='s&iacute;' escala='120' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='corregir' x='74' y='140' ancho='240' alto='60' dibujar-si='(correcto2#0)*(resp2#0)' fijo='s&iacute;' escala='120' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='ejemplo2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(10,420,100,20)' fijo='no' visible='no' imagen='imagen1/otroejercicio.png' acci&oacute;n='calcular' par&aacute;metro='p=0\n\nresp2=0\n\na=ent(20*rnd+1)\nb=a*ent(10*rnd+1)\nc=ent(20*rnd+1)\nx2=b*c/a' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(resp2#0)'">
+   <param name="C_02" value="id='solucion2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(260,420,100,20)' fijo='s&iacute;' visible='no' imagen='imagen1/comprobar.png' acci&oacute;n='calcular' par&aacute;metro='p=3' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='resp2#0' pos_mensajes='centro'">
+   <param name="C_03" value="id='resp2' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(180,75,50,30)' fijo='no' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='a' constante='s&iacute;' expresi&oacute;n='ent(20*rnd+2)' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='b' constante='s&iacute;' expresi&oacute;n='a*ent(10*rnd+1)' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='c' constante='s&iacute;' expresi&oacute;n='ent(20*rnd+1)' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='x2' constante='s&iacute;' expresi&oacute;n='b*c/a' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='correcto2' constante='s&iacute;' expresi&oacute;n='(resp2=(b*c/a))?1:2' evaluar='siempre'">
+   <param name="G_01" value="espacio='enunciado' tipo='texto' color='grisObscuro' expresi&oacute;n='[15,25]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b Si{\*\mjaformula{\expr a\decimals 2\fixed0}}grifos iguales arrojan{\*\mjaformula{\expr b\decimals 2\fixed0}}litros de agua\par \u191 Cu\u225 ntos litros de agua arrojaran{\*\mjaformula{\expr c\decimals 2\fixed0}}grifos?\par  \f2\fs24\b0\par                \par }' fuente='SansSerif,BOLD,14' fijo='no'">
+   <param name="G_02" value="espacio='fondo' tipo='texto' expresi&oacute;n='[80,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red0\green0\blue255;}\f1\fs36\b\cf0 Soluci\u243 n\cf1\f2\fs24\b0 :\par }' fuente='SansSerif,BOLD,18' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='fondo' tipo='texto' expresi&oacute;n='[240,75]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\f1\fs20\b\cf0 Escribe el valor de x\par y pulsa INTRO\f2\fs24\b0\cf1\par }' fuente='SansSerif,BOLD,10' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='texto1' tipo='texto' color='grisObscuro' dibujar-si='p=3' expresi&oacute;n='[2,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Arial;\f6\fcharset0 Courier New;\f7\fcharset0 Arial;}{\colortbl\red0\green0\blue204;\red64\green64\blue64;}\f1\fs24\cf0 1.- Las magnitudes n\u186  grifos y litros de agua \b son \par      directamente proporcionales.\b0\par 2.- Llamamos    \b  x  =  litros de agua arrojar\u225 n{\*\mjaformula{\expr c\decimals 2\fixed0}}grifos\b0\i\par \par                                    \ul n\u186  grifos \ulnone                     l\ul itros de agua\i0\ulnone\par 3.-                            {\*\mjaformula{\expr a\decimals 2\fixed0}}  \fs20 grifos \fs24   \f6\fs24 -------&amp;gt;\f1\fs24      {\*\mjaformula{\expr b\decimals 2\fixed0}}  \fs20 litros de agua\fs24\par                                  {\*\mjaformula{\expr c\decimals 2\fixed0}}  \fs20 grifos\fs24    \f6\fs24 -------&amp;gt;   x\f1\fs24\par \par  4.- Planteamos la proporci\u243 n: {\*\mjaformula{\fraction{\num{\expr a\decimals 2\fixed0}}{\den{\expr c\decimals 2\fixed0}}}}={\*\mjaformula{\fraction{\num{\expr b\decimals 2\fixed0}}{\den x}}}\par  5.- Resolvemos:    {\*\mjaformula{\expr a\decimals 2\fixed0}}\u183 x ={\*\mjaformula{\expr b\decimals 2\fixed0}}\u183 {\*\mjaformula{\expr c\decimals 2\fixed0}}    \u8658     {\*\mjaformula{\expr a\decimals 2\fixed0}}\u183 x ={\*\mjaformula{\expr b*c\decimals 2\fixed0}}    \u8658       \par                                     x = {\*\mjaformula{\fraction{\num{\expr b*c\decimals 2\fixed0}}{\den{\expr a\decimals 2\fixed0}}}}=\b{\*\mjaformula{\expr b*c/a\decimals 2\fixed0}}litros de agua arrojar\u225 n\cf1\fs32\b0\par }' fuente='SansSerif,PLAIN,12' fijo='no'">
+   <param name="G_05" value="espacio='texto1' tipo='pol&iacute;gono' color='ff6600' expresi&oacute;n='(-1.54,-1)(-1.54,0.92)(1.53,0.92)(1.53,-0.91)(-1.55,-0.91)'">
+   <param name="G_06" value="espacio='corregir' tipo='texto' dibujar-si='(correcto2=1)' expresi&oacute;n='[50,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs56\b MUY BIEN \f2\fs24\b0\par}' fuente='Arial,BOLD,28' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='corregir' tipo='imagen' dibujar-si='(correcto2=1)' expresi&oacute;n='(-0.9,0.1)' archivo='imagen1/bien.png'">
+   <param name="G_08" value="espacio='corregir' tipo='texto' dibujar-si='(correcto2=2)*(resp2#0)' expresi&oacute;n='[58,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b Vuelve a intentarlo\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='corregir' tipo='imagen' dibujar-si='(correcto2=2)*(resp2#0)' expresi&oacute;n='(-0.8,0.1)' archivo='imagen1/mal.png'">
+   <param name="G_10" value="espacio='corregir' tipo='pol&iacute;gono' color='ff6600' expresi&oacute;n='(-1,-0.24)(-1,0.25)(0.99,0.25)(0.99,-0.24)(-1,-0.24)'">
+</ajs></div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Proporcionalidad</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+
+<body onload="MM_preloadImages('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes2.png','imagen1/paracont2.png','imagen1/adelanteb.png','imagen1/atrasb.png','imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/paraejer3.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paracont3.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0px; top: 0px; width: 800px; height: 528px; z-index: 1;"> 
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="1quincena6_presenta_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes.png" alt="" name="antes" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','imagen1/paracont3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paracont3.png" alt="" name="contenidos" onload="MM_nbGroup('init','group1','contenidos','imagen1/paraconte.png',1)" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena6_ejercicios_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer.png" alt="" name="ejercicios" onload="" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena6_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" onload="" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena6_tutor_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onmouseover="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" onload="" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena6_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0" width="130" height="18"></a></td>
+    </tr>
+  </table>
+<table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+  <table align="center" border="0" cellspacing="0" height="85%" width="800">
+     <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8"></td>
+      <td bgcolor="#ffffff" valign="top"> 
+        <table cellspacing="10">
+          <tr> 
+            <td valign="top"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong>2.Proporcionalidad 
+              directa&nbsp;</strong></font></td>
+            <td> 
+              <div align="right"></div></td>
+          </tr>
+          <tr> 
+            <td valign="top"> 
+              <p align="justify"><font color="#666666" face="Geneva, Arial, Helvetica, sans-serif" size="3"><strong>Reglas 
+                de tres simple directa&nbsp;<br>
+                </strong></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2">La 
+                otra forma de resolver los problemas en los que&nbsp; intervienen 
+                dos magnitudes directamente proporcionales es mediante una regla 
+                de tres directa simple.</font></p>
+              <p><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Regla de tres simple directa. Pasos</font></b></p>
+              <ul>
+                <li>
+                  <p style="margin-top: -12"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Comprobar
+                  que las dos magnitudes son directamente proporcionales.</font></p>
+                </li>
+                <li>
+                  <p style="margin-top: -12"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Separar
+                  en dos columnas las magnitudes.</font></p>
+                </li>
+                <li>
+                  <p style="margin-top: -12"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Escribir
+                  el dato.</font></p>
+                </li>
+                <li>
+                  <p style="margin-top: -12"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Escribir
+                  la pregunta.&nbsp;</font></p>
+                </li>
+                <li>
+                  <p style="margin-top: -12"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Escribir
+                  la proporción y hallar el cuarto proporcional.</font></p>
+                </li>
+              </ul>
+
+              <table width="100%" border="0" cellpadding="6" cellspacing="0" bgcolor="#eeeedd" class="recuadro">
+                  <tr> 
+                    <td bordercolor="#eeeedd" > 
+                      <div align="right"> 
+                        
+                         Pulsa para hacer unos ejercicios </div></td>
+                    <td width="50" height="50" align="center" valign="middle" bordercolor="#eeeedd" ><ajs name="Descartes" width=39 height=39
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="39x39">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="Descartes">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='si' imagen='imagen1/paradescartes2.png' despl_imagen='arr-izq' fondo='eeeedd' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='g' tipo='gr&aacute;fico' color='azul' color-int='rojo' imagen='imagen1/paradescartes.png' dibujar-si='c=0'">
+   <param name="A_01" value="id='e2' evento='s&iacute;' condici&oacute;n='clic_izquierdo=1' acci&oacute;n='calcular' par&aacute;metro='c=1' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_02" value="id='e1' evento='s&iacute;' condici&oacute;n='clic_izquierdo=1' acci&oacute;n='abrir Escena' par&aacute;metro='1q6_ejercicios_resueltos_2d.htm' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_03" value="id='e3' evento='s&iacute;' condici&oacute;n='clic_izquierdo=1' acci&oacute;n='calcular' par&aacute;metro='c=0' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_04" value="id='bloqueo_g' algoritmo='si' evaluar='siempre' hacer='g.x=0;g.y=0'">
+</ajs></td>
+                  </tr>
+                </table>
+                  
+            </td>
+            <td valign="bottom">
+<div align="center">
+                <script type='text/javascript' src='lib/descartes-min.js'></script> <ajs name="reglas_tres_simple_directa_teoria" width=450 height=362
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="450x362">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="reglas_tres_simple_directa_teoria">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='fondo' y='0' alto='362' fijo='s&iacute;' escala='120' O.y='40' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='enunciado' alto='40' despl_imagen='arr-izq' fondo='fff0c0' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='resolucion' x='5' y='100' ancho='440' alto='255' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='precio1' x='16' y='190' ancho='40' alto='22' dibujar-si='p&gt;=4' fijo='s&iacute;' despl_imagen='arr-izq' fondo='cebbff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='precio3' x='16' y='300' ancho='40' alto='22' dibujar-si='p&gt;=5' fijo='s&iacute;' despl_imagen='arr-izq' fondo='d6c3ff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='adelante' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='enunciado' expresi&oacute;n='(385,7,25,25)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/siguiente.png' acci&oacute;n='calcular' par&aacute;metro='p=p+1\nn1=(p&lt;3)?0:n1\nn2=(p&lt;3)?0:n2' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(p&lt;fin)'">
+   <param name="C_02" value="id='atras' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='enunciado' expresi&oacute;n='(350,7,25,25)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/anterior.png' acci&oacute;n='calcular' par&aacute;metro='p=p-1\nn1=(p&lt;3)?0:n1\nn2=(p&lt;3)?0:n2' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(p&gt;0)' pos_mensajes='centro'">
+   <param name="A_01" value="id='fin' algoritmo='s&iacute;' evaluar='siempre' hacer='fin=11'">
+   <param name="G_01" value="espacio='enunciado' tipo='texto' color='negro' expresi&oacute;n='[5,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b Si 5 l\u225 pices cuestan 2 \u8364 . \par \u191 Cu\u225 nto costar\u225 n 8 l\u225 pices ?\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='fondo' tipo='texto' color='0000cc' dibujar-si='p&gt;=1' expresi&oacute;n='[70,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b\par 1.\u191 Son directamente proporcionales?\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='fondo' tipo='texto' color='azul' dibujar-si='p&gt;=2' expresi&oacute;n='[80,65]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red170\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs20\b Las magnitudes n\u186  lapices y precio son directamente proporcionales. \par Doble, triple,.. n\u186  de l\u225 pices costar\u225 n el doble, triple ...\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,10' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='resolucion' tipo='imagen' dibujar-si='p&gt;=3' coord_abs='s&iacute;' expresi&oacute;n='(254,25)' archivo='imagenes6/lapiz.gif'">
+   <param name="G_05" value="espacio='resolucion' tipo='imagen' dibujar-si='p&gt;=3' coord_abs='s&iacute;' expresi&oacute;n='(355,15)' archivo='imagenes6/billete.jpg'">
+   <param name="G_06" value="espacio='resolucion' tipo='texto' color='0000cc' dibujar-si='p&gt;=3' expresi&oacute;n='[65,35]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b 2. Magnitudes\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='resolucion' tipo='texto' color='0000cc' dibujar-si='p&gt;=3' expresi&oacute;n='[245,48]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue204;}\f1\fs24\b\cf0 n\u186   l\u225 pices                coste (\u8364 )\cf1\f2\fs24\b0\par \par \par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='resolucion' tipo='texto' color='0000cc' dibujar-si='p&gt;=4' expresi&oacute;n='[65,85]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue204;}\f1\fs24\b 3. Escribir el dato\f2\fs24            \f1\fs24   \fs28\cf0 5 \fs20 l\u225 pices\fs28   ------- &gt;    2 \u8364 \cf1\f5\fs24\b0\par \par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='resolucion' tipo='imagen' dibujar-si='p&gt;=4' coord_abs='s&iacute;' expresi&oacute;n='(6,0)' archivo='imagenes6/bote5lapiz.jpg'">
+   <param name="G_10" value="espacio='precio1' tipo='pol&iacute;gono' fondo='s&iacute;' color='azul' dibujar-si='p&gt;=4' expresi&oacute;n='(-0.4,-0.2)(-0.4,0.2)(0.4,0.2)(0.4,-0.2)(-0.4,-0.2)' ancho='2'">
+   <param name="G_11" value="espacio='precio1' tipo='texto' color='0000cc' dibujar-si='p&gt;=4' expresi&oacute;n='[2,4]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue204;}\cf0\f1\fs32\b 2 {\*\mjaformula\u8364 }\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='resolucion' tipo='texto' color='0000cc' dibujar-si='p&gt;=5' expresi&oacute;n='[65,115]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue204;}\f1\fs24\b 4. Escribir la pregunta\b0                   \b  \fs28\cf0 8 \fs20 l\u225 pices \fs28  ------- &gt;    x\cf1\fs20\par     Llamamos  x  a la \par     cantidad desconocida\f5\fs24\b0\par \par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='resolucion' tipo='imagen' dibujar-si='p&gt;=5' coord_abs='s&iacute;' expresi&oacute;n='(6,115)' archivo='imagenes6/bote8lapiz.jpg'">
+   <param name="G_14" value="espacio='precio3' tipo='pol&iacute;gono' fondo='s&iacute;' color='azul' dibujar-si='p&gt;=5' expresi&oacute;n='(-0.4,-0.2)(-0.4,0.2)(0.4,0.2)(0.4,-0.2)(-0.4,-0.2)' ancho='2'">
+   <param name="G_15" value="espacio='precio3' tipo='texto' color='azul' dibujar-si='p&gt;=5' expresi&oacute;n='[11,3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b ?\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='resolucion' tipo='texto' color='azul' dibujar-si='p&gt;=6' expresi&oacute;n='[65,155]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red170\green0\blue0;\red0\green0\blue255;}\f1\fs24\b\cf0 5. Formamos la proporci\u243 n\b0 :  \cf1                    \fs32\b{\*\mjaformula{\fraction{\num 5}{\den 8}}}={\*\mjaformula{\fraction{\num 2}{\den x}}}   \cf2\f4\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_17" value="espacio='resolucion' tipo='texto' color='azul' dibujar-si='p&gt;=7' expresi&oacute;n='[80,195]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Arial;\f5\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red170\green0\blue0;\red0\green0\blue255;}\f1\fs24\b\cf0 y resolvemos:\fs32  \cf1\fs28                       x  ={\*\mjaformula{\fraction{\num 2\u183 8}{\den 5}}}={\*\mjaformula{\fraction{\num 16}{\den 5}}}= 3,2 \fs24\b0\u8364   \par                                                                costar\u225 n 8 l\u225 pices\cf2\f5\fs24\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_18" value="espacio='resolucion' tipo='imagen' dibujar-si='p&lt;1' coord_abs='s&iacute;' expresi&oacute;n='(0,0)' archivo='imagenes6/lapiceros.jpg'">
+</ajs>
+              </div></td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8"> </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="8" width="8"></td>
+      <td background="imagen1/bor3.gif" height="8"></td>
+      <td background="imagen1/es3.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td width="684"><div align="right"> </div></td>
+      <td width="30"><div align="center"><a href="1quincena6_contenidos_2c.htm" target="_parent" onMouseOver="MM_swapImage('atras','','imagen1/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/atras.png" alt="anterior" name="atras" width="25" height="25" border="0"></a></div></td>
+      <td width="30"> 
+        <div align="center"><a href="1quincena6_contenidos_3a.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>

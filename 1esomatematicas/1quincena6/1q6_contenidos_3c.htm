@@ -1,0 +1,291 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Proporcionalidad</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+
+<body onload="MM_preloadImages('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes2.png','imagen1/paracont2.png','imagen1/adelanteb.png','imagen1/atrasb.png','imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/paraejer3.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paracont3.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0; top: 0; width: 800; height: 528; z-index: 1"> 
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="1quincena6_presenta_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes.png" alt="" name="antes" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','imagen1/paracont3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paracont3.png" alt="" name="contenidos" onload="MM_nbGroup('init','group1','contenidos','imagen1/paraconte.png',1)" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena6_ejercicios_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer.png" alt="" name="ejercicios" onload="" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena6_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" onload="" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena6_tutor_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onmouseover="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" onload="" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena6_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0" width="130" height="18"></a></td>
+    </tr>
+  </table>
+<table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="85%" width="800">
+     <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8"></td>
+      <td bgcolor="#ffffff" valign="top"> 
+        <table width="100%" cellspacing="12">
+          <tr> 
+            <td valign="top"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong>3.
+              Porcentajes</strong></font></td>
+            <td>
+<div align="right"></div></td>
+          </tr>
+          <tr> 
+            <td valign="top"> <p align="justify"><font color="#666666" face="Geneva, Arial, Helvetica, sans-serif" size="3"><strong>Cálcular 
+                el total y el porcentaje<br>
+                </strong></font><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br>
+                Otros dos tipos de ejercicios que se puede plantear son los siguientes: 
+                </font></p>
+              <ul>
+                <li> 
+                  <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Calcular 
+                    el total</b>, <br>
+                    conociendo el porcentaje y el resultado</font></li>
+                <li> 
+                  <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>Calcular 
+                    el porcentaje</b>,<b><br>
+                    </b> conociendo el total y el resultado.</font></li>
+              </ul>
+              <p align="justify"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Recuerda
+              que&nbsp;<br>
+                1.- Llamaremos <strong>x</strong> a la cantidad desconocida.<br>
+              2.- El 100% corresponde siempre al total.</font></p>
+              </td>
+            <td rowspan="2" valign="top" bordercolorlight="#FF6600" bordercolordark="#FF6600" bgcolor="#FFFada" class="recuadro" style="border-style: solid; border-width: 1"> 
+              <div align="center"> 
+                <script type='text/javascript' src='lib/descartes-min.js'></script> <ajs name="Descartes" width=500 height=365
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="500x365">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="Descartes">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' escala='15' O.x='-226' O.y='134' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='text' alto='110' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='esp1' x='5' y='115' ancho='190' alto='240' dibujar-si='n1=1' fijo='s&iacute;' escala='6' O.x='-60' O.y='101' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no' sensible_a_los_movimientos_del_rat&oacute;n='s&iacute;'">
+   <param name="E_04" value="tipo='R2' id='esp2' x='5' y='115' ancho='190' alto='240' dibujar-si='n2=1' fijo='s&iacute;' escala='6' O.x='-60' O.y='101' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no' sensible_a_los_movimientos_del_rat&oacute;n='s&iacute;'">
+   <param name="E_05" value="tipo='R2' id='text1' x='200' y='120' ancho='350' alto='200' dibujar-si='(n1=1)*(p&gt;0)' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_06" value="tipo='R2' id='text2' x='200' y='120' ancho='350' alto='200' dibujar-si='(n2=1)*(p&gt;0)' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='n1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(10,15,180,20)' fijo='s&iacute;' visible='s&iacute;' imagen='vacio.gif' acci&oacute;n='calcular' par&aacute;metro='n1=1;n2=0;p=0\nver=1\nr=0\nm=0\n\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='n2=0'">
+   <param name="C_02" value="id='n2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(10,34,180,20)' fijo='s&iacute;' visible='s&iacute;' imagen='vacio.gif' acci&oacute;n='calcular' par&aacute;metro='n1=0;n2=1;p=0\nver=1\nr=0\nm=0\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='n1=0' pos_mensajes='centro'">
+   <param name="C_03" value="id='ini' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='text' expresi&oacute;n='(10,90,43,15)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/volver.png' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='siguiente' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(470,330,23,23)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/siguiente.png' acci&oacute;n='calcular' par&aacute;metro='p=p+1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='((n1=1)|(n2=1))&amp;(p&lt;fin)' pos_mensajes='centro'">
+   <param name="C_05" value="id='anterior' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(440,330,23,23)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/anterior.png' acci&oacute;n='calcular' par&aacute;metro='p=p-1;i=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='((n1=1)|(n2=1))&amp;(p&gt;=1)' pos_mensajes='centro'">
+   <param name="C_06" value="id='valor1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(250,330,100,18)' fijo='no' visible='s&iacute;' imagen='imagen1/otroejemplo.png' acci&oacute;n='calcular' par&aacute;metro='ver=1\ngrifo=1\nr=0\nm=0\np=0\na=ent(92*rnd+4)\nb=100*ent(5*rnd)+200\nc=a*b/100\n\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(n1#0)*(p=6)' pos_mensajes='centro'">
+   <param name="C_07" value="id='siguiente' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(470,330,23,23)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/siguiente.png' acci&oacute;n='calcular' par&aacute;metro='p=p+1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='((n1=1)|(n2=1))&amp;(p&lt;fin)' pos_mensajes='centro'">
+   <param name="C_08" value="id='ver' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='esp1' expresi&oacute;n='(110,10,40,40)' fijo='no' visible='s&iacute;' imagen='vacio.gif' acci&oacute;n='animar' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='(r=0)|(r=c)' pos_mensajes='centro'">
+   <param name="C_09" value="id='ver' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='esp2' expresi&oacute;n='(110,10,40,40)' fijo='no' visible='s&iacute;' imagen='vacio.gif' acci&oacute;n='animar' par&aacute;metro.fuente='Monospaced,PLAIN,12' activo-si='(r=0)|(r=c)' pos_mensajes='centro'">
+   <param name="A_01" value="id='fin' algoritmo='s&iacute;' evaluar='siempre' hacer='fin=6'">
+   <param name="A_02" value="id='iniciardatos1' algoritmo='s&iacute;' evaluar='una-sola-vez' hacer='a=ent(92*rnd+4);b=100*ent(5*rnd)+200;c=a*b/100'">
+   <param name="A_03" value="id='limp' evento='s&iacute;' condici&oacute;n='ver=1' acci&oacute;n='limpiar' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="G_01" value="tipo='imagen' dibujar-si='(n1=0)&amp;(n2=0)' coord_abs='s&iacute;' expresi&oacute;n='(0,97)' archivo='imagenes_/parabolas.jpg'">
+   <param name="G_02" value="espacio='text' tipo='pol&iacute;gono' color='ff6600' coord_abs='s&iacute;' expresi&oacute;n='(0,0)(498,0)(498,109)(0,109)(0,0)'">
+   <param name="G_03" value="espacio='text' tipo='texto' dibujar-si='(n2=0)' expresi&oacute;n='[10,16]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green102\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b Calcular el total\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='text' tipo='texto' dibujar-si='(n2=1)' expresi&oacute;n='[10,16]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green236\blue193;\red0\green0\blue255;}\f1\fs32\b\cf0 Calcular el total\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_05" value="espacio='text' tipo='texto' dibujar-si='(n1=0)' expresi&oacute;n='[10,36]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green102\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b Calcular el porcentaje\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_06" value="espacio='text' tipo='texto' dibujar-si='(n1=1)' expresi&oacute;n='[10,36]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green236\blue193;\red0\green0\blue255;}\f1\fs32\b\cf0 Calcular el porcentaje\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='text' tipo='texto' dibujar-si='(n1=0)&amp;(n2=0)' expresi&oacute;n='[280,60]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red170\green0\blue0;\red255\green102\blue0;\red0\green0\blue255;}\f1\fs24\cf0 Pulsa sobre la opci\u243 n que prefieras,\par Pulsa  \fs20\b\cf1 &lt;volver\cf0  \fs24\b0 para cambiar a otra\cf2\f3\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='text' tipo='texto' dibujar-si='(n1=1)' expresi&oacute;n='[200,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\cf0\f1\fs24\b Para llenar el  {\*\mjaformula{\expr a\decimals 2\fixed0}}% de un dep\u243 sito necesitamos\par  {\*\mjaformula{\expr c\decimals 2\fixed0}} litros de agua.\par Calcula la capacidad del dep\u243 sito\f2\fs24\b0\cf1\par \par \par \par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='text' tipo='texto' dibujar-si='(n2=1)' expresi&oacute;n='[200,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\cf0\f1\fs24\b En un dep\u243 sito de {\*\mjaformula{\expr b\decimals 2\fixed0}}litros de capacidad\par echamos {\*\mjaformula{\expr c\decimals 2\fixed0}} litros de agua.\par \u191 Qu\u233  porcentaje del dep\u243 sito hemos llenado?\cf1\f2\fs24\b0\par \par \par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_10" value="espacio='text1' tipo='texto' color='grisObscuro' dibujar-si='(p&gt;=1)*(n1=1)' expresi&oacute;n='[3,8]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue204;\red64\green64\blue64;}\f1\fs24\b\cf0 Llamamos x al total \cf1\par \par \par \par }' fuente='SansSerif,BOLD,12' fijo='no'">
+   <param name="G_11" value="espacio='text1' tipo='texto' color='grisObscuro' dibujar-si='(p&gt;=2)*(n1=1)' expresi&oacute;n='[3,23]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue204;\red64\green64\blue64;}\f1\fs24\cf0 Escribimos una regla de tres\b\par                                      \ul Porcentaje\ulnone                  \ul Cantidad\cf1\ulnone\par \par \par \par }' fuente='SansSerif,PLAIN,12' fijo='no'">
+   <param name="G_12" value="espacio='text1' tipo='texto' color='grisObscuro' dibujar-si='(p&gt;=3)*(n1=1)' expresi&oacute;n='[3,62]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red64\green64\blue64;\red170\green0\blue0;}\f1\fs24\cf0 Escribir\b   el dato:  \cf1            \cf2{\*\mjaformula{\expr a\decimals 2\fixed0}%}  \f3\fs24  ------&amp;gt;  \f2\fs24{\*\mjaformula{\expr c\decimals 2\fixed0}}   \par \cf1\par \par }' fuente='SansSerif,PLAIN,12' fijo='no'">
+   <param name="G_13" value="espacio='text1' tipo='texto' color='grisObscuro' dibujar-si='(p&gt;=4)*(n1=1)' expresi&oacute;n='[3,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red64\green64\blue64;\red170\green0\blue0;}\f1\fs24\cf0 Escribir\b   la pregunta:  \cf1   \cf2 100%   \f3\fs24  ------&amp;gt; \f2\fs24      x \cf1\par \par \par }' fuente='SansSerif,PLAIN,12' fijo='no'">
+   <param name="G_14" value="espacio='text1' tipo='texto' color='grisObscuro' dibujar-si='(p&gt;=5)*(n1=1)' expresi&oacute;n='[3,105]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue204;\red64\green64\blue64;\red170\green0\blue0;}\f1\fs24\cf0 Formamos \b la proporci\u243 n\cf1 :       \fs26{\*\mjaformula\cf2{\fraction{\num{\expr a\decimals 2\fixed0}}{\den 100}}\cf1}\fs24 =\fs26{\*\mjaformula\cf2{\fraction{\num{\expr c\decimals 2\fixed0}}{\den x}}\cf1}\fs24\par \par \par }' fuente='SansSerif,PLAIN,12' fijo='no'">
+   <param name="G_15" value="espacio='text1' tipo='texto' color='grisObscuro' dibujar-si='(p&gt;=6)*(n1=1)' expresi&oacute;n='[3,135]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue204;\red170\green0\blue0;\red64\green64\blue64;}\f1\fs24\cf0 Resolvemos:\b  \cf1  {\*\mjaformula{\expr a\decimals 2\fixed0}}x = 100\u183 {\*\mjaformula{\expr c\decimals 2\fixed0}}  \u8658   {\*\mjaformula{\expr a\decimals 2\fixed0}}x ={\*\mjaformula{\expr 100*c\decimals 2\fixed0}}\par                           x =\fs26{\*\mjaformula{\fraction{\num{\expr 100*c\decimals 2\fixed0}}{\den{\expr a\decimals 2\fixed0}}}}\fs24 ={\*\mjaformula{\expr c*100/a\decimals 2\fixed0}}litros caben \par                                                       en el dep\u243 sito\cf2\par \par }' fuente='SansSerif,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='text2' tipo='texto' color='grisObscuro' dibujar-si='(p&gt;=1)*(n2=1)' expresi&oacute;n='[3,8]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;}{\colortbl\red0\green0\blue204;\red64\green64\blue64;}\f1\fs24\b\cf0 Llamamos x al porcentaje \cf1\par \par \par \par}' fuente='Arial,BOLD,12' fijo='no'">
+   <param name="G_17" value="espacio='text2' tipo='texto' color='grisObscuro' dibujar-si='(p&gt;=2)*(n2=1)' expresi&oacute;n='[3,23]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue204;\red64\green64\blue64;}\f1\fs24\cf0 Escribimos una regla de tres\b\par                                     \ul Porcentaje\ulnone                  \ul Cantidad\cf1\ulnone\par \par \par \par}' fuente='Arial,PLAIN,12' fijo='no'">
+   <param name="G_18" value="espacio='text2' tipo='texto' color='grisObscuro' dibujar-si='(p&gt;=3)*(n2=1)' expresi&oacute;n='[3,62]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red64\green64\blue64;\red170\green0\blue0;}\f1\fs24\cf0 Escribir\b   el dato:  \cf1         \cf2 100 %   \f3\fs24  --------&gt;  \f2\fs24{\*\mjaformula{\expr b\decimals 2\fixed0}}   \cf1\par \par \par}' fuente='Arial,PLAIN,12' fijo='no'">
+   <param name="G_19" value="espacio='text2' tipo='texto' color='grisObscuro' dibujar-si='(p&gt;=4)*(n2=1)' expresi&oacute;n='[3,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red64\green64\blue64;\red170\green0\blue0;}\f1\fs24\cf0 Escribir\b   la pregunta:\cf1        \cf2 x   \f3\fs24   --------&gt; \f2\fs24    {\*\mjaformula{\expr c\decimals 2\fixed0}}\cf1\par \par \par}' fuente='Arial,PLAIN,12' fijo='no'">
+   <param name="G_20" value="espacio='text2' tipo='texto' color='grisObscuro' dibujar-si='(p&gt;=5)*(n2=1)' expresi&oacute;n='[3,105]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue204;\red64\green64\blue64;\red170\green0\blue0;}\f1\fs24\cf0 Formamos la proporci\u243 n:\b   \cf1      \fs26{\*\mjaformula\cf2{\fraction{\num 100}{\den x}}\cf1}\fs24 =\fs26{\*\mjaformula\cf2{\fraction{\num{\expr b\decimals 2\fixed0}}{\den{\expr c\decimals 2\fixed0}}}\cf1}\fs24\par \par \par }' fuente='SansSerif,PLAIN,12' fijo='no'">
+   <param name="G_21" value="espacio='text2' tipo='texto' color='grisObscuro' dibujar-si='(n2#0)*(p=6)' expresi&oacute;n='[3,135]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}{\colortbl\red0\green0\blue204;\red64\green64\blue64;\red170\green0\blue0;}\f1\fs24\cf0 Resolvemos:\cf1\b     \cf2 100\u183 {\*\mjaformula{\expr c\decimals 2\fixed0}}={\*\mjaformula{\expr b\decimals 2\fixed0}}x  \u8658   {\*\mjaformula{\expr 100*c\decimals 2\fixed0}}={\*\mjaformula{\expr b\decimals 2\fixed0}}x\par                              x =\fs26{\*\mjaformula{\fraction{\num{\expr 100*c\decimals 2\fixed0}}{\den{\expr b\decimals 2\fixed0}}}}\fs24 ={\*\mjaformula{\expr c*100/b\decimals 2\fixed0}}%\par                             Hemos llenado el{\*\mjaformula{\expr a\decimals 2\fixed0}\f2\fs24\b}% del dep\u243 sito\cf1\par }' fuente='SansSerif,PLAIN,12' fijo='no'">
+   <param name="G_22" value="espacio='esp1' tipo='imagen' expresi&oacute;n='(13,35)' archivo='imagenes6/grifocerrado.jpg'">
+   <param name="G_23" value="espacio='esp1' tipo='texto' dibujar-si='ver=1' expresi&oacute;n='[0,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red170\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs20 Para abrir haz clic\par sobre el grifo\cf1\f2\fs24\par}' fuente='Arial,PLAIN,10' fijo='s&iacute;'">
+   <param name="G_24" value="espacio='esp1' tipo='pol&iacute;gono' color='blanco' dibujar-si='ver=0' expresi&oacute;n='(1,0.3)(1,m/20-3)(18,m/20-3)(18,0.3)(1,0.3)' rastro='blanco'">
+   <param name="G_25" value="espacio='esp1' tipo='imagen' dibujar-si='(grifo&gt;=0)*(r&gt;0)*(r&lt;c)' expresi&oacute;n='(13,29)' archivo='imagenes6/gotas.jpg'">
+   <param name="G_26" value="espacio='esp1' tipo='pol&iacute;gono' dibujar-si='r&gt;0.1' expresi&oacute;n='(0,b/20)(0,0)(20,0)(20,b/20)' ancho='2'">
+   <param name="G_27" value="espacio='esp1' tipo='pol&iacute;gono' color='b6cbff' dibujar-si='(ver=0)*(r&gt;0.1)' expresi&oacute;n='(0.2,0.2)(0.2,r/20)(19.8,r/20)(19.8,0.2)(0.2,0.2)' rastro='b6cbff' relleno='b6cbff'">
+   <param name="G_28" value="espacio='esp1' tipo='texto' dibujar-si='(ver=0)*(r&gt;0.25)' expresi&oacute;n='[0,198-0.28*b]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red119\green195\blue255;\red0\green0\blue255;}\f1\fs24\b\cf0 100%\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_29" value="espacio='esp1' tipo='texto' dibujar-si='(ver=0)*(r&gt;0.25)' expresi&oacute;n='[80,198-0.28*b]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b ?\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16' fijo='s&iacute;'">
+   <param name="G_30" value="espacio='esp1' tipo='segmento' dibujar-si='r&gt;0.1' expresi&oacute;n='(-0.3,j)(-0.3,j+b/200)' rastro='azul' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24\par}' fuente='Times New Roman,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_31" value="espacio='esp1' tipo='texto' color='0000cb' dibujar-si='(ver=0)*(r&gt;=c)' expresi&oacute;n='[0,204-0.28*c]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red119\green195\blue255;\red0\green0\blue203;}\f1\fs24\b\cf0{\*\mjaformula{\expr a\decimals 2\fixed0}}%\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='no'">
+   <param name="G_32" value="espacio='esp1' tipo='texto' color='0000cb' dibujar-si='(ver=0)*(r&gt;=c)' expresi&oacute;n='[60,204-0.28*c]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b{\*\mjaformula{\expr c\decimals 2\fixed0}} litros\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='no'">
+   <param name="G_33" value="espacio='text' tipo='texto' dibujar-si='f&gt;6' expresi&oacute;n='[160,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24 a={\*\mjaformula{\expr a\decimals 2\fixed1}}%\par b={\*\mjaformula{\expr b\decimals 2\fixed1}}total\par c={\*\mjaformula{\expr c\decimals 2\fixed1}}\par ver={\*\mjaformula{\expr ver\decimals 2\fixed1}}\par r={\*\mjaformula{\expr r\decimals 2\fixed1}}\par m={\*\mjaformula{\expr m\decimals 2\fixed1}}\par}' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_34" value="espacio='esp2' tipo='imagen' expresi&oacute;n='(13,35)' archivo='imagenes6/grifocerrado.jpg'">
+   <param name="G_35" value="espacio='esp2' tipo='texto' dibujar-si='ver=1' expresi&oacute;n='[0,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;}{\colortbl\red170\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs20 Para abrir haz clic\par sobre el grifo\cf1\f2\fs24\par}' fuente='Arial,PLAIN,10' fijo='s&iacute;'">
+   <param name="G_36" value="espacio='esp2' tipo='pol&iacute;gono' color='blanco' dibujar-si='ver=0' expresi&oacute;n='(1,0.3)(1,m/20-3)(18,m/20-3)(18,0.3)(1,0.3)' rastro='blanco'">
+   <param name="G_37" value="espacio='esp2' tipo='imagen' dibujar-si='(grifo&gt;=0)*(r&gt;0)*(r&lt;c)' expresi&oacute;n='(13,29)' archivo='imagenes6/gotas.jpg'">
+   <param name="G_38" value="espacio='esp2' tipo='pol&iacute;gono' dibujar-si='r&gt;0.1' expresi&oacute;n='(0,b/20)(0,0)(20,0)(20,b/20)' ancho='3'">
+   <param name="G_39" value="espacio='esp2' tipo='pol&iacute;gono' color='b6cbff' dibujar-si='(ver=0)*(r&gt;0.1)' expresi&oacute;n='(0.2,0.2)(0.2,r/20)(19.8,r/20)(19.8,0.2)(0.2,0.2)' rastro='b6cbff' relleno='b6cbff'">
+   <param name="G_40" value="espacio='esp2' tipo='texto' dibujar-si='(ver=0)*(r&gt;0.25)' expresi&oacute;n='[0,198-0.28*b]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red119\green195\blue255;\red0\green0\blue255;}\f1\fs24\b\cf0 100%\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_41" value="espacio='esp2' tipo='texto' color='0000cb' dibujar-si='(ver=0)*(r&gt;0.25)' expresi&oacute;n='[60,198-0.28*b]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b{\*\mjaformula{\expr b\decimals 2\fixed0}} litros\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='no'">
+   <param name="G_42" value="espacio='esp2' tipo='texto' color='0000cb' dibujar-si='(ver=0)*(r&gt;=c)' expresi&oacute;n='[10,204-0.28*c]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red0\green0\blue203;}\cf0\f1\fs36 ?\cf1\f2\fs24\par}' fuente='Arial,PLAIN,18' fijo='no'">
+   <param name="G_43" value="espacio='esp2' tipo='texto' dibujar-si='(ver=0)*(r&gt;=c)' expresi&oacute;n='[60,204-0.28*c]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red0\green0\blue255;}\cf0\f1\fs24\b{\*\mjaformula{\expr c\decimals 2\fixed0}}\b0  \b litros\cf1\f3\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_44" value="espacio='text' tipo='texto' dibujar-si='f&gt;6' expresi&oacute;n='[160,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24 a={\*\mjaformula{\expr a\decimals 2\fixed1}}%\par b={\*\mjaformula{\expr b\decimals 2\fixed1}}total\par c={\*\mjaformula{\expr c\decimals 2\fixed1}}\par ver={\*\mjaformula{\expr ver\decimals 2\fixed1}}\par r={\*\mjaformula{\expr r\decimals 2\fixed1}}\par m={\*\mjaformula{\expr m\decimals 2\fixed1}}\par}' fuente='Monospaced,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_45" value="espacio='esp2' tipo='segmento' dibujar-si='r&gt;0.1' expresi&oacute;n='(2+s,0)(2+s,b/20)' familia='s' s.intervalo='[0,18]' s.pasos='9' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24\par}' fuente='Times New Roman,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='1'">
+   <param name="G_46" value="espacio='esp2' tipo='segmento' dibujar-si='r&gt;0.1' expresi&oacute;n='(0,s)(20,s)' familia='s' s.intervalo='[0,b/20]' s.pasos='10' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24\par}' fuente='Times New Roman,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='1'">
+   <param name="G_47" value="espacio='esp2' tipo='segmento' color='naranja' dibujar-si='r&lt;0' expresi&oacute;n='(0,j)(20,j)' rastro='naranja' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24\par}' fuente='Times New Roman,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='1' ancho='3'">
+   <param name="G_48" value="espacio='esp2' tipo='segmento' dibujar-si='r&gt;0.1' expresi&oacute;n='(-0.3,j)(-0.3,j+b/200)' rastro='azul' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24\par}' fuente='Times New Roman,PLAIN,12' fijo='s&iacute;'">
+   <param name="Animaci&oacute;n" value="controles='no' auto='no' inicio='r=0;m=60;j=0' hacer='r=(r&lt;1)?r+0.25:r;r=((r&lt;=c)*(r&gt;=1))?r+4:r;m=(r&lt;c)?m+4:m+20;;j=(j&lt;b/20-b/200)?j+b/200:j' mientras='(r&lt;c)|(m&lt;=b)'">
+</ajs>
+              </div></td>
+          </tr>
+          <tr> 
+            <td valign="bottom">
+<table width="100%" border="0" cellpadding="6" cellspacing="0" bgcolor="#eeeedd" class="recuadro">
+                  <tr> 
+                    <td bordercolor="#eeeedd" > 
+                      <div align="right"> 
+                        
+                         Pulsa para hacer unos ejercicios </div></td>
+                    <td width="50" height="50" align="center" valign="middle" bordercolor="#eeeedd"><ajs name="Descartes" width=39 height=39
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="39x39">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="Descartes">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='si' imagen='imagen1/paradescartes2.png' despl_imagen='arr-izq' fondo='eeeedd' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='g' tipo='gr&aacute;fico' color='azul' color-int='rojo' imagen='imagen1/paradescartes.png' dibujar-si='c=0'">
+   <param name="A_01" value="id='e2' evento='s&iacute;' condici&oacute;n='clic_izquierdo=1' acci&oacute;n='calcular' par&aacute;metro='c=1' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_02" value="id='e1' evento='s&iacute;' condici&oacute;n='clic_izquierdo=1' acci&oacute;n='abrir Escena' par&aacute;metro='1q6_ejercicios_resueltos_3c.htm' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_03" value="id='e3' evento='s&iacute;' condici&oacute;n='clic_izquierdo=1' acci&oacute;n='calcular' par&aacute;metro='c=0' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_04" value="id='bloqueo_g' algoritmo='si' evaluar='siempre' hacer='g.x=0;g.y=0'">
+</ajs></td>
+                  </tr>
+                </table></td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8"> </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="8" width="8"></td>
+      <td background="imagen1/bor3.gif" height="8"></td>
+      <td background="imagen1/es3.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td width="684"><div align="right"> </div></td>
+      <td width="30"><div align="center"><a href="1quincena6_contenidos_3b.htm" target="_parent" onMouseOver="MM_swapImage('atras','','imagen1/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/atras.png" alt="anterior" name="atras" width="25" height="25" border="0"></a></div></td>
+      <td width="30"> 
+        <div align="center"><a href="1quincena6_resumen_1a.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>

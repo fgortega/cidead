@@ -1,0 +1,60 @@
+Aplicacion de las propiedades de las igualdades
+
+guiado='s&iacute;'
+modos='escribir'
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+2*x=6                          | Divide los dos miembros por 2 y pulsa intro. (Utiliza _ para escribir la fracción)
+(2*x)/2=6/2                    | Simplifica el primer miembro y pulsa intro
+x=6/2                          | Opera en el segundo miembro y pulsa intro
+x=3                            | La solución de la ecuación es 3. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+3*x=12                         | Divide los dos miembros por 3 y pulsa intro. (Utiliza _ para escribir la fracción)
+(3*x)/3=12/3                   | Simplifica el primer miembro y pulsa intro
+x=12/3                         | Opera en el segundo miembro y pulsa intro
+x=4                            | La solución de la ecuación es 4. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+5*x=-(15)                      | Divide los dos miembros por 5 y pulsa intro. (Utiliza _ para escribir la fracción)
+(5*x)/5=(-(15))/5              | Simplifica el primer miembro y pulsa intro
+x=(-(15))/5                    | Opera en el segundo miembro y pulsa intro
+x=-(3)                         | La solución de la ecuación es -3. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+-(5)=5*x                       | Divide los dos miembros por 5 y pulsa intro. (Utiliza _ para escribir la fracción)
+(-(5))/5=(5*x)/5               | Opera en el primer miembro y pulsa intro
+-(1)=(5*x)/5                   | Simpliica el segundo miembro y pulsa intro
+-(1)=x                         | La solución de la ecuación es -1. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+x/3=2                          | Multiplica los dos miembros por 3 y pulsa intro.
+3*(x/3)=3*2                    | Simplifica el primer miembro y pulsa intro
+x=3*2                          | Opera el segundo miembro y pulsa intro
+x=6                            | La solución de la ecuación es 6. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+x/4=-(2)                       | Multiplica los dos miembros por 4 y pulsa intro.
+4*(x/4)=4*(-(2))               | Simplifica el primer miembro y pulsa intro
+x=4*(-(2))                     | Opera el segundo miembro y pulsa intro
+x=-(8)                         | La solución de la ecuación es -8. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+x/5=-(3)                       | Multiplica los dos miembros por 5 y pulsa intro.
+5*(x/5)=5*(-(3))               | Simplifica el primer miembro y pulsa intro
+x=5*(-(3))                     | Opera el segundo miembro y pulsa intro
+x=-(15)                        | La solución de la ecuación es -15. Pulsa > para realizar el siguiente ejercicio.
+
+Realiza los pasos indicados y obtendrás la solución de la ecuación
+
+2=x/7                          | Multiplica los dos miembros por 7 y pulsa intro.
+7*2=7*(x/7)                    | Opera el primer miembro y pulsa intro
+14=7*(x/7)                     | Simplifica el segundo miembro y pulsa intro
+14=x                           | La solución de la ecuación es 14. Has terminado estas series de ejercicios.

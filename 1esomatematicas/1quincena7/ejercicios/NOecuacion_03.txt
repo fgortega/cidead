@@ -1,0 +1,43 @@
+Resolución de ecuaciones
+
+Resuelve la siguiente ecuación
+
+(2*x)+3=13                     | Pasa el término 3 al segundo miembro restando.
+2*x=13-3                       | Efectúa la resta del segundo miembro.
+2*x=10                         | Pasa el factor 2 al segundo miembro dividiendo.
+x=10/2                         | Simplifica la fracción.
+x=5                            | La solución de la ecuación es x=5. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+4*x=(2*x)+8                    | Pasa el término 2x al segundo miembro restando.
+(4*x)-(2*x)=8                  | Efectúa la resta del primer miembro.
+2*x=8                          | Pasa el factor 2 al segundo miembro dividiendo.
+x=8/2                          | Simplifica la fracción.
+x=4                            | La solución de la ecuación es x=4. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+5*x=2+(3*x)                    | Pasa el término 3x al primer miembro restando.
+(5*x)-(3*x)=2                  | Efectúa la resta del primer miembro.
+2*x=2                          | Pasa el factor 2 al segundo miembro dividiendo.
+x=2/2                          | Simplifica la fracción.
+x=1                            | La solución de la ecuación es x=1. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+(4*x)-5=21                     | Pasa el número 5 al segundo miembro sumando.
+4*x=21+5                       | Efectúa la suma del segundo miembro.
+4*x=26                         | Pasa el factor 4 al segundo miembro dividiendo.
+x=26/4                         | Simplifica la fracción.
+x=13/2                         | La solución de la ecuación es x=13/2. Pulsa > para hacer otro ejercicio.
+
+Resuelve la siguiente ecuación
+
+5=(2*x)+4                      | Pasa el término 4 al primer miembro restando.
+5-4=2*x                        | Efectúa la resta del primer miembro.
+1=2*x                          | Pasa el factor 2 al primer miembro dividiendo.
+1/2=x                          | La solución de la ecuación es x=1/2. Pulsa >> para empezar otra serie de ejercicios.
+
+  
+

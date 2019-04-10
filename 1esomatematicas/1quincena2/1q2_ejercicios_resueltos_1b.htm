@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Ejercicios resueltos: Divisores</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000"><ajs name="Busca los divisores" width=400 height=325
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="400x325">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="Busca los divisores">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=s&iacute; limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E' fijo='s&iacute;' escala='65' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='c' tipo='num&eacute;rico' interfaz='campo de texto' espacio='E' nombre='Marca un divisor y pulsa intro' incr='0' min='0' max='100' decimales='0' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="A_01" value="id='n' constante='s&iacute;' expresi&oacute;n='1+ent(rnd*100)' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='a1' algoritmo='s&iacute;' evaluar='siempre' inicio='a1=0' hacer='a1=a1+1' mientras='(n/a1&gt;ent(n/a1))*(a1&lt;n)'">
+   <param name="A_03" value="id='a2' algoritmo='s&iacute;' evaluar='siempre' inicio='a2=a1' hacer='a2=a2+1' mientras='(n/a2&gt;ent(n/a2))*(a2&lt;n)'">
+   <param name="A_04" value="id='a3' algoritmo='s&iacute;' evaluar='siempre' inicio='a3=a2' hacer='a3=a3+1' mientras='(n/a3&gt;ent(n/a3))*(a3&lt;n)'">
+   <param name="A_05" value="id='a4' algoritmo='s&iacute;' evaluar='siempre' inicio='a4=a3' hacer='a4=a4+1' mientras='(n/a4&gt;ent(n/a4))*(a4&lt;n)'">
+   <param name="A_06" value="id='a5' algoritmo='s&iacute;' evaluar='siempre' inicio='a5=a4' hacer='a5=a5+1' mientras='(n/a5&gt;ent(n/a5))*(a5&lt;n)'">
+   <param name="A_07" value="id='a6' algoritmo='s&iacute;' evaluar='siempre' inicio='a6=a5' hacer='a6=a6+1' mientras='(n/a6&gt;ent(n/a6))*(a6&lt;n)'">
+   <param name="A_08" value="id='a7' algoritmo='s&iacute;' evaluar='siempre' inicio='a7=a6' hacer='a7=a7+1' mientras='(n/a7&gt;ent(n/a7))*(a7&lt;n)'">
+   <param name="A_09" value="id='a8' algoritmo='s&iacute;' evaluar='siempre' inicio='a8=a7' hacer='a8=a8+1' mientras='(n/a8&gt;ent(n/a8))*(a8&lt;n)'">
+   <param name="A_10" value="id='a9' algoritmo='s&iacute;' evaluar='siempre' inicio='a9=a8' hacer='a9=a9+1' mientras='(n/a9&gt;ent(n/a9))*(a9&lt;n)'">
+   <param name="A_11" value="id='a10' algoritmo='s&iacute;' evaluar='siempre' inicio='a10=a9' hacer='a10=a10+1' mientras='(n/a10&gt;ent(n/a10))*(a10&lt;n)'">
+   <param name="A_12" value="id='a11' algoritmo='s&iacute;' evaluar='siempre' inicio='a11=a10' hacer='a11=a11+1' mientras='(n/a11&gt;ent(n/a11))*(a11&lt;n)'">
+   <param name="A_13" value="id='a12' algoritmo='s&iacute;' evaluar='siempre' inicio='a12=a11' hacer='a12=a12+1' mientras='(n/a12&gt;ent(n/a12))*(a12&lt;n)'">
+   <param name="A_14" value="id='d' constante='s&iacute;' expresi&oacute;n='1+(a1&lt;n)+(a2&lt;n)+(a3&lt;n)+(a4&lt;n)+(a5&lt;n)+(a6&lt;n)+(a7&lt;n)+(a8&lt;n)+(a9&lt;n)+(a10&lt;n)+(a11&lt;n)+(a12&lt;n)' evaluar='siempre'">
+   <param name="A_15" value="id='c1' constante='s&iacute;' expresi&oacute;n='(c=a1)?a1:c1' evaluar='siempre'">
+   <param name="A_16" value="id='c2' constante='s&iacute;' expresi&oacute;n='(c=a2)?a2:c2' evaluar='siempre'">
+   <param name="A_17" value="id='c3' constante='s&iacute;' expresi&oacute;n='(c=a3)?a3:c3' evaluar='siempre'">
+   <param name="A_18" value="id='c4' constante='s&iacute;' expresi&oacute;n='(c=a4)?a4:c4' evaluar='siempre'">
+   <param name="A_19" value="id='c5' constante='s&iacute;' expresi&oacute;n='(c=a5)?a5:c5' evaluar='siempre'">
+   <param name="A_20" value="id='c6' constante='s&iacute;' expresi&oacute;n='(c=a6)?a6:c6' evaluar='siempre'">
+   <param name="A_21" value="id='c7' constante='s&iacute;' expresi&oacute;n='(c=a7)?a7:c7' evaluar='siempre'">
+   <param name="A_22" value="id='c8' constante='s&iacute;' expresi&oacute;n='(c=a8)?a8:c8' evaluar='siempre'">
+   <param name="A_23" value="id='c9' constante='s&iacute;' expresi&oacute;n='(c=a9)?a9:c9' evaluar='siempre'">
+   <param name="A_24" value="id='c10' constante='s&iacute;' expresi&oacute;n='(c=a10)?a10:c10' evaluar='siempre'">
+   <param name="A_25" value="id='c11' constante='s&iacute;' expresi&oacute;n='(c=a11)?a11:c11' evaluar='siempre'">
+   <param name="A_26" value="id='c12' constante='s&iacute;' expresi&oacute;n='(c=a12)?a12:c12' evaluar='siempre'">
+   <param name="A_27" value="id='v' constante='s&iacute;' expresi&oacute;n='((c1&gt;0)+(c2&gt;0)+(c3&gt;0)+(c4&gt;0)+(c5&gt;0)+(c6&gt;0)+(c7&gt;0)+(c8&gt;0)+(c9&gt;0)+(c10&gt;0)+(c11&gt;0)+(c12&gt;0)+(c13&gt;0))*w=d' evaluar='siempre'">
+   <param name="A_28" value="id='w' constante='s&iacute;' expresi&oacute;n='((c=0)+(c=a1)+(c=a2)+(c=a3)+(c=a4)+(c=a5)+(c=a6)+(c=a7)+(c=a8)+(c=a9)+(c=a10)+(c=a11)+(c=a12))*(c&lt;n+1)' evaluar='siempre'">
+   <param name="A_29" value="id='f' constante='s&iacute;' expresi&oacute;n='w=0?1:f' evaluar='siempre'">
+   <param name="A_30" value="id='v2' constante='s&iacute;' expresi&oacute;n='(c1&gt;0)+(c2&gt;0)+(c3&gt;0)+(c4&gt;0)+(c5&gt;0)+(c6&gt;0)+(c7&gt;0)+(c8&gt;0)+(c9&gt;0)+(c10&gt;0)+(c11&gt;0)+(c12&gt;0)+(c13&gt;0)' evaluar='siempre'">
+   <param name="G_01" value="espacio='E' tipo='punto' color='0000b4' expresi&oacute;n='(-3,2)' texto='Busca los [d] divisores del n&uacute;mero [n]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_02" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(n&gt;0)*(c1=a1)' expresi&oacute;n='(-3,1)' texto='[a1]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_03" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(a2-1&lt;n)*(c2=a2)' expresi&oacute;n='(-2,1)' texto='[a2]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_04" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(a3-1&lt;n)*(c3=a3)' expresi&oacute;n='(-1,1)' texto='[a3]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_05" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(a4-1&lt;n)*(c4=a4)' expresi&oacute;n='(0,1)' texto='[a4]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_06" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(a5-1&lt;n)*(c5=a5)' expresi&oacute;n='(1,1)' texto='[a5]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_07" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(a6-1&lt;n)*(c6=a6)' expresi&oacute;n='(2,1)' texto='[a6]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_08" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(a7&lt;n+1)*(c7=a7)' expresi&oacute;n='(-3,0.5)' texto='[a7]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_09" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(a8&lt;n+1)*(c8=a8)' expresi&oacute;n='(-2,0.5)' texto='[a8]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_10" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(a9&lt;n+1)*(c9=a9)' expresi&oacute;n='(-1,0.5)' texto='[a9]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_11" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(a10&lt;n+1)*(c10=a10)' expresi&oacute;n='(0,0.5)' texto='[a10]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_12" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(a11&lt;n+1)*(c11=a11)' expresi&oacute;n='(1,0.5)' texto='[a11]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_13" value="espacio='E' tipo='punto' color='rojo' dibujar-si='(a12&lt;n+1)*(c12=a12)' expresi&oacute;n='(2,0.5)' texto='[a12]' fuente='Helvetica,PLAIN,18' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_14" value="espacio='E' tipo='punto' color='007b00' dibujar-si='v*w*(f=0)' expresi&oacute;n='(-3,-2)' texto='ENHORABUENA' fuente='Helvetica,BOLD,40' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_15" value="espacio='E' tipo='punto' color='e100a9' dibujar-si='w=0' expresi&oacute;n='(-3,-1)' texto='Error, has marcado el n&uacute;mero [c],' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_16" value="espacio='E' tipo='punto' color='e100a9' dibujar-si='w=0' expresi&oacute;n='(-3,-1.5)' texto='que no es un divisor de [n]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_17" value="espacio='E' tipo='punto' color='e100a9' dibujar-si='f' expresi&oacute;n='(-3,-2)' texto='Comienza de nuevo con otro n&uacute;mero.' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+</ajs>
+
+
+
+
+
+</body>
+</html>

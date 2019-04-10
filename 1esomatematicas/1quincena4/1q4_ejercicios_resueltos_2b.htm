@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Ejercicios resueltos: Multiplicar</title>
+<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="mutiplica_decimales" width=420 height=300
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="420x300">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="mutiplica_decimales">
+   <param name="Versi&oacute;n" value="5.101, 2013-07-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='sol2' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='exterior' nombre='s2' expresi&oacute;n='(10,100,120,23)' decimales='10' fijo='no' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='ver=1' dibujar-si='op&gt;0'">
+   <param name="C_02" value="id='sol' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' nombre='Soluci&oacute;n:' expresi&oacute;n='(10,100,120,23)' valor='&squot;&squot;' decimales='10' fijo='no' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='ver=1\nsol2=(azar=0)*(n1*n3)+(azar=1)*(n1*n2)'">
+   <param name="C_03" value="id='ej' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(290,20,100,22)' valor='1' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/otroejercicio.png' acci&oacute;n='calcular' par&aacute;metro='ev=1' dibujar-si='(bien=1)' pos_mensajes='centro'">
+   <param name="C_04" value="id='ver' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' nombre='Ver soluci&oacute;n' expresi&oacute;n='(200,100,120,23)' valor='1' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='ver=2' dibujar-si='(bien=0)&amp;(ver=1)' pos_mensajes='centro'">
+   <param name="A_01" value="id='dig(x,y)' expresi&oacute;n='ent((x+0.1)/(10^(y-1)))%10'">
+   <param name="A_02" value="id='empezar' evento='s&iacute;' condici&oacute;n='ev=1' acci&oacute;n='calcular' par&aacute;metro='bien=0\nsol=&squot;0&squot;\nsol2=&squot;0&squot;\nver=0\ncif1=ent(2*rnd)+1\nnum1=ent(10^cif1*rnd)+1\nex1=ent(cif1*rnd)+1\ncif2=ent(2*rnd)+1\nnum2=ent(10^cif2*rnd)+1\nex2=ent(cif2*rnd)+1\nn1=num1/10^ex1\nn2=num2/10^ex2\nd1=ex1-(num1%10=0)-(num1%100=0)-(num1%1000=0)-(num1%10000=0)\nd2=ex2-(num2%10=0)-(num2%100=0)-(num2%1000=0)-(num2%10000=0)\nm=max(d1,d2)\ncif3=ent(3*rnd)+2\nn3=10^cif3\nazar=ent(2*rnd)\nsol2=(azar=0)*(n1*n3)+(azar=1)*(n1*n2)\nev=0' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_03" value="id='bien' constante='s&iacute;' expresi&oacute;n='(sol=sol2)' evaluar='siempre'">
+   <param name="A_04" value="id='ev' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="G_01" value="tipo='pol&iacute;gono' color='ffda99' coord_abs='s&iacute;' expresi&oacute;n='(1,0)(419,0)(419,70)(1,70)(1,0)' relleno='fbefcf'">
+   <param name="G_02" value="tipo='texto' color='666666' dibujar-si='(azar=0)' expresi&oacute;n='[10,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red102\green102\blue102;}\f1\fs36\cf0{\*\mjaformula{\expr n1\decimals ex1\fixed0}}\u183 {\*\mjaformula{\expr n3\decimals 0\fixed0}}=\cf1\f2\fs24\par}' fuente='Arial,PLAIN,18' decimales='8' fijo='no'">
+   <param name="G_03" value="tipo='texto' color='666666' dibujar-si='(azar=0)&amp;(bien=1)' expresi&oacute;n='[10,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red102\green102\blue102;}\f1\fs36\cf0{\*\mjaformula{\expr n1\decimals 8\fixed0}}\u183 {\*\mjaformula{\expr n3\decimals 0\fixed0}}={\*\mjaformula{\expr n1*n3\decimals 8\fixed0}}\cf1\f2\fs24\par}' fuente='Arial,PLAIN,18' decimales='8' fijo='no'">
+   <param name="G_04" value="tipo='texto' color='azul' dibujar-si='(d1&gt;=cif3)&amp;(azar=0)&amp;(ver=2)' expresi&oacute;n='[10,160]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\cf0\f1\fs24 Se desplaza la coma hacia la derecha {\*\mjaformula{\expr (cif3&gt;1)?cif3+&squot; lugares&squot;: &squot;1 lugar&squot;\decimals 0\fixed0}}.\cf1\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_05" value="tipo='texto' color='azul' dibujar-si='(d1&lt;cif3)&amp;(azar=0)&amp;(ver=2)' expresi&oacute;n='[10,160]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\cf0\f1\fs24 A\u241 adimos ceros para desplazar la coma hacia la derecha {\*\mjaformula{\expr (cif3&gt;1)?cif3+&squot; lugares&squot;: &squot;1 lugar&squot;\decimals 0\fixed0}}.\cf1\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_06" value="tipo='texto' color='666666' dibujar-si='(d1&gt;=cif3)&amp;(azar=0)&amp;(ver=2)' expresi&oacute;n='[10,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red102\green102\blue102;}\f1\fs36\cf0{\*\mjaformula{\expr n1\decimals ex1\fixed0}}\u183 {\*\mjaformula{\expr n3\decimals 0\fixed0}}={\*\mjaformula{\expr n1*n3\decimals 8\fixed0}}\cf1\f2\fs24\par \par}' fuente='Arial,PLAIN,18' decimales='8' fijo='no'">
+   <param name="G_07" value="tipo='texto' color='666666' dibujar-si='(d1&lt;cif3)&amp;(azar=0)&amp;(ver=2)' expresi&oacute;n='[10,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red102\green102\blue102;}\f1\fs36\cf0{\*\mjaformula{\expr n1\decimals ex1\fixed0}}\u183 {\*\mjaformula{\expr n3\decimals 0\fixed0}}=\cf1{\*\mjaformula{\expr n1\decimals cif3\fixed1}}\u183 {\*\mjaformula{\expr n3\decimals 0\fixed0}}\cf0 ={\*\mjaformula{\expr n1*n3\decimals 8\fixed0}}\cf1\f2\fs24\par \par}' fuente='Arial,PLAIN,18' decimales='8' fijo='no'">
+   <param name="G_08" value="tipo='texto' color='grisObscuro' dibujar-si='(azar=1)' expresi&oacute;n='[10,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36{\*\mjaformula{\expr n1\decimals 8\fixed0}}\u183 {\*\mjaformula{\expr n2\decimals 8\fixed0}}=\f2\fs24\par}' fuente='Arial,PLAIN,18' decimales='8' fijo='no'">
+   <param name="G_09" value="tipo='texto' color='grisObscuro' dibujar-si='(azar=1)&amp;(bien=1)' expresi&oacute;n='[10,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36{\*\mjaformula{\expr n1\decimals 8\fixed0}}\u183 {\*\mjaformula{\expr n2\decimals 8\fixed0}}={\*\mjaformula{\expr n1*n2\decimals d1+d2\fixed0}}\f2\fs24\par}' fuente='Arial,PLAIN,18' decimales='8' fijo='no'">
+   <param name="G_10" value="tipo='texto' color='azul' dibujar-si='bien=0' expresi&oacute;n='[10,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\cf0\f1\fs24 Para continuar, escribe la soluci\u243 n sin ceros innecesarios\cf1  \f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_11" value="tipo='texto' color='666666' dibujar-si='(azar=1)&amp;(ver=2)' expresi&oacute;n='[10,140]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red102\green102\blue102;}\f1\fs24 Se multiplican sin la coma\par \par {\*\mjaformula{\expr n1*10^d1\decimals 0\fixed0}}\u183 {\*\mjaformula{\expr n2*10^d2\decimals 0\fixed0}}={\*\mjaformula{\expr n1*n2*10^(d1+d2)\decimals 0\fixed0}}\par \par El resultado tendr\u225  {\*\mjaformula{\expr d1+d2\decimals 0\fixed0}} cifras decimales y, si es preciso,\par a\u241 adimos ceros por la izquierda: \cf0{\*\mjaformula{\expr n1*n2\decimals d1+d2\fixed0}}\cf1\f2\fs24\par}' fuente='Arial,PLAIN,12' decimales='8' fijo='no'">
+</ajs>
+</body>
+</html>

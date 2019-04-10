@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Fracciones</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+
+<body onload="MM_preloadImages('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes2.png','imagen1/paracont2.png','imagen1/adelanteb.png','imagen1/atrasb.png','imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/paraejer3.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paracont3.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0px; top: 0px; width: 800px; height: 528px; z-index: 1;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="1quincena4_presenta_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes.png" alt="" name="antes" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','imagen1/paracont3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paracont3.png" alt="" name="contenidos" onload="MM_nbGroup('init','group1','contenidos','imagen1/paraconte.png',1)" border="0"></a></td>
+      <td><a href="1quincena4_ejercicios_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer.png" alt="" name="ejercicios" onload="" border="0"></a></td>
+      <td><a href="1quincena4_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" onload="" border="0"></a></td>
+      <td><a href="1quincena4_tutor_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onmouseover="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" onload="" border="0"></a></td>
+      <td><a href="1quincena4_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0"></a></td>
+    </tr>
+  </table>
+<table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="85%" width="800">
+     <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8"></td>
+      <td bgcolor="#ffffff" height="89%" valign="top">
+      <table cellspacing="12" width="100%">
+          <tr>
+            <td width="43%" valign="top"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong>2.
+              Operaciones</strong></font></td>
+            <td width="57%"> <div align="right"></div></td>
+          </tr>
+          <tr>
+            <td rowspan="2" valign="top"> <p><font color="#666666" face="Geneva, Arial, Helvetica, sans-serif" size="3"><strong>Divisi&oacute;n</strong></font></p>
+              <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+                <strong>&#8226;</strong>&nbsp;Quitamos las comas decimales. Para 
+                ello, el dividendo y el divisor deben tener el mismo n&uacute;mero 
+                de cifras decimales.</font></p>
+              <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+                <strong>&#8226;</strong>&nbsp;Dividimos como si fuesen n&uacute;meros 
+                enteros.</font></p>
+              <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+                <strong>&#8226;</strong>&nbsp;Cuando no queden cifras en el dividendo 
+                para bajar, en el cociente se coloca la coma decimal y se baja 
+                un cero para continuar la divisi&oacute;n. Se bajar&aacute;n tantos 
+                ceros como decimales necesitemos en el cociente. </font></p>
+              <div align="justify">
+                <table width="90%" align="center" cellpadding="10" cellspacing="0" background="imagen1/clipcon.png">
+                  <tr>
+                    <td valign="bottom"> <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br>
+                        Para dividir por 10, 100, 1000,... se desplaza la coma
+                        hacia la izquierda 1, 2, 3,... lugares. <br>
+                        Si es preciso, se a&ntilde;aden ceros por la izquierda.</font></p></td>
+                  </tr>
+                </table>
+              </div></td>
+            <td valign="top"> <div align="center">
+                <ajs name="divisiondecimal" width=420 height=300
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="420x300">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="divisiondecimal">
+   <param name="Versi&oacute;n" value="5.101, 2013-07-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='1' dibujar-si='op=1' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='2' dibujar-si='op=0' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='ej' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='2' expresi&oacute;n='(318,275,100,22)' valor='1' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/otroejemplo.png' acci&oacute;n='inicio' dibujar-si='(acab#0)'">
+   <param name="C_02" value="id='seg1' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='2' nombre='_._' expresi&oacute;n='(380,40,25,25)' valor='seg1' fijo='s&iacute;' visible='no' imagen='imagen1/siguiente.png' acci&oacute;n='animar' dibujar-si='(acab=0)&amp;(seg1&lt;4)&amp;(ttt=0)'">
+   <param name="C_03" value="id='seg' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='2' nombre='_._' expresi&oacute;n='(380,40,25,25)' valor='seg' fijo='s&iacute;' visible='no' imagen='imagen1/siguiente.png' acci&oacute;n='animar' par&aacute;metro='seg=seg+(zp=0)\nesp=esp+(zp=1)*(cont=0)\nij=ij-(ij&gt;=0)\nev=1' dibujar-si='(acab=0)&amp;(seg1=4)&amp;(ttt=0)'">
+   <param name="C_04" value="id='op' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='2' nombre='Dividir entre' expresi&oacute;n='(210,0,210,25)' fijo='s&iacute;' visible='no' opciones='un n&ordm; decimal,potencias de 10' acci&oacute;n='calcular' dibujar-si='seg1=0' pos_mensajes='centro'">
+   <param name="C_05" value="id='op' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='1' nombre='Dividir entre' expresi&oacute;n='(210,0,210,25)' fijo='s&iacute;' visible='no' opciones='un n&ordm; decimal,potencias de 10' acci&oacute;n='calcular' dibujar-si='(siguiente=0)' pos_mensajes='centro'">
+   <param name="C_06" value="id='siguiente' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='1' nombre='_._' expresi&oacute;n='(380,40,25,25)' valor='siguiente' fijo='s&iacute;' visible='no' imagen='imagen1/siguiente.png' acci&oacute;n='calcular' par&aacute;metro='siguiente=siguiente+1' dibujar-si='siguiente&lt;2' pos_mensajes='centro'">
+   <param name="C_07" value="id='ej' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='1' expresi&oacute;n='(150,150,100,22)' valor='1' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/otroejemplo.png' acci&oacute;n='calcular' par&aacute;metro='cif1=ent(3*rnd)+2\nnum1=ent(10^cif1*rnd)+1\nex1=ent(cif1*rnd)+1\ncif2=ent(3*rnd)+1\nn3=10^cif2\nce=0\nceros=&squot; &squot;\nsiguiente=0\n' dibujar-si='siguiente=2' pos_mensajes='centro'">
+   <param name="A_01" value="id='cifras(x)' expresi&oacute;n='(x&gt;0)?ent(log10(x+0.1))+1:1'">
+   <param name="A_02" value="id='dig(x,y)' expresi&oacute;n='ent((x+0.1)/(10^(y-1)))%10'">
+   <param name="A_03" value="id='nu' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='12'">
+   <param name="A_04" value="id='le' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='10' expresi&oacute;n='le[0]=&squot;0&squot;;le[1]=&squot;1&squot;;le[2]=&squot;2&squot;;le[3]=&squot;3&squot;;le[4]=&squot;4&squot;;le[5]=&squot;5&squot;;le[6]=&squot;6&squot;;le[7]=&squot;7&squot;;le[8]=&squot;8&squot;;le[9]=&squot;9&squot;'">
+   <param name="A_05" value="id='de' constante='s&iacute;' expresi&oacute;n='3' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='cif1' constante='s&iacute;' expresi&oacute;n='ent(3*rnd)+2' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='num1' constante='s&iacute;' expresi&oacute;n='ent(10^cif1*rnd)+1' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='ex1' constante='s&iacute;' expresi&oacute;n='ent(cif1*rnd)+1' evaluar='una-sola-vez'">
+   <param name="A_09" value="id='cif2' constante='s&iacute;' expresi&oacute;n='ent(3*rnd)+2' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='num2' constante='s&iacute;' expresi&oacute;n='ent(10^cif2*rnd)+1' evaluar='una-sola-vez'">
+   <param name="A_11" value="id='ex2' constante='s&iacute;' expresi&oacute;n='ent(cif2*rnd)+1' evaluar='una-sola-vez'">
+   <param name="A_12" value="id='n1' constante='s&iacute;' expresi&oacute;n='num1/10^ex1' evaluar='siempre'">
+   <param name="A_13" value="id='n2' constante='s&iacute;' expresi&oacute;n='num2/10^ex2' evaluar='una-sola-vez'">
+   <param name="A_14" value="id='n3' constante='s&iacute;' expresi&oacute;n='10^cif2' evaluar='una-sola-vez'">
+   <param name="A_15" value="id='d1' constante='s&iacute;' expresi&oacute;n='ex1-(num1%10=0)-(num1%100=0)-(num1%1000=0)-(num1%10000=0)' evaluar='siempre'">
+   <param name="A_16" value="id='d2' constante='s&iacute;' expresi&oacute;n='ex2-(num2%10=0)-(num2%100=0)-(num2%1000=0)-(num2%10000=0)' evaluar='una-sola-vez'">
+   <param name="A_17" value="id='m' constante='s&iacute;' expresi&oacute;n='max(d1,d2)' evaluar='una-sola-vez'">
+   <param name="A_18" value="id='nn1' constante='s&iacute;' expresi&oacute;n='n1*10^m' evaluar='una-sola-vez'">
+   <param name="A_19" value="id='nn2' constante='s&iacute;' expresi&oacute;n='n2*10^m' evaluar='una-sola-vez'">
+   <param name="A_20" value="id='lim' constante='s&iacute;' expresi&oacute;n='max(cifras(nn1),cifras(nn2))' evaluar='una-sola-vez'">
+   <param name="A_21" value="id='panu' algoritmo='s&iacute;' evaluar='una-sola-vez' inicio='j=0; ij=(cifras(nn2)&gt;=cifras(nn1))?(cifras(nn2)-cifras(nn1)):(nn2&gt;nn1); jk=ij' hacer='nu[j]=(j&gt;de-1+ij)?dig(nn1,j+1-de-ij):0;j=j+1' mientras='j&lt;lim+de'">
+   <param name="A_22" value="id='e30' evento='s&iacute;' condici&oacute;n='ev=1' acci&oacute;n='calcular' par&aacute;metro='coma=(seg=cifras(nn1))\ncont=(zp=1)?cont+1:cont+(nn_1&gt;=nn2)\n\nzp=(nn_1&gt;=nn2)?1:zp\nespacio=espacio+(nn_1&gt;=nn2)*(cont&lt;2)\n\n\nc=(cont&lt;2)?ent(nn_1/nn2):c\nr=(cont&lt;2)?nn_1-c*nn2:r\nespacio2=(cont&lt;2)?espacio2+(cifras(nn2)-cifras(r))*zp+(cifras(nn_1)&gt;cifras(nn2)):espacio2\nnn_1=((cont&lt;2)&amp;(lim+de-seg&gt;=1))?r*10+nu[lim+de-seg-1]:nn_1\n\ncont=(cont&gt;2+coma)?0:cont\nseg=seg+(cont=0)*(zp=1)\nacab=(seg=lim+de)*(cont=2)\n\n\nev=0' par&aacute;metro.fuente='Monospaced,PLAIN,12' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_23" value="id='u' constante='s&iacute;' expresi&oacute;n='lim+de-cifras(nn1)' evaluar='siempre'">
+   <param name="A_24" value="id='uu' constante='s&iacute;' expresi&oacute;n='nn1/nn2' evaluar='siempre'">
+   <param name="A_25" value="id='ceros' constante='s&iacute;' expresi&oacute;n='&squot; &squot;' evaluar='una-sola-vez'">
+   <param name="A_26" value="id='ceros' algoritmo='s&iacute;' evaluar='siempre' inicio='com=cifras(num1)+(n1&lt;1)+(n1&lt;0.1)+(n1&lt;0.01)+(n1&lt;0.001)+(n1&lt;0.0001)-ex1-cif2' hacer=';ceros=(com+ce&lt;=0)?ceros+&squot;0&squot;:ceros;ce=ce+1' mientras='com+ce&lt;=0'">
+   <param name="G_01" value="espacio='2' tipo='pol&iacute;gono' color='ffda99' coord_abs='s&iacute;' expresi&oacute;n='(1,0)(419,0)(419,70)(1,70)(1,0)' relleno='fbefcf'">
+   <param name="G_02" value="espacio='2' tipo='pol&iacute;gono' color='grisObscuro' dibujar-si='(seg1=4)' expresi&oacute;n='(-1.55,0.3)(-1.55,-0.2)(0,-0.2)' ancho='2'">
+   <param name="G_03" value="espacio='2' tipo='texto' color='grisObscuro' dibujar-si='seg1=4' expresi&oacute;n='[10,140]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\f2\fs24{\expr nn1\decimals 0\fixed0}\f3\fs24}\f3\fs24\par }' fuente='SansSerif,PLAIN,18' decimales='0' fijo='no'">
+   <param name="G_04" value="espacio='2' tipo='texto' color='grisObscuro' dibujar-si='seg1=4' expresi&oacute;n='[140,140]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\f2\fs24{\expr nn2\decimals 0\fixed0}\f3\fs24}\f3\fs24\par}' fuente='Arial,PLAIN,18' decimales='0' fijo='no'">
+   <param name="G_05" value="espacio='2' tipo='texto' color='grisObscuro' dibujar-si='seg1=1' expresi&oacute;n='[10,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\f2\fs24{\expr n1\decimals ex1\fixed0}\f3\fs24}:{\*\mjaformula\f2\fs24{\expr n2\decimals ex2\fixed0}\f3\fs24}=\f3\fs24\par}' fuente='Arial,PLAIN,18' decimales='ex1' fijo='no'">
+   <param name="G_06" value="espacio='2' tipo='texto' color='grisObscuro' dibujar-si='(seg1=2)&amp;(d1#d2)' expresi&oacute;n='[10,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\f2\fs24{\expr n1\decimals ex1\fixed0}\f3\fs24}:{\*\mjaformula\f2\fs24{\expr n2\decimals ex2\fixed0}\f3\fs24}={\*\mjaformula\f2\fs24{\expr n1\decimals m\fixed1}\f3\fs24}:{\*\mjaformula\f2\fs24{\expr n2\decimals m\fixed1}\f3\fs24}=\f3\fs24\par}' fuente='Arial,PLAIN,18' decimales='ex1' fijo='no'">
+   <param name="G_07" value="espacio='2' tipo='texto' color='grisObscuro' dibujar-si='(seg1&gt;2)&amp;(d1#d2)' expresi&oacute;n='[10,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\f2\fs24{\expr n1\decimals ex1\fixed0}\f3\fs24}:{\*\mjaformula\f2\fs24{\expr n2\decimals ex2\fixed0}\f3\fs24}={\*\mjaformula\f2\fs24{\expr n1\decimals m\fixed1}\f3\fs24}:{\*\mjaformula\f2\fs24{\expr n2\decimals m\fixed1}\f3\fs24}={\*\mjaformula\f2\fs24{\expr n1*10^m\decimals 0\fixed0}\f3\fs24}:{\*\mjaformula\f2\fs24{\expr n2*10^m\decimals 0\fixed0}\f3\fs24}\f3\fs24\par}' fuente='Arial,PLAIN,18' decimales='ex1' fijo='no'">
+   <param name="G_08" value="espacio='2' tipo='texto' color='grisObscuro' dibujar-si='(seg1=4)&amp;(seg=cifras(nn1)-1)&amp;(nn1&lt;nn2)' expresi&oacute;n='[140,160]' rastro='grisObscuro' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36{\*\mjaformula{\expr &squot;0,&squot;\decimals 0\fixed0}}\f2\fs24\par}' fuente='Arial,PLAIN,18' decimales='0' fijo='no'">
+   <param name="G_09" value="espacio='2' tipo='texto' color='grisObscuro' dibujar-si='(seg1=4)&amp;(seg&gt;cifras(nn1))&amp;(nn1&lt;nn2)&amp;((cont=1)|(zp=0))' expresi&oacute;n='[145+10*(seg-cifras(nn1)),160]' rastro='grisObscuro' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36{\*\mjaformula{\expr (zp=0)?&squot;0&squot;:c\decimals 0\fixed0}}\f2\fs24\par}' fuente='Arial,PLAIN,18' decimales='0' fijo='no'">
+   <param name="G_10" value="espacio='2' tipo='texto' color='grisObscuro' dibujar-si='(seg1=4)&amp;(zp=1)&amp;(nn1&gt;=nn2)&amp;(cont=1)' expresi&oacute;n='[140+10*esp+5*(seg&gt;lim),160]' rastro='grisObscuro' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36{\*\mjaformula{\expr c\decimals 0\fixed0}}\f2\fs24\par}' fuente='Arial,PLAIN,18' decimales='0' fijo='no'">
+   <param name="G_11" value="espacio='2' tipo='texto' color='ff6600' dibujar-si='(seg1=4)&amp;(cont=0)' expresi&oacute;n='[10+10*espacio2,140+20*espacio]' rastro='gris' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs36\b{\*\mjaformula\f2\fs24{\expr nn_1\decimals 0\fixed0}\f3\fs24}\f3\fs24\b0\par }' fuente='SansSerif,BOLD,18' decimales='0' fijo='no'">
+   <param name="G_12" value="espacio='2' tipo='texto' color='ff6600' dibujar-si='(seg1=4)&amp;(zp=1)&amp;(cont=2)' expresi&oacute;n='[10+10*espacio2,140+20*espacio]' rastro='grisObscuro' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\f2\fs24{\expr r\decimals 0\fixed0}\f3\fs24}\f3\fs24\par}' fuente='Arial,PLAIN,18' decimales='0' fijo='no'">
+   <param name="G_13" value="espacio='2' tipo='texto' color='grisObscuro' dibujar-si='(seg1=4)&amp;(cont=3)' expresi&oacute;n='[140+10*esp+5*(seg&gt;lim),160]' rastro='grisObscuro' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36{\*\mjaformula{\expr c+&squot;,&squot;\decimals 0\fixed0}}\f2\fs24\par}' fuente='Arial,PLAIN,18' decimales='0' fijo='no'">
+   <param name="G_14" value="espacio='2' tipo='texto' color='grisObscuro' expresi&oacute;n='[5,25]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 Calcula con {\*\mjaformula{\expr lim+de-cifras(nn1)\decimals 0\fixed0}\f2\fs24} decimales\par {\*\mjaformula{\expr n1\decimals 10\fixed0}:{\expr n2\decimals 10\fixed0}=}\f2\fs24\par \par}' fuente='Arial,PLAIN,18' decimales='0' fijo='no'">
+   <param name="G_15" value="espacio='2' tipo='texto' color='ff6600' dibujar-si='(seg1=2)&amp;(d1=d2)' expresi&oacute;n='[10,75]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Se quita la coma\f2\fs24\par}' fuente='Arial,PLAIN,12' decimales='0' fijo='no'">
+   <param name="G_16" value="espacio='2' tipo='texto' color='ff6600' dibujar-si='(seg1=2)&amp;(d1#d2)' expresi&oacute;n='[10,75]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Se a\u241 aden ceros para igualar el n\u250 mero de cifras decimales\f2\fs24\par}' fuente='Arial,PLAIN,12' decimales='0' fijo='no'">
+   <param name="G_17" value="espacio='2' tipo='texto' color='grisObscuro' dibujar-si='(seg1&gt;1)&amp;(d1=d2)' expresi&oacute;n='[10,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\f2\fs24{\expr n1\decimals ex1\fixed0}\f3\fs24}:{\*\mjaformula\f2\fs24{\expr n2\decimals ex2\fixed0}\f3\fs24}={\*\mjaformula\f2\fs24{\expr n1*10^m\decimals 0\fixed0}\f3\fs24}:{\*\mjaformula\f2\fs24{\expr n2*10^m\decimals 0\fixed0}\f3\fs24}\f3\fs24\par}' fuente='Arial,PLAIN,18' decimales='ex1' fijo='no'">
+   <param name="G_18" value="espacio='2' tipo='texto' color='ff6600' dibujar-si='(seg1=3)&amp;(d1#d2)' expresi&oacute;n='[10,75]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Se quita la coma \f2\fs24\par}' fuente='Arial,PLAIN,12' decimales='0' fijo='no'">
+   <param name="G_19" value="espacio='2' tipo='texto' color='ff6600' dibujar-si='(seg1=3)&amp;(d1=d2)' expresi&oacute;n='[10,75]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Se divide\f2\fs24\par}' fuente='Arial,PLAIN,12' decimales='0' fijo='no'">
+   <param name="G_20" value="espacio='2' tipo='texto' color='grisObscuro' dibujar-si='acab#0' expresi&oacute;n='[5,25]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs36 Calcula con {\*\mjaformula{\expr lim+de-cifras(nn1)\decimals 10\fixed0}\f2\fs24} decimales\par {\*\mjaformula{\expr n1\decimals 10\fixed0}:{\expr n2\decimals 10\fixed0}}={\*\mjaformula{\expr ent(10^u*(nn1/nn2))/10^u\decimals u\fixed1}}\f2\fs24\par \par }' fuente='SansSerif,PLAIN,18' decimales='9' fijo='no'">
+   <param name="G_21" value="espacio='1' tipo='pol&iacute;gono' color='ffda99' coord_abs='s&iacute;' expresi&oacute;n='(1,0)(419,0)(419,70)(1,70)(1,0)' relleno='fbefcf'">
+   <param name="G_22" value="espacio='1' tipo='texto' color='grisObscuro' dibujar-si='(op=1)' expresi&oacute;n='[10,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\f2\fs24{\expr n1\decimals ex1\fixed0}\f3\fs24}:{\*\mjaformula\f2\fs24{\expr n3\decimals 8\fixed0}\f3\fs24}=\f3\fs24\par}' fuente='Arial,PLAIN,18' fijo='no'">
+   <param name="G_23" value="espacio='1' tipo='texto' color='grisObscuro' dibujar-si='(op=1)&amp;(siguiente&gt;1)' expresi&oacute;n='[10,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}\f1\fs36{\*\mjaformula\f2\fs24{\expr n1\decimals ex1\fixed0}\f3\fs24}:{\*\mjaformula\f2\fs24{\expr n3\decimals 8\fixed0}\f3\fs24}={\*\mjaformula{\expr n1/n3\decimals ex1+cif2\fixed0}}\f3\fs24\par}' fuente='Arial,PLAIN,18' fijo='no'">
+   <param name="G_24" value="espacio='1' tipo='texto' color='666666' dibujar-si='(siguiente&gt;0)&amp;(op=1)&amp;(com&lt;=0)' expresi&oacute;n='[10,100]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red102\green102\blue102;}\f1\fs36\cf0{\*\mjaformula\f2\fs24{\expr n1\decimals ex1\fixed0}\f3\fs24}:{\*\mjaformula{\expr n3\decimals 8\fixed0}\f3\fs24}={\*\mjaformula\f2\fs24{\expr ceros+n1\decimals ex1\fixed1}\f1\fs36 :{\expr n3\decimals 8\fixed0}\f3\fs24}\cf1\f3\fs24\par}' fuente='Arial,PLAIN,18' fijo='no'">
+   <param name="G_25" value="espacio='1' tipo='texto' color='666666' dibujar-si='(siguiente&gt;0)&amp;(op=1)&amp;(com&lt;=0)' expresi&oacute;n='[10,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 A\u241 adimos ceros para mover la coma decimal {\*\mjaformula{\expr (cif2&gt;1)?cif2+&squot; lugares&squot;:&squot;1 lugar&squot;\decimals 2\fixed0}} a la izquierda.\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='no'">
+   <param name="G_26" value="espacio='1' tipo='texto' color='666666' dibujar-si='(siguiente&gt;0)&amp;(op=1)&amp;(com&gt;0)' expresi&oacute;n='[10,80]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Se mueve la coma decimal {\*\mjaformula{\expr (cif2&gt;1)?cif2+&squot; lugares&squot;:&squot;1 lugar&squot;\decimals 2\fixed0}} a la izquierda.\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='no'">
+   <param name="Animaci&oacute;n" value="controles='no' auto='no' inicio='ttt=1' hacer='nn_1=(seg1&lt;4)?nu[lim+de-1]:nn_1;ev=(seg1=4);;seg=seg+(zp=0)*(seg1=4);esp=esp+(zp=1)*(cont=0)*(seg1=4);ij=ij-(ij&gt;=0)*(seg1=4);;seg1=seg1+(seg1&lt;4);;ttt=0'">
+</ajs>
+              </div></td>
+          </tr>
+          <tr>
+            <td valign="top"><table width="100%" border="0" cellpadding="6" cellspacing="0" bordercolor="#999966" bgcolor="#eeeedd" class="recuadro">
+                <tr> 
+                  <td bordercolor="#eeeedd"> <div align="right">Pulsa para hacer unos ejercicios</div></td>
+                  <td width="50" height="50" align="center" valign="middle" bordercolor="#eeeedd">
+				  <ajs name="Descartes" width=39 height=39
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar"
+        MAYSCRIPT> 
+		<param name="tama&ntilde;o" value="39x39"> 
+		<param name="decimal_symbol" value=","> 
+		<param name="antialias" value="s&iacute;"> 
+		<param name="nombre" value="Descartes"> 
+		<param name="Versi&oacute;n" value="5.101, 2013-07-16"> 
+		<param name="Idioma" value="espa&ntilde;ol"> 
+		<param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no"> 
+		<param name="E_01" value="tipo='R2' fijo='si' imagen='imagen1/paradescartes2.png' despl_imagen='arr-izq' fondo='eeeedd' red='no' red10='no' ejes='no' texto='no'"> 
+		<param name="C_01" value="id='g' tipo='gr&aacute;fico' color='azul' color-int='rojo' imagen='imagen1/paradescartes.png' dibujar-si='c=0'"> 
+		<param name="A_01" value="id='e2' evento='s&iacute;' condici&oacute;n='clic_izquierdo=1' acci&oacute;n='calcular' par&aacute;metro='c=1' ejecuci&oacute;n='siempre' pos_mensajes='centro'"> 
+		<param name="A_02" value="id='e1' evento='s&iacute;' condici&oacute;n='clic_izquierdo=1' acci&oacute;n='abrir Escena' par&aacute;metro='1q4_ejercicios_resueltos_2c.htm' ejecuci&oacute;n='siempre' pos_mensajes='centro'"> 
+		<param name="A_03" value="id='e3' evento='s&iacute;' condici&oacute;n='clic_izquierdo=1' acci&oacute;n='calcular' par&aacute;metro='c=0' ejecuci&oacute;n='siempre' pos_mensajes='centro'"> 
+		<param name="A_04" value="id='bloqueo_g' algoritmo='si' evaluar='siempre' hacer='g.x=0;g.y=0'"> 
+                      </ajs></td>
+                </tr>
+              </table>
+</td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8"> </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="8" width="8"></td>
+      <td background="imagen1/bor3.gif" height="8"></td>
+      <td background="imagen1/es3.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td width="684"><div align="right"> </div></td>
+      <td width="30"><div align="center"><a href="1quincena4_contenidos_2b.htm" target="_parent" onMouseOver="MM_swapImage('atras','','imagen1/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/atras.png" alt="anterior" name="atras" width="25" height="25" border="0"></a></div></td>
+      <td width="30">
+        <div align="center"><a href="1quincena4_contenidos_3a.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>

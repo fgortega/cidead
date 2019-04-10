@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Proporcionalidad</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" fptype="dynamicanimation">
+<!--
+function dynAnimation() {}
+function clickSwapImg() {}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+
+<body onload="MM_preloadImages('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes2.png','imagen1/paracont2.png','imagen1/adelanteb.png','imagen1/atrasb.png','imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/paraejer3.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paracont3.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0px; top: 0px; width: 800px; height: 528px; z-index: 1;"> 
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="1quincena6_presenta_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes.png" alt="" name="antes" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','imagen1/paracont3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paracont3.png" alt="" name="contenidos" onload="MM_nbGroup('init','group1','contenidos','imagen1/paraconte.png',1)" border="0"></a></td>
+      <td><a href="1quincena6_ejercicios_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer.png" alt="" name="ejercicios" onload="" border="0"></a></td>
+      <td><a href="1quincena6_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" onload="" border="0"></a></td>
+      <td><a href="1quincena6_tutor_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onmouseover="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" onload="" border="0"></a></td>
+      <td><a href="1quincena6_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0"></a></td>
+    </tr>
+  </table>
+<table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="85%" width="800">
+     <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8"></td>
+      <td bgcolor="#ffffff" height="89%" valign="top">
+      <table cellspacing="12" width="100%">
+          <tr> 
+            <td width="49%" valign="top"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong>1.
+              Razón y proporción</strong></font></td>
+            <td width="51%">
+<div align="right"></div></td>
+          </tr>
+          <tr> 
+            <td valign="top"> <p align="justify"><font color="#666666" face="Geneva, Arial, Helvetica, sans-serif" size="3"><strong>Razón 
+                entre dos números<br>
+                </strong></font><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Estamos 
+                acostumbrados a dar información sobre situaciones de la vida cotidiana 
+                usando números. Hay ocasiones en las que un solo&nbsp; número 
+                no es suficiente y debemos compararlo con otra cantidad para poder 
+                comprender mejor la situación. <br>
+                Cuando comparamos dos cantidades formamos una razón.</font></p>
+             
+              <table width="85%" align="center" cellpadding="10" cellspacing="0" background="imagen1/clipcon.png">
+                <tr> 
+                  <td valign="bottom"> <br> <div align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" align="justify"><b>Razón 
+                      </b>es el <b>cociente&nbsp; </b>entre dos números<b> a </b>y<b> 
+                      b</b>. <br>
+                      Se escribe&nbsp; <strong>a/b</strong>&nbsp; y se lee "a 
+                      es a b".</font></div>
+                    </td>
+                  </tr>
+                </table>
+                
+              <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Una 
+                razón<em> no tiene unidades</em> y sirve para comparar: indica 
+                el nº de veces que una cantidad es mayor que otra.</font></p>
+              
+              </td>
+            <td rowspan="2" valign="bottom"> <div align="center">
+                <script type='text/javascript' src='lib/descartes-min.js'></script> <ajs name="Razon de dos numeros" width=390 height=362
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="390x362">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="Razon de dos numeros">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='fondo' alto='362' fijo='s&iacute;' escala='120' O.y='40' despl_imagen='arr-izq' fondo='fffac7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='escoge' alto='20' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fafaff' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='enunciado' y='20' alto='80' dibujar-si='(ejem#0)' fijo='s&iacute;' escala='120' O.y='40' despl_imagen='arr-izq' fondo='fff0c0' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='imagen' x='12' y='100' ancho='159' alto='187' dibujar-si='(ejem#0)' fijo='s&iacute;' escala='120' O.x='-73' O.y='83' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_05" value="tipo='R2' id='texto' x='189' y='100' ancho='190' alto='187' dibujar-si='(ejem*p)#0' fijo='s&iacute;' escala='120' O.x='-73' O.y='83' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='ejem' tipo='num&eacute;rico' interfaz='men&uacute;' regi&oacute;n='interior' espacio='escoge' expresi&oacute;n='(280,0,110,20)' fijo='s&iacute;' visible='no' opciones='-,Ejemplo 1,Ejemplo 2,Ejemplo 3,Ejemplo 4' acci&oacute;n='calcular' par&aacute;metro='p=0' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='adelante' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(340,300,25,25)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/siguiente.png' acci&oacute;n='calcular' par&aacute;metro='p=p+1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(ejem#0)&amp;(p&lt;fin)' pos_mensajes='centro'">
+   <param name="C_03" value="id='atras' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(305,300,25,25)' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/anterior.png' acci&oacute;n='calcular' par&aacute;metro='p=p-1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(ejem#0)&amp;(p&gt;0)' pos_mensajes='centro'">
+   <param name="A_01" value="id='fin' algoritmo='s&iacute;' evaluar='siempre' hacer='fin=2'">
+   <param name="G_01" value="espacio='fondo' tipo='texto' color='azul' dibujar-si='(ejem=0)' expresi&oacute;n='[25,40]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red255\green200\blue0;\red170\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs28\b\par \par                   \cf1  \fs36\b0\u191 Qu\u233  es una raz\u243 n?\fs32\par \par \par En esta escena te presentamos varios ejemplos\par en los que vamos a presentar este concepto y \par entender qu\u233  nos indica.\par \par \par Elige los distintos ejemplos.\par Lee atentamente las explicaciones.\fs28\b   \cf2\f4\fs24\b0\par }' fuente='SansSerif,BOLD,14' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='escoge' tipo='texto' color='grisObscuro' expresi&oacute;n='[60,2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Elige un ejemplo \f2\fs24\par }' fuente='SansSerif,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='enunciado' tipo='texto' color='azul' dibujar-si='(ejem=1)' expresi&oacute;n='[5,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b El bote de pintura grande pesa  4,5 kg   y el peque\u241 o 1,5 kg.\par Hallar la raz\u243 n entre el peso  del bote grande y  el peso\par del bote peque\u241 o.  \u191 Qu\u233  indica la raz\u243 n?\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_04" value="espacio='imagen' tipo='imagen' dibujar-si='ejem=1' coord_abs='s&iacute;' expresi&oacute;n='(0,0)' archivo='imagenes6/pinturagrande.jpg'">
+   <param name="G_05" value="espacio='imagen' tipo='imagen' dibujar-si='ejem=1' coord_abs='s&iacute;' expresi&oacute;n='(0,100)' archivo='imagenes6/pinturapeq.jpg'">
+   <param name="G_06" value="espacio='texto' tipo='texto' color='azul' dibujar-si='(p&gt;=1)&amp;(ejem=1)' expresi&oacute;n='[1,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}\f1\fs24\b           \b0 Hay que calcular:\fs20\b\par \par \fs24{\*\mjaformula{\fraction{\num peso  bote grande}{\den peso bote peque\u241 o}}}={\*\mjaformula{\fraction{\num 4,5}{\den 1,5}}}=3\par \b0\par Se lee  4,5 es a 1,5\b\par \par La raz\u243 n es 3 y nos indica que \par el bote grande pesa 3 veces  \par m\u225 s que el bote peque\u241 o.\f4\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='fondo' tipo='texto' color='rojo' dibujar-si='(ejem#0)*(p=2)' expresi&oacute;n='[10,290]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red170\green0\blue0;\red255\green0\blue0;}\f1\fs24\cf0 OBSERVA  que \b una raz\u243 n no es una fracci\u243 n.\b0\par En una raz\u243 n los n\u250 meros pueden ser \par decimales y en una fracci\u243 n han de ser\par n\u250 meros enteros.\cf1\f3\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;'">
+   <param name="G_08" value="espacio='enunciado' tipo='texto' color='azul' dibujar-si='(ejem=2)' expresi&oacute;n='[5,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b En un coche caben 5 personas y en un autob\u250 s caben 50.\par Hallar la raz\u243 n entre el n\u186  de personas que caben en un coche\par y el n\u186  de personas que caben en un autob\u250 s.\par \u191 Qu\u233  indica la raz\u243 n?\cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_09" value="espacio='imagen' tipo='imagen' dibujar-si='ejem=2' coord_abs='s&iacute;' expresi&oacute;n='(15,15)' archivo='imagenes6/coche.jpg'">
+   <param name="G_10" value="espacio='imagen' tipo='imagen' dibujar-si='ejem=2' coord_abs='s&iacute;' expresi&oacute;n='(15,120)' archivo='imagenes6/autobus.jpg'">
+   <param name="G_11" value="espacio='texto' tipo='texto' color='azul' dibujar-si='(p&gt;=1)&amp;(ejem=2)' expresi&oacute;n='[1,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}\f1\fs24\b         \b0   Hay que calcular:\fs20\b\par \par \fs24{\*\mjaformula{\fraction{\num pasajeros coche  }{\den pasajeros bus}}}={\*\mjaformula{\fraction{\num 5}{\den 50}}}={\*\mjaformula{\fraction{\num 1}{\den 10}}}\par \par \b0 Se lee 5 es a 50 \u243  bien 1 es a 10\b\par \par La raz\u243 n es 1/10 e indica que en\par el coche caben la d\u233 cima parte \par de las personas que caben en \par un autob\u250 s.\f4\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_12" value="espacio='enunciado' tipo='texto' color='azul' dibujar-si='(ejem=3)' expresi&oacute;n='[5,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b Luis dedica 1,5 horas diaria a estudiar y 3 horas  a jugar.\par Escribe una raz\u243 n para comparar esos dos tiempos.\par \u191 Qu\u233  indica la raz\u243 n?\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_13" value="espacio='imagen' tipo='imagen' dibujar-si='ejem=3' coord_abs='s&iacute;' expresi&oacute;n='(15,0)' archivo='imagenes6/libro.jpg'">
+   <param name="G_14" value="espacio='imagen' tipo='imagen' dibujar-si='ejem=3' coord_abs='s&iacute;' expresi&oacute;n='(0,90)' archivo='imagenes6/jugar.jpg'">
+   <param name="G_15" value="espacio='texto' tipo='texto' color='azul' dibujar-si='(p&gt;=1)&amp;(ejem=3)' expresi&oacute;n='[1,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}\f1\fs24\b           \b0 Hay que calcular:\par \fs20\b\par \fs24{\*\mjaformula{\fraction{\num tiempo estudio  }{\den tiempo de juegos}}}={\*\mjaformula{\fraction{\num 1,5}{\den 3}}}=0,5\par \par \b0 Se lee 1,5 es a 3.\b\par \par La raz\u243 n es 0,5 e  indica que \par dedica al estudio la mitad  del \par tiempo que dedica al juego.\f4\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+   <param name="G_16" value="espacio='enunciado' tipo='texto' color='azul' dibujar-si='(ejem=4)' expresi&oacute;n='[5,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs24\b Luis dedica  hora y media  diaria a estudiar y 3 horas a jugar.\par Escribe una raz\u243 n para comparar esos dos tiempos.\par \u191 Qu\u233  indica la raz\u243 n?\par (Es el ejemplo anterior pero lo vamos a hacer de otra forma)\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,12' fijo='s&iacute;'">
+   <param name="G_17" value="espacio='imagen' tipo='imagen' dibujar-si='ejem=4' coord_abs='s&iacute;' expresi&oacute;n='(0,0)' archivo='imagenes6/jugar.jpg'">
+   <param name="G_18" value="espacio='imagen' tipo='imagen' dibujar-si='ejem=4' coord_abs='s&iacute;' expresi&oacute;n='(15,100)' archivo='imagenes6/libro.jpg'">
+   <param name="G_19" value="espacio='texto' tipo='texto' color='azul' dibujar-si='(p&gt;=1)&amp;(ejem=4)' expresi&oacute;n='[0,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}\f1\fs24\b          \b0  Hay que calcular:\fs20\b\par \par \fs24{\*\mjaformula\f1\fs24\b{\fraction{\num tiempo de  juego  }{\den tiempo  estudio}}\f4\fs24\b0}={\*\mjaformula{\fraction{\num 3 h}{\den 1,5 h}}}=2\par \par \b0 Se lee 3 es a 1,5.\b\par \par La raz\u243 n es 2  y nos indica que \par dedica al juego el doble de  \par tiempo que al estudio.\f4\fs24\b0\par }' fuente='SansSerif,BOLD,12' fijo='s&iacute;'">
+</ajs>
+              </div></td>
+          </tr>
+          <tr> 
+            <td valign="bottom">
+<table width="100%" border="0" cellpadding="6" cellspacing="0" bordercolor="#999966" bgcolor="#eeeedd">
+                <tr> 
+                  <td bordercolor="#eeeedd" class="recuadro" valign="middle">
+<div align="right"><font size="2"><a onMouseOver="document['fpAnimswapImgFP1'].imgRolln=document['fpAnimswapImgFP1'].src;document['fpAnimswapImgFP1'].src=document['fpAnimswapImgFP1'].lowsrc;" onMouseOut="document['fpAnimswapImgFP1'].src=document['fpAnimswapImgFP1'].imgRolln" href="#"><img src="imagen1/paralapiz1.png" name="fpAnimswapImgFP1" width="40" height="40" border="0" align="right" lowsrc="imagen1/paralapiz2.png" id="fpAnimswapImgFP1" onClick="MM_openBrWindow('1q6_ejercicios_resueltos_1a.htm','resueltos1a','width=640,height=400')" dynamicanimation="fpAnimswapImgFP1"></a></font><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font><font face="Verdana, Arial, Helvetica, sans-serif"> 
+                      </font><font size="2"></font>Pulsa para hacer unos ejercicios<br>
+                      en tu cuaderno. </div></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8"> </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="8" width="8"></td>
+      <td background="imagen1/bor3.gif" height="8"></td>
+      <td background="imagen1/es3.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td width="684"><div align="right"> </div></td>
+      <td width="30"><div align="center"><a href="1quincena6_presenta_1a.htm" target="_parent" onMouseOver="MM_swapImage('atras','','imagen1/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/atras.png" alt="anterior" name="atras" width="25" height="25" border="0"></a></div></td>
+      <td width="30"> 
+        <div align="center"><a href="1quincena6_contenidos_1b.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>

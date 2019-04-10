@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ejercicio resuelto: Más gráficas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center">
+<ajs name="ejercicio_funcion_lineal" width=600 height=500
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="600x500">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="ejercicio_funcion_lineal">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E1' y='100' ancho='600' alto='350' fijo='s&iacute;' escala='18' despl_imagen='arr-izq' fondo='ffffc6' red='grisClaro' red10='no' ejes='gris' texto='no'">
+   <param name="E_02" value="tipo='R2' id='E2' ancho='600' alto='100' fijo='s&iacute;' despl_imagen='arr-izq' fondo='ffffc6' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='E3' y='450' ancho='600' alto='50' despl_imagen='arr-izq' fondo='ffffc6' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='situado' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E3' nombre='punto situado' expresi&oacute;n='(500,20,90,30)' fijo='s&iacute;' visible='no' acci&oacute;n='calcular' par&aacute;metro='i=1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(i=0)&amp;(A.x#0)'">
+   <param name="C_02" value="id='inicio' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E3' nombre='otro ejercicio' expresi&oacute;n='(510,20,80,30)' fijo='s&iacute;' visible='no' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='i=1' pos_mensajes='centro'">
+   <param name="C_03" value="id='A' tipo='gr&aacute;fico' espacio='E1' color='azul' color-int='ffae00' fijo='s&iacute;' activo-si='i=0'">
+   <param name="C_04" value="id='A.x' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='A.x' incr='0.25' min='-16' max='16' discreto='s&iacute;' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_05" value="id='A.y' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' nombre='A.y' incr='0.25' min='-9' max='9' discreto='s&iacute;' fijo='s&iacute;' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="A_01" value="id='exp1' constante='s&iacute;' expresi&oacute;n='ent(rnd*5)' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='exp2' constante='s&iacute;' expresi&oacute;n='ent(rnd*5)' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='pma' constante='s&iacute;' expresi&oacute;n='ent(rnd*6)*(-1)^exp2+0.25*(ent(rnd*3))*(-1)^exp2' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='p1' constante='s&iacute;' expresi&oacute;n='(pma#0)?pma:ent(rnd*4+1)' evaluar='una-sola-vez'">
+   <param name="G_01" value="espacio='E2' tipo='texto' color='azul' expresi&oacute;n='[40,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\f1\fs32\b Situa el punto A de manera que la recta que pasa por dicho punto \par y por  el origen de coordenadas represente la funci\u243 n dada por la \par f\u243 rmula \cf0  y ={\*\mjaformula{\expr p1\decimals 2\fixed0}}\u183  x\cf1\f2\fs24\b0\par \par }' fuente='SansSerif,BOLD,16' fijo='s&iacute;'">
+   <param name="G_02" value="espacio='E3' tipo='texto' color='azul' dibujar-si='(i=1)&amp;(A.y#A.x*p1)' expresi&oacute;n='[10,5]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red144\green0\blue0;\red0\green0\blue255;}\cf0\f1\fs32\b\u161 OJO! el punto que has marcado corresponde\par a la f\u243 rmula y ={\*\mjaformula{\expr A.y/A.x\decimals 2\fixed0}}\u183  x \cf1\f2\fs24\b0\par }' fuente='SansSerif,BOLD,16' fijo='s&iacute;'">
+   <param name="G_03" value="espacio='E1' tipo='ecuaci&oacute;n' color='900000' dibujar-si='(i=1)&amp;(A.y=p1*A.x)' expresi&oacute;n='y=p1*x' ancho='2'">
+   <param name="G_04" value="espacio='E1' tipo='ecuaci&oacute;n' color='gris' expresi&oacute;n='y=0' ancho='2'">
+   <param name="G_05" value="espacio='E1' tipo='ecuaci&oacute;n' color='gris' expresi&oacute;n='x=0' ancho='2'">
+   <param name="G_06" value="espacio='E3' tipo='texto' color='azul' dibujar-si='(i=1)&amp;(A.y=A.x*p1)' expresi&oacute;n='[200,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green190\blue0;\red0\green0\blue255;}\f1\fs56\b\cf0\u161 MUY BIEN!\f2\fs24\b0\cf1\par}' fuente='Arial,BOLD,28' fijo='s&iacute;'">
+   <param name="G_07" value="espacio='E1' tipo='ecuaci&oacute;n' color='ffae00' dibujar-si='(i=1)&amp;(A.y#p1*A.x)' expresi&oacute;n='y=p1*x' ancho='2'">
+   <param name="G_08" value="espacio='E1' tipo='punto' color='ffae00' dibujar-si='(i=1)&amp;(A.y#p1*A.x)' expresi&oacute;n='(0.5,8)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red192\green192\blue192;\red255\green174\blue0;}\f1\fs28\b La recta naranja es la que corresponde\par a la ecuaci\u243 n del enunciado.\par \cf0 La recta gris es la funci\u243 n lineal que\par pasa por el punto que has marcado.\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_09" value="espacio='E1' tipo='ecuaci&oacute;n' color='grisClaro' dibujar-si='(i=1)&amp;(A.y#p1*A.x)' expresi&oacute;n='y=(A.y/A.x)*x' ancho='2'">
+   <param name="G_10" value="espacio='E1' tipo='punto' expresi&oacute;n='(A.x,A.y)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue255;\red32\green48\blue58;}\f1\fs30\b\cf0 A\f2\fs30\b0\cf1}' fuente='SansSerif,BOLD,15' fijo='s&iacute;' tama&ntilde;o='4'">
+</ajs>
+</div>
+</body>
+</html>

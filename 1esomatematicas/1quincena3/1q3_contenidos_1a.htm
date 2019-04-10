@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Enteros</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript" src="embeddedcontent.js" defer="defer"></script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+
+
+<body onload="MM_preloadimagenes3('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes2.png','imagen1/paracont2.png','imagen1/adelanteb.png','imagen1/atrasb.png','imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/paraejer3.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paracont3.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0; top: 0; width: 800; height: 528; z-index: 1"> 
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="1quincena3_presenta_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes.png" alt="" name="antes" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="javascript:;" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','imagen1/paracont3.png',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paracont3.png" alt="" name="contenidos" onload="MM_nbGroup('init','group1','contenidos','imagen1/paraconte.png',1)" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena3_ejercicios_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer.png" alt="" name="ejercicios" onload="" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena3_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" onload="" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena3_tutor_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onmouseover="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" onload="" border="0" width="130" height="18"></a></td>
+      <td><a href="1quincena3_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0" width="130" height="18"></a></td>
+    </tr>
+  </table>
+<table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="85%" width="800">
+     <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8"></td>
+      <td bgcolor="#ffffff" valign="top"> 
+        <table width="100%" cellspacing="12">
+          <tr> 
+            <td valign="top"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong>1.
+              Los n&uacute;meros enteros</strong></font></td>
+            <td>
+<div align="right"></div></td>
+          </tr>
+          <tr> 
+            <td valign="top"> <p><font color="#666666" face="Geneva, Arial, Helvetica, sans-serif" size="3"><strong>Necesidad
+              de n&uacute;meros enteros&nbsp;</strong></font></p>
+              <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">En
+              la vida real hay situaciones en las que los n&uacute;meros naturales no
+              son suficientes.&nbsp;<br>
+              Por ejemplo: si tienes 10 euros y debes 15 euros &iquest;De cu&aacute;nto
+              dispones?&nbsp;<br>
+              <br>
+              </font><font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                Observa en la escena distintas situaciones en las que se
+              necesitan los n&uacute;meros enteros.</font></p>
+              <p align="justify"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">Los
+              n&uacute;meros <b>enteros son una ampliaci&oacute;n de los naturales:</b><br>
+                Los naturales se consideran enteros positivos (se escriben con 
+                el signo +).<br>
+              Los enteros negativos van precedidos del signo -.<br>
+              El cero es un entero pero no es ni negativo ni positivo.<br>
+              </font>
+              </td>
+            <td rowspan="2" valign="middle" bordercolor="#FF6600" bordercolorlight="#FF6600" bordercolordark="#FF6600" bgcolor="#FFFaC7" style="border-style: solid; border-width: 1"> 
+              <script type='text/javascript' src='lib/descartes-min.js'></script> <ajs name="situaciones_enteros_teoria" width=392 height=345
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar,lib/Descartes5_Sonido.jar,lib/Descartes5_Algebra.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="392x345">
+   <param name="sonido" value="s&iacute;">
+   <param name="&aacute;lgebra" value="s&iacute;">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="situaciones_enteros_teoria">
+   <param name="Versi&oacute;n" value="5.1, 2013-07-13">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='fondo' y='0' alto='346' fijo='si' escala='120' O.y='40' despl_imagen='arr-izq' fondo='fffac7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='enunciado' y='0' alto='60' dibujar-si='(i&gt;=1)*(i&lt;6)' fijo='si' escala='120' O.x='-73' O.y='83' despl_imagen='arr-izq' fondo='fff0c0' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_03" value="tipo='R2' id='imagen1' x='8' y='70' ancho='170' alto='120' dibujar-si='(i&gt;0)*(i&lt;6)' fijo='si' escala='120' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_04" value="tipo='R2' id='imagen2' x='210' y='70' ancho='170' alto='120' dibujar-si='(i&gt;0)*(i&lt;6)' fijo='si' escala='120' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='ejemplo2' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(150,310,100,20)' fijo='no' visible='si' imagen='imagen1/otroejemplo.png' acci&oacute;n='calcular' par&aacute;metro='i=(i&lt;=6)?i+1:i\n\na1=ent(500*rnd)\na=(a1=0)?a1+5:a1\nb1=ent(20*rnd+1970)\nb=(b1=0)?b1+5:b1\nc1=ent(20*rnd+20)\nc=(c1=0)?c1+5:c1\nd1=ent(20*rnd+20)\nd=(d1=0)?d1+5:d1\ne1=ent(5*rnd)\ne=(e1=0)?e1+1:e1\n \n\n\n\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='(i&lt;6)*(i&gt;0)' pos_mensajes='centro'">
+   <param name="C_02" value="id='inicio' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(150,(i=6)?310:200000,80,20)' visible='no' imagen='imagen1/repetir.png' acci&oacute;n='calcular' par&aacute;metro='i=0' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='play' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(110,217,20,20)' visible='no' imagen='imagen1/play.png' acci&oacute;n='calcular' par&aacute;metro='i=(i&lt;=6)?i+1:i\n' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='i=0' pos_mensajes='centro'">
+   <param name="A_01" value="id='a1' constante='si' expresi&oacute;n='ent(500*rnd)' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='a' constante='si' expresi&oacute;n='(a1=0)?a1+5:a1' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='b1' constante='si' expresi&oacute;n='ent(20*rnd+1970)' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='b' constante='si' expresi&oacute;n='(b1=0)?b1+5:b1' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='c1' constante='si' expresi&oacute;n='ent(20*rnd+20)' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='c' constante='si' expresi&oacute;n='(c1=0)?c1+5:c1' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='d1' constante='si' expresi&oacute;n='ent(20*rnd+20)' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='d' constante='si' expresi&oacute;n='(d1=0)?d1+2:d1' evaluar='una-sola-vez'">
+   <param name="A_09" value="id='e1' constante='si' expresi&oacute;n='ent(5*rnd)' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='e' constante='si' expresi&oacute;n='(e1=0)?e1+1:e1' evaluar='una-sola-vez'">
+   <param name="G_01" value="espacio='fondo' tipo='texto' color='blanco' dibujar-si='i=0' expresi&oacute;n='[20,35]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red255\green102\blue0;\red255\green255\blue255;}\f1\fs32\cf0 Hasta  ahora has trabajado con los n\u250 meros\par naturales y las fracciones\par \par No son los \u250 nicos n\u250 meros que existen\par \par Existen situaciones en las que hay que utilizar \par otros n\u250 meros que llamaremos \b\ul enteros\b0\ulnone\par \par \par \par Pulsa aqu\u237            y ver\u225 s esas situaciones \fs24\b\par \par \par Lee atentamente lo que se te indica en cada caso\cf1\f4\fs24\b0\par \par \par}' fuente='Arial,PLAIN,16'">
+   <param name="G_02" value="espacio='enunciado' tipo='texto' color='azul' dibujar-si='(i&gt;=1)&amp;(i&lt;=5)' expresi&oacute;n='[25,15]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\f1\fs52\cf0\u191 Crees que es lo mismo?\cf1\f2\fs24\par}' fuente='Arial,PLAIN,26'">
+   <param name="G_03" value="espacio='imagen1' tipo='imagen' dibujar-si='i=1' coord_abs='si' expresi&oacute;n='(0,0)' archivo='imagenes3/tener_dinero.jpg'">
+   <param name="G_04" value="espacio='imagen2' tipo='imagen' dibujar-si='i=1' coord_abs='si' expresi&oacute;n='(0,0)' archivo='imagenes3/deber_dinero.jpg'">
+   <param name="G_05" value="espacio='fondo' tipo='texto' color='0000cc' dibujar-si='i=1' expresi&oacute;n='[10,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red0\green255\blue255;}\cf0\f1\fs24\b TENER {\*\mjaformula{\expr a}} \u8364 \par \par Escribiremos \fs32  +{\*\mjaformula{\expr a}} \fs24\u8364 \par                        \u243    \fs32 {\*\mjaformula{\expr a}} \fs24\u8364 \cf1\f3\fs24\b0\par}' fuente='Arial,BOLD,12' decimales='0'">
+   <param name="G_06" value="espacio='fondo' tipo='texto' color='rojo' dibujar-si='i=1' expresi&oacute;n='[210,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red238\green0\blue0;\red255\green102\blue0;\red255\green0\blue0;}\f1\fs24\b\cf0 DEBER {\*\mjaformula{\expr a}} \u8364 \par \par Escribiremos   \fs32{\*\mjaformula{\expr -a}}\fs24  \u8364 \cf1\par           \cf2\f3\fs24\b0\par}' fuente='Arial,BOLD,12' decimales='0'">
+   <param name="G_07" value="espacio='imagen1' tipo='imagen' dibujar-si='i=2' expresi&oacute;n='(-0.75,0.5)' archivo='imagenes3/desierto2.jpg'">
+   <param name="G_08" value="espacio='imagen2' tipo='imagen' dibujar-si='i=2' expresi&oacute;n='(-0.8,0.5)' archivo='imagenes3/nevada.jpg'">
+   <param name="G_09" value="espacio='fondo' tipo='texto' color='turquesa' dibujar-si='i=2' expresi&oacute;n='[10,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red0\green255\blue255;}\cf0\f1\fs24\b LA TEMPERATURA \par ALCANZ\u211  LOS  {\*\mjaformula{\expr d}}\u186 \par \par Escribiremos \fs32 +{\*\mjaformula{\expr d}} \fs24\par                       \u243    \fs32{\*\mjaformula{\expr d}}\fs24  \cf1\f3\fs24\b0\par}' fuente='Arial,BOLD,12' decimales='0'">
+   <param name="G_10" value="espacio='fondo' tipo='texto' color='ee0000' dibujar-si='i=2' expresi&oacute;n='[210,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red255\green0\blue0;\red238\green0\blue0;}\f1\fs24\b LA TEMPERATURA\par ALCANZ\u211  LOS {\*\mjaformula{\expr d}}\u186 \par BAJO CERO\par \par Escribiremos   \fs32{\*\mjaformula{\expr -d}}\u186 \cf0\fs36\b0\par           \cf1\f4\fs24\par}' fuente='Arial,BOLD,12' decimales='0'">
+   <param name="G_11" value="espacio='imagen1' tipo='imagen' dibujar-si='i=3' expresi&oacute;n='(-0.7,0.5)' archivo='imagenes3/despues_cristo.jpg'">
+   <param name="G_12" value="espacio='imagen2' tipo='imagen' dibujar-si='i=3' expresi&oacute;n='(-0.7,0.5)' archivo='imagenes3/antes_cristo.jpg'">
+   <param name="G_13" value="espacio='fondo' tipo='texto' color='turquesa' dibujar-si='i=3' expresi&oacute;n='[10,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red0\green0\blue204;\red0\green255\blue255;}\f1\fs24\b\cf0 CONSTRU\u205 DO EN EL \par A\u209 O {\*\mjaformula{\expr b}} DESPU\u201 S\par DE CRISTO\par \par Escribiremos \fs32 +{\*\mjaformula{\expr b}} \fs24\par                        \u243   \fs32 {\*\mjaformula{\expr b}} \cf1\f3\fs24\b0\par}' fuente='Arial,BOLD,12' decimales='0'">
+   <param name="G_14" value="espacio='fondo' tipo='texto' color='ff6600' dibujar-si='i=3' expresi&oacute;n='[210,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red238\green0\blue0;\red255\green102\blue0;}\f1\fs24\b\cf0 CONSTRU\u205 DO EN EL \par A\u209 O {\*\mjaformula{\expr b}} ANTES \par DE CRISTO\cf1\par \par \cf0 Escribiremos   \fs32{\*\mjaformula{\expr -b}}\fs24\cf1\par           \f3\fs24\b0\par}' fuente='Arial,BOLD,12' decimales='0'">
+   <param name="G_15" value="espacio='imagen1' tipo='imagen' dibujar-si='i=4' expresi&oacute;n='(-0.75,0.5)' archivo='imagenes3/globo2.jpg'">
+   <param name="G_16" value="espacio='imagen2' tipo='imagen' dibujar-si='i=4' coord_abs='si' expresi&oacute;n='(0,0)' archivo='imagenes3/fondo_marino.jpg'">
+   <param name="G_17" value="espacio='fondo' tipo='texto' color='0000cc' dibujar-si='i=4' expresi&oacute;n='[10,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24\b EL GLOBO EST\u193   A\par {\*\mjaformula{\expr c}} m DE ALTURA\par \par Escribiremos \fs32 +{\*\mjaformula{\expr c}} \fs24\par                       \u243    \fs32{\*\mjaformula{\expr c}} \f3\fs24\b0\par}' fuente='Arial,BOLD,12' decimales='0'">
+   <param name="G_18" value="espacio='fondo' tipo='texto' color='ff6600' dibujar-si='i=4' expresi&oacute;n='[210,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red238\green0\blue0;\red255\green102\blue0;}\f1\fs24\b\cf0 EL BUZO  EST\u193  A  \par {\*\mjaformula{\expr c}} m BAJO EL \par NIVEL DEL MAR\par \par Escribiremos   \fs32{\*\mjaformula{\expr -c}}\fs24\cf1\par           \f3\fs24\b0\par}' fuente='Arial,BOLD,12' decimales='0'">
+   <param name="G_19" value="espacio='imagen1' tipo='imagen' dibujar-si='i=5' expresi&oacute;n='(-0.7,0.5)' archivo='imagenes3/rascacielos2.jpg'">
+   <param name="G_20" value="espacio='imagen2' tipo='imagen' dibujar-si='i=5' expresi&oacute;n='(-0.7,0.5)' archivo='imagenes3/parking.jpg'">
+   <param name="G_21" value="espacio='fondo' tipo='texto' color='0000cc' dibujar-si='i=5' expresi&oacute;n='[10,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs24\b HAN SUBIDO HASTA LA \par PLANTA {\*\mjaformula{\expr e}} \par \par Escribiremos \fs32 +{\*\mjaformula{\expr e}} \fs24\par                       \u243   \fs32  {\*\mjaformula{\expr e}} \f3\fs24\b0\par}' fuente='Arial,BOLD,12' decimales='0'">
+   <param name="G_22" value="espacio='fondo' tipo='texto' color='ff6600' dibujar-si='i=5' expresi&oacute;n='[210,200]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red238\green0\blue0;\red255\green102\blue0;}\f1\fs24\b\cf0 HA BAJADO AL   \par S\u211 TANO {\*\mjaformula{\expr e}} \par \par Escribiremos   \fs32{\*\mjaformula{\expr -e}}\fs24\cf1\par           \f3\fs24\b0\par}' fuente='Arial,BOLD,12' decimales='0'">
+   <param name="G_23" value="espacio='fondo' tipo='texto' color='blanco' dibujar-si='i&gt;=6' expresi&oacute;n='[15,30]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Courier New;}{\colortbl\red255\green102\blue0;\red255\green255\blue255;}\f1\fs32\cf0 Has visto distintas situaciones en las que\par debes usar los llamados n\u250 meros enteros\par \par No s\u243 lo debes fijarte en la cantidad sino \par tambi\u233 n en el signo\b\ul\par El signo nos da mucha informaci\u243 n\b0\ulnone\par \par SI has entendido pasa a la siguiente  escena \par en ella deber\u225 s aplicar lo aprendido \par \par Si tienes dudas pulsa \ul repetir\ulnone  para ver de nuevo \par los ejemplos\cf1\f4\fs24\par \par \par}' fuente='Arial,PLAIN,16'">
+</ajs> </td>
+          </tr>
+          <tr> 
+            <td valign="bottom"> 
+
+              <table width="100%" border="0" cellpadding="6" cellspacing="0" bordercolor="#999966" bgcolor="#eeeedd" class="recuadro">
+                <tr> 
+                  <td bordercolor="#eeeedd" valign="middle"> <div align="right"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"> 
+                      <script type='text/javascript' src='lib/descartes-min.js'></script>
+                       </font>Pulsa para hacer unos ejercicios </div></td>
+                  <td width="50" height="50" align="center" valign="middle" bordercolor="#eeeedd"><ajs name="Descartes" width=39 height=39
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar,lib/Descartes5_Sonido.jar,lib/Descartes5_Algebra.jar"
+        MAYSCRIPT> <param name="tama&ntilde;o" value="39x39"> <param name="sonido" value="s&iacute;"> <param name="&aacute;lgebra" value="s&iacute;"> <param name="decimal_symbol" value=","> <param name="antialias" value="s&iacute;"> <param name="nombre" value="Descartes"> <param name="Versi&oacute;n" value="5.1, 2013-07-13"> <param name="Idioma" value="espa&ntilde;ol"> <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no"> <param name="E_01" value="tipo='R2' fijo='si' imagen='imagen1/paradescartes2.png' despl_imagen='arr-izq' fondo='eeeedd' red='no' red10='no' ejes='no' texto='no'"> <param name="C_01" value="id='g' tipo='gr&aacute;fico' color='azul' color-int='rojo' imagen='imagen1/paradescartes.png' dibujar-si='c=0'"> <param name="A_01" value="id='e2' evento='s&iacute;' condici&oacute;n='clic_izquierdo=1' acci&oacute;n='calcular' par&aacute;metro='c=1' ejecuci&oacute;n='siempre' pos_mensajes='centro'"> <param name="A_02" value="id='e1' evento='s&iacute;' condici&oacute;n='clic_izquierdo=1' acci&oacute;n='abrir Escena' par&aacute;metro='1q3_ejercicios_resueltos_1a.htm' ejecuci&oacute;n='siempre' pos_mensajes='centro'"> <param name="A_03" value="id='e3' evento='s&iacute;' condici&oacute;n='clic_izquierdo=1' acci&oacute;n='calcular' par&aacute;metro='c=0' ejecuci&oacute;n='siempre' pos_mensajes='centro'"> <param name="A_04" value="id='bloqueo_g' algoritmo='si' evaluar='siempre' hacer='g.x=0;g.y=0'"> 
+                      </ajs></td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8"> </td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="8" width="8"></td>
+      <td background="imagen1/bor3.gif" height="8"></td>
+      <td background="imagen1/es3.gif" height="8" width="8"></td>
+    </tr>
+</table>
+
+<table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td width="684"><div align="right"> </div></td>
+      <td width="30"><div align="center"><a href="1quincena3_presenta_1a.htm" target="_parent" onMouseOver="MM_swapImage('atras','','imagen1/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/atras.png" alt="anterior" name="atras" width="25" height="25" border="0"></a></div></td>
+      <td width="30"> 
+        <div align="center"><a href="1quincena3_contenidos_1b.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<applet name="Recorridos en la circunferencia"
+        code="Descartes.class"
+        codebase="../../"
+        archive="Descartes3.jar"
+        MAYSCRIPT
+        width=362 height=362 style="border: 1 solid #cccc99">
+   <param name="nombre" value="Recorridos en la circunferencia">
+   <param name="Versi&oacute;n" value="3.893, 2007-02-12">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="id='fondo' fijo='si' escala='120' O.y='40' y='20' alto='342' despl_imagen='arr-izq' fondo='eeeecc' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_01" value="id='texto' fijo='si' escala='120' O.x='-73' O.y='83' x='185' y='90' ancho='169' alto='193' despl_imagen='arr-izq' fondo='blanco' red='no' red10='no' ejes='no' texto='no' dibujar-si='ang#0'">
+   <param name="E_02" value="id='imagen' fijo='si' escala='120' O.x='-73' O.y='83' x='8' y='90' ancho='169' alto='193' despl_imagen='arr-izq' fondo='blanco' red='ffda99' red10='no' ejes='gris' texto='no' dibujar-si='ang#0'">
+   <param name="E_03" value="id='escoge' fijo='si' alto='20' despl_imagen='arr-izq' fondo='fff7d7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="tipo='num&eacute;rico' id='ang' interfaz='men&uacute;' regi&oacute;n='interior' espacio='escoge' expresi&oacute;n='(302,0,60,20)' visible='no' opciones='-,60&ordm;,45&ordm;' acci&oacute;n='calcular' par&aacute;metro='p=0' pos_mensajes='centro'">
+   <param name="C_01" value="tipo='num&eacute;rico' id='adelante' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(320,280,25,25)' visible='si' imagen='../imagen1/siguiente.png' dibujar-si='(ang#0)&amp;(p&lt;fin)' acci&oacute;n='calcular' par&aacute;metro='p=p+1' pos_mensajes='centro'">
+   <param name="C_02" value="tipo='num&eacute;rico' id='atras' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='fondo' expresi&oacute;n='(285,280,25,25)' visible='si' imagen='../imagen1/anterior.png' dibujar-si='(ang#0)&amp;(p&gt;0)' acci&oacute;n='calcular' par&aacute;metro='p=p-1' pos_mensajes='centro'">
+   <param name="A_00" value="id='fin' hacer='fin=(ang=1)?4:(ang=2?5:3)' evaluar='siempre' algoritmo='si'">
+   <param name="G_00" value="espacio='texto' tipo='texto' dibujar-si='(p=fin)&amp;(ang#0)' color='azul' expresi&oacute;n='[2,120]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Escoge otro valor del \u225 ngulo\f2\fs24\par}' fuente='SansSerif,PLAIN,12'">
+   <param name="G_01" value="espacio='escoge' tipo='texto' color='grisObscuro' expresi&oacute;n='[20,2]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24 Elige un valor del \u225 ngulo\f2\fs24\par}' fuente='SansSerif,PLAIN,12'">
+   <param name="G_02" value="espacio='fondo' tipo='texto' dibujar-si='ang#0' color='rojo' expresi&oacute;n='[20,280]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Courier New;}\f1\fs24 El n\u250 mero de pasos en cada opci\u243 n\par se define en el algoritmo fin\par Este es el paso p={\*\mjaformula{\expr p\decimals 2\fixed0}} \par}' fuente='Monospaced,PLAIN,12'">
+</applet>

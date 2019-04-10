@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Ejercicios resueltos: Ordenar y aproximar</title>
+<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body><ajs name="redondeo" width=360 height=300
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="360x300">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="redondeo">
+   <param name="Versi&oacute;n" value="5.101, 2013-07-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='s&iacute;' O.y='50' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='escribe' tipo='num&eacute;rico' interfaz='campo de texto' regi&oacute;n='interior' expresi&oacute;n='(100,120,110,25)' decimales='de' fijo='no' visible='s&iacute;' acci&oacute;n='calcular' par&aacute;metro='err=(redondeo(num)/10^de#escribe)'">
+   <param name="C_02" value="id='inicio' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(130,220,100,22)' valor='1' fijo='s&iacute;' visible='s&iacute;' imagen='imagen1/otroejemplo.png' acci&oacute;n='calcular' par&aacute;metro='ver=2\nerr=2' dibujar-si='(err=0)'">
+   <param name="A_01" value="id='escrs' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='12' expresi&oacute;n='escrs[0]=&squot; millon&eacute;simas&squot;;escrs[1]=&squot; cienmil&eacute;simas&squot;;escrs[2]=&squot; diezmil&eacute;simas&squot;;escrs[3]=&squot; mil&eacute;simas&squot;;escrs[4]=&squot; cent&eacute;simas&squot;;escrs[5]=&squot; d&eacute;cimas&squot;;escrs[6]=&squot; unidades&squot;;escrs[7]=&squot; decenas&squot;;escrs[8]=&squot; centenas&squot;;escrs[9]=&squot; unidades de millar&squot;;escrs[10]=&squot; decenas de millar&squot;;escrs[11]=&squot; centenas de millar&squot;;'">
+   <param name="A_02" value="id='redondeo(x)' expresi&oacute;n='ent((x+5*10^(e0-1))/10^(e0))*10^(e0)'">
+   <param name="A_03" value="id='troz(x,y)' expresi&oacute;n='ent((x%10^(3*y))/10^(3*(y-1)))'">
+   <param name="A_04" value="id='ver' constante='s&iacute;' expresi&oacute;n='2' evaluar='una-sola-vez'">
+   <param name="A_05" value="id='err' constante='s&iacute;' expresi&oacute;n='2' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='elig2' evento='s&iacute;' condici&oacute;n='ver=2' acci&oacute;n='calcular' par&aacute;metro='cif=ent(5*rnd)+3\nnum=ent(10^cif*rnd)+1000\ne0=ent(log10(num)*rnd)+1\nde=ent(5*rnd)+1\nelegido=escrs[e0+6-de]\nescribe=num/10^de\nesc=escribe\n\ncifra=ent(num/10^(e0))%10\ncifra2=ent(num/10^(e0-1))%10\nduda=(cifra2&lt;5)?&squot;menor que&squot;:((cifra2=5)?&squot;igual a&squot;:&squot;mayor que&squot;)\n\nver=0' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="A_07" value="id='trozos' algoritmo='s&iacute;' evaluar='siempre' hacer='tr1=(troz(num,1)&lt;100)?((troz(num,1)&lt;10)?&squot;00&squot;+troz(num,1):&squot;0&squot;+troz(num,1)):troz(num,1) ;tr2=(troz(num,2)&lt;100)?((troz(num,2)&lt;10)?&squot;00&squot;+troz(num,2):&squot;0&squot;+troz(num,2)):troz(num,2);tr3=(troz(num,3)&lt;100)?((troz(num,3)&lt;10)?&squot;00&squot;+troz(num,3):&squot;0&squot;+troz(num,3)):troz(num,3);tr4=(troz(num,4)&lt;100)?((troz(num,4)&lt;10)?&squot;00&squot;+troz(num,4):&squot;0&squot;+troz(num,4)):troz(num,4);'">
+   <param name="G_01" value="tipo='texto' color='grisObscuro' expresi&oacute;n='[20,70]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28 Redondea el n\u250 mero{\*\mjaformula{\expr esc\decimals de\fixed1}}\par a las{\*\mjaformula{\expr elegido\decimals 2\fixed1}}\f2\fs24\par }' fuente='SansSerif,PLAIN,14' decimales='0' fijo='s&iacute;'">
+   <param name="G_02" value="tipo='texto' color='ff6600' dibujar-si='(err=1)' expresi&oacute;n='[10,180]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs28 La cifra de las{\*\mjaformula{\expr elegido\decimals 2\fixed1}} es {\*\mjaformula{\expr cifra\decimals 0\fixed1}}.\par La cifra siguiente es {\*\mjaformula{\expr cifra2\decimals 0\fixed1}} que es {\*\mjaformula{\expr duda\decimals 2\fixed1}} 5.\par Luego el n\u250 mero redondeado es {\*\mjaformula{\expr redondeo(num)/10^de\decimals de\fixed0}}\fs32\par \par Escribe el n\u250 mero correcto\f3\fs24\par }' fuente='SansSerif,PLAIN,14' fijo='s&iacute;'">
+</ajs>
+</body>
+</html>

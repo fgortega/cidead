@@ -1,0 +1,343 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Fracciones</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function MM_reloadPage(init) { //reloads the window if Nav4 resized
+if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x; if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_nbGroup(event, grpName) { //v6.0
+var i,img,nbArr,args=MM_nbGroup.arguments;
+if (event == "init" && args.length > 2) {
+if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+nbArr[nbArr.length] = img;
+for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = args[i+1];
+nbArr[nbArr.length] = img;
+} }
+} else if (event == "over") {
+document.MM_nbOver = nbArr = new Array();
+for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+nbArr[nbArr.length] = img;
+}
+} else if (event == "out" ) {
+for (i=0; i < document.MM_nbOver.length; i++) {
+img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+} else if (event == "down") {
+nbArr = document[grpName];
+if (nbArr)
+for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+document[grpName] = nbArr = new Array();
+for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+if (!img.MM_up) img.MM_up = img.src;
+img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+nbArr[nbArr.length] = img;
+} }
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+
+</script>
+<style type="text/css"><!--
+.parakaos {font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+background-color: #F1F1F1;
+text-align: left;
+display: block;
+border: thin dashed #FF6600;
+padding: 4px;
+height: auto;
+width: 300px;}
+-->
+  </style>
+<link href="paracidead1.css" rel="stylesheet" type="text/css">
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body onload="MM_preloadImages('imagen1/paraantes3.png','imagen1/paraconte.png','imagen1/atrasb.png','imagen1/paraantes2.png','imagen1/paracont2.png','imagen1/adelanteb.png','imagen1/atrasb.png','imagen1/paraantes3.png','imagen1/paracont3.png','imagen1/paraejer.png','imagen1/paraejer2.png','imagen1/paraeval3.png','imagen1/paraeval2.png','imagen1/paratut3.png','imagen1/paratut2.png','imagen1/paramas3.png','imagen1/paramas2.png','imagen1/paraejer3.png')" bgcolor="#f1f1f1">
+<div id="Layer1" style="position: absolute; left: 0px; top: 0px; width: 800px; height: 369px; z-index: 1;">
+  <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="1quincena5_presenta_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','antes','imagen1/paraantes3.png',1)" onmouseover="MM_nbGroup('over','antes','imagen1/paraantes2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraantes.png" alt="" name="antes" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="1quincena5_contenidos_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','contenidos','imagen1/paracont3.png',1)" onMouseOver="MM_nbGroup('over','contenidos','imagen1/paracont2.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paraconte.png" alt="" name="contenidos" onload="" border="0"></a></td>
+      <td><a href="javascript:;" target="_parent" onclick="MM_nbGroup('down','group1','ejercicios','imagen1/paraejer3.png',1)" onmouseover="MM_nbGroup('over','ejercicios','imagen1/paraejer2.png','imagen1/paraejer3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraejer3.png" alt="" name="ejercicios" onload="MM_nbGroup('init','group1','ejercicios','imagen1/paraejer.png',1)" border="0"></a></td>
+      <td><a href="1quincena5_autoeval_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','autoeval','imagen1/paraeval3.png',1)" onmouseover="MM_nbGroup('over','autoeval','imagen1/paraeval2.png','',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paraeval.png" alt="" name="autoeval" width="130" height="18" border="0" onload=""></a></td>
+      <td><a href="1quincena5_tutor_1a.htm" target="_parent" onClick="MM_nbGroup('down','group1','paratutor','imagen1/paratut3.png',1)" onMouseOver="MM_nbGroup('over','paratutor','imagen1/paratut2.png','',1)" onMouseOut="MM_nbGroup('out')"><img src="imagen1/paratut.png" alt="" name="paratutor" onload="" border="0"></a></td>
+      <td><a href="1quincena5_sabermas_1a.htm" target="_parent" onclick="MM_nbGroup('down','group1','paramas','imagen1/paramas3.png',1)" onmouseover="MM_nbGroup('over','paramas','imagen1/paramas2.png','imagen1/paramas3.png',1)" onmouseout="MM_nbGroup('out')"><img src="imagen1/paramas.png" alt="" name="paramas" onload="" border="0"></a></td>
+    </tr>
+  </table>
+  <table align="center" border="0" cellspacing="0" height="8" width="800">
+    <tr>
+      <td background="imagen1/es1.gif" height="8" width="8"></td>
+      <td background="imagen1/bor1.gif" height="8"></td>
+      <td background="imagen1/es2.gif" height="8" width="8"></td>
+    </tr>
+  </table>
+  <table width="800" height="85%" border="0" align="center" cellspacing="0">
+    <tr height="100%">
+      <td background="imagen1/bor4.gif" width="8"></td>
+      <td bgcolor="#ffffff" valign="top">
+        <table width="100%" cellpadding="4" cellspacing="9">
+          <tr>
+            <td width="48%" valign="top"> <font color="#ff6600" face="Geneva, Arial, Helvetica, sans-serif" size="4"><strong><img src="imagen1/ejercicios.png" width="50" height="38" align="middle">Para
+              practicar </strong></font></td>
+            <td width="52%" valign="bottom">
+              <div align="right"><font color="#666666" face="Geneva, Arial, Helvetica, sans-serif" size="3"><strong>Ejercicios
+                diversos</strong></font></div>
+            </td>
+          </tr>
+          <tr bgcolor="e7e7d7">
+            <td valign="middle" class="recuadro" colspan="2" bordercolor="#FFFFFF">
+              <div align="center">
+                <div align="left">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" bordercolor="#999966" bgcolor="#eeeedd">
+                    <tr>
+                      <td colspan="2" bordercolor="ff7000" bgcolor="ffeebb" class="recuadronaranja">
+                        <div align="center">
+<table width="100%" cellspacing="0" cellpadding="4">
+                            <tr>
+                              <td><div align="center"><font size="2">Elige opción:</font><br>
+                                  <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="1quincena5_ejercicios_1b.htm" target="_parent"></a></font><font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="1quincena5_ejercicios_1b.htm" target="_parent"><img src="imagen1/unor.png" width="22" height="22" border="0">
+                                  </a><img src="imagen1/dosv.png" width="22" height="22" border="0">
+                                  <a href="1quincena5_ejercicios_1d.htm" target="_parent">
+                                  <img src="imagen1/tresr.png" width="22" height="22" border="0">
+                                  </a><a href="1quincena5_ejercicios_1e.htm" target="_parent"><img src="imagen1/cuatror.png" width="22" height="22" border="0"></a>
+                                  </font> </div></td>
+                              <td width="566" bgcolor="#fffada"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Estas
+                                siete fracciones son solamente de tres valores
+                                diferentes como máximo.<br>
+                                Junta en el mismo rectángulo las fracciones
+                                que representen el mismo valor.</font></td>
+                            </tr>
+                          </table>
+
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td width="26%" bordercolor="ff7000" bgcolor="e7e7d7"> <div align="right">
+                          <div align="center">
+                            <table width="100%" cellspacing="0" cellpadding="6">
+                              <tr>
+                                <td height="208" valign="top">
+                                  <p align="left"><font color="#0000CC" size="2" face="Verdana, Arial, Helvetica, sans-serif">Para
+                                    comprobar si dos fracciones son equivalentes
+                                    nos valemos de los <b>productos cruzados</b>.</font>
+                                  </p>
+                                  </td>
+                              </tr>
+                            </table>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                            </font></div>
+                        </div></td>
+                      <td bordercolor="ff7000" width="74%" bgcolor="e7e7d7"> <div align="center">
+                          <ajs name="iguales" width=575 height=310
+        code="Descartes.class">
+ <script>
+    document.write('<param name="docBase" value="'+window.location.href+'">');
+ </script>
+   <param name="jnlp_href" value="./lib/Descartes5.jnlp">
+   <param name="tama&ntilde;o" value="575x310">
+   <param name="decimal_symbol" value=",">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="iguales">
+   <param name="Versi&oacute;n" value="5.3.02, 2013-12-06">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' id='E' fijo='s&iacute;' escala='95' despl_imagen='arr-izq' fondo='60ffffff' red='no' red10='no' ejes='no' texto='no' eje-x='no' eje-y='no'">
+   <param name="C_01" value="id='n1' tipo='gr&aacute;fico' espacio='E' color='azul' color-int='rojo' tama&ntilde;o='31' expresi&oacute;n='[-1.8,-1.35]' dibujar-si='0'">
+   <param name="C_02" value="id='n2' tipo='gr&aacute;fico' espacio='E' color='azul' color-int='rojo' tama&ntilde;o='31' expresi&oacute;n='[-1.1,-1.35]' dibujar-si='0'">
+   <param name="C_03" value="id='n3' tipo='gr&aacute;fico' espacio='E' color='azul' color-int='rojo' tama&ntilde;o='31' expresi&oacute;n='[-0.4,-1.35]' dibujar-si='0'">
+   <param name="C_04" value="id='n4' tipo='gr&aacute;fico' espacio='E' color='azul' color-int='rojo' tama&ntilde;o='31' expresi&oacute;n='[0.3,-1.35]' dibujar-si='0'">
+   <param name="C_05" value="id='n5' tipo='gr&aacute;fico' espacio='E' color='azul' color-int='rojo' tama&ntilde;o='31' expresi&oacute;n='[1,-1.35]' dibujar-si='0'">
+   <param name="C_06" value="id='n6' tipo='gr&aacute;fico' espacio='E' color='azul' color-int='rojo' tama&ntilde;o='31' expresi&oacute;n='[1.7,-1.35]' dibujar-si='0'">
+   <param name="C_07" value="id='n7' tipo='gr&aacute;fico' color='azul' color-int='rojo' tama&ntilde;o='31' expresi&oacute;n='[2.4,-1.35]' dibujar-si='0'">
+   <param name="C_08" value="id='n8' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E' nombre='Otro ejercicio' expresi&oacute;n='(0,285,90,25)' fijo='s&iacute;' visible='s&iacute;' fuente puntos='14' acci&oacute;n='inicio' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="A_01" value="id='v' expresi&oacute;n='az1*((vaz1#vaz2)*az2+(vaz1#vaz3)*az3+(vaz1#vaz4)*az4+(vaz1#vaz5)*az5+(vaz1#vaz6)*az6+(vaz1#vaz7)*az7)+az2*((vaz2#vaz3)*az3+(vaz2#vaz4)*az4+(vaz2#vaz5)*az5+(vaz2#vaz6)*az6+(vaz2#vaz7)*az7)+az3*((vaz3#vaz4)*az4+(vaz3#vaz5)*az5+(vaz3#vaz6)*az6+(vaz3#vaz7)*az7)+az4*((vaz4#vaz5)*az5+(vaz4#vaz6)*az6+(vaz4#vaz7)*az7)+az5*((vaz5#vaz6)*az6+(vaz5#vaz7)*az7)+az6*(vaz6#vaz7)*az7+ve1*((vve1#vve2)*ve2+(vve1#vve3)*ve3+(vve1#vve4)*ve4+(vve1#vve5)*ve5+(vve1#vve6)*ve6+(vve1#vve7)*ve7)+ve2*((vve2#vve3)*ve3+(vve2#vve4)*ve4+(vve2#vve5)*ve5+(vve2#vve6)*ve6+(vve2#vve7)*ve7)+ve3*((vve3#vve4)*ve4+(vve3#vve5)*ve5+(vve3#vve6)*ve6+(vve3#vve7)*ve7)+ve4*((vve4#vve5)*ve5+(vve4#vve6)*ve6+(vve4#vve7)*ve7)+ve5*((vve5#vve6)*ve6+(vve5#vve7)*ve7)+ve6*(vve6#vve7)*ve7+am1*((vam1#vam2)*am2+(vam1#vam3)*am3+(vam1#vam4)*am4+(vam1#vam5)*am5+(vam1#vam6)*am6+(vam1#vam7)*am7)+am2*((vam2#vam3)*am3+(vam2#vam4)*am4+(vam2#vam5)*am5+(vam2#vam6)*am6+(vam2#vam7)*am7)+am3*((vam3#vam4)*am4+(vam3#vam5)*am5+(vam3#vam6)*am6+(vam3#vam7)*am7)+am4*((vam4#vam5)*am5+(vam4#vam6)*am6+(vam4#vam7)*am7)+am5*((vam5#vam6)*am6+(vam5#vam7)*am7)+am6*(vam6#vam7)*am7'">
+   <param name="A_02" value="id='z' expresi&oacute;n='az1+az2+az3+az4+az5+az6+az7+ve1+ve2+ve3+ve4+ve5+ve6+ve7+am1+am2+am3+am4+am5+am6+am7'">
+   <param name="A_03" value="id='w1' expresi&oacute;n='az1*((vaz1=vve2)*ve2+(vaz1=vve3)*ve3+(vaz1=vve4)*ve4+(vaz1=vve5)*ve5+(vaz1=vve6)*ve6+(vaz1=vve7)*ve7+(vaz1=vam2)*am2+(vaz1=vam3)*am3+(vaz1=vam4)*am4+(vaz1=vam5)*am5+(vaz1=vam6)*am6+(vaz1=vam7)*am7)+az2*((vaz2=vve1)*ve1+(vaz2=vve3)*ve3+(vaz2=vve4)*ve4+(vaz2=vve5)*ve5+(vaz2=vve6)*ve6+(vaz2=vve7)*ve7+(vaz2=vam1)*am1+(vaz2=vam3)*am3+(vaz2=vam4)*am4+(vaz2=vam5)*am5+(vaz2=vam6)*am6+(vaz2=vam7)*am7)+az3*((vaz3=vve1)*ve1+(vaz3=vve2)*ve2+(vaz3=vve4)*ve4+(vaz3=vve5)*ve5+(vaz3=vve6)*ve6+(vaz3=vve7)*ve7+(vaz3=vam1)*am1+(vaz3=vam2)*am2+(vaz3=vam4)*am4+(vaz3=vam5)*am5+(vaz3=vam6)*am6+(vaz3=vam7)*am7)+az4*((vaz4=vve1)*ve1+(vaz4=vve2)*ve2+(vaz4=vve3)*ve3+(vaz4=vve5)*ve5+(vaz4=vve6)*ve6+(vaz4=vve7)*ve7+(vaz4=vam1)*am1+(vaz4=vam2)*am2+(vaz4=vam3)*am3+(vaz4=vam5)*am5+(vaz4=vam6)*am6+(vaz4=vam7)*am7)+az5*((vaz5=vve1)*ve1+(vaz5=vve2)*ve2+(vaz5=vve3)*ve3+(vaz5=vve4)*ve4+(vaz5=vve6)*ve6+(vaz5=vve7)*ve7+(vaz5=vam1)*am1+(vaz5=vam2)*am2+(vaz5=vam3)*am3+(vaz5=vam4)*am4+(vaz5=vam6)*am6+(vaz5=vam7)*am7)+az6*((vaz6=vve1)*ve1+(vaz6=vve2)*ve2+(vaz6=vve3)*ve3+(vaz6=vve4)*ve4+(vaz6=vve5)*ve5+(vaz6=vve7)*ve7+(vaz6=vam1)*am1+(vaz6=vam2)*am2+(vaz6=vam3)*am3+(vaz6=vam4)*am4+(vaz6=vam5)*am6+(vaz6=vam7)*am7)+az7*((vaz7=vve1)*ve1+(vaz7=vve2)*ve2+(vaz7=vve3)*ve3+(vaz7=vve4)*ve4+(vaz7=vve5)*ve5+(vaz7=vve6)*ve6+(vaz7=vam1)*am1+(vaz7=vam2)*am2+(vaz7=vam3)*am3+(vaz7=vam4)*am4+(vaz7=vam5)*am6+(vaz7=vam6)*am7)'">
+   <param name="A_04" value="id='w2' expresi&oacute;n='ve1*((vve1=vam2)*am2+(vve1=vam3)*am3+(vve1=vam4)*am4+(vve1=vam5)*am5+(vve1=vam6)*am6+(vve1=vam7)*am7)+ve2*((vve2=vam1)*am1+(vve2=vam3)*am3+(vve2=vam4)*am4+(vve2=vam5)*am5+(vve2=vam6)*am6+(vve2=vam7)*am7)+ve3*((vve3=vam1)*am1+(vve3=vam2)*am2+(vve3=vam4)*am4+(vve3=vam5)*am5+(vve3=vam6)*am6+(vve3=vam7)*am7)+ve4*((vve4=vam1)*am1+(vve4=vam2)*am2+(vve4=vam3)*am3+(vve4=vam5)*am5+(vve4=vam6)*am6+(vve4=vam7)*am7)+ve5*((vve5=vam1)*am1+(vve5=vam2)*am2+(vve5=vam3)*am3+(vve5=vam4)*am4+(vve5=vam6)*am6+(vve5=vam7)*am7)+ve6*((vve6=vam1)*am1+(vve6=vam2)*am2+(vve6=vam3)*am3+(vve6=vam4)*am4+(vve6=vam5)*am5+(vve6=vam7)*am7)+ve7*((vve7=vam1)*am1+(vve7=vam2)*am2+(vve7=vam3)*am3+(vve7=vam4)*am4+(vve7=vam5)*am5+(vve7=vam6)*am6)'">
+   <param name="A_05" value="id='v1' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)' evaluar='una-sola-vez'">
+   <param name="A_06" value="id='v2' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)' evaluar='una-sola-vez'">
+   <param name="A_07" value="id='v3' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)' evaluar='una-sola-vez'">
+   <param name="A_08" value="id='v4' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_09" value="id='v5' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_10" value="id='v6' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_11" value="id='mcd1' algoritmo='s&iacute;' evaluar='siempre' inicio='mcd1=v4+1' hacer='mcd1=mcd1-1' mientras='(v1&gt;0)*((ent(v1/mcd1)&lt;(v1/mcd1))+(ent(v4/mcd1)&lt;(v4/mcd1)))'">
+   <param name="A_12" value="id='mcd2' algoritmo='s&iacute;' evaluar='siempre' inicio='mcd2=v5+1' hacer='mcd2=mcd2-1' mientras='(v2&gt;0)*((ent(v2/mcd2)&lt;(v2/mcd2))+(ent(v5/mcd2)&lt;(v5/mcd2)))'">
+   <param name="A_13" value="id='mcd3' algoritmo='s&iacute;' evaluar='siempre' inicio='mcd3=v6+1' hacer='mcd3=mcd3-1' mientras='(v3&gt;0)*((ent(v3/mcd3)&lt;(v3/mcd3))+(ent(v6/mcd3)&lt;(v6/mcd3)))'">
+   <param name="A_14" value="id='as1' constante='s&iacute;' expresi&oacute;n='v1/mcd1' evaluar='siempre'">
+   <param name="A_15" value="id='as2' constante='s&iacute;' expresi&oacute;n='v2/mcd2' evaluar='siempre'">
+   <param name="A_16" value="id='as3' constante='s&iacute;' expresi&oacute;n='v3/mcd3' evaluar='siempre'">
+   <param name="A_17" value="id='bs1' constante='s&iacute;' expresi&oacute;n='v4/mcd1' evaluar='siempre'">
+   <param name="A_18" value="id='bs2' constante='s&iacute;' expresi&oacute;n='v5/mcd2' evaluar='siempre'">
+   <param name="A_19" value="id='bs3' constante='s&iacute;' expresi&oacute;n='v6/mcd3' evaluar='siempre'">
+   <param name="A_20" value="id='e1' constante='s&iacute;' expresi&oacute;n='(ent(rnd*10))%3' evaluar='una-sola-vez'">
+   <param name="A_21" value="id='e2' constante='s&iacute;' expresi&oacute;n='(ent(rnd*10))%3' evaluar='una-sola-vez'">
+   <param name="A_22" value="id='e3' constante='s&iacute;' expresi&oacute;n='(ent(rnd*10))%3' evaluar='una-sola-vez'">
+   <param name="A_23" value="id='e4' constante='s&iacute;' expresi&oacute;n='(ent(rnd*10))%3' evaluar='una-sola-vez'">
+   <param name="A_24" value="id='e5' constante='s&iacute;' expresi&oacute;n='(ent(rnd*10))%3' evaluar='una-sola-vez'">
+   <param name="A_25" value="id='e6' constante='s&iacute;' expresi&oacute;n='(ent(rnd*10))%3' evaluar='una-sola-vez'">
+   <param name="A_26" value="id='e7' constante='s&iacute;' expresi&oacute;n='(ent(rnd*10))%3' evaluar='una-sola-vez'">
+   <param name="A_27" value="id='p1' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_28" value="id='p2' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_29" value="id='p3' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_30" value="id='p4' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_31" value="id='p5' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_32" value="id='p6' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_33" value="id='p7' constante='s&iacute;' expresi&oacute;n='ent(rnd*10)+1' evaluar='una-sola-vez'">
+   <param name="A_34" value="id='a1' constante='s&iacute;' expresi&oacute;n='p1*(as1*(e1=0)+as2*(e1=1)+as3*(e1=2))' evaluar='siempre'">
+   <param name="A_35" value="id='a2' constante='s&iacute;' expresi&oacute;n='p2*(as1*(e2=0)+as2*(e2=1)+as3*(e2=2))' evaluar='siempre'">
+   <param name="A_36" value="id='a3' constante='s&iacute;' expresi&oacute;n='p3*(as1*(e3=0)+as2*(e3=1)+as3*(e3=2))' evaluar='siempre'">
+   <param name="A_37" value="id='a4' constante='s&iacute;' expresi&oacute;n='p4*(as1*(e4=0)+as2*(e4=1)+as3*(e4=2))' evaluar='siempre'">
+   <param name="A_38" value="id='a5' constante='s&iacute;' expresi&oacute;n='p5*(as1*(e5=0)+as2*(e5=1)+as3*(e5=2))' evaluar='siempre'">
+   <param name="A_39" value="id='a6' constante='s&iacute;' expresi&oacute;n='p6*(as1*(e6=0)+as2*(e6=1)+as3*(e6=2))' evaluar='siempre'">
+   <param name="A_40" value="id='a7' constante='s&iacute;' expresi&oacute;n='p7*(as1*(e7=0)+as2*(e7=1)+as3*(e7=2))' evaluar='siempre'">
+   <param name="A_41" value="id='b1' constante='s&iacute;' expresi&oacute;n='p1*(bs1*(e1=0)+bs2*(e1=1)+bs3*(e1=2))' evaluar='siempre'">
+   <param name="A_42" value="id='b2' constante='s&iacute;' expresi&oacute;n='p2*(bs1*(e2=0)+bs2*(e2=1)+bs3*(e2=2))' evaluar='siempre'">
+   <param name="A_43" value="id='b3' constante='s&iacute;' expresi&oacute;n='p3*(bs1*(e3=0)+bs2*(e3=1)+bs3*(e3=2))' evaluar='siempre'">
+   <param name="A_44" value="id='b4' constante='s&iacute;' expresi&oacute;n='p4*(bs1*(e4=0)+bs2*(e4=1)+bs3*(e4=2))' evaluar='siempre'">
+   <param name="A_45" value="id='b5' constante='s&iacute;' expresi&oacute;n='p5*(bs1*(e5=0)+bs2*(e5=1)+bs3*(e5=2))' evaluar='siempre'">
+   <param name="A_46" value="id='b6' constante='s&iacute;' expresi&oacute;n='p6*(bs1*(e6=0)+bs2*(e6=1)+bs3*(e6=2))' evaluar='siempre'">
+   <param name="A_47" value="id='b7' constante='s&iacute;' expresi&oacute;n='p7*(bs1*(e7=0)+bs2*(e7=1)+bs3*(e7=2))' evaluar='siempre'">
+   <param name="A_48" value="id='az1' constante='s&iacute;' expresi&oacute;n='(n1.x&gt;-3)*(n1.x&lt;-1)*(n1.y&lt;1.6)*(n1.y&gt;-1)' evaluar='siempre'">
+   <param name="A_49" value="id='az2' constante='s&iacute;' expresi&oacute;n='(n2.x&gt;-3)*(n2.x&lt;-1)*(n2.y&lt;1.6)*(n2.y&gt;-1)' evaluar='siempre'">
+   <param name="A_50" value="id='az3' constante='s&iacute;' expresi&oacute;n='(n3.x&gt;-3)*(n3.x&lt;-1)*(n3.y&lt;1.6)*(n3.y&gt;-1)' evaluar='siempre'">
+   <param name="A_51" value="id='az4' constante='s&iacute;' expresi&oacute;n='(n4.x&gt;-3)*(n4.x&lt;-1)*(n4.y&lt;1.6)*(n4.y&gt;-1)' evaluar='siempre'">
+   <param name="A_52" value="id='az5' constante='s&iacute;' expresi&oacute;n='(n5.x&gt;-3)*(n5.x&lt;-1)*(n5.y&lt;1.6)*(n5.y&gt;-1)' evaluar='siempre'">
+   <param name="A_53" value="id='az6' constante='s&iacute;' expresi&oacute;n='(n6.x&gt;-3)*(n6.x&lt;-1)*(n6.y&lt;1.6)*(n6.y&gt;-1)' evaluar='siempre'">
+   <param name="A_54" value="id='az7' constante='s&iacute;' expresi&oacute;n='(n7.x&gt;-3)*(n7.x&lt;-1)*(n7.y&lt;1.6)*(n7.y&gt;-1)' evaluar='siempre'">
+   <param name="A_55" value="id='vaz1' constante='s&iacute;' expresi&oacute;n='11+az1*a1/b1' evaluar='siempre'">
+   <param name="A_56" value="id='vaz2' constante='s&iacute;' expresi&oacute;n='11+az2*a2/b2' evaluar='siempre'">
+   <param name="A_57" value="id='vaz3' constante='s&iacute;' expresi&oacute;n='11+az3*a3/b3' evaluar='siempre'">
+   <param name="A_58" value="id='vaz4' constante='s&iacute;' expresi&oacute;n='11+az4*a4/b4' evaluar='siempre'">
+   <param name="A_59" value="id='vaz5' constante='s&iacute;' expresi&oacute;n='11+az5*a5/b5' evaluar='siempre'">
+   <param name="A_60" value="id='vaz6' constante='s&iacute;' expresi&oacute;n='11+az6*a6/b6' evaluar='siempre'">
+   <param name="A_61" value="id='vaz7' constante='s&iacute;' expresi&oacute;n='11+az7*a7/b7' evaluar='siempre'">
+   <param name="A_62" value="id='ve1' constante='s&iacute;' expresi&oacute;n='(n1.x&gt;-1)*(n1.x&lt;1)*(n1.y&lt;1.6)*(n1.y&gt;-1)' evaluar='siempre'">
+   <param name="A_63" value="id='ve2' constante='s&iacute;' expresi&oacute;n='(n2.x&gt;-1)*(n2.x&lt;1)*(n2.y&lt;1.6)*(n2.y&gt;-1)' evaluar='siempre'">
+   <param name="A_64" value="id='ve3' constante='s&iacute;' expresi&oacute;n='(n3.x&gt;-1)*(n3.x&lt;1)*(n3.y&lt;1.6)*(n3.y&gt;-1)' evaluar='siempre'">
+   <param name="A_65" value="id='ve4' constante='s&iacute;' expresi&oacute;n='(n4.x&gt;-1)*(n4.x&lt;1)*(n4.y&lt;1.6)*(n4.y&gt;-1)' evaluar='siempre'">
+   <param name="A_66" value="id='ve5' constante='s&iacute;' expresi&oacute;n='(n5.x&gt;-1)*(n5.x&lt;1)*(n5.y&lt;1.6)*(n5.y&gt;-1)' evaluar='siempre'">
+   <param name="A_67" value="id='ve6' constante='s&iacute;' expresi&oacute;n='(n6.x&gt;-1)*(n6.x&lt;1)*(n6.y&lt;1.6)*(n6.y&gt;-1)' evaluar='siempre'">
+   <param name="A_68" value="id='ve7' constante='s&iacute;' expresi&oacute;n='(n7.x&gt;-1)*(n7.x&lt;1)*(n7.y&lt;1.6)*(n7.y&gt;-1)' evaluar='siempre'">
+   <param name="A_69" value="id='vve1' constante='s&iacute;' expresi&oacute;n='11+ve1*a1/b1' evaluar='siempre'">
+   <param name="A_70" value="id='vve2' constante='s&iacute;' expresi&oacute;n='11+ve2*a2/b2' evaluar='siempre'">
+   <param name="A_71" value="id='vve3' constante='s&iacute;' expresi&oacute;n='11+ve3*a3/b3' evaluar='siempre'">
+   <param name="A_72" value="id='vve4' constante='s&iacute;' expresi&oacute;n='11+ve4*a4/b4' evaluar='siempre'">
+   <param name="A_73" value="id='vve5' constante='s&iacute;' expresi&oacute;n='11+ve5*a5/b5' evaluar='siempre'">
+   <param name="A_74" value="id='vve6' constante='s&iacute;' expresi&oacute;n='11+ve6*a6/b6' evaluar='siempre'">
+   <param name="A_75" value="id='vve7' constante='s&iacute;' expresi&oacute;n='11+ve7*a7/b7' evaluar='siempre'">
+   <param name="A_76" value="id='am1' constante='s&iacute;' expresi&oacute;n='(n1.x&gt;1)*(n1.x&lt;3)*(n1.y&lt;1.6)*(n1.y&gt;-1)' evaluar='siempre'">
+   <param name="A_77" value="id='am2' constante='s&iacute;' expresi&oacute;n='(n2.x&gt;1)*(n2.x&lt;3)*(n2.y&lt;1.6)*(n2.y&gt;-1)' evaluar='siempre'">
+   <param name="A_78" value="id='am3' constante='s&iacute;' expresi&oacute;n='(n3.x&gt;1)*(n3.x&lt;3)*(n3.y&lt;1.6)*(n3.y&gt;-1)' evaluar='siempre'">
+   <param name="A_79" value="id='am4' constante='s&iacute;' expresi&oacute;n='(n4.x&gt;1)*(n4.x&lt;3)*(n4.y&lt;1.6)*(n4.y&gt;-1)' evaluar='siempre'">
+   <param name="A_80" value="id='am5' constante='s&iacute;' expresi&oacute;n='(n5.x&gt;1)*(n5.x&lt;3)*(n5.y&lt;1.6)*(n5.y&gt;-1)' evaluar='siempre'">
+   <param name="A_81" value="id='am6' constante='s&iacute;' expresi&oacute;n='(n6.x&gt;1)*(n6.x&lt;3)*(n6.y&lt;1.6)*(n6.y&gt;-1)' evaluar='siempre'">
+   <param name="A_82" value="id='am7' constante='s&iacute;' expresi&oacute;n='(n7.x&gt;1)*(n7.x&lt;3)*(n7.y&lt;1.6)*(n7.y&gt;-1)' evaluar='siempre'">
+   <param name="A_83" value="id='vam1' constante='s&iacute;' expresi&oacute;n='11+am1*a1/b1' evaluar='siempre'">
+   <param name="A_84" value="id='vam2' constante='s&iacute;' expresi&oacute;n='11+am2*a2/b2' evaluar='siempre'">
+   <param name="A_85" value="id='vam3' constante='s&iacute;' expresi&oacute;n='11+am3*a3/b3' evaluar='siempre'">
+   <param name="A_86" value="id='vam4' constante='s&iacute;' expresi&oacute;n='11+am4*a4/b4' evaluar='siempre'">
+   <param name="A_87" value="id='vam5' constante='s&iacute;' expresi&oacute;n='11+am5*a5/b5' evaluar='siempre'">
+   <param name="A_88" value="id='vam6' constante='s&iacute;' expresi&oacute;n='11+am6*a6/b6' evaluar='siempre'">
+   <param name="A_89" value="id='vam7' constante='s&iacute;' expresi&oacute;n='11+am7*a7/b7' evaluar='siempre'">
+   <param name="G_01" value="espacio='E' tipo='pol&iacute;gono' fondo='s&iacute;' color='0087ff' expresi&oacute;n='(-3.02,-2)(3.01,-2)(3.01,-1)(-3.02,-1)(-3.02,-2)' relleno='0087ff' ancho='0'">
+   <param name="G_02" value="tipo='pol&iacute;gono' fondo='s&iacute;' color='004bd7' expresi&oacute;n='(-3,-1)(-1.03,-1)(-1.03,1.62)(-3,1.62)(-3,-1)' relleno='96ebff' ancho='5'">
+   <param name="G_03" value="tipo='pol&iacute;gono' fondo='s&iacute;' color='009100' expresi&oacute;n='(-0.93,-1)(0.97,-1)(0.97,1.62)(-0.97,1.62)(-0.97,-1)' relleno='96eb9b' ancho='5'">
+   <param name="G_04" value="tipo='pol&iacute;gono' fondo='s&iacute;' color='ffb900' expresi&oacute;n='(1.03,-1)(2.97,-1)(2.97,1.62)(1.03,1.62)(1.03,-1)' relleno='ffff8c' ancho='5'">
+   <param name="G_05" value="tipo='punto' color='blanco' expresi&oacute;n='(n1.x,n1.y)' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_06" value="tipo='punto' color='negro' expresi&oacute;n='(n1.x-0.05-0.06*(a1&gt;9),n1.y+0.05)' texto='[a1]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_07" value="tipo='punto' color='negro' expresi&oacute;n='(n1.x-0.05-0.06*(b1&gt;9)-0.09*(b1&gt;99),n1.y-0.22)' texto='[b1]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_08" value="tipo='segmento' color='azul' expresi&oacute;n='(n1.x-0.2,n1.y)(n1.x+0.2,n1.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_09" value="tipo='punto' color='blanco' expresi&oacute;n='(n2.x,n2.y)' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_10" value="tipo='punto' color='negro' expresi&oacute;n='(n2.x-0.05-0.06*(a2&gt;9),n2.y+0.05)' texto='[a2]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_11" value="tipo='punto' color='negro' expresi&oacute;n='(n2.x-0.05-0.06*(b2&gt;9)-0.09*(b2&gt;99),n2.y-0.22)' texto='[b2]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_12" value="tipo='segmento' color='azul' expresi&oacute;n='(n2.x-0.2,n2.y)(n2.x+0.2,n2.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_13" value="tipo='punto' color='blanco' expresi&oacute;n='(n3.x,n3.y)' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_14" value="tipo='punto' color='negro' expresi&oacute;n='(n3.x-0.05-0.06*(a3&gt;9),n3.y+0.05)' texto='[a3]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_15" value="tipo='punto' color='negro' expresi&oacute;n='(n3.x-0.05-0.06*(b3&gt;9)-0.09*(b3&gt;99),n3.y-0.22)' texto='[b3]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_16" value="tipo='segmento' color='azul' expresi&oacute;n='(n3.x-0.2,n3.y)(n3.x+0.2,n3.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_17" value="tipo='punto' color='blanco' expresi&oacute;n='(n4.x,n4.y)' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_18" value="tipo='punto' color='negro' expresi&oacute;n='(n4.x-0.05-0.06*(a4&gt;9),n4.y+0.05)' texto='[a4]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_19" value="tipo='punto' color='negro' expresi&oacute;n='(n4.x-0.05-0.06*(b4&gt;9)-0.06*(b4&gt;99),n4.y-0.22)' texto='[b4]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_20" value="tipo='segmento' color='azul' expresi&oacute;n='(n4.x-0.2,n4.y)(n4.x+0.2,n4.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_21" value="tipo='punto' color='blanco' expresi&oacute;n='(n5.x,n5.y)' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_22" value="tipo='punto' color='negro' expresi&oacute;n='(n5.x-0.05-0.06*(a5&gt;9),n5.y+0.05)' texto='[a5]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_23" value="tipo='punto' color='negro' expresi&oacute;n='(n5.x-0.05-0.06*(b5&gt;9)-0.09*(b5&gt;99),n5.y-0.22)' texto='[b5]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_24" value="tipo='segmento' color='azul' expresi&oacute;n='(n5.x-0.2,n5.y)(n5.x+0.2,n5.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_25" value="tipo='punto' color='blanco' expresi&oacute;n='(n6.x,n6.y)' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_26" value="tipo='punto' color='negro' expresi&oacute;n='(n6.x-0.05-0.06*(a6&gt;9),n6.y+0.05)' texto='[a6]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_27" value="tipo='punto' color='negro' expresi&oacute;n='(n6.x-0.05-0.06*(b6&gt;9)-0.09*(b6&gt;99),n6.y-0.22)' texto='[b6]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_28" value="tipo='segmento' color='azul' expresi&oacute;n='(n6.x-0.2,n6.y)(n6.x+0.2,n6.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_29" value="tipo='punto' color='blanco' expresi&oacute;n='(n7.x,n7.y)' fuente='Monospaced,PLAIN,12' decimales='0' fijo='s&iacute;' tama&ntilde;o='25'">
+   <param name="G_30" value="tipo='punto' color='negro' expresi&oacute;n='(n7.x-0.05-0.06*(a7&gt;9),n7.y+0.05)' texto='[a7]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_31" value="tipo='punto' color='negro' expresi&oacute;n='(n7.x-0.05-0.06*(b7&gt;9)-0.09*(b7&gt;99),n7.y-0.22)' texto='[b7]' fuente='Helvetica,PLAIN,20' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_32" value="tipo='segmento' color='azul' expresi&oacute;n='(n7.x-0.2,n7.y)(n7.x+0.2,n7.y)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0' ancho='2'">
+   <param name="G_33" value="tipo='punto' color='blanco' dibujar-si='(v=0)*(z=7)*(w1+w2=0)' expresi&oacute;n='(-1.5,-1.5)' texto='CORRECTO' fuente='Helvetica,BOLD,48' decimales='0' fijo='s&iacute;' tama&ntilde;o='0'">
+</ajs>
+                        </div></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td rowspan="2" background="imagen1/bor2.gif" width="8"> </td>
+    </tr>
+  </table>
+  <table align="center" border="0" cellspacing="0" height="10" width="800">
+    <tr>
+      <td background="imagen1/es4.gif" height="8" width="8"></td>
+      <td background="imagen1/bor3.gif" height="8"></td>
+      <td background="imagen1/es3.gif" height="8" width="8"></td>
+    </tr>
+  </table>
+  <table align="center" border="0" cellspacing="0" width="768">
+    <tr>
+      <td width="684">
+        <div align="right"> </div>
+      </td>
+      <td width="30">
+        <div align="center"><a href="1quincena5_ejercicios_1a.htm" target="_parent" onMouseOver="MM_swapImage('atras','','imagen1/atrasb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/atras.png" alt="anterior" name="atras" width="25" height="25" border="0"></a></div>
+      </td>
+      <td width="30">
+        <div align="center"><a href="1quincena5_ejercicios_2a.htm" target="_parent" onMouseOver="MM_swapImage('adelante','','imagen1/adelanteb.png',1)" onMouseOut="MM_swapImgRestore()"><img src="imagen1/adelante.png" alt="siguiente" name="adelante" width="25" height="25" border="0"></a></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

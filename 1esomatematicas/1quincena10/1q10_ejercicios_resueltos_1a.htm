@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script type='text/javascript' src='lib/descartes-min.js'></script>
+    </head>
+    <body>
+        <ajs name=""10ejres1"" width=420 height=360
+        code="Descartes.class" codebase="./"
+        archive="lib/Descartes5.jar,lib/Descartes5_Sonido.jar,lib/Descartes5_Algebra.jar"
+        MAYSCRIPT>
+   <param name="nombre" value="10ejres1">
+   <param name="Versi&oacute;n" value="3.92, 2008-06-02">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_00" value="tipo='R2' id='escoge' alto='38' fijo='si' despl_imagen='arr-izq' fondo='negro' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_01" value="tipo='R2' id='enunciado' y='38' alto='90' fijo='si' escala='20' despl_imagen='arr-izq' fondo='f1f1f1' red='no' red10='no' ejes='no' texto='no'">
+   <param name="E_02" value="tipo='R2' id='solucion' y='128' alto='235' fijo='si' escala='20' despl_imagen='arr-izq' fondo='fff7d7' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_00" value="id='atras' espacio='escoge' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(240,7,25,25)' visible='si' dibujar-si='(ang#0)&amp;(p&gt;1)' imagen='imagen1/anterior.png' acci&oacute;n='calcular' par&aacute;metro='p=p-1' pos_mensajes='centro'">
+   <param name="C_01" value="id='adelante' espacio='escoge' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(275,7,25,25)' visible='si' dibujar-si='(ang#0)&amp;(p&lt;fin)' imagen='imagen1/siguiente.png' acci&oacute;n='calcular' par&aacute;metro='p=p+1' pos_mensajes='centro'">
+   <param name="C_02" value="id='Soluciones' espacio='escoge' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(310,7)' visible='si' dibujar-si='(p=fin)&amp;(sol=0)' imagen='imagenes10/soluciones.jpg' acci&oacute;n='calcular' par&aacute;metro='sol=1;p=1' pos_mensajes='centro'">
+   <param name="C_03" value="id='ini' espacio='escoge' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(10,7,70,25)' nombre='Inicio' visible='si' acci&oacute;n='inicio' pos_mensajes='centro'">
+   <param name="A_00" value="id='fin' algoritmo='si' evaluar='siempre' hacer='ang=1;fin=2'">
+   <param name="A_01" value="id='pi' constante='si' expresi&oacute;n='6*asen(0.5)' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='el' vector='si' tama&ntilde;o='6' evaluar='una-sola-vez' expresi&oacute;n='el[0]=&squot;Centro&squot;;el[1]=&squot;Radio&squot;;el[2]=&squot;Di&aacute;metro&squot;;el[3]=&squot;Cuerda&squot;;el[4]=&squot;Arco&squot;;el[5]=&squot;Semicircunferencia&squot;'">
+   <param name="G_00" value="espacio='escoge' tipo='texto' color='ff6200' dibujar-si='p&gt;0' expresi&oacute;n='[90,3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs24\b Ejercicio\par {\*\mjaformula{\expr p}} de {\*\mjaformula{\expr fin}}\fs32\par}' fuente='Arial,BOLD,12' decimales='0'">
+   <param name="G_01" value="espacio='enunciado' tipo='texto' color='ff6200' dibujar-si='p=0' expresi&oacute;n='[10,3]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs28\b Escribe y resuelve en tu cuaderno\par los siguientes ejercicios.\f2\fs24\b0\par}' fuente='Arial,BOLD,14'">
+   <param name="G_02" value="espacio='enunciado' tipo='segmento' color='grisClaro' coord_abs='si' expresi&oacute;n='(0,0)(420,0)' tama&ntilde;o='0'">
+   <param name="G_03" value="espacio='enunciado' tipo='segmento' color='grisClaro' coord_abs='si' expresi&oacute;n='(0,89)(420,89)' tama&ntilde;o='0'">
+   <param name="G_04" value="espacio='enunciado' tipo='texto' color='negro' dibujar-si='p=1' expresi&oacute;n='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;}\f1\fs28\b 1\b0 . Dibuja con regla y comp\u225 s una circunferencia de 3 cm\par     de radio con centro en el punto A y traza sobre ella los\par     siguientes elementos: un radio, un di\u225 metro, una cuerda\par     y un arco.\f3\fs24\par}' fuente='Arial,BOLD,14'">
+   <param name="G_05" value="espacio='enunciado' tipo='texto' color='negro' dibujar-si='p=2' expresi&oacute;n='[10,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Times New Roman;}\f1\fs28\b 2\b0 . Identifica en la figura el nombre de los distintos\par     elementos que aparecen coloreados en rojo.\f3\fs24\par}' fuente='Arial,BOLD,14'">
+   <param name="G_06" value="espacio='solucion' tipo='curva' color='azul' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(3*cos(t),3*sen(t))' t.intervalo='[0,2*pi]' t.pasos='1000' ancho='2' visible='no'">
+   <param name="G_07" value="espacio='solucion' tipo='segmento' color='rojo' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(0,0)(3,0)' tama&ntilde;o='0' ancho='2'">
+   <param name="G_08" value="espacio='solucion' tipo='segmento' color='naranja' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(-3*cos(pi/6),-3*sen(pi/6))(3*cos(pi/6),3*sen(pi/6))' tama&ntilde;o='0' ancho='2'">
+   <param name="G_09" value="espacio='solucion' tipo='segmento' color='009000' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(-3*cos(pi/6),-3*sen(pi/6))(0,3)' tama&ntilde;o='0' ancho='2'">
+   <param name="G_10" value="espacio='solucion' tipo='curva' color='magenta' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(3*cos(t),3*sen(t))' t.intervalo='[0,7*pi/6]' t.pasos='1000' ancho='2' visible='no'">
+   <param name="G_11" value="espacio='solucion' tipo='punto' color='azul' dibujar-si='p=1' expresi&oacute;n='(0,0)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24\b A\f2\fs24\b0\par}' fuente='Arial,BOLD,12' tama&ntilde;o='3'">
+   <param name="G_12" value="espacio='solucion' tipo='texto' color='azul' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='[20,70]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs28\b\cf0 Cuerda\par \par \par \par Arco\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,14'">
+   <param name="G_13" value="espacio='solucion' tipo='texto' color='azul' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='[350,70]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs28\b\cf0 Radio\par \par \par \par Di\u225 metro\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,14'">
+   <param name="G_14" value="espacio='solucion' tipo='flecha' color='negro' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(-6,2)(-1.5,1)' ancho='2' ancho='2' punta='5' flecha='negro'">
+   <param name="G_15" value="espacio='solucion' tipo='flecha' color='negro' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(-6,-1.5)(-3.5,0)' ancho='2' ancho='2' punta='5' flecha='negro'">
+   <param name="G_16" value="espacio='solucion' tipo='flecha' color='negro' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(6,2)(2,0.2)' ancho='2' ancho='2' punta='5' flecha='negro'">
+   <param name="G_17" value="espacio='solucion' tipo='flecha' color='negro' dibujar-si='(p=1)&amp;(sol=1)' expresi&oacute;n='(6,-1.5)(-1,-1)' ancho='2' ancho='2' punta='5' flecha='negro'">
+   <param name="G_18" value="espacio='solucion' tipo='curva' color='azul' dibujar-si='p=2' expresi&oacute;n='(2+5*cos(t),5*sen(t))' t.intervalo='[0,2*pi]' t.pasos='1000' ancho='2' visible='no'">
+   <param name="G_19" value="espacio='solucion' tipo='punto' color='rojo' dibujar-si='(p=2)&amp;(ent(t/20)=0)' expresi&oacute;n='(2,0)' fuente='Arial,BOLD,12' tama&ntilde;o='5'">
+   <param name="G_20" value="espacio='solucion' tipo='segmento' color='rojo' dibujar-si='(p=2)&amp;(ent(t/20)=1)' expresi&oacute;n='(2,0)(2+5*cos(pi/3),5*sen(pi/3))' tama&ntilde;o='0' ancho='4'">
+   <param name="G_21" value="espacio='solucion' tipo='segmento' color='rojo' dibujar-si='(p=2)&amp;(ent(t/20)=2)' expresi&oacute;n='(2-5*cos(pi/6),5*sen(pi/6))(2+5*cos(pi/6),-5*sen(pi/6))' tama&ntilde;o='0' ancho='4'">
+   <param name="G_22" value="espacio='solucion' tipo='segmento' color='rojo' dibujar-si='(p=2)&amp;(ent(t/20)=3)' expresi&oacute;n='(2-5*cos(pi/6),5*sen(pi/6))(2,-5)' tama&ntilde;o='0' ancho='4'">
+   <param name="G_23" value="espacio='solucion' tipo='curva' color='rojo' dibujar-si='(p=2)&amp;(ent(t/20)=4)' expresi&oacute;n='(2+5*cos(t),5*sen(t))' t.intervalo='[3*pi/2,pi/4]' t.pasos='1000' ancho='4' visible='no'">
+   <param name="G_24" value="espacio='solucion' tipo='curva' color='rojo' dibujar-si='(p=2)&amp;(ent(t/20)=5)' expresi&oacute;n='(2+5*cos(t),5*sen(t))' t.intervalo='[0,pi]' t.pasos='1000' ancho='4' visible='no'">
+   <param name="G_25" value="espacio='solucion' tipo='texto' color='azul' dibujar-si='p=2' expresi&oacute;n='[10,20]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green0\blue0;\red0\green0\blue255;}\f1\fs32\b\cf0 Elemento {\*\mjaformula{\expr 1+ent(t/20)\decimals 0\fixed1}}\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16'">
+   <param name="G_26" value="espacio='solucion' tipo='texto' color='azul' dibujar-si='(p=2)&amp;(sol=1)' expresi&oacute;n='[10,180]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red0\green144\blue0;\red0\green0\blue255;}\f1\fs32\b\cf0{\*\mjaformula{\expr el[ent(t/20)]\decimals 0\fixed1}}\cf1\f2\fs24\b0\par}' fuente='Arial,BOLD,16'">
+   <param name="Animaci&oacute;n" value="controles='no' repetir='si' inicio='t=0' hacer='t=(p=2)?(t+1)%120:0'">
+</ajs> 
+    </body>
+   </html>

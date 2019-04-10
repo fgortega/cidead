@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Investiga: n&uacute;meros triangulares</title>
+
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body bgcolor="fffada">
+<ajs name="sol_n_triangulares" width=400 height=300
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="400x300">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="sol_n_triangulares">
+   <param name="Versi&oacute;n" value="5.101, 2013-07-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='escala' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='18' decimales='(escala&lt;0.01)+(escala&lt;0.1)+(escala&lt;1)+(escala&lt;10)+(escala&lt;100)+(escala&lt;1000)+(escala&lt;10000)+(escala&lt;100000)' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='Ox' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='148' incr='10' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_03" value="id='Oy' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='-135' incr='5' fijo='s&iacute;' visible='s&iacute;' pos_mensajes='centro'">
+   <param name="C_04" value="id='n5' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(370,270,23,23)' valor='1' discreto='s&iacute;' decimales='0' fijo='no' visible='no' imagen='imagen1/siguiente.png' acci&oacute;n='calcular' par&aacute;metro='ev=0; bot=0' dibujar-si='(nn&lt;12)&amp;(bot=1)' pos_mensajes='centro'">
+   <param name="C_05" value="id='n6' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' expresi&oacute;n='(340,270,23,23)' valor='1' discreto='s&iacute;' decimales='0' fijo='no' visible='no' imagen='imagen1/anterior.png' acci&oacute;n='calcular' par&aacute;metro='nn=nn-1' dibujar-si='(nn&gt;2)&amp;(bot=1)' pos_mensajes='centro'">
+   <param name="A_01" value="id='nn' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_02" value="id='mm' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_03" value="id='e3' evento='s&iacute;' condici&oacute;n='ev=0' acci&oacute;n='animar' ejecuci&oacute;n='siempre' pos_mensajes='centro'">
+   <param name="G_01" value="tipo='punto' color='ff6600' expresi&oacute;n='(-s+0.3,-2)' rastro='ff6600' familia='s' s.intervalo='[0,1]' s.pasos='1' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_02" value="tipo='punto' color='00aa00' expresi&oacute;n='(-1+0.3,-s)' rastro='00aa00' familia='s' s.intervalo='[0,1]' s.pasos='1' fuente='Monospaced,PLAIN,12' fijo='no' tama&ntilde;o='8'">
+   <param name="G_03" value="tipo='punto' color='ff6600' expresi&oacute;n='(-s+0.3,-nn)' rastro='ff6600' familia='s' s.intervalo='[0,nn-1]' s.pasos='(nn-1)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_04" value="tipo='punto' color='fffada' expresi&oacute;n='(-s+0.3,-nn-1)' rastro='fffada' familia='s' s.intervalo='[0,nn]' s.pasos='nn' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_05" value="tipo='punto' color='00aa00' dibujar-si='mm=0' expresi&oacute;n='(-nn+1+0.3,-s)' rastro='00aa00' familia='s' s.intervalo='[0,nn-1]' s.pasos='nn-1' fuente='Monospaced,PLAIN,12' fijo='no' tama&ntilde;o='8'">
+   <param name="G_06" value="tipo='punto' color='fffada' expresi&oacute;n='(-nn+0.3,-s)' rastro='fffada' familia='s' s.intervalo='[0,nn]' s.pasos='nn' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_07" value="tipo='texto' color='grisObscuro' dibujar-si='nn&gt;1' expresi&oacute;n='[0,10]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}{\colortbl\red255\green102\blue0;\red64\green64\blue64;\red0\green170\blue0;}\f1\fs28\b OBSERVA:\par Queremos contar\par los puntos de color\cf0\par naranja\cf1 .\b0\par Se a\u241 aden puntos\cf2\par verdes\cf1  para que \par haya tantos como\par los naranja.\par As\u237  tenemos el \par doble del n\u250 mero\par que buscamos.\par \par Pero todos los puntos\par forman un rect\u225 ngulo.\par Entonces son {\*\mjaformula{\expr nn\decimals 2\fixed0}}\u183 {\*\mjaformula{\expr nn+1\decimals 2\fixed0}} puntos.\par La cantidad que busc\u225 bamos es la mitad.\b\par Son {\*\mjaformula ({\expr nn\decimals 2\fixed0}\u183 {\expr nn+1\decimals 2\fixed0}) : 2={\expr nn*(nn+1)/2\decimals 2\fixed0}} puntos de color \cf0 naranja\cf1 .\f3\fs24\b0\par}' fuente='Arial,BOLD,14' fijo='s&iacute;'">
+   <param name="G_08" value="tipo='punto' color='ff6600' dibujar-si='nn&gt;1' expresi&oacute;n='((-nn-1)/2+1,-nn-1.1)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}\f1\fs24{\*\mjaformula\f0\fs24{\expr nn\decimals 2\fixed0}}\f2\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_09" value="tipo='punto' color='ff6600' dibujar-si='nn&gt;1' expresi&oacute;n='(0.7,(-nn-1)/2+0.2)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Times New Roman;\f3\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green170\blue0;\red255\green102\blue0;}\f1\fs24{\*\mjaformula\f2\fs24{\expr nn\decimals 2\fixed0}\f3\fs24\cf0 +\cf1 1\cf2}\f3\fs24\par}' fuente='Arial,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='0'">
+   <param name="G_10" value="tipo='punto' color='00aa00' dibujar-si='nn&gt;1' expresi&oacute;n='(0.3,0)' fijo='no' tama&ntilde;o='8'">
+   <param name="G_11" value="tipo='punto' color='ff6600' dibujar-si='nn&gt;1' expresi&oacute;n='(0.3,-1)' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_12" value="tipo='punto' color='00aa00' expresi&oacute;n='(-nn+1+0.3,-s+mm)' familia='s' s.intervalo='[0,nn-1]' s.pasos='nn-1' fijo='no' tama&ntilde;o='8'">
+   <param name="Animaci&oacute;n" value="controles='no' auto='no' inicio='ev=1; nn=nn+1; mm=2*nn' hacer='mm=mm-1;bot=(mm=0)' mientras='mm&gt;0'">
+</ajs>
+</body>
+</html>

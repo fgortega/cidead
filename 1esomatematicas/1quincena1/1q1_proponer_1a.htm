@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>N&uacute;meros triangulares</title>
+	<script type='text/javascript' src='lib/descartes-min.js'></script>
+</head>
+<body>
+<ajs name="n_triangulares" width=400 height=300
+        code="Descartes.class"
+        codebase="./"
+        archive="lib/Descartes5.jar"
+        MAYSCRIPT>
+   <param name="tama&ntilde;o" value="400x300">
+   <param name="decimal_symbol" value=".">
+   <param name="antialias" value="s&iacute;">
+   <param name="nombre" value="n_triangulares">
+   <param name="Versi&oacute;n" value="5.101, 2013-07-16">
+   <param name="Idioma" value="espa&ntilde;ol">
+   <param name="Botones" value="cr&eacute;ditos=no config=no inicio=no limpiar=no">
+   <param name="E_01" value="tipo='R2' fijo='s&iacute;' despl_imagen='arr-izq' fondo='fffada' red='no' red10='no' ejes='no' texto='no'">
+   <param name="C_01" value="id='escala' tipo='num&eacute;rico' regi&oacute;n='exterior' valor='18' decimales='(escala&lt;0.01)+(escala&lt;0.1)+(escala&lt;1)+(escala&lt;10)+(escala&lt;100)+(escala&lt;1000)+(escala&lt;10000)+(escala&lt;100000)' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12'">
+   <param name="C_02" value="id='Ox' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' valor='148' incr='10' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_03" value="id='Oy' tipo='num&eacute;rico' regi&oacute;n='exterior' espacio='E1' valor='-135' incr='5' fijo='s&iacute;' visible='s&iacute;' par&aacute;metro.fuente='Monospaced,PLAIN,12' pos_mensajes='centro'">
+   <param name="C_04" value="id='n5' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(370,270,23,23)' valor='1' discreto='s&iacute;' decimales='0' fijo='no' visible='no' imagen='imagen1/siguiente.png' acci&oacute;n='calcular' par&aacute;metro='nn=nn+1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='nn&lt;12' pos_mensajes='centro'">
+   <param name="C_05" value="id='n6' tipo='num&eacute;rico' interfaz='bot&oacute;n' regi&oacute;n='interior' espacio='E1' expresi&oacute;n='(340,270,23,23)' valor='1' discreto='s&iacute;' decimales='0' fijo='no' visible='no' imagen='imagen1/anterior.png' acci&oacute;n='calcular' par&aacute;metro='nn=nn-1' par&aacute;metro.fuente='Monospaced,PLAIN,12' dibujar-si='nn&gt;1' pos_mensajes='centro'">
+   <param name="A_01" value="id='V1' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='resto' expresi&oacute;n='V1[0]=n;'">
+   <param name="A_02" value="id='V2' vector='s&iacute;' evaluar='una-sola-vez' tama&ntilde;o='resto' expresi&oacute;n='V2[0]=0;'">
+   <param name="A_03" value="id='nn' constante='s&iacute;' expresi&oacute;n='1' evaluar='una-sola-vez'">
+   <param name="A_04" value="id='resto' constante='s&iacute;' expresi&oacute;n='nn-n^2' evaluar='siempre'">
+   <param name="A_05" value="id='paV' algoritmo='s&iacute;' evaluar='siempre' inicio='h=0' hacer='V1[h+1]=(h+1&gt;n)?V1[h]-1:V1[h];V2[h+1]=(h+1&gt;n)?V2[h]:V2[h]+1;h=h+1' mientras='h&lt;resto'">
+   <param name="G_01" value="tipo='punto' color='ff6600' expresi&oacute;n='(0,-1)' rastro='ff6600' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_02" value="tipo='punto' color='ff6600' expresi&oacute;n='(-s,-nn)' rastro='ff6600' familia='s' s.intervalo='[nn-1,0]' s.pasos='(nn-1)' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_03" value="tipo='punto' color='fffada' expresi&oacute;n='(-s,-nn-1)' rastro='fffada' familia='s' s.intervalo='[nn,0]' s.pasos='nn' fuente='Monospaced,PLAIN,12' fijo='s&iacute;' tama&ntilde;o='8'">
+   <param name="G_04" value="tipo='punto' color='ff6600' dibujar-si='nn&gt;1' expresi&oacute;n='(-3.5-0.5*((nn^2+nn)/2&gt;9),-nn-1.6)' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Courier New;}\f1\fs32 Suma total:\ol{\*\mjaformula{\expr (nn^2+nn)/2\decimals 0\fixed1}}\olnone  \f3\fs24\par}' fuente='Arial,PLAIN,16' fijo='no' tama&ntilde;o='0'">
+   <param name="G_05" value="tipo='texto' expresi&oacute;n='[350+9*(s&lt;10),9+18*s]' familia='s' s.intervalo='[1,nn]' s.pasos='nn-1' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\f1\fs32\cf0{\*\mjaformula{\expr s\decimals 0\fixed1}} \cf1\f2\fs24\par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='no'">
+   <param name="G_06" value="tipo='texto' dibujar-si='(nn==1)' expresi&oacute;n='[10+15*s,265]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\f1\fs32\cf0 El {\*\mjaformula{\expr nn\decimals 0\fixed0}{\supix er}} n\u250 mero triangular es {\*\mjaformula{\expr (nn^2+nn)/2\decimals 0\fixed0}} \cf1\f2\fs24\par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='no'">
+   <param name="G_07" value="tipo='texto' dibujar-si='(nn&gt;=2)' expresi&oacute;n='[10+15*s,265]' texto='{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Courier New;}{\colortbl\red64\green64\blue64;\red0\green0\blue255;}\f1\fs32\cf0 El {\*\mjaformula{\expr nn\decimals 0\fixed0}{\supix o}} n\u250 mero triangular es {\*\mjaformula{\expr (nn^2+nn)/2\decimals 0\fixed0}} \cf1\f2\fs24\par }' fuente='SansSerif,PLAIN,16' decimales='0' fijo='no'">
+</ajs>
+</body>
+</html>
